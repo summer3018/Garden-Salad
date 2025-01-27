@@ -137,6 +137,10 @@ li {
   padding-bottom: 24px;
 }
 
+.about {
+  background: #f2f2f2;
+}
+
 .about__inner {
   padding-top: 45px;
   padding-left: 16px;
@@ -146,31 +150,60 @@ li {
 .about-subtitle {
   color: #159741;
   text-align: center;
+  margin: 0 auto;
   font-family: "Noto Sans JP";
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.7px;
+  padding-bottom: 12px;
 }
 
 .about-title {
   color: #333;
-  font-family: Reross;
+  font-family: "reross-quadratic", sans-serif;
+  text-align: center;
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 1.6px;
+  border-bottom: 2px solid #159741;
+  width: 50px;
 }
 
-.about-heading-01 {
+.about-text-wrapper {
+  padding-top: 56px;
+}
+
+.about-heading {
   color: #333;
   font-family: "Noto Sans JP";
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 1.2px;
+  padding-bottom: 16px;
+  padding-left: 9px;
+}
+.about-heading span {
+  color: #159741;
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.about-text {
+  color: #333;
+  text-align: justify;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.48px;
+  padding-bottom: 32px;
+  padding-left: 9px;
+  padding-right: 7px;
+}
+
+.about-image {
+  padding-bottom: 56px;
 }
 /*# sourceMappingURL=style.css.map */

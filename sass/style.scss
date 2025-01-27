@@ -168,7 +168,7 @@ li{
 
 // about
 .about{
-
+    background: $main-color;
 }
 .about__inner{
     padding-top: 45px;
@@ -176,43 +176,58 @@ li{
     padding-right: 16px;
 }
 .about-subtitle{
-    color: #159741;
+    color: $accent-color;
     text-align: center;
+    margin: 0 auto;
     font-family: "Noto Sans JP";
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.7px;
+    padding-bottom: 12px;
 }
 .about-title{
-    color: #333;
-    font-family: Reross;
+    color: $font-black;
+    font-family: $font-reross;
+    text-align: center;
     font-size: 32px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.6px;
+    border-bottom: 2px solid $accent-color;
+    width: 50px;
 }
 .about-text-wrapper{
-
+    padding-top: 56px;
 }
-.about-heading-01{
-    color: #333;
+.about-heading{
+    color: $font-black;
     font-family: "Noto Sans JP";
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.2px;
+    padding-bottom: 16px;
+    padding-left: 9px;
     span{
-
+        color: $accent-color;
+        font-family: "Noto Sans JP";
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
     }
 }
 .about-text{
-
+    color: $font-black;
+    text-align: justify;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.48px;
+    padding-bottom: 32px;
+    padding-left: 9px;
+    padding-right: 7px;
 }
 .about-image{
+    padding-bottom: 56px;
     img{
 
     }
