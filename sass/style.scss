@@ -1,0 +1,166 @@
+@mixin mq($breakpoint) {
+    @media (#{map-get($breakpoints, $breakpoint)} <= width) {
+      @content;
+    }
+  }
+
+$breakpoints: (
+  sm: 500px,
+  md: 700px,
+  lg: 900px,
+);
+
+$font-black: #333;
+$font-white: #FFF;
+$base-color: #2f2f2f;
+$main-color: #f2f2f2;
+$accent-color: #159741;
+$font-reross: "reross-quadratic", sans-serif;
+$font-Satisfy: "Satisfy", serif;
+  
+a{
+    text-decoration: none;
+    color: #333;
+}
+li{
+    list-style: none;
+}
+.header{
+    background: $base-color;
+    width: 375px;
+    height: 60px;
+}
+.header__inner{
+    padding: 15px 16px 17px 16px;
+    display: flex;
+}
+.header-left{
+
+}
+.logo__header{
+    img{
+
+    }
+}
+.header-right{
+
+}
+.nav_header{
+
+}
+.nav_header-lists{
+    display: flex; /* 横並びにする */
+    justify-content: flex-end; /* 右寄せにする */
+    gap: 20px; /* リストアイテム間の均等な間隔 */
+    margin-left: 65px;
+}
+.nav_header-list{
+    justify-content: space-between;
+    a{
+        color: $font-white;
+        font-family: $font-reross;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.42px;
+    }
+}
+
+
+//  mv  ---------------------------------------------------------------------------------
+.mv{
+    background: $base-color;
+    height: 263px;
+}
+.mv-bg-image{
+    width: 100%;
+    height: 243px;
+    background-image: url(/image/img_mv\(SP\).png);
+    background-position: 66px 0;
+    padding-bottom: 20px;
+}
+.mv-texts__en{
+    color: #FFF;
+    font-family: $font-reross;
+    font-size: 36px;
+    font-weight: 400;
+    padding-left: 19px;
+}
+.mv-text__en-farst{
+    padding-top: 24px;
+    margin-bottom: -10px;
+}
+.mv-text__en-second{
+    span{
+
+    }
+}
+.salad{
+    margin-top: -6px;
+    color: $accent-color;
+    font-family: $font-reross;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    span{
+        color: $font-white;
+    }
+}
+.mv-texts__jp{
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    padding-left: 17px;
+}
+.mv-text__jp-farst{
+    padding-top: 20px;
+    padding-bottom: 9px;
+    padding-left: 8px;
+}
+.mv-text__jp-second-wrapper{
+    width: 231px;
+    height: 31px;
+    background: $accent-color;
+    padding: 4px 8px 7px 0px;
+}
+.mv-text__jp-second{
+    
+}
+
+// concept
+
+.concept{
+    background: $base-color;
+    background-image: url(/image/pGarden\ Salad.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.concept__inner{
+    padding-top: 28px;
+    padding-bottom: 64px;
+    padding-right: 32px;
+    padding-left: 33px;
+}
+.concept-title{
+    color: $font-white;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    line-height: 150%; /* 30px */
+    padding-bottom: 24px;
+    letter-spacing: 1px;
+    padding-left: 17px;
+}
+.concept-texts{
+    color: $font-white;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.48px;
+}
+.concept-text{
+    padding-bottom: 24px;
+}
