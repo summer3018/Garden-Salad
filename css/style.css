@@ -154,22 +154,30 @@ li {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 }
 
 .about-title {
+  position: relative;
   color: #333;
   font-family: "reross-quadratic", sans-serif;
   text-align: center;
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
-  border-bottom: 2px solid #159741;
-  width: 50px;
+  padding-bottom: 12px;
+  margin-bottom: 56px;
 }
-
-.about-text-wrapper {
-  padding-top: 62px;
+.about-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0px; /*線の上下位置*/
+  display: inline-block;
+  width: 50px; /*線の長さ*/
+  height: 2px; /*線の太さ*/
+  transform: translateX(-50%); /*位置調整*/
+  background-color: #159741; /*線の色*/
 }
 
 .about-heading {
@@ -202,6 +210,10 @@ li {
   padding-right: 7px;
 }
 
+.about-image img {
+  padding-bottom: 53px;
+}
+
 .about-text-bg01 {
   background-image: url(/image/01.png);
   background-position: right 0px;
@@ -215,4 +227,5 @@ li {
 .about-text-bg03 {
   background-image: url(/image/03.png);
   background-position: right 0px;
+  margin-bottom: 11px;
 }/*# sourceMappingURL=style.css.map */
