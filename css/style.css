@@ -226,6 +226,11 @@ li {
 
 .about-text-bg03 {
   background-image: url(/image/03.png);
-  background-position: right 0px;
-  margin-bottom: 11px;
+  background-position: right -16px;
+  margin-bottom: 14px;
+}
+
+.about-image__bottom img {
+  width: 100%;
+  height: 250px;
 }/*# sourceMappingURL=style.css.map */
