@@ -133,12 +133,12 @@ li{
 .mv-bg-image{
     width: 100%;
     height: 243px;
-    background-image: url(/image/img_mv\(SP\).png);
+    background-image: url(/image/sp/img_mv\(SP\).png);
     background-position: 66px 0;
     padding-bottom: 20px;
     @include mq(md) {
         height: 650px;
-        background-image: url(/image/img_mv\ \(PC\).png);
+        background-image: url(/image/pc/img_mv\ \(PC\).png);
         background-position: right;
     }
 }
@@ -227,11 +227,11 @@ li{
     position: relative;
     top: -2px;
     background: $base-color;
-    background-image: url(/image/pGarden\ Salad\(sp\).png);
+    background-image: url(/image/sp/pGarden\ Salad\(sp\).png);
     background-repeat: no-repeat;
     background-position: 6px 272px;
     @include mq(md) {
-      background-image: url(/image/Garden\ Salad\(pc\).png);
+      background-image: url(/image/pc/Garden\ Salad\(pc\).png);
       background-position: bottom;
     }
 }
@@ -360,16 +360,16 @@ li{
     }
 }
 .about-text-bg01{
-    background-image: url(/image/01.png);
+    background-image: url(/image/sp/01.png);
     background-position: right 45px;
 }
 .about-text-bg02{
-    background-image: url(/image/02.png);
+    background-image: url(/image/sp/02.png);
     background-position: right 79px;
     // margin-bottom: 32px;
 }
 .about-text-bg03{
-    background-image: url(/image/03.png);
+    background-image: url(/image/sp/03.png);
     background-position: right 68px;
     margin-bottom: 14px;
 }
