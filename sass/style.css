@@ -8,6 +8,24 @@ li {
   list-style: none;
 }
 
+.pc-none {
+  display: block;
+}
+@media (700px <= width) {
+  .pc-none {
+    display: none;
+  }
+}
+
+.pc-block {
+  display: none;
+}
+@media (700px <= width) {
+  .pc-block {
+    display: block;
+  }
+}
+
 .header {
   background: #2f2f2f;
   width: 375px;
@@ -204,24 +222,6 @@ li {
     width: 524px;
     height: 64px;
     padding: 9px 20px 9px 0;
-  }
-}
-
-.pc-none {
-  display: block;
-}
-@media (700px <= width) {
-  .pc-none {
-    display: none;
-  }
-}
-
-.pc-block {
-  display: none;
-}
-@media (700px <= width) {
-  .pc-block {
-    display: block;
   }
 }
 
