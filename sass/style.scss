@@ -348,6 +348,7 @@ li{
       flex-direction: row-reverse;
       align-items: center; // 横方向に中央寄せ
       justify-content: flex-end;
+      margin-bottom: 11px;
     }
 }.about-text-container-02{
     @include mq(md) {
@@ -404,12 +405,15 @@ li{
 }
 .about-heading-01{
     @include mq(md) {
-        margin-top: 94px;
+        margin-top: 21px;
         margin-bottom: 7px;
     }
 }
 .about-heading-02{
-    
+    @include mq(md) {
+      margin-top: 40px;
+      margin-bottom: 7px;
+    }
 }
 .about-heading-03{
     
@@ -430,7 +434,20 @@ li{
         letter-spacing: 0.54px;
         padding-left: 0;
     }
+}
+.about__text01{
+    @include mq(md) {
+        margin-right: 155px;
+    }
+}
+.about__text02{
+    @include mq(md) {
+        margin-right: 223px;
+    }
 
+}
+.about__text03{
+    margin-bottom: 13px;
 }
 .about-image-wrpper-01{
     @include mq(md) {
@@ -456,9 +473,6 @@ li{
     }
 }
 
-.about-text__03{
-    margin-bottom: 13px;
-}
 .about-image__bottom{
     margin-top: -7px;
     img{
