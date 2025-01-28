@@ -435,6 +435,7 @@ li{
 .about-image-wrpper-01{
     @include mq(md) {
         padding-right: 67px;
+        margin-top: 30px;
     }
 }
 .about-image-wrpper-02{
@@ -449,8 +450,8 @@ li{
         padding-bottom: 53px;
         @include mq(md) {
             width: 450px;
-            height: 288px;
-            object-fit: cover;
+            // height: 288px;
+            // object-fit: cover;
         }
     }
 }
