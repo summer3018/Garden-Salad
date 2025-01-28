@@ -39,7 +39,7 @@ li{
     display: flex;
     justify-content: space-between;
     @include mq(md) {
-        padding: 34px 71px 17px 16px;
+        padding: 20px 71px 12px 33px;
 
     }
 }
@@ -48,16 +48,27 @@ li{
 }
 .header__logo{
     @include mq(md) {
-      padding-left: 31px;
-      padding-bottom: 12px;
+        margin-left: -20px;
+        margin-top: -5px;
     }
     img{
         @include mq(md) {
-            width: 115.839px;
-            height: 63px;
+            // width: 115.839px;
+            // height: 63px;
             padding-left: 18px;
-            padding-bottom: 0px;
         }
+    }
+}
+.logo__header-sp{
+    display: block;
+    @include mq(md) {
+      display: none;
+    }
+}
+.logo__header-pc{
+    display: none;
+    @include mq(md) {
+      display: block;
     }
 }
 .header-right{
@@ -74,6 +85,7 @@ li{
     @include mq(md) {
       justify-content: flex-end;
       gap: 40px;
+      margin-top: 15px;
     }
 }
 .nav_header-list{
@@ -96,6 +108,10 @@ li{
 .mv{
     background: $base-color;
     height: 263px;
+    @include mq(md) {
+        max-width: 1440px;
+        height: 650px;
+    }
 }
 .mv-bg-image{
     width: 100%;
@@ -104,24 +120,33 @@ li{
     background-position: 66px 0;
     padding-bottom: 20px;
     @include mq(md) {
-      
+        height: 650px;
+        background-image: url(/image/img_mv\ \(PC\).png);
+        background-position: right;
     }
 }
 .mv-texts__en{
-    color: #FFF;
+    color: $font-white;
     font-family: $font-reross;
     font-size: 36px;
     font-weight: 400;
     padding-left: 19px;
+    @include mq(md) {
+        font-size: 100px;
+        line-height: 100px; /* 100% */
+        padding-left: 178px;
+    }
 }
 .mv-text__en-farst{
     padding-top: 24px;
     margin-bottom: -10px;
+    @include mq(md) {
+        padding-top: 85px;
+        margin-bottom: 3px;
+    }
 }
 .mv-text__en-second{
-    span{
 
-    }
 }
 .salad{
     margin-top: -6px;
@@ -130,6 +155,11 @@ li{
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+    @include mq(md) {
+        margin-top: 1px;
+        font-size: 100px;
+        line-height: 100px;
+    }
     span{
         color: $font-white;
     }
@@ -141,23 +171,51 @@ li{
     font-weight: 500;
     letter-spacing: 0.7px;
     padding-left: 17px;
+    @include mq(md) {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+        margin-top: 24px;
+        padding-left: 180px;
+    }
 }
 .mv-text__jp-farst{
     padding-top: 20px;
     padding-bottom: 9px;
     padding-left: 8px;
+    @include mq(md) {
+        padding-bottom: 22px;
+      padding-left: 19px;
+    }
 }
 .mv-text__jp-second-wrapper{
     width: 231px;
     height: 31px;
     background: $accent-color;
     padding: 4px 8px 7px 0px;
+    @include mq(md) {
+        width: 524px;
+        height: 64px;
+        padding: 9px 20px 9px 0;
+    }
 }
 .mv-text__jp-second{
     
 }
 
 // concept
+.pc-none{
+    display: block;
+    @include mq(md) {
+      display: none;
+    }
+}
+.pc-block{
+    display: none;
+    @include mq(md) {
+      display: block;
+    }
+}
 
 .concept{
     background: $base-color;
