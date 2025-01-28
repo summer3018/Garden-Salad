@@ -339,52 +339,6 @@ li{
         @include mq(md) {
           bottom: -6px;
         }
-
-    }
-
-}
-.about-text-wrapper{
-
-}
-.about-heading{
-    color: $font-black;
-    font-family: "Noto Sans JP";
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    padding-bottom: 16px;
-    padding-left: 9px;
-    span{
-        color: $accent-color;
-        font-family: "Noto Sans JP";
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: 1.2px;
-    }
-}
-.about-text{
-    color: $font-black;
-    text-align: justify;
-    font-family: "Noto Sans JP";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.48px;
-    padding-bottom: 32px;
-    padding-left: 9px;
-    padding-right: 7px;
-
-}
-.about-image-wrpper{
-
-}
-.about-image{
-    img{
-        padding-bottom: 53px;
-        @include mq(md) {
-            width: 450px;
-            height: 288px;
-        }
     }
 }
 .about-text-container-01{
@@ -416,6 +370,59 @@ li{
     background-position: right 68px;
     margin-bottom: 14px;
 }
+
+.about-heading{
+    color: $font-black;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding-bottom: 16px;
+    padding-left: 9px;
+    span{
+        color: $accent-color;
+        font-family: "Noto Sans JP";
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+    }
+}
+.about-text{
+    color: $font-black;
+    text-align: justify;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.48px;
+    padding-bottom: 32px;
+    padding-left: 9px;
+    padding-right: 7px;
+
+}
+.about-image-wrpper-01{
+    @include mq(md) {
+        padding-right: 67px;
+    }
+}
+.about-image-wrpper-02{
+
+}
+.about-image-wrpper-03{
+
+}
+
+.about-image{
+    img{
+        padding-bottom: 53px;
+        @include mq(md) {
+            width: 450px;
+            height: 288px;
+            object-fit: cover;
+        }
+    }
+}
+
 .about-text__03{
     margin-bottom: 13px;
 }
