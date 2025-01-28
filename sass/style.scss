@@ -353,11 +353,14 @@ li{
 }.about-text-container-02{
     @include mq(md) {
       display: flex;
+      margin-bottom: 11px;
     }
 }.about-text-container-03{
     @include mq(md) {
       display: flex;
       flex-direction: row-reverse;
+      align-items: center; // 横方向に中央寄せ
+      justify-content: flex-end;
     }
 }
 .about-text-bg01{
@@ -416,7 +419,10 @@ li{
     }
 }
 .about-heading-03{
-    
+    @include mq(md) {
+      margin-top: -9px;
+      margin-bottom: 7px;
+    }
 }
 .about-text{
     color: $font-black;
@@ -444,10 +450,12 @@ li{
     @include mq(md) {
         margin-right: 223px;
     }
-
 }
 .about__text03{
     margin-bottom: 13px;
+    @include mq(md) {
+      margin-right: 150px;
+    }
 }
 .about-image-wrpper-01{
     @include mq(md) {
@@ -459,7 +467,9 @@ li{
 
 }
 .about-image-wrpper-03{
-
+    @include mq(md) {
+      margin-right: 71px;
+    }
 }
 
 .about-image{
