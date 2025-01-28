@@ -313,6 +313,8 @@ li {
   .about__inner {
     padding-top: 129px;
     padding-bottom: 150px;
+    padding-right: 180px;
+    padding-left: 180px;
   }
 }
 
@@ -417,15 +419,15 @@ li {
   margin-bottom: 14px;
 }
 
+.about-text__03 {
+  margin-bottom: 13px;
+}
+
 .about-image__bottom {
   margin-top: -7px;
 }
 .about-image__bottom img {
   width: 100%;
   height: 250px;
-}
-
-.about-text__03 {
-  margin-bottom: 13px;
 }
 /*# sourceMappingURL=style.css.map */
