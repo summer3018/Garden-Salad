@@ -29,17 +29,35 @@ li{
     background: $base-color;
     width: 375px;
     height: 60px;
+    @include mq(md) {
+        width: 1440px;
+        height: 90px;
+    }
 }
 .header__inner{
     padding: 15px 16px 17px 16px;
     display: flex;
+    justify-content: space-between;
+    @include mq(md) {
+        padding: 34px 71px 17px 16px;
+
+    }
 }
 .header-left{
 
 }
-.logo__header{
+.header__logo{
+    @include mq(md) {
+      padding-left: 31px;
+      padding-bottom: 12px;
+    }
     img{
-
+        @include mq(md) {
+            width: 115.839px;
+            height: 63px;
+            padding-left: 18px;
+            padding-bottom: 0px;
+        }
     }
 }
 .header-right{
@@ -53,6 +71,10 @@ li{
     justify-content: flex-end; /* 右寄せにする */
     gap: 20px; /* リストアイテム間の均等な間隔 */
     margin-left: 65px;
+    @include mq(md) {
+      justify-content: flex-end;
+      gap: 40px;
+    }
 }
 .nav_header-list{
     justify-content: space-between;
@@ -62,6 +84,10 @@ li{
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0.42px;
+        @include mq(md) {
+            font-size: 18px;
+            letter-spacing: 0.54px;
+        }
     }
 }
 
@@ -77,6 +103,9 @@ li{
     background-image: url(/image/img_mv\(SP\).png);
     background-position: 66px 0;
     padding-bottom: 20px;
+    @include mq(md) {
+      
+    }
 }
 .mv-texts__en{
     color: #FFF;
@@ -138,7 +167,7 @@ li{
 }
 .concept__inner{
     padding-top: 28px;
-    padding-bottom: 42px;
+    padding-bottom: 40px;
     padding-right: 32px;
     padding-left: 33px;
     // margin-bottom: 19px;
@@ -171,7 +200,7 @@ li{
     background: $main-color;
 }
 .about__inner{
-    padding-top: 62px;
+    padding-top: 64px;
     padding-left: 16px;
     padding-right: 15px;
 }
@@ -262,8 +291,12 @@ li{
     margin-bottom: 14px;
 }
 .about-image__bottom{
+    margin-top: -7px;
     img{
         width: 100%;
         height: 250px;
     }
+}
+.about-text__03{
+    margin-bottom: 13px;
 }
