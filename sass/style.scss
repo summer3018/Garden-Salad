@@ -347,7 +347,7 @@ li{
       display: flex;
       flex-direction: row-reverse;
       align-items: center; // 横方向に中央寄せ
-      justify-content: center; // 縦方向に中央寄せ
+      justify-content: flex-end;
     }
 }.about-text-container-02{
     @include mq(md) {

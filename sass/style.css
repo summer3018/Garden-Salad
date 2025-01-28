@@ -376,7 +376,7 @@ li {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 
