@@ -113,6 +113,8 @@ li {
 .mv {
   background: #2f2f2f;
   height: 263px;
+  position: relative;
+  top: -1px;
 }
 @media (700px <= width) {
   .mv {
@@ -226,6 +228,8 @@ li {
 }
 
 .concept {
+  position: relative;
+  top: -2px;
   background: #2f2f2f;
   background-image: url(/image/pGarden\ Salad\(sp\).png);
   background-repeat: no-repeat;

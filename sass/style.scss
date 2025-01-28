@@ -122,6 +122,8 @@ li{
 .mv{
     background: $base-color;
     height: 263px;
+    position: relative;
+    top: -1px;
     @include mq(md) {
         max-width: 1440px;
         height: 650px;
@@ -221,6 +223,8 @@ li{
 
 
 .concept{
+    position: relative;
+    top: -2px;
     background: $base-color;
     background-image: url(/image/pGarden\ Salad\(sp\).png);
     background-repeat: no-repeat;
