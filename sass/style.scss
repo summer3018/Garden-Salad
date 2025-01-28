@@ -240,7 +240,7 @@ li{
     padding-right: 32px;
     padding-left: 33px;
     @include mq(md) {
-      padding-top: 120px;
+      padding-top: 122px;
       padding-bottom: 83px;
     }
 }
@@ -290,7 +290,7 @@ li{
     padding-left: 16px;
     padding-right: 15px;
     @include mq(md) {
-      padding-top: 130px;
+      padding-top: 129px;
       padding-bottom: 150px;
     }
 }
@@ -333,6 +333,9 @@ li{
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);/*位置調整*/
         background-color: #159741;/*線の色*/
+        @include mq(md) {
+          bottom: -6px;
+        }
 
     }
 

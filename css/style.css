@@ -250,7 +250,7 @@ li {
 }
 @media (700px <= width) {
   .concept__inner {
-    padding-top: 120px;
+    padding-top: 122px;
     padding-bottom: 83px;
   }
 }
@@ -311,7 +311,7 @@ li {
 }
 @media (700px <= width) {
   .about__inner {
-    padding-top: 130px;
+    padding-top: 129px;
     padding-bottom: 150px;
   }
 }
@@ -360,6 +360,11 @@ li {
   height: 2px; /*線の太さ*/
   transform: translateX(-50%); /*位置調整*/
   background-color: #159741; /*線の色*/
+}
+@media (700px <= width) {
+  .about-title::before {
+    bottom: -6px;
+  }
 }
 
 .about-heading {
