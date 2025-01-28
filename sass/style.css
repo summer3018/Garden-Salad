@@ -401,16 +401,34 @@ li {
   background-image: url(/image/sp/01.png);
   background-position: right 45px;
 }
+@media (700px <= width) {
+  .about-text-bg01 {
+    background-image: url(/image/pc/01\ \(pc\).png);
+    background-position: right 38px top 63px;
+  }
+}
 
 .about-text-bg02 {
   background-image: url(/image/sp/02.png);
   background-position: right 79px;
+}
+@media (700px <= width) {
+  .about-text-bg02 {
+    background-image: url(/image/pc/02\ \(pc\).png);
+    background-position: left 256px top 33px;
+  }
 }
 
 .about-text-bg03 {
   background-image: url(/image/sp/03.png);
   background-position: right 68px;
   margin-bottom: 14px;
+}
+@media (700px <= width) {
+  .about-text-bg03 {
+    background-image: url(/image/pc/03\ \(pc\).png);
+    background-position: right 1px top 31px;
+  }
 }
 
 .about-heading {
