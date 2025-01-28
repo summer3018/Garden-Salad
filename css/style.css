@@ -247,7 +247,7 @@ li {
 @media (700px <= width) {
   .concept__inner {
     padding-top: 120px;
-    padding-bottom: 110px;
+    padding-bottom: 83px;
   }
 }
 
@@ -290,6 +290,11 @@ li {
 .concept-text {
   padding-bottom: 24px;
 }
+@media (700px <= width) {
+  .concept-text {
+    padding-bottom: 27px;
+  }
+}
 
 .about {
   background: #f2f2f2;
@@ -299,6 +304,12 @@ li {
   padding-top: 64px;
   padding-left: 16px;
   padding-right: 15px;
+}
+@media (700px <= width) {
+  .about__inner {
+    padding-top: 130px;
+    padding-bottom: 150px;
+  }
 }
 
 .about-subtitle {
@@ -311,6 +322,12 @@ li {
   letter-spacing: 0.7px;
   padding-bottom: 8px;
 }
+@media (700px <= width) {
+  .about-subtitle {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+}
 
 .about-title {
   position: relative;
@@ -322,6 +339,12 @@ li {
   letter-spacing: 1.6px;
   padding-bottom: 12px;
   margin-bottom: 56px;
+}
+@media (700px <= width) {
+  .about-title {
+    font-size: 48px;
+    letter-spacing: 2.4px;
+  }
 }
 .about-title::before {
   content: "";
