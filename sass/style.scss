@@ -343,9 +343,6 @@ li{
     }
 
 }
-.about-text-container{
-    // padding-top: 62px;
-}
 .about-text-wrapper{
 
 }
@@ -384,6 +381,25 @@ li{
 .about-image{
     img{
         padding-bottom: 53px;
+        @include mq(md) {
+            width: 450px;
+            height: 288px;
+        }
+    }
+}
+.about-text-container-01{
+    @include mq(md) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+}.about-text-container-02{
+    @include mq(md) {
+      display: flex;
+    }
+}.about-text-container-03{
+    @include mq(md) {
+      display: flex;
+      flex-direction: row-reverse;
     }
 }
 .about-text-bg01{
