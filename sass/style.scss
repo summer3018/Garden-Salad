@@ -346,7 +346,6 @@ li{
     @include mq(md) {
       display: flex;
       flex-direction: row-reverse;
-      flex-direction: column; // 縦方向の要素を意識
       align-items: center; // 横方向に中央寄せ
       justify-content: center; // 縦方向に中央寄せ
     }

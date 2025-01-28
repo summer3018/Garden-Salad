@@ -375,7 +375,6 @@ li {
   .about-text-container-01 {
     display: flex;
     flex-direction: row-reverse;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
