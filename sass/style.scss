@@ -37,6 +37,8 @@ li{
       display: block;
     }
 }
+
+//  header
 .header{
     background: $base-color;
     width: 375px;
@@ -220,16 +222,23 @@ li{
 
 .concept{
     background: $base-color;
-    background-image: url(/image/pGarden\ Salad.png);
+    background-image: url(/image/pGarden\ Salad\(sp\).png);
     background-repeat: no-repeat;
     background-position: 6px 272px;
+    @include mq(md) {
+      background-image: url(/image/Garden\ Salad\(pc\).png);
+      background-position: bottom;
+    }
 }
 .concept__inner{
     padding-top: 28px;
     padding-bottom: 40px;
     padding-right: 32px;
     padding-left: 33px;
-    // margin-bottom: 19px;
+    @include mq(md) {
+      padding-top: 120px;
+      padding-bottom: 110px;
+    }
 }
 .concept-title{
     color: $font-white;
@@ -240,6 +249,13 @@ li{
     padding-bottom: 24px;
     letter-spacing: 1px;
     padding-left: 17px;
+    @include mq(md) {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        padding-bottom: 48px;
+        padding-left: 3px;
+    }
 }
 .concept-texts{
     color: $font-white;
@@ -249,6 +265,10 @@ li{
     font-weight: 400;
     line-height: 150%; /* 24px */
     letter-spacing: 0.48px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.54px;
+    }
 }
 .concept-text{
     padding-bottom: 24px;

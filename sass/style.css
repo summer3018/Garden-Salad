@@ -227,9 +227,15 @@ li {
 
 .concept {
   background: #2f2f2f;
-  background-image: url(/image/pGarden\ Salad.png);
+  background-image: url(/image/pGarden\ Salad\(sp\).png);
   background-repeat: no-repeat;
   background-position: 6px 272px;
+}
+@media (700px <= width) {
+  .concept {
+    background-image: url(/image/Garden\ Salad\(pc\).png);
+    background-position: bottom;
+  }
 }
 
 .concept__inner {
@@ -237,6 +243,12 @@ li {
   padding-bottom: 40px;
   padding-right: 32px;
   padding-left: 33px;
+}
+@media (700px <= width) {
+  .concept__inner {
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
 }
 
 .concept-title {
@@ -249,6 +261,15 @@ li {
   letter-spacing: 1px;
   padding-left: 17px;
 }
+@media (700px <= width) {
+  .concept-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding-bottom: 48px;
+    padding-left: 3px;
+  }
+}
 
 .concept-texts {
   color: #FFF;
@@ -258,6 +279,12 @@ li {
   font-weight: 400;
   line-height: 150%; /* 24px */
   letter-spacing: 0.48px;
+}
+@media (700px <= width) {
+  .concept-texts {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+  }
 }
 
 .concept-text {
