@@ -187,7 +187,6 @@ li {
 
 .mv-texts__jp {
   color: #FFF;
-  font-family: "Noto Sans JP";
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.7px;
@@ -235,7 +234,7 @@ li {
   background: #2f2f2f;
   background-image: url(/image/sp/pGarden\ Salad\(sp\).png);
   background-repeat: no-repeat;
-  background-position: 6px 272px;
+  background-position: 6px 274px;
 }
 @media (700px <= width) {
   .concept {
@@ -245,7 +244,7 @@ li {
 }
 
 .concept__inner {
-  padding-top: 28px;
+  padding-top: 31px;
   padding-bottom: 40px;
   padding-right: 32px;
   padding-left: 33px;
@@ -260,7 +259,6 @@ li {
 .concept-title {
   color: #FFF;
   text-align: center;
-  font-family: "Noto Sans JP";
   font-size: 20px;
   line-height: 150%; /* 30px */
   padding-bottom: 24px;
@@ -280,7 +278,6 @@ li {
 .concept-texts {
   color: #FFF;
   text-align: center;
-  font-family: "Noto Sans JP";
   font-size: 16px;
   font-weight: 400;
   line-height: 150%; /* 24px */
@@ -307,7 +304,7 @@ li {
 }
 
 .about__inner {
-  padding-top: 64px;
+  padding-top: 61px;
   padding-left: 16px;
   padding-right: 15px;
 }
@@ -324,7 +321,6 @@ li {
   color: #159741;
   text-align: center;
   margin: 0 auto;
-  font-family: "Noto Sans JP";
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -433,7 +429,6 @@ li {
 
 .about-heading {
   color: #333;
-  font-family: "Noto Sans JP";
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -449,7 +444,6 @@ li {
 }
 .about-heading span {
   color: #159741;
-  font-family: "Noto Sans JP";
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -485,7 +479,6 @@ li {
 .about-text {
   color: #333;
   text-align: justify;
-  font-family: "Noto Sans JP";
   font-size: 16px;
   font-weight: 400;
   line-height: 150%; /* 24px */
@@ -537,7 +530,7 @@ li {
 }
 
 .about-image img {
-  padding-bottom: 53px;
+  padding-bottom: 57px;
 }
 @media (700px <= width) {
   .about-image img {
@@ -545,10 +538,12 @@ li {
   }
 }
 
-.about-image__bottom {
+.parallax__image {
+  width: 375px;
+  height: 267px;
   position: relative;
-  height: 400px; /* お好みの高さに調整 */
   overflow: hidden;
+  margin-top: -23px;
 }
 
 .parallax-image {
@@ -583,10 +578,10 @@ li {
 
 .nemu-title__jp {
   color: #FFF;
-  font-family: "Noto Sans JP";
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
+  padding-bottom: 9px;
 }
 
 .nemu-title__en {
@@ -611,12 +606,11 @@ li {
 
 .menu-text-pfc {
   color: #FFF;
-  font-family: "Noto Sans JP";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  margin-top: 48px;
-  margin-bottom: 48px;
+  margin-top: 60px;
+  margin-bottom: 19px;
 }
 
 .menu-card__text__wrapper {
@@ -629,7 +623,6 @@ li {
 
 .menu-card__title {
   color: #333;
-  font-family: "Noto Sans JP";
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 2.4px;
@@ -658,7 +651,6 @@ li {
 
 .menu-card__price-tax {
   color: #333;
-  font-family: "Noto Sans JP";
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
@@ -666,7 +658,6 @@ li {
 
 .menu-card__text {
   color: #333;
-  font-family: "Noto Sans JP";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.42px;
@@ -676,6 +667,8 @@ li {
   position: relative;
   top: 30px;
   z-index: 2;
+  padding-left: 24px;
+  padding-right: 36px;
 }
 .card1__wrapper {
   height: 323px;
@@ -683,6 +676,7 @@ li {
   margin-right: 37px;
   margin-bottom: 48px;
   position: relative;
+  top: -16px;
 }
 
 .menu-card1__Recommendation {
@@ -701,12 +695,11 @@ li {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.36px;
-  margin-top: 38px;
+  margin-top: 37px;
 }
 
 .menu-card1__Recommendation-jp {
   color: #FFF;
-  font-family: "Noto Sans JP";
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.54px;
@@ -714,13 +707,12 @@ li {
 
 .menu-card1__title {
   color: #333;
-  font-family: "Noto Sans JP";
   font-size: 24px;
   font-weight: 700;
   line-height: 150%; /* 36px */
   letter-spacing: 2.4px;
   padding-top: 121px;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
 }
 
 .menu-card1__price {
@@ -745,7 +737,6 @@ li {
 
 .menu-card1__price-tax {
   color: #333;
-  font-family: "Noto Sans JP";
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
@@ -753,7 +744,6 @@ li {
 
 .menu-card1__text {
   color: #333;
-  font-family: "Noto Sans JP";
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.42px;
