@@ -514,9 +514,21 @@ li{
 
 // menu
 .menu{
+    background: #2F2F2F;
+    position: relative;
 
 }
 .menu__inner{
+    padding: 56px 0;
+    &::after{
+        position: absolute;
+        border: 1px solid #FFF;
+        content: "";
+        top: 24px;
+        bottom: 24px;
+        right: 16px;
+        left: 16px;
+    }
 
 }
 .menu-title__container{

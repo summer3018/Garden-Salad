@@ -561,4 +561,22 @@ li {
   transition: transform 0.01s ease-out;
   will-change: transform; /* パフォーマンスを向上させる */
 }
+
+.menu {
+  background: #2F2F2F;
+  position: relative;
+}
+
+.menu__inner {
+  padding: 56px 0;
+}
+.menu__inner::after {
+  position: absolute;
+  border: 1px solid #FFF;
+  content: "";
+  top: 24px;
+  bottom: 24px;
+  right: 16px;
+  left: 16px;
+}
 /*# sourceMappingURL=style.css.map */
