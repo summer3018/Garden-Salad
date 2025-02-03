@@ -629,16 +629,19 @@ li {
 
 .menu-card__title {
   color: #333;
-  text-align: center;
   font-family: "Noto Sans JP";
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 2.4px;
+  padding-bottom: 16px;
+}
+
+.menu-card__price {
+  padding-bottom: 16px;
 }
 
 .menu-card__price-en {
   color: #333;
-  text-align: center;
   font-family: "reross-quadratic", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -647,7 +650,6 @@ li {
 
 .menu-card__price-price {
   color: #333;
-  text-align: center;
   font-family: "reross-quadratic", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -656,7 +658,6 @@ li {
 
 .menu-card__price-tax {
   color: #333;
-  text-align: center;
   font-family: "Noto Sans JP";
   font-size: 12px;
   font-weight: 500;
@@ -764,62 +765,22 @@ li {
   z-index: 2;
 }
 .card2-text__wrapper {
-  height: 323px;
   margin-left: 38px;
   margin-right: 37px;
   margin-bottom: 48px;
-  position: relative;
 }
 
-.menu-card2__title {
-  color: #333;
-  text-align: center;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 2.4px;
-}
-
-.menu-card2__price-en {
-  color: #333;
-  text-align: center;
-  font-family: "reross-quadratic", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 1.8px;
-}
-
-.menu-card2__price-price {
-  color: #333;
-  text-align: center;
-  font-family: "reross-quadratic", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-
-.menu-card2__price-tax {
-  color: #333;
-  text-align: center;
-  font-family: "Noto Sans JP";
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-}
-
-.menu-card2__text {
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.42px;
+.card__title2 {
+  padding-top: 58px;
 }
 
 .card3-text__wrapper {
-  height: 323px;
-  margin-left: 38px;
-  margin-right: 37px;
+  margin-left: 41px;
+  margin-right: 34px;
   margin-bottom: 48px;
-  position: relative;
+}
+
+.card__title3 {
+  padding-top: 56px;
 }
 /*# sourceMappingURL=style.css.map */
