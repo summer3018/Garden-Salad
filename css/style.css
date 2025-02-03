@@ -809,6 +809,9 @@ li {
   background: #159741;
   position: relative;
   z-index: 1;
+  margin-left: 57px;
+  margin-right: 58px;
+  margin-bottom: 24px;
 }
 
 .instagram-card__title-en {
@@ -817,4 +820,42 @@ li {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 1.2px;
+  padding: 10px 34px 11px 34px;
+}
+
+.instagram-card__text {
+  color: #333;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  padding: 0 32px 24px;
+}
+
+.instagram-card__image-container img {
+  width: 125px;
+  height: 125px;
+}
+
+.instagram-card__ID {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+.instagram-card__btn {
+  border: 1px solid #333;
+  margin: 0 20px;
+}
+
+.instagram-card__btn-text {
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  padding-top: 16px;
+  padding-bottom: 17px;
 }/*# sourceMappingURL=style.css.map */
