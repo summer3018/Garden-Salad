@@ -795,4 +795,27 @@ li {
 .card__price3 {
   padding-left: 10px;
 }
+
+.instagram-card {
+  background: #F2F2F2;
+  outline: 1px solid #333;
+  outline-offset: -10px;
+  margin-left: 41px;
+  margin-right: 34px;
+  margin-bottom: 56px;
+}
+
+.instagram-card__title {
+  background: #159741;
+  position: relative;
+  z-index: 1;
+}
+
+.instagram-card__title-en {
+  color: #FFF;
+  font-family: "reross-quadratic", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
 /*# sourceMappingURL=style.css.map */
