@@ -564,7 +564,7 @@ li {
 }
 
 .menu__inner {
-  padding: 56px 0 87px;
+  padding: 56px 0 111px;
 }
 .menu__inner::after {
   position: absolute;
@@ -574,6 +574,7 @@ li {
   bottom: 24px;
   right: 16px;
   left: 16px;
+  margin-bottom: 24px;
 }
 
 .nemu-title__jp {
@@ -832,10 +833,6 @@ li {
   padding: 0 32px 24px;
 }
 
-.instagram-card__image-container {
-  display: grid;
-  gap: 5px;
-}
 .instagram-card__image-container img {
   width: 125px;
   height: 125px;

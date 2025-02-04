@@ -517,7 +517,7 @@ li{
     text-align: center;
 }
 .menu__inner{
-    padding: 56px 0 87px;
+    padding: 56px 0 111px;
     &::after{
         position: absolute;
         border: 1px solid #FFF;
@@ -526,6 +526,7 @@ li{
         bottom: 24px;
         right: 16px;
         left: 16px;
+        margin-bottom: 24px;
     }
 }
 .menu-title__container{
@@ -792,8 +793,6 @@ li{
     padding: 0 32px 24px;
 }
 .instagram-card__image-container{
-    display: grid;
-    gap: 5px;
     img{
         width: 125px;
         height: 125px;
@@ -832,3 +831,5 @@ li{
     margin-right: 17px;
 
 }
+// parallax2
+
