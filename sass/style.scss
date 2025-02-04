@@ -805,10 +805,11 @@ li{
     padding-bottom: 24px;
 }
 .instagram-card__btn{
-    border: 1px solid #333;
-    margin: 0 20px;
+
 }
 .instagram-card__btn-text{
+    border: 1px solid #333;
+    margin: 0 20px 34px;
     color: #333;
     text-align: center;
     font-size: 16px;
@@ -816,4 +817,12 @@ li{
     letter-spacing: 0.48px;
     padding-top: 16px;
     padding-bottom: 17px;
+    padding-left: 37px;
+    padding-right: 58px;
+}
+
+.external-icon {
+    width: 19px;
+    height: 19px;
+    margin-left: 8px;
 }
