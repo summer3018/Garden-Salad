@@ -517,7 +517,7 @@ li{
     text-align: center;
 }
 .menu__inner{
-    padding: 56px 0;
+    padding: 56px 0 87px;
     &::after{
         position: absolute;
         border: 1px solid #FFF;
@@ -733,8 +733,8 @@ li{
     padding-left: 10px;
 }
 // card3
-.menu-card3-wrapper{
-   
+.menu-card3__wrapper{
+//    margin-bottom: 48px;
  }
 .menu-image__3{
     position: relative;
@@ -746,7 +746,7 @@ li{
 .card3-text__wrapper{
     margin-left: 41px;
     margin-right: 34px;
-    margin-bottom: 48px;
+    margin-bottom: -10px;
     position: relative;
     bottom: 60px;
 }
@@ -765,7 +765,7 @@ li{
     outline-offset: -10px;
     margin-left: 41px;
     margin-right: 34px;
-    margin-bottom: 56px;
+    margin-bottom: -31px;
 }
 .instagram-card__title{
     background: #159741;
@@ -781,7 +781,7 @@ li{
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 1.2px;
-    padding: 10px 34px 11px 34px;
+    padding: 7px 34px 11px 34px;
 }
 .instagram-card__text{
     color: #333;
@@ -792,6 +792,8 @@ li{
     padding: 0 32px 24px;
 }
 .instagram-card__image-container{
+    display: grid;
+    gap: 5px;
     img{
         width: 125px;
         height: 125px;
@@ -801,8 +803,9 @@ li{
     color: #333;
     font-size: 16px;
     font-weight: 400;
-    padding-top: 8px;
+    padding-top: 4px;
     padding-bottom: 24px;
+    padding-right: 10px;
 }
 .instagram-card__btn{
 
@@ -815,14 +818,17 @@ li{
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.48px;
-    padding-top: 16px;
+    padding-top: 13px;
     padding-bottom: 17px;
     padding-left: 37px;
-    padding-right: 58px;
+    // padding-right: 22px;
 }
 
 .external-icon {
     width: 19px;
     height: 19px;
-    margin-left: 8px;
+    margin-bottom: -3px;
+    margin-left: 16px;
+    margin-right: 17px;
+
 }
