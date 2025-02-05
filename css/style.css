@@ -904,6 +904,23 @@ li {
 .shop__access-map {
   margin-bottom: 56px;
 }
+
+.union__image-wrap {
+  position: relative;
+}
+
+.union-image {
+  position: absolute;
+  right: 64px;
+  bottom: 94px;
+}
+
+.shop-logo {
+  position: absolute;
+  right: 72px;
+  bottom: 118px;
+}
+
 .shop-name {
   text-align: center;
   font-family: "reross-quadratic", sans-serif;
@@ -943,4 +960,5 @@ li {
   line-height: 170%; /* 27.2px */
   letter-spacing: 0.48px;
   padding-left: 28px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

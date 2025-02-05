@@ -875,13 +875,18 @@ li{
     margin-bottom: 56px;
 }
 .union__image-wrap{
+    position: relative;
 
 }
-.union__image{
-
+.union-image{
+    position: absolute;
+    right: 64px;
+    bottom: 94px;
 }
 .shop-logo{
-    
+    position: absolute;
+    right: 72px;
+    bottom: 118px;
 }
 .shop-name{
     text-align: center;
@@ -919,4 +924,5 @@ li{
     line-height: 170%; /* 27.2px */
     letter-spacing: 0.48px;
     padding-left: 28px;
+    padding-bottom: 40px;
 }
