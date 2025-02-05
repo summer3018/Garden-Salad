@@ -868,6 +868,10 @@ li {
   margin-right: 17px;
 }
 
+.shop__inner {
+  padding-top: 64px;
+}
+
 .menu-title__jp {
   text-align: center;
   color: #159741;
@@ -883,13 +887,13 @@ li {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
-  padding-bottom: 56px;
+  padding-bottom: 68px;
 }
 .menu-title__en::after {
   content: "";
   position: absolute;
   left: 50%;
-  top: 0px; /*線の上下位置*/
+  bottom: 56px; /*線の上下位置*/
   display: inline-block;
   width: 50px; /*線の長さ*/
   height: 2px; /*線の太さ*/
@@ -897,6 +901,9 @@ li {
   background-color: #159741; /*線の色*/
 }
 
+.shop__access-map {
+  margin-bottom: 56px;
+}
 .shop-name {
   text-align: center;
   font-family: "reross-quadratic", sans-serif;
@@ -905,12 +912,21 @@ li {
   line-height: 100%; /* 32px */
   letter-spacing: 0.96px;
 }
+.shop-name span {
+  text-align: center;
+  font-family: "reross-quadratic", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  padding-right: 4px;
+}
 
 .shop-ruby {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
+  padding-bottom: 24px;
 }
 
 .shop-adress {
@@ -918,6 +934,7 @@ li {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
   letter-spacing: 0.48px;
+  padding-left: 28px;
 }
 
 .shop-information {
@@ -925,4 +942,5 @@ li {
   font-weight: 400;
   line-height: 170%; /* 27.2px */
   letter-spacing: 0.48px;
+  padding-left: 28px;
 }/*# sourceMappingURL=style.css.map */
