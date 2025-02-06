@@ -891,6 +891,7 @@ li {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
+  padding-top: 12px;
   padding-bottom: 68px;
 }
 .shop-title__en::after {
@@ -1047,7 +1048,7 @@ li {
   padding: 64px 16px;
 }
 
-.contact-title__container {
+.contact__wrapper {
   background: #F2F2F2;
 }
 
@@ -1057,6 +1058,7 @@ li {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
+  padding-top: 64px;
 }
 
 .contact-title__en {
@@ -1066,6 +1068,7 @@ li {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
+  padding-top: 12px;
   padding-bottom: 68px;
 }
 .contact-title__en::after {
@@ -1078,4 +1081,59 @@ li {
   height: 2px; /*線の太さ*/
   transform: translateX(-50%); /*位置調整*/
   background-color: #159741; /*線の色*/
+}
+
+.contact-text {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  padding-left: 16px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact-form .form-group label .required {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 6px;
+  background: #159741;
+}
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form .form-group textarea {
+  height: 150px;
+}
+.contact-form .form-group input[type=checkbox] {
+  margin-right: 10px;
+}
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #45a049;
 }/*# sourceMappingURL=style.css.map */
