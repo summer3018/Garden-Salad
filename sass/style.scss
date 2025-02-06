@@ -1048,54 +1048,73 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-label {
+
+}
   
-    .form-group {
-      margin-bottom: 15px;
+.required {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 6px;
+    background: #159741;
+}
   
-      label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
+.form-input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
   
-        .required {
-            color: #FFF;
-            font-size: 12px;
-            font-weight: 400;
-            border-radius: 6px;
-            background: #159741;
-        }
-      }
+.form-textarea {
+    height: 150px;
+    border: 1px solid #2F2F2F;
+    background: #000;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
   
-      input,
-      textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 1em;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-  
-      textarea {
-        height: 150px;
-      }
-  
-      input[type="checkbox"] {
-        margin-right: 10px;
-      }
-    }
-  
-    button {
-      padding: 10px 20px;
-      font-size: 1em;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-  
-      &:hover {
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+.item-text{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: $accent-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
         background-color: #45a049;
-      }
     }
-  }
-  
+}
+
+// footer
+.footer{
+    background: blue;
+}
+.footer__inner{
+    padding: 48px 46px 10px;
+}
