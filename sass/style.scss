@@ -835,7 +835,7 @@ li{
 
 // shop
 .shop{
-
+    background: #F2F2F2;
 }
 .shop__inner{
     padding-top: 64px;
@@ -927,20 +927,50 @@ li{
     padding-bottom: 40px;
 }
 .shop-image__exterior{
+    padding: 0 16px;
+    margin-bottom: 98px;
+}
+.image-exterior{
 
 }
 .post-card__wrapper{
-
+    background: #fff;
+    padding: 18px 16px 64px 16px;
 }
+// .post-card__wrapper2{
+//     padding: 18px 10px;
+//     background: #FFF;
+// }
 .post-card__images{
-
+    position: relative;
+    padding: 0 10px;
+    
 }
 .post-card__stamp{
-
+    position: absolute;
+    top: -40px;
+    left: -10px;
 }
 .post-card__terrace{
-
+    outline: 1px solid #fff;
+    outline-offset: -10px;
 }
 .post-card__takeout{
-    
+    outline: 1px solid #fff;
+    outline-offset: -10px;
+    margin-top: -5px;
+}
+.card-text__title{
+    color: #333;
+    font-family: Satisfy;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.card-text{
+    color: #4F4F4F;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 250%; /* 40px */
 }
