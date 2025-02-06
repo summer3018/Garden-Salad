@@ -972,14 +972,19 @@ li {
   margin-bottom: 98px;
 }
 
+.post-card__container {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 64px;
+}
+
 .post-card__wrapper {
   background: #fff;
-  padding: 18px 16px 64px 16px;
+  padding: 18px 10px 113px 10px;
 }
 
 .post-card__images {
   position: relative;
-  padding: 0 10px;
 }
 
 .post-card__stamp {
