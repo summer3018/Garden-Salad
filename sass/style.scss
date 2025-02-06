@@ -1164,6 +1164,38 @@ input[type="checkbox"] {
 .footer__inner{
     padding: 48px 46px 10px;
 }
+.sns-icons__wrpper{
+
+}
 .sns-icons{
+    // display: flex;
+    fill: #2F2F2F;
+}
+.footer-nav__wapper{
+
+}
+.footer-nav{
     display: flex;
+    justify-content: space-between;
+    color: #333;
+    font-family: $font-reross;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
+.footer-nav-text{
+
+}
+.footer-logo{
+    img{
+        
+    }
+
+}
+.footer-text{
+    color: #333;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
 }
