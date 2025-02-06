@@ -941,6 +941,7 @@ li{
 .post-card__wrapper{
     background: #fff;
     padding: 18px 10px 113px 10px;
+    box-shadow: 0px 4px 20px 0px rgba(161, 159, 159, 0.60);
     
 }
 .post-card__images{
@@ -960,6 +961,10 @@ li{
     outline-offset: -10px;
     margin-top: -5px;
 }
+.card-text__wrapper{
+    padding-top: 20px;
+    padding-left: 14px;
+}
 .card-text__title{
     color: #333;
     font-family: Satisfy;
@@ -973,4 +978,13 @@ li{
     font-size: 16px;
     font-weight: 400;
     line-height: 250%; /* 40px */
+    text-decoration: underline;
+}
+.card-text-image{
+    position: relative;
+    img{
+        position: absolute;
+        top: -20px;
+        left: 30px;
+    }
 }
