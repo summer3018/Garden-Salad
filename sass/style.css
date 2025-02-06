@@ -848,6 +848,8 @@ li {
 }
 
 .instagram-card__btn-text {
+  display: inline-flex;
+  align-items: center;
   border: 1px solid #333;
   margin: 0 20px 34px;
   color: #333;
@@ -858,6 +860,11 @@ li {
   padding-top: 13px;
   padding-bottom: 17px;
   padding-left: 37px;
+  cursor: pointer;
+}
+.instagram-card__btn-text:hover {
+  background: #333;
+  color: #fff;
 }
 
 .external-icon {
@@ -1106,7 +1113,6 @@ li {
   color: #333;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 .contact-form .form-group .form-label .required {
   color: #FFF;
@@ -1115,16 +1121,33 @@ li {
   border-radius: 6px;
   background: #159741;
   padding: 1px 7px 3px 8px;
-  margin-bottom: 30px;
+  margin-left: 10px;
 }
 .contact-form .form-group .form-input,
 .contact-form .form-group .form-textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #2F2F2F;
   background: #fff;
+  margin-top: 6px;
+}
+.contact-form .form-group .form-input::-moz-placeholder, .contact-form .form-group .form-textarea::-moz-placeholder {
+  color: #BDBDBD;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-form .form-group .form-input::placeholder,
+.contact-form .form-group .form-textarea::placeholder {
+  color: #BDBDBD;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .contact-form .form-group .form-textarea {
   height: 150px;
@@ -1138,9 +1161,24 @@ li {
   height: 150px;
   background: #fff;
   padding: 10px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #2F2F2F;
+}
+.form-textarea::-moz-placeholder {
+  color: #BDBDBD;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-textarea::placeholder {
+  color: #BDBDBD;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 input[type=checkbox] {
@@ -1149,17 +1187,25 @@ input[type=checkbox] {
   margin-right: 13px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 1em;
-  background-color: #159741;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.privacy-text {
+  color: red;
+  padding-bottom: 5px;
 }
-button:hover {
-  background-color: #45a049;
+.privacy-text span {
+  color: #159741;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.8px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 .form-button {
@@ -1170,16 +1216,26 @@ button:hover {
   font-weight: 500;
   line-height: 150%; /* 27px */
   letter-spacing: 0.9px;
+  cursor: pointer;
+  background: #159741;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 14px;
+  margin-top: 43px;
+}
+.form-button:hover {
+  opacity: 0.7;
 }
 
 .footer {
-  background: blue;
+  background: #F2F2F2;
 }
 
 .footer__inner {
   padding: 48px 46px 10px;
+}
+
+.sns-icons {
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

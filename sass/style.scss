@@ -806,10 +806,10 @@ li{
     padding-bottom: 24px;
     padding-right: 10px;
 }
-.instagram-card__btn{
 
-}
 .instagram-card__btn-text{
+    display: inline-flex;
+    align-items: center;
     border: 1px solid #333;
     margin: 0 20px 34px;
     color: #333;
@@ -820,9 +820,12 @@ li{
     padding-top: 13px;
     padding-bottom: 17px;
     padding-left: 37px;
-    // padding-right: 22px;
+    cursor: pointer;
+    &:hover{
+        background: #333;
+        color: #fff;
+    }
 }
-
 .external-icon {
     width: 19px;
     height: 19px;
@@ -1056,7 +1059,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
             color: #333;
             font-size: 16px;
             font-weight: 400;
-            margin-bottom: 10px;
+            
 
             .required {
                 color: #FFF;
@@ -1065,17 +1068,25 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
                 border-radius: 6px;
                 background: #159741;
                 padding: 1px 7px 3px 8px;
-                margin-bottom: 30px;
+                margin-left: 10px;
             }
         }
         .form-input,
         .form-textarea{
             width: 100%;
             padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            font-size: 16px;
+            border: 1px solid #2F2F2F;
             background: #fff;
+            margin-top: 6px;
+            &::placeholder {
+                color: #BDBDBD;
+                font-family: "Noto Sans JP";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
         }
 
         .form-textarea {
@@ -1093,9 +1104,16 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     height: 150px;
     background: #fff;
     padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #2F2F2F;
+    &::placeholder {
+        color: #BDBDBD;
+        font-family: "Noto Sans JP";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
 }
   
 input[type="checkbox"] {
@@ -1103,20 +1121,24 @@ input[type="checkbox"] {
     height: 30px;
     margin-right: 13px;
 }
-
-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: $accent-color;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #45a049;
+.privacy-text{
+    color: red;
+    padding-bottom: 5px;
+    span{
+        color: $accent-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.8px;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
     }
 }
+
 .form-button{
     color: #FFF;
     width: 300px;
@@ -1125,14 +1147,23 @@ button {
     font-weight: 500;
     line-height: 150%; /* 27px */
     letter-spacing: 0.9px;
+    cursor: pointer;
+    background: $accent-color;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 14px;
+    margin-top: 43px;
+    &:hover {
+        opacity: 0.7;
+    }
 }
 // footer
 .footer{
-    background: blue;
+    background: #F2F2F2;
 }
 .footer__inner{
     padding: 48px 46px 10px;
+}
+.sns-icons{
+    display: flex;
 }
