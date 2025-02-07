@@ -1124,6 +1124,12 @@ li {
   font-weight: 700;
   letter-spacing: 0.7px;
 }
+@media (700px <= width) {
+  .shop-title__jp {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+}
 
 .shop-title__en {
   position: relative;
@@ -1134,6 +1140,12 @@ li {
   letter-spacing: 1.6px;
   padding-top: 10px;
   padding-bottom: 68px;
+}
+@media (700px <= width) {
+  .shop-title__en {
+    font-size: 48px;
+    letter-spacing: 2.4px;
+  }
 }
 .shop-title__en::after {
   content: "";
@@ -1183,6 +1195,17 @@ li {
   line-height: 100%; /* 18px */
   padding-right: 4px;
 }
+@media (700px <= width) {
+  .shop-name span {
+    color: #333;
+    text-align: center;
+    font-family: Reross;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 
 .shop-ruby {
   text-align: center;
@@ -1200,6 +1223,13 @@ li {
   padding-left: 28px;
   padding-top: 2px;
 }
+@media (700px <= width) {
+  .shop-adress {
+    font-size: 18px;
+    line-height: 200%; /* 36px */
+    letter-spacing: 0.54px;
+  }
+}
 
 .shop-information {
   font-size: 16px;
@@ -1209,6 +1239,13 @@ li {
   padding-left: 28px;
   padding-bottom: 40px;
   padding-top: 4px;
+}
+@media (700px <= width) {
+  .shop-information {
+    font-size: 18px;
+    line-height: 200%; /* 36px */
+    letter-spacing: 0.54px;
+  }
 }
 
 .shop-image__exterior {
