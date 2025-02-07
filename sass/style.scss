@@ -1234,3 +1234,12 @@ input[type="checkbox"] {
     letter-spacing: 0.36px;
     padding-top: 30px;
 }
+
+.page-top__btn{
+    position: relative;
+    z-index: 2;
+    img{
+        position: absolute;
+        
+    }
+}

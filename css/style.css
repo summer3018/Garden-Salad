@@ -1290,4 +1290,12 @@ input[type=checkbox] {
   font-weight: 400;
   letter-spacing: 0.36px;
   padding-top: 30px;
+}
+
+.page-top__btn {
+  position: relative;
+  z-index: 2;
+}
+.page-top__btn img {
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
