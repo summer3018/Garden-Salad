@@ -878,6 +878,7 @@ li{
     margin-left: 41px;
     margin-right: 34px;
     margin-bottom: -31px;
+
 }
 .instagram-card__title{
     background: #159741;
@@ -886,6 +887,11 @@ li{
     margin-left: 57px;
     margin-right: 58px;
     margin-bottom: 24px;
+    @include mq(md) {
+        width: 360px;
+        height: 73px;
+        margin: 0 auto;
+    }
 }
 .instagram-card__title-en{
     color: #FFF;
@@ -897,6 +903,8 @@ li{
     @include mq(md) {
         font-size: 30px;
         letter-spacing: 1.5px;
+        padding-top: 18px;
+        padding-bottom: 19px;
     }
 }
 .instagram-card__text{
@@ -907,8 +915,11 @@ li{
     letter-spacing: 0.8px;
     padding: 0 32px 24px;
     @include mq(md) {
+        text-align: center;
         font-size: 18px;
         letter-spacing: 0.9px;
+        padding-top: 28px;
+        padding-bottom: 34px;
     }
 }
 .instagram-card__image-container{

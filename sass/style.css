@@ -978,6 +978,13 @@ li {
   margin-right: 58px;
   margin-bottom: 24px;
 }
+@media (700px <= width) {
+  .instagram-card__title {
+    width: 360px;
+    height: 73px;
+    margin: 0 auto;
+  }
+}
 
 .instagram-card__title-en {
   color: #FFF;
@@ -991,6 +998,8 @@ li {
   .instagram-card__title-en {
     font-size: 30px;
     letter-spacing: 1.5px;
+    padding-top: 18px;
+    padding-bottom: 19px;
   }
 }
 
@@ -1004,8 +1013,11 @@ li {
 }
 @media (700px <= width) {
   .instagram-card__text {
+    text-align: center;
     font-size: 18px;
     letter-spacing: 0.9px;
+    padding-top: 28px;
+    padding-bottom: 34px;
   }
 }
 
