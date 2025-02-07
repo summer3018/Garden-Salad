@@ -1249,6 +1249,8 @@ input[type=checkbox] {
 
 .twitter-icon__image {
   position: absolute;
+  top: 5.8px;
+  left: 5.8px;
 }
 
 .instagram-icon {
@@ -1257,6 +1259,8 @@ input[type=checkbox] {
 
 .instagram-icon__image {
   position: absolute;
+  top: 10.7px;
+  left: 6.7px;
 }
 
 .tiktok-icon {
@@ -1265,6 +1269,8 @@ input[type=checkbox] {
 
 .tiktok-icon__image {
   position: absolute;
+  top: 12px;
+  left: 12px;
 }
 
 .footer-nav {
