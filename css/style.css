@@ -545,6 +545,12 @@ li {
   overflow: hidden;
   margin-top: -23px;
 }
+@media (700px <= width) {
+  .parallax__image {
+    width: 1440px;
+    height: 450px;
+  }
+}
 
 .parallax-image {
   position: absolute;
@@ -584,6 +590,12 @@ li {
   letter-spacing: 0.7px;
   padding-bottom: 9px;
 }
+@media (700px <= width) {
+  .menu-title__jp {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+}
 
 .menu-title__en {
   color: #FFF;
@@ -592,6 +604,12 @@ li {
   font-weight: 400;
   letter-spacing: 1.6px;
   position: relative;
+}
+@media (700px <= width) {
+  .menu-title__en {
+    font-size: 48px;
+    letter-spacing: 2.4px;
+  }
 }
 .menu-title__en::after {
   content: "";
@@ -613,6 +631,12 @@ li {
   margin-top: 60px;
   margin-bottom: 19px;
 }
+@media (700px <= width) {
+  .menu-text-pfc {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+  }
+}
 
 .menu-card__text__wrapper {
   width: 300px;
@@ -629,6 +653,12 @@ li {
   letter-spacing: 2.4px;
   padding-bottom: 16px;
 }
+@media (700px <= width) {
+  .menu-card__title {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
 
 .menu-card__price {
   padding-bottom: 16px;
@@ -641,6 +671,12 @@ li {
   font-weight: 400;
   letter-spacing: 1.8px;
 }
+@media (700px <= width) {
+  .menu-card__price-en {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+  }
+}
 
 .menu-card__price-price {
   color: #333;
@@ -649,12 +685,24 @@ li {
   font-weight: 400;
   letter-spacing: 3px;
 }
+@media (700px <= width) {
+  .menu-card__price-price {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+}
 
 .menu-card__price-tax {
   color: #333;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
+}
+@media (700px <= width) {
+  .menu-card__price-tax {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
 }
 
 .menu-card__text {
@@ -665,6 +713,16 @@ li {
   padding-top: 1px;
   margin-left: 22px;
   margin-right: 21px;
+}
+@media (700px <= width) {
+  .menu-card__text {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
+}
+
+.menu-card1-wrapper {
+  display: flex;
 }
 
 .menu-image__1 {
@@ -692,6 +750,12 @@ li {
   position: absolute;
   left: 45px;
 }
+@media (700px <= width) {
+  .menu-card1__Recommendation {
+    width: 251px;
+    height: 78px;
+  }
+}
 
 .menu-card1__Recommendation-en {
   color: #FFF;
@@ -701,12 +765,24 @@ li {
   letter-spacing: 0.36px;
   margin-top: 37px;
 }
+@media (700px <= width) {
+  .menu-card1__Recommendation-en {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+  }
+}
 
 .menu-card1__Recommendation-jp {
   color: #FFF;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.54px;
+}
+@media (700px <= width) {
+  .menu-card1__Recommendation-jp {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
 }
 
 .menu-card1__title {
@@ -717,6 +793,13 @@ li {
   letter-spacing: 2.4px;
   padding-top: 121px;
   padding-bottom: 13px;
+}
+@media (700px <= width) {
+  .menu-card1__title {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
 }
 
 .menu-card1__price {
@@ -730,6 +813,12 @@ li {
   font-weight: 400;
   letter-spacing: 1.8px;
 }
+@media (700px <= width) {
+  .menu-card1__price-en {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+  }
+}
 
 .menu-card1__price-price {
   color: #333;
@@ -738,12 +827,24 @@ li {
   font-weight: 400;
   letter-spacing: 3px;
 }
+@media (700px <= width) {
+  .menu-card1__price-price {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+}
 
 .menu-card1__price-tax {
   color: #333;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
+}
+@media (700px <= width) {
+  .menu-card1__price-tax {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
 }
 
 .menu-card1__text {
@@ -752,6 +853,12 @@ li {
   font-weight: 400;
   letter-spacing: 0.42px;
   margin-bottom: 42px;
+}
+@media (700px <= width) {
+  .menu-card1__text {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
 }
 
 .menu-image__2 {
@@ -823,6 +930,12 @@ li {
   letter-spacing: 1.2px;
   padding: 7px 34px 11px 34px;
 }
+@media (700px <= width) {
+  .instagram-card__title-en {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+}
 
 .instagram-card__text {
   color: #333;
@@ -831,6 +944,12 @@ li {
   font-weight: 400;
   letter-spacing: 0.8px;
   padding: 0 32px 24px;
+}
+@media (700px <= width) {
+  .instagram-card__text {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
 }
 
 .instagram-card__image-container img {
@@ -845,6 +964,11 @@ li {
   padding-top: 4px;
   padding-bottom: 24px;
   padding-right: 10px;
+}
+@media (700px <= width) {
+  .instagram-card__ID {
+    font-size: 18px;
+  }
 }
 
 .instagram-card__btn-text {
@@ -861,6 +985,12 @@ li {
   padding-bottom: 17px;
   padding-left: 37px;
   cursor: pointer;
+}
+@media (700px <= width) {
+  .instagram-card__btn-text {
+    font-size: 16px;
+    cursor: pointer;
+  }
 }
 .instagram-card__btn-text:hover {
   background: #333;
@@ -880,7 +1010,7 @@ li {
 }
 
 .shop__inner {
-  padding-top: 64px;
+  padding-top: 45px;
 }
 
 .shop-title__jp {
@@ -898,7 +1028,7 @@ li {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 68px;
 }
 .shop-title__en::after {
@@ -914,7 +1044,7 @@ li {
 }
 
 .shop__access-map {
-  margin-bottom: 56px;
+  margin-bottom: 48px;
 }
 
 .union__image-wrap {
@@ -924,13 +1054,13 @@ li {
 .union-image {
   position: absolute;
   right: 64px;
-  bottom: 94px;
+  bottom: 67px;
 }
 
 .shop-logo {
   position: absolute;
-  right: 72px;
-  bottom: 118px;
+  right: 73px;
+  bottom: 90px;
 }
 
 .shop-name {
@@ -964,6 +1094,7 @@ li {
   line-height: 170%; /* 27.2px */
   letter-spacing: 0.48px;
   padding-left: 28px;
+  padding-top: 2px;
 }
 
 .shop-information {
@@ -973,11 +1104,12 @@ li {
   letter-spacing: 0.48px;
   padding-left: 28px;
   padding-bottom: 40px;
+  padding-top: 4px;
 }
 
 .shop-image__exterior {
   padding: 0 16px;
-  margin-bottom: 98px;
+  margin-bottom: 93px;
 }
 
 .post-card__container {
@@ -998,8 +1130,8 @@ li {
 
 .post-card__stamp {
   position: absolute;
-  top: -40px;
-  left: -10px;
+  top: -58px;
+  left: -26px;
 }
 
 .post-card__terrace {
@@ -1014,7 +1146,7 @@ li {
 }
 
 .card-text__wrapper {
-  padding-top: 20px;
+  padding-top: 14px;
   padding-left: 14px;
 }
 
@@ -1043,8 +1175,8 @@ li {
 }
 .card-text-image img {
   position: absolute;
-  top: -12px;
-  left: 30px;
+  top: -10px;
+  left: 22px;
 }
 
 .contact {
@@ -1075,14 +1207,14 @@ li {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
-  padding-top: 12px;
-  padding-bottom: 68px;
+  padding-top: 10px;
+  padding-bottom: 58px;
 }
 .contact-title__en::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 56px; /*線の上下位置*/
+  bottom: 47px; /*線の上下位置*/
   display: inline-block;
   width: 50px; /*線の長さ*/
   height: 2px; /*線の太さ*/
@@ -1096,16 +1228,16 @@ li {
   font-weight: 400;
   letter-spacing: 0.48px;
   padding-left: 16px;
-  padding-bottom: 32px;
+  padding-bottom: 11px;
 }
 
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 31px 20px;
 }
 .contact-form .form-group {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 .contact-form .form-group .form-label {
   color: #333;
@@ -1123,8 +1255,8 @@ li {
 }
 .contact-form .form-group .form-input,
 .contact-form .form-group .form-textarea {
-  width: 100%;
-  padding: 10px;
+  width: 102%;
+  padding: 15px;
   font-size: 16px;
   border: 1px solid #2F2F2F;
   background: #fff;
@@ -1148,7 +1280,7 @@ li {
   line-height: normal;
 }
 .contact-form .form-group .form-textarea {
-  height: 150px;
+  height: 160px;
 }
 .contact-form .form-group .form-checkbox {
   margin-right: 10px;
@@ -1182,11 +1314,10 @@ li {
 input[type=checkbox] {
   width: 30px;
   height: 30px;
-  margin-right: 13px;
+  margin-right: 5px;
 }
 
 .privacy-text {
-  color: red;
   padding-bottom: 5px;
 }
 .privacy-text span {
@@ -1217,7 +1348,8 @@ input[type=checkbox] {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 14px;
-  margin-top: 43px;
+  margin-top: 44px;
+  margin-left: 3px;
 }
 .form-button:hover {
   opacity: 0.7;
@@ -1235,7 +1367,7 @@ input[type=checkbox] {
   display: flex;
   padding-left: 26px;
   padding-right: 27px;
-  padding-bottom: 41px;
+  padding-bottom: 35px;
   gap: 40px;
 }
 
@@ -1281,7 +1413,7 @@ input[type=checkbox] {
 
 .footer-logo {
   text-align: center;
-  padding-top: 41px;
+  padding-top: 35px;
 }
 .footer-text {
   color: #333;
@@ -1289,13 +1421,10 @@ input[type=checkbox] {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.36px;
-  padding-top: 30px;
+  padding-top: 23px;
 }
 
-.page-top__btn {
-  position: relative;
-  z-index: 2;
-}
 .page-top__btn img {
-  position: absolute;
+  margin-left: auto;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

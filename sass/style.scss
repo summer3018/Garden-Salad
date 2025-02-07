@@ -496,6 +496,10 @@ li{
     // height: 400px; /* お好みの高さに調整 */
     overflow: hidden;
     margin-top: -23px;
+    @include mq(md) {
+        width: 1440px;
+        height: 450px;
+    }
 }
 
 .parallax-image {
@@ -537,6 +541,10 @@ li{
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-bottom: 9px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
 }
 .menu-title__en{
     color: #FFF;
@@ -545,6 +553,10 @@ li{
     font-weight: 400;
     letter-spacing: 1.6px;
     position: relative;
+    @include mq(md) {
+        font-size: 48px;
+        letter-spacing: 2.4px;
+    }
     &::after{
         content: '';
         position: absolute;
@@ -568,6 +580,10 @@ li{
     letter-spacing: 0.48px;
     margin-top: 60px;
     margin-bottom: 19px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.54px;
+    }
 }
 .menu-card__text__wrapper{
     width: 300px;
@@ -582,6 +598,10 @@ li{
     font-weight: 700;
     letter-spacing: 2.4px;
     padding-bottom: 16px;
+    @include mq(md) {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
 }
 .menu-card__price{
     padding-bottom: 16px;
@@ -592,6 +612,10 @@ li{
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
+    @include mq(md) {
+        font-size: 24px;
+        letter-spacing: 2.4px;
+    }
 }
 .menu-card__price-price{
     color: #333;
@@ -599,12 +623,20 @@ li{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+    @include mq(md) {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
 }
 .menu-card__price-tax{
     color: #333;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
 }
 .menu-card__pfc{
 
@@ -617,10 +649,14 @@ li{
     padding-top: 1px;
     margin-left: 22px;
     margin-right: 21px;
+    @include mq(md) {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+    }
 }
 // card1
 .menu-card1-wrapper{
-    
+    display: flex;
 }
 .menu-image__1{
     position: relative;
@@ -648,6 +684,10 @@ li{
     margin: 0 auto;
     position: absolute;
     left: 45px;
+    @include mq(md) {
+        width: 251px;
+        height: 78px;
+    }
 }
 .menu-card1__Recommendation-en{
     color: #FFF;
@@ -656,12 +696,20 @@ li{
     font-weight: 400;
     letter-spacing: 0.36px;
     margin-top: 37px;
+    @include mq(md) {
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
 }
 .menu-card1__Recommendation-jp{
     color: #FFF;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.54px;
+    @include mq(md) {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+    }
 }
 .menu-card1__title{
     color: #333;
@@ -671,6 +719,11 @@ li{
     letter-spacing: 2.4px;
     padding-top: 121px;
     padding-bottom: 13px;
+    @include mq(md) {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
 }
 .menu-card1__price{
     padding-bottom: 16px;
@@ -682,6 +735,10 @@ li{
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
+    @include mq(md) {
+        font-size: 24px;
+        letter-spacing: 2.4px;
+    }
 }
 .menu-card1__price-price{
     color: #333;
@@ -689,6 +746,10 @@ li{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+    @include mq(md) {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
     
 }
 .menu-card1__price-tax{
@@ -696,6 +757,10 @@ li{
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
 }
 .menu-card1__pfc{
 
@@ -706,6 +771,10 @@ li{
     font-weight: 400;
     letter-spacing: 0.42px;
     margin-bottom: 42px;
+    @include mq(md) {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+    }
 }
 // card2
 .menu-card2-wrapper{
@@ -783,6 +852,10 @@ li{
     font-weight: 400;
     letter-spacing: 1.2px;
     padding: 7px 34px 11px 34px;
+    @include mq(md) {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+    }
 }
 .instagram-card__text{
     color: #333;
@@ -791,6 +864,10 @@ li{
     font-weight: 400;
     letter-spacing: 0.8px;
     padding: 0 32px 24px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
 }
 .instagram-card__image-container{
     img{
@@ -805,6 +882,9 @@ li{
     padding-top: 4px;
     padding-bottom: 24px;
     padding-right: 10px;
+    @include mq(md) {
+        font-size: 18px;
+    }
 }
 
 .instagram-card__btn-text{
@@ -821,6 +901,10 @@ li{
     padding-bottom: 17px;
     padding-left: 37px;
     cursor: pointer;
+    @include mq(md) {
+        font-size: 16px;
+        cursor: pointer;
+    }
     &:hover{
         background: #333;
         color: #fff;
@@ -841,7 +925,7 @@ li{
     background: #F2F2F2;
 }
 .shop__inner{
-    padding-top: 64px;
+    padding-top: 45px;
 }
 .shop-title__container{
 
@@ -860,7 +944,7 @@ li{
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1.6px;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-bottom: 68px;
     &::after{
         content: '';
@@ -876,7 +960,7 @@ li{
     }
 }
 .shop__access-map{
-    margin-bottom: 56px;
+    margin-bottom: 48px;
 }
 .union__image-wrap{
     position: relative;
@@ -885,12 +969,12 @@ li{
 .union-image{
     position: absolute;
     right: 64px;
-    bottom: 94px;
+    bottom: 67px;
 }
 .shop-logo{
     position: absolute;
-    right: 72px;
-    bottom: 118px;
+    right: 73px;
+    bottom: 90px;
 }
 .shop-name{
     text-align: center;
@@ -921,6 +1005,7 @@ li{
     line-height: 170%; /* 27.2px */
     letter-spacing: 0.48px;
     padding-left: 28px;
+    padding-top: 2px;
 }
 .shop-information{
     font-size: 16px;
@@ -929,10 +1014,11 @@ li{
     letter-spacing: 0.48px;
     padding-left: 28px;
     padding-bottom: 40px;
+    padding-top: 4px;
 }
 .shop-image__exterior{
     padding: 0 16px;
-    margin-bottom: 98px;
+    margin-bottom: 93px;
 }
 .image-exterior{
 
@@ -953,8 +1039,8 @@ li{
 }
 .post-card__stamp{
     position: absolute;
-    top: -40px;
-    left: -10px;
+    top: -58px;
+    left: -26px;
 }
 .post-card__terrace{
     outline: 1px solid #fff;
@@ -966,7 +1052,7 @@ li{
     margin-top: -5px;
 }
 .card-text__wrapper{
-    padding-top: 20px;
+    padding-top: 14px;
     padding-left: 14px;
 }
 .card-text__title{
@@ -991,8 +1077,8 @@ li{
     position: relative;
     img{
         position: absolute;
-        top: -12px;
-        left: 30px;
+        top: -10px;
+        left: 22px;
     }
 }
 // contact
@@ -1023,13 +1109,13 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1.6px;
-    padding-top: 12px;
-    padding-bottom: 68px;
+    padding-top: 10px;
+    padding-bottom: 58px;
     &::after{
         content: '';
         position: absolute;
         left: 50%;
-        bottom: 56px;/*線の上下位置*/
+        bottom: 47px;/*線の上下位置*/
         display: inline-block;
         width: 50px;/*線の長さ*/
         height: 2px;/*線の太さ*/
@@ -1044,16 +1130,16 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     font-weight: 400;
     letter-spacing: 0.48px;
     padding-left: 16px;
-    padding-bottom: 32px;
+    padding-bottom: 11px;
 }
 
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 31px 20px;
 
     .form-group {
-        margin-bottom: 32px;
+        margin-bottom: 31px;
 
         .form-label {
             color: #333;
@@ -1073,8 +1159,8 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
         }
         .form-input,
         .form-textarea{
-            width: 100%;
-            padding: 10px;
+            width: 102%;
+            padding: 15px;
             font-size: 16px;
             border: 1px solid #2F2F2F;
             background: #fff;
@@ -1090,7 +1176,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
         }
 
         .form-textarea {
-            height: 150px;
+            height: 160px;
           }
 
           .form-checkbox {
@@ -1119,10 +1205,9 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
 input[type="checkbox"] {
     width: 30px;
     height: 30px;
-    margin-right: 13px;
+    margin-right: 5px;
 }
 .privacy-text{
-    color: red;
     padding-bottom: 5px;
     span{
         color: $accent-color;
@@ -1152,7 +1237,9 @@ input[type="checkbox"] {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 14px;
-    margin-top: 43px;
+    margin-top: 44px;
+    margin-left: 3px;
+
     &:hover {
         opacity: 0.7;
     }
@@ -1171,7 +1258,7 @@ input[type="checkbox"] {
     display: flex;
     padding-left: 26px;
     padding-right: 27px;
-    padding-bottom: 41px;
+    padding-bottom: 35px;
     gap: 40px;
 
 }
@@ -1220,7 +1307,7 @@ input[type="checkbox"] {
 }
 .footer-logo{
     text-align: center;
-    padding-top: 41px;
+    padding-top: 35px;
     img{
         
     }
@@ -1232,14 +1319,13 @@ input[type="checkbox"] {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.36px;
-    padding-top: 30px;
+    padding-top: 23px;
 }
 
 .page-top__btn{
-    position: relative;
-    z-index: 2;
+
     img{
-        position: absolute;
-        
+        margin-left: auto;
+        display: block;
     }
 }
