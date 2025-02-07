@@ -592,6 +592,10 @@ li{
     background: #F2F2F2;
     outline: 1px solid #333;
     outline-offset: -10px;
+    @include mq(md) {
+        width: 524px;
+        height: 280px;
+    }
 }
 .menu-card__title{
     color: #333;
@@ -658,7 +662,8 @@ li{
 // card1
 .menu-card1__wrapper{
     @include mq(md) {
-        display: inline-flex;
+        display: flex;
+        gap: 60px;
     }
 }
 .menu-image__1{
@@ -667,6 +672,12 @@ li{
     z-index: 2;
     padding-left: 24px;
     padding-right: 36px;
+    @include mq(md) {
+        top: auto;
+        bottom: 68px;
+        left: 80px;
+        padding-right: 0;
+    }
     img{
         
     }
@@ -681,6 +692,7 @@ li{
     @include mq(md) {
         width: 592px;
         height: 367px;
+        margin-left: 60px;
     }
 }
 .menu-card1__Recommendation{
@@ -787,14 +799,24 @@ li{
         letter-spacing: 0.72px;
     }
 }
+.test-wrap{
+    @include mq(md) {
+        display: flex; /* 横並びにする */
+        justify-content: center; /* 中央寄せ */
+        gap: 32px; /* 要素間の余白（必要に応じて調整） */
+    }
+}
 // card2
-.menu-card2-wrapper{
-   
+.menu-card2__wrapper{
+
 }
 .menu-image__2{
     position: relative;
     z-index: 1;
     padding-right: 6px;
+    @include mq(md) {
+      left: 60px;
+    }
     img{
         
     }
@@ -805,6 +827,10 @@ li{
     margin-bottom: -13px;
     position: relative;
     bottom: 60px;
+    @include mq(md) {
+      margin-right: 0;
+    }
+
 }
 .card__title2{
     padding-top: 58px;
@@ -815,11 +841,13 @@ li{
 }
 // card3
 .menu-card3__wrapper{
-//    margin-bottom: 48px;
  }
 .menu-image__3{
     position: relative;
     z-index: 1;
+    @include mq(md) {
+      left: 15px;
+    }
     img{
         
     }
@@ -830,6 +858,9 @@ li{
     margin-bottom: -10px;
     position: relative;
     bottom: 60px;
+    @include mq(md) {
+      margin-left: 0;
+    }
 }
 .card__title3{
     padding-top: 56px;
