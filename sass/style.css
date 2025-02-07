@@ -1235,9 +1235,6 @@ input[type=checkbox] {
   padding: 48px 46px 10px;
 }
 
-.sns-icons {
-  display: flex;
-}
 .footer-nav {
   display: flex;
   justify-content: space-between;
