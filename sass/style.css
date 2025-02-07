@@ -1236,9 +1236,8 @@ input[type=checkbox] {
 }
 
 .sns-icons {
-  fill: #2F2F2F;
+  display: flex;
 }
-
 .footer-nav {
   display: flex;
   justify-content: space-between;
