@@ -670,6 +670,7 @@ li{
 .menu-card1__wrapper{
     @include mq(md) {
         display: flex;
+        justify-content: center;
         gap: 60px;
     }
 }
@@ -806,7 +807,7 @@ li{
         letter-spacing: 0.72px;
     }
 }
-.test-wrap{
+.menu-card__wrap{
     @include mq(md) {
         display: flex; /* 横並びにする */
         justify-content: center; /* 中央寄せ */
