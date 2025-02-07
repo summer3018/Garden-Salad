@@ -1237,19 +1237,44 @@ input[type=checkbox] {
 
 .sns-icons {
   display: flex;
+  padding-left: 26px;
+  padding-right: 27px;
+  padding-bottom: 41px;
+  gap: 40px;
 }
+
+.twitter-icon {
+  position: relative;
+}
+
+.twitter-icon__image {
+  position: absolute;
+}
+
+.instagram-icon {
+  position: relative;
+}
+
+.instagram-icon__image {
+  position: absolute;
+}
+
+.tiktok-icon {
+  position: relative;
+}
+
+.tiktok-icon__image {
+  position: absolute;
+}
+
 .footer-nav {
   display: flex;
-  justify-content: space-between;
   color: #333;
   font-family: "reross-quadratic", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
-}
-
-.footer-nav-text {
-  gap: 10px;
+  gap: 32px;
 }
 
 .footer-logo {
