@@ -1168,9 +1168,25 @@ input[type="checkbox"] {
 
 }
 .sns-icons{
+    display: flex;
     img{
         
     }
+}
+.twitter-icon{
+
+}
+.twitter-icon__image{
+
+}
+.instagram-icon__image{
+
+}
+.tiktok-icon__image{
+    
+}
+.icon-background__image{
+
 }
 .footer-nav__wapper{
 
@@ -1185,9 +1201,11 @@ input[type="checkbox"] {
     letter-spacing: 0.48px;
 }
 .footer-nav-text{
-
+    gap: 10px;
 }
 .footer-logo{
+    text-align: center;
+    padding-top: 41px;
     img{
         
     }
@@ -1199,4 +1217,5 @@ input[type="checkbox"] {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.36px;
+    padding-top: 30px;
 }
