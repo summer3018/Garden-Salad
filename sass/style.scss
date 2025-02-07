@@ -531,6 +531,12 @@ li{
         right: 16px;
         left: 16px;
         margin-bottom: 24px;
+        @include mq(md) {
+            top: 72px;
+            bottom: 72px;
+            right: 72px;
+            left: 72px;
+        }
     }
 }
 .menu-title__container{
@@ -595,6 +601,7 @@ li{
     @include mq(md) {
         width: 524px;
         height: 280px;
+        outline-offset: -13px;
     }
 }
 .menu-card__title{
@@ -878,6 +885,14 @@ li{
     margin-left: 41px;
     margin-right: 34px;
     margin-bottom: -31px;
+    @include mq(md) {
+        width: 1080px;
+        height: 544px;
+        outline-offset: -13px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
 
 }
 .instagram-card__title{
@@ -923,9 +938,19 @@ li{
     }
 }
 .instagram-card__image-container{
+    @include mq(md) {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+
+    }
     img{
         width: 125px;
         height: 125px;
+        @include mq(md) {
+            width: 231px;
+            height: 231px;
+        }
     }
 }
 .instagram-card__ID{
@@ -937,6 +962,8 @@ li{
     padding-right: 10px;
     @include mq(md) {
         font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 26px;
     }
 }
 
