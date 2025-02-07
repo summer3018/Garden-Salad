@@ -583,6 +583,7 @@ li{
     @include mq(md) {
         font-size: 18px;
         letter-spacing: 0.54px;
+        margin-bottom: 105px;
     }
 }
 .menu-card__text__wrapper{
@@ -655,8 +656,10 @@ li{
     }
 }
 // card1
-.menu-card1-wrapper{
-    display: flex;
+.menu-card1__wrapper{
+    @include mq(md) {
+        display: inline-flex;
+    }
 }
 .menu-image__1{
     position: relative;
@@ -675,6 +678,10 @@ li{
     margin-bottom: 32px;
     position: relative;
     top: -16px;
+    @include mq(md) {
+        width: 592px;
+        height: 367px;
+    }
 }
 .menu-card1__Recommendation{
     width: 211px;
@@ -687,6 +694,9 @@ li{
     @include mq(md) {
         width: 251px;
         height: 78px;
+        margin-left: 141px;
+        margin-right: 170px;
+        padding-bottom: 35px;
     }
 }
 .menu-card1__Recommendation-en{
@@ -699,6 +709,7 @@ li{
     @include mq(md) {
         font-size: 14px;
         letter-spacing: 0.42px;
+        margin-top: 10px;
     }
 }
 .menu-card1__Recommendation-jp{

@@ -635,6 +635,7 @@ li {
   .menu-text-pfc {
     font-size: 18px;
     letter-spacing: 0.54px;
+    margin-bottom: 105px;
   }
 }
 
@@ -721,8 +722,10 @@ li {
   }
 }
 
-.menu-card1-wrapper {
-  display: flex;
+@media (700px <= width) {
+  .menu-card1__wrapper {
+    display: inline-flex;
+  }
 }
 
 .menu-image__1 {
@@ -740,6 +743,12 @@ li {
   position: relative;
   top: -16px;
 }
+@media (700px <= width) {
+  .card1__wrapper {
+    width: 592px;
+    height: 367px;
+  }
+}
 
 .menu-card1__Recommendation {
   width: 211px;
@@ -754,6 +763,9 @@ li {
   .menu-card1__Recommendation {
     width: 251px;
     height: 78px;
+    margin-left: 141px;
+    margin-right: 170px;
+    padding-bottom: 35px;
   }
 }
 
@@ -769,6 +781,7 @@ li {
   .menu-card1__Recommendation-en {
     font-size: 14px;
     letter-spacing: 0.42px;
+    margin-top: 10px;
   }
 }
 
