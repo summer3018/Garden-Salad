@@ -1351,7 +1351,13 @@ li {
 
 @media (700px <= width) {
   .shop-date {
-    padding: 10px;
+    padding: 10px 60px 10px 10px;
+  }
+}
+
+@media (700px <= width) {
+  .shop-date__access {
+    line-height: 200%;
   }
 }
 
@@ -1436,6 +1442,12 @@ li {
   padding-top: 14px;
   padding-left: 14px;
 }
+@media (700px <= width) {
+  .card-text__wrapper {
+    gap: 135px;
+  }
+}
+
 .card-text__title {
   color: #333;
   font-family: "Satisfy", serif;
@@ -1445,10 +1457,12 @@ li {
 }
 @media (700px <= width) {
   .card-text__title {
-    color: #333;
-    font-family: "Satisfy", serif;
     font-size: 48px;
     letter-spacing: 2.4px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-top: 27px;
   }
 }
 
@@ -1463,9 +1477,22 @@ li {
   text-decoration-color: #4F4F4F;
   text-underline-offset: 10px;
 }
+@media (700px <= width) {
+  .card-text {
+    text-align: left;
+    margin-right: 220px;
+    padding-top: 45px;
+  }
+}
 
 .card-text-image {
   position: relative;
+}
+@media (700px <= width) {
+  .card-text-image {
+    position: relative;
+    right: 20px;
+  }
 }
 .card-text-image img {
   position: absolute;

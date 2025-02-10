@@ -1210,7 +1210,13 @@ padding: 10px 0;
 }
 .shop-date{
     @include mq(md) {
-        padding: 10px;
+        padding: 10px 60px 10px 10px;
+        // line-height: 150%;
+    }
+}
+.shop-date__access{
+    @include mq(md) {
+      line-height: 200%;
     }
 }
 .shop-image__exterior{
@@ -1282,6 +1288,12 @@ padding: 10px 0;
     padding-left: 14px;
     @include mq(md) {
     //   display: flex;
+      gap: 135px;
+    }
+}
+.test-wrap{
+    @include mq(md) {
+      
     }
 }
 .card-text__title{
@@ -1291,10 +1303,12 @@ padding: 10px 0;
     font-weight: 400;
     letter-spacing: 1.5px;
     @include mq(md) {
-        color: #333;
-        font-family: $font-Satisfy;
         font-size: 48px;
         letter-spacing: 2.4px;
+        float: left;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        padding-top: 27px;
     }
 }
 .card-text{
@@ -1307,9 +1321,19 @@ padding: 10px 0;
     text-decoration-thickness: 2px;
     text-decoration-color: #4F4F4F;
     text-underline-offset: 10px;
+    @include mq(md) {
+      text-align: left;
+      margin-right: 220px;
+      padding-top: 45px;
+
+    }
 }
 .card-text-image{
     position: relative;
+    @include mq(md) {
+      position: relative;
+      right: 20px;
+    }
     img{
         position: absolute;
         top: -10px;
