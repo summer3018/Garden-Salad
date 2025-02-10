@@ -1190,7 +1190,7 @@ li {
 }
 @media (700px <= width) {
   .union__image-wrap {
-    right: 332px;
+    right: 323px;
     bottom: 90px;
   }
 }
@@ -1438,10 +1438,18 @@ li {
 }
 .card-text__title {
   color: #333;
-  font-family: Satisfy;
+  font-family: "Satisfy", serif;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+}
+@media (700px <= width) {
+  .card-text__title {
+    color: #333;
+    font-family: "Satisfy", serif;
+    font-size: 48px;
+    letter-spacing: 2.4px;
+  }
 }
 
 .card-text {

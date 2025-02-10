@@ -1070,10 +1070,9 @@ li{
 .union__image-wrap{
     position: relative;
     @include mq(md) {
-        right: 332px;
+        right: 323px;
         bottom: 90px;
     }
-
 }
 .union-image{
     position: absolute;
@@ -1287,10 +1286,16 @@ padding: 10px 0;
 }
 .card-text__title{
     color: #333;
-    font-family: Satisfy;
+    font-family: $font-Satisfy;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1.5px;
+    @include mq(md) {
+        color: #333;
+        font-family: $font-Satisfy;
+        font-size: 48px;
+        letter-spacing: 2.4px;
+    }
 }
 .card-text{
     color: #4F4F4F;
