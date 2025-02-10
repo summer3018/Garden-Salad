@@ -1176,22 +1176,34 @@ li{
         letter-spacing: 0.54px;
     }
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+.shop-table {
+    @include mq(md) {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.54px;
+        margin-left: 15px;
+    }
 }
+.shop-row{
 
-th, td {
-    padding: 10px;
-    // border-bottom: 1px solid #ddd;
 }
-
-th {
-    text-align: left;
-    background-color: #f2f2f2;
-    width: 30%;
-    vertical-align: top;
+.shop-header {
+    @include mq(md) {
+        text-align: left;
+        background-color: #f2f2f2;
+        width: 20%;
+        vertical-align: top;
+        font-weight: normal;
+        padding: 10px;
+    }
+}
+.shop-date{
+    @include mq(md) {
+        padding: 10px;
+    }
 }
 .shop-image__exterior{
     padding: 0 16px;
@@ -1202,6 +1214,7 @@ th {
         padding-right: 0;
         margin-bottom: 80px;
         margin-top: 80px;
+        padding-left: 80px;
     }
 }
 .image-exterior{
