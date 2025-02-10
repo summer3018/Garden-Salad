@@ -1014,7 +1014,7 @@ li{
     padding-top: 45px;
     @include mq(md) {
       padding-top: 120px;
-      
+
     }
 }
 .shop-title__container{
@@ -1065,6 +1065,10 @@ li{
 }
 .union__image-wrap{
     position: relative;
+    @include mq(md) {
+        right: 332px;
+        bottom: 90px;
+    }
 
 }
 .union-image{
@@ -1076,6 +1080,10 @@ li{
     position: absolute;
     right: 73px;
     bottom: 90px;
+    @include mq(md) {
+        right: 82px;
+        bottom: 115px;
+    }
 }
 .shop-name{
     text-align: center;

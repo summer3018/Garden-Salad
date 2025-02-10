@@ -1182,6 +1182,12 @@ li {
 .union__image-wrap {
   position: relative;
 }
+@media (700px <= width) {
+  .union__image-wrap {
+    right: 332px;
+    bottom: 90px;
+  }
+}
 
 .union-image {
   position: absolute;
@@ -1193,6 +1199,12 @@ li {
   position: absolute;
   right: 73px;
   bottom: 90px;
+}
+@media (700px <= width) {
+  .shop-logo {
+    right: 82px;
+    bottom: 115px;
+  }
 }
 
 .shop-name {
