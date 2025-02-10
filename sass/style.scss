@@ -1360,6 +1360,10 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-top: 64px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
 }
 .contact-title__en{
     position: relative;
@@ -1370,6 +1374,10 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     letter-spacing: 1.6px;
     padding-top: 10px;
     padding-bottom: 58px;
+    @include mq(md) {
+        font-size: 48px;
+        letter-spacing: 2.4px;
+    }
     &::after{
         content: '';
         position: absolute;
@@ -1390,6 +1398,9 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     letter-spacing: 0.48px;
     padding-left: 16px;
     padding-bottom: 11px;
+    @include mq(md) {
+
+    }
 }
 
 .contact-form {
@@ -1468,6 +1479,10 @@ input[type="checkbox"] {
 }
 .privacy-text{
     padding-bottom: 5px;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
     span{
         color: $accent-color;
         font-size: 16px;
@@ -1480,6 +1495,10 @@ input[type="checkbox"] {
         text-decoration-thickness: auto;
         text-underline-offset: auto;
         text-underline-position: from-font;
+        @include mq(md) {
+            font-size: 18px;
+            letter-spacing: 0.9px;
+        }
     }
 }
 
