@@ -1059,6 +1059,10 @@ li{
 }
 .shop__access-map{
     margin-bottom: 48px;
+    @include mq(md) {
+        padding-left: 7px;
+        padding-right: 3px;
+    }
 }
 .map-image{
     width: 100%;

@@ -1174,6 +1174,12 @@ li {
 .shop__access-map {
   margin-bottom: 48px;
 }
+@media (700px <= width) {
+  .shop__access-map {
+    padding-left: 7px;
+    padding-right: 3px;
+  }
+}
 
 .map-image {
   width: 100%;
