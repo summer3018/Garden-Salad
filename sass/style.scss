@@ -1177,6 +1177,10 @@ li{
     }
 }
 .shop-table {
+font-size: 16px;
+line-height: 170%; /* 27.2px */
+letter-spacing: 0.48px;
+padding: 5px 28px 40px;
     @include mq(md) {
         width: 100%;
         border-collapse: collapse;
@@ -1188,15 +1192,16 @@ li{
     }
 }
 .shop-row{
-
+padding: 10px 0;
 }
 .shop-header {
+    font-weight: normal;
+    width: 25%;
+    text-align: left;
+    // padding-left: 28px;
+    vertical-align: top;
     @include mq(md) {
-        text-align: left;
-        background-color: #f2f2f2;
         width: 20%;
-        vertical-align: top;
-        font-weight: normal;
         padding: 10px;
     }
 }
