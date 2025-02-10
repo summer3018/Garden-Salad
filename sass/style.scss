@@ -1012,6 +1012,10 @@ li{
 }
 .shop__inner{
     padding-top: 45px;
+    @include mq(md) {
+      padding-top: 120px;
+      
+    }
 }
 .shop-title__container{
 
@@ -1055,6 +1059,9 @@ li{
 }
 .shop__access-map{
     margin-bottom: 48px;
+}
+.map-image{
+    width: 100%;
 }
 .union__image-wrap{
     position: relative;
