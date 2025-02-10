@@ -1207,6 +1207,25 @@ li {
   }
 }
 
+@media (700px <= width) {
+  .shop-detail {
+    display: flex;
+  }
+}
+
+@media (700px <= width) {
+  .shop-text-container {
+    margin-top: 155px;
+    margin-left: 180px;
+  }
+}
+
+@media (700px <= width) {
+  .shop__name-wrapper {
+    display: flex;
+  }
+}
+
 .shop-name {
   text-align: center;
   font-family: "reross-quadratic", sans-serif;
@@ -1214,6 +1233,12 @@ li {
   font-weight: 400;
   line-height: 100%; /* 32px */
   letter-spacing: 0.96px;
+}
+@media (700px <= width) {
+  .shop-name {
+    margin: 0;
+    padding-left: 30px;
+  }
 }
 .shop-name span {
   text-align: center;
@@ -1242,6 +1267,12 @@ li {
   letter-spacing: 0.48px;
   padding-bottom: 24px;
 }
+@media (700px <= width) {
+  .shop-ruby {
+    padding-bottom: 25px;
+    margin-left: 10px;
+  }
+}
 
 .shop-adress {
   font-size: 16px;
@@ -1256,6 +1287,7 @@ li {
     font-size: 18px;
     line-height: 200%; /* 36px */
     letter-spacing: 0.54px;
+    padding-bottom: 17px;
   }
 }
 
@@ -1279,6 +1311,15 @@ li {
 .shop-image__exterior {
   padding: 0 16px;
   margin-bottom: 93px;
+}
+@media (700px <= width) {
+  .shop-image__exterior {
+    text-align: right;
+    margin: 0 0 0 auto;
+    padding-right: 0;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
 }
 
 .post-card__container {

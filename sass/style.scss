@@ -1085,6 +1085,23 @@ li{
         bottom: 115px;
     }
 }
+.shop-detail{
+    @include mq(md) {
+      display: flex;
+    }
+}
+.shop-text-container{
+    @include mq(md) {
+        margin-top: 155px;
+        margin-left: 180px;
+      
+    }
+}
+.shop__name-wrapper{
+    @include mq(md) {
+        display: flex;
+    }
+}
 .shop-name{
     text-align: center;
     font-family: $font-reross;
@@ -1092,6 +1109,10 @@ li{
     font-weight: 400;
     line-height: 100%; /* 32px */
     letter-spacing: 0.96px;
+    @include mq(md) {
+      margin: 0;
+      padding-left: 30px;
+    }
     span{
         text-align: center;
         font-family: $font-reross;
@@ -1110,12 +1131,22 @@ li{
         }
     }
 }
+
 .shop-ruby{
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
     padding-bottom: 24px;
+    @include mq(md) {
+        padding-bottom: 25px;
+        margin-left: 10px;
+    }
+}
+
+.shop-text-wrapper{
+    @include mq(md) {
+    }
 }
 .shop-adress{
     font-size: 16px;
@@ -1128,6 +1159,7 @@ li{
         font-size: 18px;
         line-height: 200%; /* 36px */
         letter-spacing: 0.54px;
+        padding-bottom: 17px;
     }
 }
 .shop-information{
@@ -1147,6 +1179,13 @@ li{
 .shop-image__exterior{
     padding: 0 16px;
     margin-bottom: 93px;
+    @include mq(md) {
+        text-align: right;
+        margin: 0 0 0 auto;
+        padding-right: 0;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
 }
 .image-exterior{
 
