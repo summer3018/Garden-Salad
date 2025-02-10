@@ -1501,15 +1501,32 @@ li {
 }
 
 .contact {
-  background-image: url(/image/sp/img：野菜\(背景\).png);
+  background-image: url(/image/sp/img：野菜\(背景\));
+}
+@media (700px <= width) {
+  .contact {
+    background-image: url(/image/pc/img：野菜.png);
+  }
 }
 
 .contact__inner {
   padding: 64px 16px;
 }
+@media (700px <= width) {
+  .contact__inner {
+    padding: 130px 0;
+  }
+}
 
 .contact__wrapper {
   background: #F2F2F2;
+}
+@media (700px <= width) {
+  .contact__wrapper {
+    width: 800px;
+    height: 1032px;
+    margin: 0 auto;
+  }
 }
 
 .contact-title__jp {
@@ -1563,6 +1580,12 @@ li {
   padding-left: 16px;
   padding-bottom: 11px;
 }
+@media (700px <= width) {
+  .contact-text {
+    text-align: center;
+  }
+}
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -1643,6 +1666,12 @@ li {
   line-height: normal;
 }
 
+@media (700px <= width) {
+  .form-group2 {
+    text-align: center;
+  }
+}
+
 input[type=checkbox] {
   width: 30px;
   height: 30px;
@@ -1676,6 +1705,12 @@ input[type=checkbox] {
   .privacy-text span {
     font-size: 18px;
     letter-spacing: 0.9px;
+  }
+}
+
+@media (700px <= width) {
+  .submit-btn {
+    text-align: center;
   }
 }
 

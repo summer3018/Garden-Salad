@@ -1342,13 +1342,24 @@ padding: 10px 0;
 }
 // contact
 .contact{
-background-image: url(/image/sp/img：野菜\(背景\).png);
+background-image: url(/image/sp/img：野菜\(背景\));
+@include mq(md) {
+  background-image: url(/image/pc/img：野菜.png);
+}
 }
 .contact__inner{
     padding: 64px 16px;
+    @include mq(md) {
+        padding: 130px 0;
+    }
 }
 .contact__wrapper{
     background: #F2F2F2;
+    @include mq(md) {
+        width: 800px;
+        height: 1032px;
+        margin: 0 auto;
+    }
 }
 .contact-title__container{
     
@@ -1399,7 +1410,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     padding-left: 16px;
     padding-bottom: 11px;
     @include mq(md) {
-
+        text-align: center;
     }
 }
 
@@ -1471,7 +1482,12 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
         line-height: normal;
       }
 }
-  
+ 
+.form-group2{
+    @include mq(md) {
+      text-align: center;
+    }
+}
 input[type="checkbox"] {
     width: 30px;
     height: 30px;
@@ -1501,7 +1517,11 @@ input[type="checkbox"] {
         }
     }
 }
-
+.submit-btn{
+    @include mq(md) {
+      text-align: center;
+    }
+}
 .form-button{
     color: #FFF;
     width: 300px;
