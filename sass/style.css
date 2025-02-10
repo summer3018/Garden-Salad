@@ -572,6 +572,11 @@ li {
 .menu__inner {
   padding: 56px 0 111px;
 }
+@media (700px <= width) {
+  .menu__inner {
+    padding: 152px 72px 112px;
+  }
+}
 .menu__inner::after {
   position: absolute;
   border: 1px solid #FFF;
@@ -617,6 +622,7 @@ li {
   .menu-title__en {
     font-size: 48px;
     letter-spacing: 2.4px;
+    padding-bottom: 16px;
   }
 }
 .menu-title__en::after {
@@ -773,6 +779,7 @@ li {
     width: 592px;
     height: 367px;
     margin-left: 60px;
+    margin-bottom: 85px;
   }
 }
 

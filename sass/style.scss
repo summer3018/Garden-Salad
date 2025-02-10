@@ -522,6 +522,9 @@ li{
 }
 .menu__inner{
     padding: 56px 0 111px;
+    @include mq(md) {
+      padding: 152px 72px 112px;
+    }
     &::after{
         position: absolute;
         border: 1px solid #FFF;
@@ -562,6 +565,7 @@ li{
     @include mq(md) {
         font-size: 48px;
         letter-spacing: 2.4px;
+        padding-bottom: 16px;
     }
     &::after{
         content: '';
@@ -576,7 +580,7 @@ li{
         background-color: #fff;/*線の色*/
     }
 }
-.menu-text__wrappe-textr{
+.menu-text__wrapper{
 
 }
 .menu-text-pfc{
@@ -701,6 +705,7 @@ li{
         width: 592px;
         height: 367px;
         margin-left: 60px;
+        margin-bottom: 85px;
     }
 }
 .menu-card1__Recommendation{
