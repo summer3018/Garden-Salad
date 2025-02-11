@@ -1741,6 +1741,12 @@ input[type=checkbox] {
 .footer__inner {
   padding: 48px 46px 10px;
 }
+@media (700px <= width) {
+  .footer__inner {
+    padding-top: 56px;
+    padding-bottom: 9px;
+  }
+}
 
 .sns-icons {
   display: flex;
@@ -1748,6 +1754,12 @@ input[type=checkbox] {
   padding-right: 27px;
   padding-bottom: 35px;
   gap: 40px;
+}
+@media (700px <= width) {
+  .sns-icons {
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .twitter-icon {
@@ -1788,6 +1800,12 @@ input[type=checkbox] {
   font-weight: 400;
   letter-spacing: 0.48px;
   gap: 32px;
+}
+@media (700px <= width) {
+  .footer-nav {
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .footer-logo {
