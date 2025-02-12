@@ -702,6 +702,7 @@ li {
   .menu-card__price-en {
     font-size: 24px;
     letter-spacing: 2.4px;
+    padding-right: 8px;
   }
 }
 
@@ -765,7 +766,7 @@ li {
   .menu-image__1 {
     top: auto;
     bottom: 68px;
-    left: 80px;
+    left: 143px;
     padding-right: 0;
   }
 }
@@ -920,8 +921,15 @@ li {
   .menu-card1__text {
     font-size: 24px;
     letter-spacing: 0.72px;
+    display: block;
   }
 }
+@media (700px <= width) {
+  .menu-card1__text span {
+    gap: 10px;
+  }
+}
+
 @media (700px <= width) {
   .menu-card__wrap {
     display: flex; /* 横並びにする */
@@ -937,7 +945,8 @@ li {
 }
 @media (700px <= width) {
   .menu-image__2 {
-    left: 60px;
+    left: 85px;
+    bottom: 17px;
   }
 }
 .card2-text__wrapper {
@@ -950,6 +959,7 @@ li {
 @media (700px <= width) {
   .card2-text__wrapper {
     margin-right: 0;
+    bottom: 94px;
   }
 }
 
@@ -957,9 +967,20 @@ li {
   padding-top: 58px;
   padding-bottom: 11px;
 }
+@media (700px <= width) {
+  .card__title2 {
+    padding-top: 73px;
+    padding-right: 5px;
+  }
+}
 
 .card__price2 {
   padding-left: 10px;
+}
+@media (700px <= width) {
+  .card__price2 {
+    padding-bottom: 22px;
+  }
 }
 
 .menu-image__3 {
@@ -968,7 +989,8 @@ li {
 }
 @media (700px <= width) {
   .menu-image__3 {
-    left: 15px;
+    bottom: 17px;
+    left: 29px;
   }
 }
 .card3-text__wrapper {
@@ -981,6 +1003,7 @@ li {
 @media (700px <= width) {
   .card3-text__wrapper {
     margin-left: 0;
+    bottom: 90px;
   }
 }
 
@@ -988,9 +1011,19 @@ li {
   padding-top: 56px;
   padding-bottom: 11px;
 }
+@media (700px <= width) {
+  .card__title3 {
+    padding-top: 75px;
+  }
+}
 
 .card__price3 {
   padding-left: 10px;
+}
+@media (700px <= width) {
+  .card__price3 {
+    padding-bottom: 22px;
+  }
 }
 
 .instagram-card {
@@ -1007,8 +1040,7 @@ li {
     height: 544px;
     outline-offset: -13px;
     margin: 0 auto;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 82px;
   }
 }
 
@@ -1024,7 +1056,10 @@ li {
   .instagram-card__title {
     width: 360px;
     height: 73px;
-    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 45px;
+    margin-right: 58px;
   }
 }
 
@@ -1058,11 +1093,15 @@ li {
     text-align: center;
     font-size: 18px;
     letter-spacing: 0.9px;
-    padding-top: 28px;
-    padding-bottom: 34px;
+    padding-top: 27px;
+    padding-bottom: 35px;
+    padding-right: 27px;
   }
 }
 
+.instagram-card__image-container {
+  display: block;
+}
 @media (700px <= width) {
   .instagram-card__image-container {
     display: flex;
