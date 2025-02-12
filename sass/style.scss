@@ -1577,12 +1577,18 @@ background-image: url(/image/sp/img：野菜\(背景\));
 .form-group2{
     @include mq(md) {
       text-align: center;
+      margin-top: -13px;
+      margin-left: 33px;
     }
 }
 input[type="checkbox"] {
     width: 30px;
     height: 30px;
     margin-right: 5px;
+    @include mq(md) {
+        margin-right: 10px;
+        margin-top: 8px;
+    }
 }
 .privacy-text{
     padding-bottom: 5px;
@@ -1631,7 +1637,7 @@ input[type="checkbox"] {
     @include mq(md) {
         width: 239px;
         height: 56px;
-        margin-top: 29px;
+        margin-top: 42px;
         margin-left: 9px;
     }
 

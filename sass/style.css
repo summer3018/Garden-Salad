@@ -1781,6 +1781,8 @@ li {
 @media (700px <= width) {
   .form-group2 {
     text-align: center;
+    margin-top: -13px;
+    margin-left: 33px;
   }
 }
 
@@ -1788,6 +1790,12 @@ input[type=checkbox] {
   width: 30px;
   height: 30px;
   margin-right: 5px;
+}
+@media (700px <= width) {
+  input[type=checkbox] {
+    margin-right: 10px;
+    margin-top: 8px;
+  }
 }
 
 .privacy-text {
@@ -1848,7 +1856,7 @@ input[type=checkbox] {
   .form-button {
     width: 239px;
     height: 56px;
-    margin-top: 29px;
+    margin-top: 42px;
     margin-left: 9px;
   }
 }
