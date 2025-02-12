@@ -1248,6 +1248,7 @@ li{
     letter-spacing: 0.48px;
     padding-left: 28px;
     padding-top: 2px;
+    padding-bottom: 2px;
     @include mq(md) {
         font-size: 18px;
         line-height: 200%; /* 36px */
