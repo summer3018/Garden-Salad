@@ -734,18 +734,22 @@ li {
 }
 
 .menu-card__text {
+  display: flex;
+  justify-content: space-between;
   color: #333;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.42px;
+  margin: 0 21px;
   padding-top: 1px;
-  margin-left: 22px;
-  margin-right: 21px;
 }
 @media (700px <= width) {
   .menu-card__text {
     font-size: 24px;
     letter-spacing: 0.72px;
+    padding-top: 1px;
+    margin-left: 41px;
+    margin-right: 43px;
   }
 }
 
@@ -776,7 +780,7 @@ li {
   margin-right: 37px;
   margin-bottom: 32px;
   position: relative;
-  top: -16px;
+  top: -12px;
 }
 @media (700px <= width) {
   .card1__wrapper {
@@ -911,22 +915,23 @@ li {
 }
 
 .menu-card1__text {
+  display: flex;
+  justify-content: space-between;
   color: #333;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.42px;
-  margin-bottom: 42px;
+  padding-top: 1px;
+  margin-left: 22px;
+  margin-right: 21px;
 }
 @media (700px <= width) {
   .menu-card1__text {
     font-size: 24px;
     letter-spacing: 0.72px;
-    display: block;
-  }
-}
-@media (700px <= width) {
-  .menu-card1__text span {
-    gap: 10px;
+    /* padding-top: 1px; */
+    margin-left: 76px;
+    margin-right: 75px;
   }
 }
 
@@ -942,6 +947,8 @@ li {
   position: relative;
   z-index: 1;
   padding-right: 6px;
+  padding-left: 31px;
+  padding-top: 5px;
 }
 @media (700px <= width) {
   .menu-image__2 {
@@ -954,7 +961,7 @@ li {
   margin-right: 37px;
   margin-bottom: -13px;
   position: relative;
-  bottom: 60px;
+  bottom: 55px;
 }
 @media (700px <= width) {
   .card2-text__wrapper {
@@ -986,6 +993,8 @@ li {
 .menu-image__3 {
   position: relative;
   z-index: 1;
+  padding-left: 34px;
+  padding-top: 6px;
 }
 @media (700px <= width) {
   .menu-image__3 {
@@ -998,7 +1007,7 @@ li {
   margin-right: 34px;
   margin-bottom: -10px;
   position: relative;
-  bottom: 60px;
+  bottom: 55px;
 }
 @media (700px <= width) {
   .card3-text__wrapper {
@@ -1033,6 +1042,7 @@ li {
   margin-left: 41px;
   margin-right: 34px;
   margin-bottom: -31px;
+  margin-top: 4px;
 }
 @media (700px <= width) {
   .instagram-card {
@@ -1086,7 +1096,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.8px;
-  padding: 0 32px 24px;
+  padding: 0 32px 22px;
 }
 @media (700px <= width) {
   .instagram-card__text {
@@ -1101,24 +1111,31 @@ li {
 }
 
 .instagram-card__image-container {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 2px 20px;
 }
 @media (700px <= width) {
   .instagram-card__image-container {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
   }
 }
 .instagram-card__image-container img {
-  width: 125px;
-  height: 125px;
+  width: 100%;
+  height: auto;
+  max-width: 125px;
+  max-height: 125px;
 }
 @media (700px <= width) {
   .instagram-card__image-container img {
-    width: 231px;
-    height: 231px;
-    padding-right: 6px;
+    max-width: 231px;
+    max-height: 231px;
   }
 }
 
@@ -1238,7 +1255,7 @@ li {
 }
 
 .shop__access-map {
-  margin-bottom: 48px;
+  margin-bottom: 53px;
 }
 @media (700px <= width) {
   .shop__access-map {
@@ -1254,6 +1271,7 @@ li {
 
 .union__image-wrap {
   position: relative;
+  top: 5px;
 }
 @media (700px <= width) {
   .union__image-wrap {
@@ -1389,7 +1407,7 @@ li {
   font-size: 16px;
   line-height: 170%; /* 27.2px */
   letter-spacing: 0.48px;
-  padding: 5px 28px 40px;
+  padding: 0px 26px 34px;
 }
 @media (700px <= width) {
   .shop-table {
@@ -1434,7 +1452,7 @@ li {
 
 .shop-image__exterior {
   padding: 0 16px;
-  margin-bottom: 93px;
+  margin-bottom: 100px;
 }
 @media (700px <= width) {
   .shop-image__exterior {
@@ -1495,7 +1513,7 @@ li {
 
 .post-card__terrace {
   outline: 1px solid #fff;
-  outline-offset: -10px;
+  outline-offset: -14px;
 }
 @media (700px <= width) {
   .post-card__terrace {
@@ -1506,7 +1524,7 @@ li {
 .post-card__takeout {
   outline: 1px solid #fff;
   outline-offset: -10px;
-  margin-top: -5px;
+  margin-top: -2px;
 }
 @media (700px <= width) {
   .post-card__takeout {
@@ -1516,7 +1534,7 @@ li {
 }
 
 .card-text__wrapper {
-  padding-top: 14px;
+  padding-top: 21px;
   padding-left: 14px;
 }
 @media (700px <= width) {

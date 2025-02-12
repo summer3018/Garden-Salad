@@ -663,19 +663,25 @@ li{
 .menu-card__pfc{
 
 }
-.menu-card__text{
+.menu-card__text {
+    display: flex;
+    justify-content: space-between; // 均等配置
     color: #333;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.42px;
+    margin: 0 21px;
     padding-top: 1px;
-    margin-left: 22px;
-    margin-right: 21px;
+
     @include mq(md) {
         font-size: 24px;
         letter-spacing: 0.72px;
+        padding-top: 1px;
+        margin-left: 41px;
+        margin-right: 43px; 
     }
 }
+
 // card1
 .menu-card1__wrapper{
     @include mq(md) {
@@ -707,7 +713,7 @@ li{
     margin-right: 37px;
     margin-bottom: 32px;
     position: relative;
-    top: -16px;
+    top: -12px;
     @include mq(md) {
         width: 592px;
         height: 367px;
@@ -821,21 +827,28 @@ li{
 
 }
 .menu-card1__text{
+    display: flex;
+    justify-content: space-between; // 均等配置
     color: #333;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.42px;
-    margin-bottom: 42px;
+    padding-top: 1px;
+    margin-left: 22px;
+    margin-right: 21px;
+
     @include mq(md) {
         font-size: 24px;
         letter-spacing: 0.72px;
-        display: block;
+            /* padding-top: 1px; */
+    margin-left: 76px;
+    margin-right: 75px;
     }
-    span{
-        @include mq(md) {
-            gap: 10px;
-        }
-    }
+    // span{
+    //     @include mq(md) {
+    //         gap: 10px;
+    //     }
+    // }
 }
 .menu-card__wrap{
     @include mq(md) {
@@ -852,6 +865,8 @@ li{
     position: relative;
     z-index: 1;
     padding-right: 6px;
+    padding-left: 31px;
+    padding-top: 5px;
     @include mq(md) {
         left: 85px;
         bottom: 17px;    }
@@ -864,7 +879,7 @@ li{
     margin-right: 37px;
     margin-bottom: -13px;
     position: relative;
-    bottom: 60px;
+    bottom: 55px;
     @include mq(md) {
       margin-right: 0;
       bottom: 94px;
@@ -891,6 +906,8 @@ li{
 .menu-image__3{
     position: relative;
     z-index: 1;
+    padding-left: 34px;
+    padding-top: 6px;
     @include mq(md) {
         bottom: 17px;
         left: 29px;
@@ -904,7 +921,7 @@ li{
     margin-right: 34px;
     margin-bottom: -10px;
     position: relative;
-    bottom: 60px;
+    bottom: 55px;
     @include mq(md) {
       margin-left: 0;
       bottom: 90px;
@@ -932,6 +949,7 @@ li{
     margin-left: 41px;
     margin-right: 34px;
     margin-bottom: -31px;
+    margin-top: 4px;
     @include mq(md) {
         width: 1080px;
         height: 544px;
@@ -978,35 +996,44 @@ li{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.8px;
-    padding: 0 32px 24px;
+    padding: 0 32px 22px;
     @include mq(md) {
         text-align: center;
         font-size: 18px;
         letter-spacing: 0.9px;
-padding-top: 27px;
+        padding-top: 27px;
         padding-bottom: 34px;
         padding-left: 46px;
         padding-right: 42px;
     }
 }
-.instagram-card__image-container{
-    display: block;
+.instagram-card__image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // スマホ時は2列
+    grid-template-rows: repeat(2, 1fr); // スマホ時は2行
+    gap: 10px; // 画像間の間隔を設定
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 2px 20px;
     @include mq(md) {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-
+        grid-template-columns: repeat(4, 1fr); // PC時は横1列に4枚
+        grid-template-rows: 1fr; // PC時は1行
+        gap: 20px;
     }
-    img{
-        width: 125px;
-        height: 125px;
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 125px;
+        max-height: 125px;
+
         @include mq(md) {
-            width: 231px;
-            height: 231px;
-            padding-right: 6px;
+            max-width: 231px;
+            max-height: 231px;
         }
     }
 }
+
 .instagram-card__ID{
     color: #333;
     font-size: 16px;
@@ -1116,7 +1143,7 @@ padding-top: 27px;
     }
 }
 .shop__access-map{
-    margin-bottom: 48px;
+    margin-bottom: 53px;
     @include mq(md) {
         padding-top: 29px;
         padding-left: 3px;
@@ -1128,6 +1155,7 @@ padding-top: 27px;
 }
 .union__image-wrap{
     position: relative;
+    top: 5px;
     @include mq(md) {
         right: 328px;
         bottom: 90px;
@@ -1246,8 +1274,8 @@ padding-top: 27px;
 font-size: 16px;
 line-height: 170%; /* 27.2px */
 letter-spacing: 0.48px;
-padding: 5px 28px 40px;
-    @include mq(md) {
+padding: 0px 26px 34px;
+@include mq(md) {
         width: 100%;
         border-collapse: collapse;
         margin-top: 10px;
@@ -1284,7 +1312,7 @@ padding: 10px 0;
 }
 .shop-image__exterior{
     padding: 0 16px;
-    margin-bottom: 93px;
+    margin-bottom: 100px;
     @include mq(md) {
         text-align: right;
         margin: 0 0 0 auto;
@@ -1336,7 +1364,7 @@ padding: 10px 0;
 }
 .post-card__terrace{
     outline: 1px solid #fff;
-    outline-offset: -10px;
+    outline-offset: -14px;
     @include mq(md) {
         outline-offset: -20px;
     }
@@ -1344,14 +1372,14 @@ padding: 10px 0;
 .post-card__takeout{
     outline: 1px solid #fff;
     outline-offset: -10px;
-    margin-top: -5px;
+    margin-top: -2px;
     @include mq(md) {
       margin-top: 0;
       outline-offset: -20px;
     }
 }
 .card-text__wrapper{
-    padding-top: 14px;
+    padding-top: 21px;
     padding-left: 14px;
     @include mq(md) {
         padding-top: 0;
