@@ -1118,6 +1118,7 @@ li {
   .instagram-card__image-container img {
     width: 231px;
     height: 231px;
+    padding-right: 6px;
   }
 }
 
@@ -1805,7 +1806,8 @@ input[type=checkbox] {
     letter-spacing: 0.9px;
   }
 }
-.privacy-text span {
+
+.privacy-text-accent {
   color: #159741;
   font-size: 16px;
   font-weight: 400;
@@ -1820,7 +1822,7 @@ input[type=checkbox] {
   text-underline-position: from-font;
 }
 @media (700px <= width) {
-  .privacy-text span {
+  .privacy-text-accent {
     font-size: 18px;
     letter-spacing: 0.9px;
   }
@@ -1852,7 +1854,7 @@ input[type=checkbox] {
   .form-button {
     width: 239px;
     height: 56px;
-    margin-top: 42px;
+    margin-top: 34px;
     margin-left: 9px;
   }
 }
@@ -1884,6 +1886,7 @@ input[type=checkbox] {
 @media (700px <= width) {
   .sns-icons {
     justify-content: center;
+    padding-bottom: 38px;
     gap: 40px;
   }
 }
@@ -1947,6 +1950,8 @@ input[type=checkbox] {
 }
 @media (700px <= width) {
   .footer-nav {
+    font-size: 18px;
+    letter-spacing: 0.54px;
     justify-content: center;
     gap: 40px;
   }
@@ -1956,6 +1961,11 @@ input[type=checkbox] {
   text-align: center;
   padding-top: 35px;
 }
+@media (700px <= width) {
+  .footer-logo {
+    padding-top: 37px;
+  }
+}
 .footer-text {
   color: #333;
   text-align: center;
@@ -1963,6 +1973,12 @@ input[type=checkbox] {
   font-weight: 400;
   letter-spacing: 0.36px;
   padding-top: 23px;
+}
+@media (700px <= width) {
+  .footer-text {
+    padding-top: 15px;
+    padding-left: 6px;
+  }
 }
 
 .page-top__btn img {

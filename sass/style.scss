@@ -1003,6 +1003,7 @@ padding-top: 27px;
         @include mq(md) {
             width: 231px;
             height: 231px;
+            padding-right: 6px;
         }
     }
 }
@@ -1596,22 +1597,22 @@ input[type="checkbox"] {
         font-size: 18px;
         letter-spacing: 0.9px;
     }
-    span{
-        color: $accent-color;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%; /* 24px */
-        letter-spacing: 0.8px;
-        text-decoration-line: underline;
-        text-decoration-style: solid;
-        text-decoration-skip-ink: none;
-        text-decoration-thickness: auto;
-        text-underline-offset: auto;
-        text-underline-position: from-font;
-        @include mq(md) {
-            font-size: 18px;
-            letter-spacing: 0.9px;
-        }
+}
+.privacy-text-accent{
+    color: $accent-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.8px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.9px;
     }
 }
 .submit-btn{
@@ -1637,7 +1638,7 @@ input[type="checkbox"] {
     @include mq(md) {
         width: 239px;
         height: 56px;
-        margin-top: 42px;
+        margin-top: 34px;
         margin-left: 9px;
     }
 
@@ -1670,6 +1671,7 @@ input[type="checkbox"] {
     gap: 40px;
     @include mq(md) {
       justify-content: center;
+      padding-bottom: 38px;
       gap: 40px;
     }
 
@@ -1727,8 +1729,10 @@ input[type="checkbox"] {
     letter-spacing: 0.48px;
     gap: 32px;
     @include mq(md) {
-      justify-content: center;
-      gap: 40px;
+        font-size: 18px;;
+        letter-spacing: 0.54px;
+        justify-content: center;
+        gap: 40px;
     }
 }
 .footer-nav-text{
@@ -1737,6 +1741,9 @@ input[type="checkbox"] {
 .footer-logo{
     text-align: center;
     padding-top: 35px;
+    @include mq(md) {
+      padding-top: 37px;
+    }
     img{
         
     }
@@ -1749,6 +1756,10 @@ input[type="checkbox"] {
     font-weight: 400;
     letter-spacing: 0.36px;
     padding-top: 23px;
+    @include mq(md) {
+        padding-top: 15px;
+        padding-left: 6px;
+    }
 }
 
 .page-top__btn{
