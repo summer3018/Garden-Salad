@@ -1684,6 +1684,11 @@ li {
     padding: 20px 31px 31px 20px;
   }
 }
+@media (700px <= width) {
+  .contact-form .margin-bottom {
+    margin-bottom: 50px;
+  }
+}
 .contact-form .form-group {
   margin-bottom: 31px;
 }
@@ -1691,6 +1696,12 @@ li {
   color: #333;
   font-size: 16px;
   font-weight: 400;
+}
+@media (700px <= width) {
+  .contact-form .form-group .form-label {
+    font-size: 18px;
+    margin-left: 1px;
+  }
 }
 .contact-form .form-group .form-label .required {
   color: #FFF;
@@ -1709,6 +1720,12 @@ li {
   border: 1px solid #2F2F2F;
   background: #fff;
   margin-top: 6px;
+}
+@media (700px <= width) {
+  .contact-form .form-group .form-input,
+  .contact-form .form-group .form-textarea {
+    padding: 11px 11px 12px 23px;
+  }
 }
 .contact-form .form-group .form-input::-moz-placeholder, .contact-form .form-group .form-textarea::-moz-placeholder {
   color: #BDBDBD;
@@ -1822,6 +1839,14 @@ input[type=checkbox] {
   padding-bottom: 14px;
   margin-top: 44px;
   margin-left: 3px;
+}
+@media (700px <= width) {
+  .form-button {
+    width: 239px;
+    height: 56px;
+    margin-top: 29px;
+    margin-left: 9px;
+  }
 }
 .form-button:hover {
   opacity: 0.7;

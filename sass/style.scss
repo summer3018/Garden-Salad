@@ -1497,6 +1497,11 @@ background-image: url(/image/sp/img：野菜\(背景\));
         max-width: 562px;
         padding: 20px 31px 31px 20px;
     }
+    .margin-bottom{
+        @include mq(md) {
+          margin-bottom: 50px;
+        }
+    }
 
     .form-group {
         margin-bottom: 31px;
@@ -1505,6 +1510,10 @@ background-image: url(/image/sp/img：野菜\(背景\));
             color: #333;
             font-size: 16px;
             font-weight: 400;
+            @include mq(md) {
+                font-size: 18px;
+                margin-left: 1px;
+            }
             
 
             .required {
@@ -1525,6 +1534,9 @@ background-image: url(/image/sp/img：野菜\(背景\));
             border: 1px solid #2F2F2F;
             background: #fff;
             margin-top: 6px;
+            @include mq(md) {
+                padding: 11px 11px 12px 23px;
+            }
             &::placeholder {
                 color: #BDBDBD;
                 font-family: "Noto Sans JP";
@@ -1616,6 +1628,12 @@ input[type="checkbox"] {
     padding-bottom: 14px;
     margin-top: 44px;
     margin-left: 3px;
+    @include mq(md) {
+        width: 239px;
+        height: 56px;
+        margin-top: 29px;
+        margin-left: 9px;
+    }
 
     &:hover {
         opacity: 0.7;
