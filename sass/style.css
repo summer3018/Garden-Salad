@@ -311,7 +311,7 @@ li {
 @media (700px <= width) {
   .about__inner {
     padding-top: 129px;
-    padding-bottom: 150px;
+    padding-bottom: 105px;
     padding-right: 180px;
     padding-left: 180px;
   }
@@ -535,6 +535,7 @@ li {
 @media (700px <= width) {
   .about-image img {
     width: 450px;
+    padding-bottom: 53px;
   }
 }
 
@@ -607,6 +608,7 @@ li {
   .menu-title__jp {
     font-size: 18px;
     letter-spacing: 0.9px;
+    padding-left: 5px;
   }
 }
 
@@ -622,7 +624,9 @@ li {
   .menu-title__en {
     font-size: 48px;
     letter-spacing: 2.4px;
-    padding-bottom: 16px;
+    padding-bottom: 7px;
+    padding-top: 1px;
+    padding-left: 7px;
   }
 }
 .menu-title__en::after {
@@ -649,7 +653,8 @@ li {
   .menu-text-pfc {
     font-size: 18px;
     letter-spacing: 0.54px;
-    margin-bottom: 105px;
+    margin-bottom: 122px;
+    margin-top: 43px;
   }
 }
 
@@ -746,8 +751,6 @@ li {
 @media (700px <= width) {
   .menu-card1__wrapper {
     display: flex;
-    justify-content: center;
-    gap: 60px;
   }
 }
 
@@ -778,7 +781,7 @@ li {
   .card1__wrapper {
     width: 592px;
     height: 367px;
-    margin-left: 60px;
+    margin-left: 54px;
     margin-bottom: 85px;
   }
 }
@@ -796,7 +799,7 @@ li {
   .menu-card1__Recommendation {
     width: 251px;
     height: 78px;
-    margin-left: 141px;
+    margin-left: 125px;
     margin-right: 170px;
     padding-bottom: 35px;
   }
@@ -814,7 +817,8 @@ li {
   .menu-card1__Recommendation-en {
     font-size: 14px;
     letter-spacing: 0.42px;
-    margin-top: 10px;
+    margin-top: 6px;
+    margin-left: 2px;
   }
 }
 
@@ -828,6 +832,7 @@ li {
   .menu-card1__Recommendation-jp {
     font-size: 24px;
     letter-spacing: 0.72px;
+    margin-left: 5px;
   }
 }
 
@@ -845,11 +850,20 @@ li {
     text-align: center;
     font-size: 30px;
     letter-spacing: 3px;
+    padding-top: 111px;
+    padding-bottom: 8px;
   }
 }
 
 .menu-card1__price {
   padding-bottom: 16px;
+}
+@media (700px <= width) {
+  .menu-card1__price {
+    padding-bottom: 23px;
+    padding-right: 10px;
+    padding-top: 2px;
+  }
 }
 
 .menu-card1__price-en {
@@ -863,6 +877,7 @@ li {
   .menu-card1__price-en {
     font-size: 24px;
     letter-spacing: 2.4px;
+    padding-right: 5px;
   }
 }
 
@@ -890,6 +905,7 @@ li {
   .menu-card1__price-tax {
     font-size: 18px;
     letter-spacing: 1.8px;
+    padding-left: 4px;
   }
 }
 
@@ -906,7 +922,6 @@ li {
     letter-spacing: 0.72px;
   }
 }
-
 @media (700px <= width) {
   .menu-card__wrap {
     display: flex; /* 横並びにする */
@@ -1775,6 +1790,12 @@ input[type=checkbox] {
   top: 5.8px;
   left: 5.8px;
 }
+@media (700px <= width) {
+  .twitter-icon__image {
+    top: 4.6px;
+    left: 4.6px;
+  }
+}
 
 .instagram-icon {
   position: relative;
@@ -1785,6 +1806,12 @@ input[type=checkbox] {
   top: 10.7px;
   left: 6.7px;
 }
+@media (700px <= width) {
+  .instagram-icon__image {
+    top: 8.5px;
+    left: 5.3px;
+  }
+}
 
 .tiktok-icon {
   position: relative;
@@ -1794,6 +1821,12 @@ input[type=checkbox] {
   position: absolute;
   top: 12px;
   left: 12px;
+}
+@media (700px <= width) {
+  .tiktok-icon__image {
+    top: 9.6px;
+    left: 9.6px;
+  }
 }
 
 .footer-nav {
