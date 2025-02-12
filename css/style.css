@@ -1075,7 +1075,7 @@ li {
   .instagram-card__title-en {
     font-size: 30px;
     letter-spacing: 1.5px;
-    padding-top: 18px;
+    padding-top: 14px;
     padding-bottom: 19px;
   }
 }
@@ -1094,8 +1094,9 @@ li {
     font-size: 18px;
     letter-spacing: 0.9px;
     padding-top: 27px;
-    padding-bottom: 35px;
-    padding-right: 27px;
+    padding-bottom: 34px;
+    padding-left: 46px;
+    padding-right: 42px;
   }
 }
 
@@ -1154,6 +1155,7 @@ li {
 @media (700px <= width) {
   .instagram-card__btn-text {
     font-size: 16px;
+    padding: 13px 42px 17px;
     cursor: pointer;
   }
 }
@@ -1194,6 +1196,7 @@ li {
   .shop-title__jp {
     font-size: 18px;
     letter-spacing: 0.9px;
+    padding-right: 5px;
   }
 }
 
@@ -1211,6 +1214,8 @@ li {
   .shop-title__en {
     font-size: 48px;
     letter-spacing: 2.4px;
+    padding-top: 8px;
+    padding-right: 5px;
   }
 }
 .shop-title__en::after {
@@ -1224,14 +1229,21 @@ li {
   transform: translateX(-50%); /*位置調整*/
   background-color: #159741; /*線の色*/
 }
+@media (700px <= width) {
+  .shop-title__en::after {
+    left: 45rem;
+    bottom: 52px;
+  }
+}
 
 .shop__access-map {
   margin-bottom: 48px;
 }
 @media (700px <= width) {
   .shop__access-map {
-    padding-left: 7px;
-    padding-right: 3px;
+    padding-top: 29px;
+    padding-left: 3px;
+    margin-bottom: 0;
   }
 }
 
@@ -1244,7 +1256,7 @@ li {
 }
 @media (700px <= width) {
   .union__image-wrap {
-    right: 323px;
+    right: 328px;
     bottom: 90px;
   }
 }
@@ -1275,8 +1287,8 @@ li {
 
 @media (700px <= width) {
   .shop-text-container {
-    margin-top: 155px;
-    margin-left: 180px;
+    margin-top: 149px;
+    margin-left: 154px;
   }
 }
 
@@ -1329,8 +1341,11 @@ li {
 }
 @media (700px <= width) {
   .shop-ruby {
+    font-size: 18px;
+    letter-spacing: 0.54px;
     padding-bottom: 25px;
-    margin-left: 10px;
+    margin-left: -1px;
+    margin-top: 6px;
   }
 }
 
@@ -1347,7 +1362,8 @@ li {
     font-size: 18px;
     line-height: 200%; /* 36px */
     letter-spacing: 0.54px;
-    padding-bottom: 17px;
+    padding-left: 26px;
+    padding-bottom: 1px;
   }
 }
 
@@ -1437,7 +1453,7 @@ li {
 }
 @media (700px <= width) {
   .post-card__container {
-    padding: 80px 147px 120px;
+    padding: 0px 147px 120px;
   }
 }
 
@@ -1471,14 +1487,19 @@ li {
 }
 @media (700px <= width) {
   .post-card__stamp {
-    top: -113px;
-    left: -120px;
+    top: -101px;
+    left: -131px;
   }
 }
 
 .post-card__terrace {
   outline: 1px solid #fff;
   outline-offset: -10px;
+}
+@media (700px <= width) {
+  .post-card__terrace {
+    outline-offset: -20px;
+  }
 }
 
 .post-card__takeout {
@@ -1489,6 +1510,7 @@ li {
 @media (700px <= width) {
   .post-card__takeout {
     margin-top: 0;
+    outline-offset: -20px;
   }
 }
 
@@ -1498,6 +1520,8 @@ li {
 }
 @media (700px <= width) {
   .card-text__wrapper {
+    padding-top: 0;
+    padding-left: 9px;
     gap: 135px;
   }
 }
@@ -1612,6 +1636,8 @@ li {
   .contact-title__en {
     font-size: 48px;
     letter-spacing: 2.4px;
+    padding-top: 8px;
+    padding-bottom: 42px;
   }
 }
 .contact-title__en::after {
@@ -1625,6 +1651,11 @@ li {
   transform: translateX(-50%); /*位置調整*/
   background-color: #159741; /*線の色*/
 }
+@media (700px <= width) {
+  .contact-title__en::after {
+    bottom: 30px;
+  }
+}
 
 .contact-text {
   color: #333;
@@ -1637,6 +1668,8 @@ li {
 @media (700px <= width) {
   .contact-text {
     text-align: center;
+    padding-left: 0;
+    padding-bottom: 28px;
   }
 }
 
@@ -1644,6 +1677,12 @@ li {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px 20px 31px 20px;
+}
+@media (700px <= width) {
+  .contact-form {
+    max-width: 562px;
+    padding: 20px 31px 31px 20px;
+  }
 }
 .contact-form .form-group {
   margin-bottom: 31px;

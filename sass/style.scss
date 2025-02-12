@@ -968,7 +968,7 @@ li{
     @include mq(md) {
         font-size: 30px;
         letter-spacing: 1.5px;
-        padding-top: 18px;
+        padding-top: 14px;
         padding-bottom: 19px;
     }
 }
@@ -983,9 +983,10 @@ li{
         text-align: center;
         font-size: 18px;
         letter-spacing: 0.9px;
-        padding-top: 27px;
-        padding-bottom: 35px;
-        padding-right: 27px;
+padding-top: 27px;
+        padding-bottom: 34px;
+        padding-left: 46px;
+        padding-right: 42px;
     }
 }
 .instagram-card__image-container{
@@ -1035,6 +1036,7 @@ li{
     cursor: pointer;
     @include mq(md) {
         font-size: 16px;
+        padding: 13px 42px 17px;
         cursor: pointer;
     }
     &:hover{
@@ -1051,7 +1053,9 @@ li{
 
 }
 // parallax2
+.parallax2{
 
+}
 // shop
 .shop{
     background: #F2F2F2;
@@ -1075,6 +1079,7 @@ li{
     @include mq(md) {
         font-size: 18px;
         letter-spacing: 0.9px;
+        padding-right: 5px;
     }
 }
 .shop-title__en{
@@ -1089,6 +1094,8 @@ li{
     @include mq(md) {
         font-size: 48px;
         letter-spacing: 2.4px;
+        padding-top: 8px;
+        padding-right: 5px;
     }
     &::after{
         content: '';
@@ -1101,13 +1108,18 @@ li{
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);/*位置調整*/
         background-color: #159741;/*線の色*/
+        @include mq(md) {
+            left: 45rem;
+            bottom: 52px;
+        }
     }
 }
 .shop__access-map{
     margin-bottom: 48px;
     @include mq(md) {
-        padding-left: 7px;
-        padding-right: 3px;
+        padding-top: 29px;
+        padding-left: 3px;
+        margin-bottom: 0;
     }
 }
 .map-image{
@@ -1116,7 +1128,7 @@ li{
 .union__image-wrap{
     position: relative;
     @include mq(md) {
-        right: 323px;
+        right: 328px;
         bottom: 90px;
     }
 }
@@ -1141,8 +1153,8 @@ li{
 }
 .shop-text-container{
     @include mq(md) {
-        margin-top: 155px;
-        margin-left: 180px;
+        margin-top: 149px;
+        margin-left: 154px;
       
     }
 }
@@ -1188,8 +1200,11 @@ li{
     letter-spacing: 0.48px;
     padding-bottom: 24px;
     @include mq(md) {
+        font-size: 18px;
+        letter-spacing: 0.54px;
         padding-bottom: 25px;
-        margin-left: 10px;
+        margin-left: -1px;
+        margin-top: 6px;
     }
 }
 
@@ -1208,7 +1223,8 @@ li{
         font-size: 18px;
         line-height: 200%; /* 36px */
         letter-spacing: 0.54px;
-        padding-bottom: 17px;
+        padding-left: 26px;
+        padding-bottom: 1px;
     }
 }
 .shop-information{
@@ -1285,7 +1301,7 @@ padding: 10px 0;
     padding-right: 16px;
     padding-bottom: 64px;
     @include mq(md) {
-        padding: 80px 147px 120px;
+        padding: 0px 147px 120px;
 
     }
 }
@@ -1313,13 +1329,16 @@ padding: 10px 0;
     top: -58px;
     left: -26px;
     @include mq(md) {
-        top: -113px;
-        left: -120px;
+        top: -101px;
+        left: -131px;
     }
 }
 .post-card__terrace{
     outline: 1px solid #fff;
     outline-offset: -10px;
+    @include mq(md) {
+        outline-offset: -20px;
+    }
 }
 .post-card__takeout{
     outline: 1px solid #fff;
@@ -1327,12 +1346,15 @@ padding: 10px 0;
     margin-top: -5px;
     @include mq(md) {
       margin-top: 0;
+      outline-offset: -20px;
     }
 }
 .card-text__wrapper{
     padding-top: 14px;
     padding-left: 14px;
     @include mq(md) {
+        padding-top: 0;
+        padding-left: 9px;
     //   display: flex;
       gap: 135px;
     }
@@ -1434,6 +1456,8 @@ background-image: url(/image/sp/img：野菜\(背景\));
     @include mq(md) {
         font-size: 48px;
         letter-spacing: 2.4px;
+        padding-top: 8px;
+        padding-bottom: 42px;
     }
     &::after{
         content: '';
@@ -1446,6 +1470,9 @@ background-image: url(/image/sp/img：野菜\(背景\));
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);/*位置調整*/
         background-color: #159741;/*線の色*/
+        @include mq(md) {
+          bottom: 30px;
+        }
     }
 }
 .contact-text{
@@ -1457,6 +1484,8 @@ background-image: url(/image/sp/img：野菜\(背景\));
     padding-bottom: 11px;
     @include mq(md) {
         text-align: center;
+        padding-left: 0;
+        padding-bottom: 28px;
     }
 }
 
@@ -1464,6 +1493,10 @@ background-image: url(/image/sp/img：野菜\(背景\));
     max-width: 600px;
     margin: 0 auto;
     padding: 20px 20px 31px 20px;
+    @include mq(md) {
+        max-width: 562px;
+        padding: 20px 31px 31px 20px;
+    }
 
     .form-group {
         margin-bottom: 31px;
