@@ -555,7 +555,6 @@ li {
 @media (min-width: 1025px) {
   .parallax__image {
     min-width: 1025px;
-    width: 1440px;
     height: 450px;
   }
 }
@@ -1273,24 +1272,22 @@ li {
 }
 
 .map-image {
-  max-width: 100%;
+  width: 100%;
 }
 
 .union__image-wrap {
   position: relative;
-  top: 5px;
 }
-@media (min-width: 1025px) {
-  .union__image-wrap {
-    right: 328px;
-    top: -90px;
-  }
-}
-
 .union-image {
   position: absolute;
   right: 64px;
   bottom: 67px;
+}
+@media (min-width: 1025px) {
+  .union-image {
+    right: 394px;
+    bottom: 162px;
+  }
 }
 
 .shop-logo {
@@ -1300,8 +1297,8 @@ li {
 }
 @media (min-width: 1025px) {
   .shop-logo {
-    right: 82px;
-    bottom: 115px;
+    right: 410px;
+    bottom: 205px;
   }
 }
 

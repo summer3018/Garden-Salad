@@ -517,7 +517,7 @@ li{
     margin-top: -23px;
     @include mq(lg) {
         min-width: 1025px;
-        width: 1440px;
+        // width: 1440px;
         height: 450px;
     }
 }
@@ -1171,28 +1171,32 @@ li{
     }
 }
 .map-image{
-    max-width: 100%;
+    width: 100%;
 }
 .union__image-wrap{
     position: relative;
-    top: 5px;
+    // top: 5px;
     @include mq(lg) {
-        right: 328px;
-        top: -90px;
+        // right: 328px;
+        // top: -90px;
     }
 }
 .union-image{
     position: absolute;
     right: 64px;
     bottom: 67px;
+    @include mq(lg) {
+        right: 394px;
+        bottom: 162px;
+    }
 }
 .shop-logo{
     position: absolute;
     right: 73px;
     bottom: 90px;
     @include mq(lg) {
-        right: 82px;
-        bottom: 115px;
+        right: 410px;
+        bottom: 205px;
     }
 }
 .shop-detail{
