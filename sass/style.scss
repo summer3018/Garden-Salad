@@ -1,13 +1,25 @@
+// @mixin mq($breakpoint) {
+//     @media (#{map-get($breakpoints, $breakpoint)} <= width) {
+//       @content;
+//     }
+//   }
+
+// $breakpoints: (
+//   sm: 500px,
+//   md: 700px,
+//   lg: 900px,
+// );
+
 @mixin mq($breakpoint) {
-    @media (#{map-get($breakpoints, $breakpoint)} <= width) {
-      @content;
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
     }
-  }
+}
 
 $breakpoints: (
-  sm: 500px,
-  md: 700px,
-  lg: 900px,
+  sm: 767px, // スマホ用
+  md: 768px, // タブレット用（768px以上）
+  lg: 1025px // PC用（1025px以上）
 );
 
 $font-black: #333;
@@ -1516,6 +1528,7 @@ background-size: 100%;
 }
 .contact-text{
     color: #333;
+    text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
