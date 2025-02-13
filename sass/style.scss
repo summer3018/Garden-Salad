@@ -30,13 +30,13 @@ li{
 }
 .pc-none{
     display: block;
-    @include mq(md) {
+    @include mq(lg) {
       display: none;
     }
 }
 .pc-block{
     display: none;
-    @include mq(md) {
+    @include mq(lg) {
       display: block;
     }
 }
@@ -46,7 +46,7 @@ li{
     background: $base-color;
     // width: 375px;
     height: 60px;
-    @include mq(md) {
+    @include mq(lg) {
         // width: 100%;
         height: 90px;
     }
@@ -55,7 +55,7 @@ li{
     padding: 15px 16px 17px 16px;
     display: flex;
     justify-content: space-between;
-    @include mq(md) {
+    @include mq(lg) {
         padding: 20px 71px 12px 33px;
 
     }
@@ -64,25 +64,25 @@ li{
 
 }
 .header__logo{
-    @include mq(md) {
+    @include mq(lg) {
         margin-left: -20px;
         margin-top: -5px;
     }
     img{
-        @include mq(md) {
+        @include mq(lg) {
             padding-left: 18px;
         }
     }
 }
 .logo__header-sp{
     display: block;
-    @include mq(md) {
+    @include mq(lg) {
       display: none;
     }
 }
 .logo__header-pc{
     display: none;
-    @include mq(md) {
+    @include mq(lg) {
       display: block;
     }
 }
@@ -97,7 +97,7 @@ li{
     justify-content: flex-end; /* 右寄せにする */
     gap: 20px; /* リストアイテム間の均等な間隔 */
     margin-left: 65px;
-    @include mq(md) {
+    @include mq(lg) {
       justify-content: flex-end;
       gap: 40px;
       margin-top: 15px;
@@ -111,7 +111,7 @@ li{
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0.42px;
-        @include mq(md) {
+        @include mq(lg) {
             font-size: 18px;
             letter-spacing: 0.54px;
         }
@@ -125,18 +125,18 @@ li{
     height: 263px;
     position: relative;
     top: -1px;
-    @include mq(md) {
+    @include mq(lg) {
         max-width: 100%;
         height: 650px;
     }
 }
 .mv-bg-image{
-    width: 100%;
+    max-width: 100%;
     height: 243px;
     background-image: url(/image/sp/img_mv\(SP\).png);
     background-position: 66px 0;
     padding-bottom: 20px;
-    @include mq(md) {
+    @include mq(lg) {
         height: 650px;
         background-image: url(/image/pc/img_mv\ \(PC\).png);
         background-position: right;
@@ -148,7 +148,7 @@ li{
     font-size: 36px;
     font-weight: 400;
     padding-left: 19px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 100px;
         line-height: 100px; /* 100% */
         padding-left: 178px;
@@ -157,7 +157,7 @@ li{
 .mv-text__en-farst{
     padding-top: 24px;
     margin-bottom: -10px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-top: 85px;
         margin-bottom: 3px;
     }
@@ -172,7 +172,7 @@ li{
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-    @include mq(md) {
+    @include mq(lg) {
         margin-top: 1px;
         font-size: 100px;
         line-height: 100px;
@@ -187,7 +187,7 @@ li{
     font-weight: 500;
     letter-spacing: 0.7px;
     padding-left: 17px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 32px;
         font-weight: 700;
         letter-spacing: 1.6px;
@@ -199,7 +199,7 @@ li{
     padding-top: 20px;
     padding-bottom: 9px;
     padding-left: 8px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-bottom: 22px;
       padding-left: 19px;
     }
@@ -209,7 +209,7 @@ li{
     height: 31px;
     background: $accent-color;
     padding: 4px 8px 7px 0px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 524px;
         height: 64px;
         padding: 9px 20px 9px 0;
@@ -229,7 +229,7 @@ li{
     background-image: url(/image/sp/pGarden\ Salad\(sp\).png);
     background-repeat: no-repeat;
     background-position: 6px 274px;
-    @include mq(md) {
+    @include mq(lg) {
       background-image: url(/image/pc/Garden\ Salad\(pc\).png);
       background-position: bottom;
     }
@@ -239,7 +239,7 @@ li{
     padding-bottom: 40px;
     padding-right: 32px;
     padding-left: 33px;
-    @include mq(md) {
+    @include mq(lg) {
       padding-top: 122px;
       padding-bottom: 83px;
     }
@@ -252,7 +252,7 @@ li{
     padding-bottom: 24px;
     letter-spacing: 1px;
     padding-left: 17px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 30px;
         font-weight: 700;
         letter-spacing: 1.5px;
@@ -267,14 +267,14 @@ li{
     font-weight: 400;
     line-height: 150%; /* 24px */
     letter-spacing: 0.48px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
     }
 }
 .concept-text{
     padding-bottom: 24px;
-    @include mq(md) {
+    @include mq(lg) {
       padding-bottom: 27px;
     }
 }
@@ -287,7 +287,7 @@ li{
     padding-top: 61px;
     padding-left: 16px;
     padding-right: 15px;
-    @include mq(md) {
+    @include mq(lg) {
       padding-top: 129px;
       padding-bottom: 105px;
       padding-right: 180px;
@@ -303,7 +303,7 @@ li{
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-bottom: 8px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
     }
@@ -318,7 +318,7 @@ li{
     letter-spacing: 1.6px;
     padding-bottom: 12px;
     margin-bottom: 56px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
     }
@@ -333,13 +333,13 @@ li{
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);/*位置調整*/
         background-color: #159741;/*線の色*/
-        @include mq(md) {
+        @include mq(lg) {
           bottom: -6px;
         }
     }
 }
 .about-text-container-01{
-    @include mq(md) {
+    @include mq(lg) {
       display: flex;
       flex-direction: row-reverse;
       align-items: center; // 横方向に中央寄せ
@@ -347,12 +347,12 @@ li{
       margin-bottom: 11px;
     }
 }.about-text-container-02{
-    @include mq(md) {
+    @include mq(lg) {
       display: flex;
       margin-bottom: 11px;
     }
 }.about-text-container-03{
-    @include mq(md) {
+    @include mq(lg) {
       display: flex;
       flex-direction: row-reverse;
       align-items: center; // 横方向に中央寄せ
@@ -362,7 +362,7 @@ li{
 .about-text-bg01{
     background-image: url(/image/sp/01.png);
     background-position: right 45px;
-    @include mq(md) {
+    @include mq(lg) {
       background-image: url(/image/pc/01\ \(pc\).png);
       background-position: right 38px top 63px;
     }
@@ -370,7 +370,7 @@ li{
 .about-text-bg02{
     background-image: url(/image/sp/02.png);
     background-position: right 79px;
-    @include mq(md) {
+    @include mq(lg) {
       background-image: url(/image/pc/02\ \(pc\).png);
       background-position: left 256px top 33px;
     }
@@ -379,7 +379,7 @@ li{
     background-image: url(/image/sp/03.png);
     background-position: right 68px;
     margin-bottom: 14px;
-    @include mq(md) {
+    @include mq(lg) {
       background-image: url(/image/pc/03\ \(pc\).png);
       background-position: right 1px top 31px;
     }
@@ -395,7 +395,7 @@ li{
     letter-spacing: 1.2px;
     padding-bottom: 16px;
     padding-left: 9px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 30px;
         letter-spacing: 1.5px;
         padding-left: 0;
@@ -405,26 +405,26 @@ li{
         font-size: 24px;
         font-weight: 700;
         letter-spacing: 1.2px;
-        @include mq(md) {
+        @include mq(lg) {
             font-size: 30px;
             letter-spacing: 1.5px;
         }
     }
 }
 .about-heading-01{
-    @include mq(md) {
+    @include mq(lg) {
         margin-top: 21px;
         margin-bottom: 7px;
     }
 }
 .about-heading-02{
-    @include mq(md) {
+    @include mq(lg) {
       margin-top: 40px;
       margin-bottom: 7px;
     }
 }
 .about-heading-03{
-    @include mq(md) {
+    @include mq(lg) {
       margin-top: -9px;
       margin-bottom: 7px;
     }
@@ -439,30 +439,30 @@ li{
     padding-bottom: 32px;
     padding-left: 9px;
     padding-right: 7px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
         padding-left: 0;
     }
 }
 .about__text01{
-    @include mq(md) {
+    @include mq(lg) {
         margin-right: 155px;
     }
 }
 .about__text02{
-    @include mq(md) {
+    @include mq(lg) {
         margin-right: 223px;
     }
 }
 .about__text03{
     margin-bottom: 13px;
-    @include mq(md) {
+    @include mq(lg) {
       margin-right: 150px;
     }
 }
 .about-image-wrpper-01{
-    @include mq(md) {
+    @include mq(lg) {
         padding-right: 67px;
         margin-top: 30px;
     }
@@ -471,7 +471,7 @@ li{
 
 }
 .about-image-wrpper-03{
-    @include mq(md) {
+    @include mq(lg) {
       margin-right: 71px;
     }
 }
@@ -480,11 +480,18 @@ li{
 .about-image{
     img{
         padding-bottom: 57px;
-        @include mq(md) {
+        max-width: 500px;
+        @include mq(sm) {
+          max-width: 699px;
+        }
+        @include mq(lg) {
             width: 450px;
             padding-bottom: 53px;
             // height: 288px;
             // object-fit: cover;
+        }
+        @include mq(lg) {
+          
         }
     }
 }
@@ -497,7 +504,7 @@ li{
     // height: 400px; /* お好みの高さに調整 */
     overflow: hidden;
     margin-top: -23px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 1440px;
         height: 450px;
     }
@@ -512,6 +519,7 @@ li{
     transform: translateY(0);
     transition: transform 0.01s ease-out;
     will-change: transform; /* パフォーマンスを向上させる */
+
 }
 
 
@@ -523,7 +531,7 @@ li{
 }
 .menu__inner{
     padding: 56px 0 111px;
-    @include mq(md) {
+    @include mq(lg) {
       padding: 152px 72px 112px;
     }
     &::after{
@@ -535,7 +543,7 @@ li{
         right: 16px;
         left: 16px;
         margin-bottom: 24px;
-        @include mq(md) {
+        @include mq(lg) {
             top: 72px;
             bottom: 72px;
             right: 72px;
@@ -551,7 +559,7 @@ li{
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-bottom: 9px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
         padding-left: 5px;
@@ -564,7 +572,7 @@ li{
     font-weight: 400;
     letter-spacing: 1.6px;
     position: relative;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
         padding-bottom: 7px;
@@ -594,7 +602,7 @@ li{
     letter-spacing: 0.48px;
     margin-top: 60px;
     margin-bottom: 19px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
         margin-bottom: 122px;
@@ -607,7 +615,7 @@ li{
     background: #F2F2F2;
     outline: 1px solid #333;
     outline-offset: -10px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 524px;
         height: 280px;
         outline-offset: -13px;
@@ -619,7 +627,7 @@ li{
     font-weight: 700;
     letter-spacing: 2.4px;
     padding-bottom: 16px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 30px;
         letter-spacing: 3px;
     }
@@ -633,7 +641,7 @@ li{
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 24px;
         letter-spacing: 2.4px;
         padding-right: 8px;
@@ -645,7 +653,7 @@ li{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 40px;
         letter-spacing: 4px;
     }
@@ -655,7 +663,7 @@ li{
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 1.8px;
     }
@@ -673,7 +681,7 @@ li{
     margin: 0 21px;
     padding-top: 1px;
 
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
         padding-top: 1px;
@@ -684,7 +692,7 @@ li{
 
 // card1
 .menu-card1__wrapper{
-    @include mq(md) {
+    @include mq(lg) {
         display: flex;
 
         // justify-content: center;
@@ -697,7 +705,7 @@ li{
     z-index: 2;
     padding-left: 24px;
     padding-right: 36px;
-    @include mq(md) {
+    @include mq(lg) {
         top: auto;
         bottom: 68px;
         left: 143px;
@@ -714,7 +722,7 @@ li{
     margin-bottom: 32px;
     position: relative;
     top: -12px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 592px;
         height: 367px;
         margin-left: 54px;
@@ -729,7 +737,7 @@ li{
     margin: 0 auto;
     position: absolute;
     left: 45px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 251px;
         height: 78px;
         margin-left: 125px;
@@ -744,7 +752,7 @@ li{
     font-weight: 400;
     letter-spacing: 0.36px;
     margin-top: 37px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 14px;
         letter-spacing: 0.42px;
         margin-top: 6px;
@@ -756,7 +764,7 @@ li{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.54px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
         margin-left: 5px;
@@ -770,7 +778,7 @@ li{
     letter-spacing: 2.4px;
     padding-top: 121px;
     padding-bottom: 13px;
-    @include mq(md) {
+    @include mq(lg) {
         text-align: center;
         font-size: 30px;
         letter-spacing: 3px;
@@ -781,7 +789,7 @@ li{
 }
 .menu-card1__price{
     padding-bottom: 16px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-bottom: 23px;
         padding-right: 10px;
         padding-top: 2px;
@@ -793,7 +801,7 @@ li{
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 24px;
         letter-spacing: 2.4px;
         padding-right: 5px;
@@ -805,7 +813,7 @@ li{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 40px;
         letter-spacing: 4px;
     }
@@ -816,7 +824,7 @@ li{
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 1.8px;
         padding-left: 4px;
@@ -837,7 +845,7 @@ li{
     margin-left: 22px;
     margin-right: 21px;
 
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
             /* padding-top: 1px; */
@@ -845,13 +853,13 @@ li{
     margin-right: 75px;
     }
     // span{
-    //     @include mq(md) {
+    //     @include mq(lg) {
     //         gap: 10px;
     //     }
     // }
 }
 .menu-card__wrap{
-    @include mq(md) {
+    @include mq(lg) {
         display: flex; /* 横並びにする */
         justify-content: center; /* 中央寄せ */
         gap: 32px; /* 要素間の余白（必要に応じて調整） */
@@ -867,7 +875,7 @@ li{
     padding-right: 6px;
     padding-left: 31px;
     padding-top: 5px;
-    @include mq(md) {
+    @include mq(lg) {
         left: 85px;
         bottom: 17px;    }
     img{
@@ -880,7 +888,7 @@ li{
     margin-bottom: -13px;
     position: relative;
     bottom: 55px;
-    @include mq(md) {
+    @include mq(lg) {
       margin-right: 0;
       bottom: 94px;
     }
@@ -889,14 +897,14 @@ li{
 .card__title2{
     padding-top: 58px;
     padding-bottom: 11px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-top: 73px;
         padding-right: 5px;
     }
 }
 .card__price2{
     padding-left: 10px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-bottom: 22px;
     }
 }
@@ -908,7 +916,7 @@ li{
     z-index: 1;
     padding-left: 34px;
     padding-top: 6px;
-    @include mq(md) {
+    @include mq(lg) {
         bottom: 17px;
         left: 29px;
     }
@@ -922,7 +930,7 @@ li{
     margin-bottom: -10px;
     position: relative;
     bottom: 55px;
-    @include mq(md) {
+    @include mq(lg) {
       margin-left: 0;
       bottom: 90px;
     }
@@ -930,13 +938,13 @@ li{
 .card__title3{
     padding-top: 56px;
     padding-bottom: 11px;
-    @include mq(md) {
+    @include mq(lg) {
       padding-top: 75px;
     }
 }
 .card__price3{
     padding-left: 10px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-bottom: 22px;
     }
 }
@@ -950,7 +958,7 @@ li{
     margin-right: 34px;
     margin-bottom: -31px;
     margin-top: 4px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 1080px;
         height: 544px;
         outline-offset: -13px;
@@ -967,7 +975,7 @@ li{
     margin-left: 57px;
     margin-right: 58px;
     margin-bottom: 24px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 360px;
         height: 73px;
         display: inline-block;
@@ -983,7 +991,7 @@ li{
     font-weight: 400;
     letter-spacing: 1.2px;
     padding: 7px 34px 11px 34px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 30px;
         letter-spacing: 1.5px;
         padding-top: 14px;
@@ -997,7 +1005,7 @@ li{
     font-weight: 400;
     letter-spacing: 0.8px;
     padding: 0 32px 22px;
-    @include mq(md) {
+    @include mq(lg) {
         text-align: center;
         font-size: 18px;
         letter-spacing: 0.9px;
@@ -1015,19 +1023,19 @@ li{
     justify-content: center;
     align-items: center;
     padding: 0 20px 2px 20px;
-    @include mq(md) {
+    @include mq(lg) {
         grid-template-columns: repeat(4, 1fr); // PC時は横1列に4枚
         grid-template-rows: 1fr; // PC時は1行
         gap: 20px;
     }
 
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         max-width: 125px;
         max-height: 125px;
 
-        @include mq(md) {
+        @include mq(lg) {
             max-width: 231px;
             max-height: 231px;
         }
@@ -1041,7 +1049,7 @@ li{
     padding-top: 4px;
     padding-bottom: 24px;
     padding-right: 10px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         padding-top: 8px;
         padding-bottom: 26px;
@@ -1062,7 +1070,7 @@ li{
     padding-bottom: 17px;
     padding-left: 37px;
     cursor: pointer;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 16px;
         padding: 13px 42px 17px;
         cursor: pointer;
@@ -1090,7 +1098,7 @@ li{
 }
 .shop__inner{
     padding-top: 45px;
-    @include mq(md) {
+    @include mq(lg) {
       padding-top: 120px;
 
     }
@@ -1104,7 +1112,7 @@ li{
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.7px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
         padding-right: 5px;
@@ -1119,7 +1127,7 @@ li{
     letter-spacing: 1.6px;
     padding-top: 10px;
     padding-bottom: 68px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
         padding-top: 8px;
@@ -1136,7 +1144,7 @@ li{
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);/*位置調整*/
         background-color: #159741;/*線の色*/
-        @include mq(md) {
+        @include mq(lg) {
             left: 45rem;
             bottom: 52px;
         }
@@ -1144,19 +1152,19 @@ li{
 }
 .shop__access-map{
     margin-bottom: 53px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-top: 29px;
         padding-left: 3px;
         margin-bottom: 0;
     }
 }
 .map-image{
-    width: 100%;
+    max-width: 100%;
 }
 .union__image-wrap{
     position: relative;
     top: 5px;
-    @include mq(md) {
+    @include mq(lg) {
         right: 328px;
         top: -90px;
     }
@@ -1170,25 +1178,25 @@ li{
     position: absolute;
     right: 73px;
     bottom: 90px;
-    @include mq(md) {
+    @include mq(lg) {
         right: 82px;
         bottom: 115px;
     }
 }
 .shop-detail{
-    @include mq(md) {
+    @include mq(lg) {
       display: flex;
     }
 }
 .shop-text-container{
-    @include mq(md) {
+    @include mq(lg) {
         margin-top: 149px;
         margin-left: 154px;
       
     }
 }
 .shop__name-wrapper{
-    @include mq(md) {
+    @include mq(lg) {
         display: flex;
     }
 }
@@ -1199,7 +1207,7 @@ li{
     font-weight: 400;
     line-height: 100%; /* 32px */
     letter-spacing: 0.96px;
-    @include mq(md) {
+    @include mq(lg) {
       margin: 0;
       padding-left: 30px;
     }
@@ -1210,7 +1218,7 @@ li{
         font-weight: 400;
         line-height: 100%; /* 18px */
         padding-right: 4px;
-        @include mq(md) {
+        @include mq(lg) {
             color: #333;
             text-align: center;
             font-family: Reross;
@@ -1228,7 +1236,7 @@ li{
     font-weight: 400;
     letter-spacing: 0.48px;
     padding-bottom: 24px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
         padding-bottom: 25px;
@@ -1238,7 +1246,7 @@ li{
 }
 
 .shop-text-wrapper{
-    @include mq(md) {
+    @include mq(lg) {
     }
 }
 .shop-adress{
@@ -1249,7 +1257,7 @@ li{
     padding-left: 28px;
     padding-top: 2px;
     padding-bottom: 2px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         line-height: 200%; /* 36px */
         letter-spacing: 0.54px;
@@ -1265,7 +1273,7 @@ li{
     padding-left: 28px;
     padding-bottom: 40px;
     padding-top: 4px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         line-height: 200%; /* 36px */
         letter-spacing: 0.54px;
@@ -1276,8 +1284,8 @@ font-size: 16px;
 line-height: 170%; /* 27.2px */
 letter-spacing: 0.48px;
 padding: 0px 26px 34px;
-@include mq(md) {
-        width: 100%;
+@include mq(lg) {
+        max-width: 100%;
         border-collapse: collapse;
         margin-top: 10px;
         font-size: 18px;
@@ -1295,26 +1303,26 @@ padding: 10px 0;
     text-align: left;
     // padding-left: 28px;
     vertical-align: top;
-    @include mq(md) {
+    @include mq(lg) {
         width: 20%;
         padding: 10px;
     }
 }
 .shop-date{
-    @include mq(md) {
+    @include mq(lg) {
         padding: 10px 60px 10px 10px;
         // line-height: 150%;
     }
 }
 .shop-date__access{
-    @include mq(md) {
+    @include mq(lg) {
       line-height: 200%;
     }
 }
 .shop-image__exterior{
     padding: 0 16px;
     margin-bottom: 100px;
-    @include mq(md) {
+    @include mq(lg) {
         text-align: right;
         margin: 0 0 0 auto;
         padding-right: 0;
@@ -1330,7 +1338,7 @@ padding: 10px 0;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 64px;
-    @include mq(md) {
+    @include mq(lg) {
         padding: 0px 147px 120px;
 
     }
@@ -1339,7 +1347,7 @@ padding: 10px 0;
     background: #fff;
     padding: 16px 10px 113px 10px;
     box-shadow: 0px 4px 20px 0px rgba(161, 159, 159, 0.60);
-    @include mq(md) {
+    @include mq(lg) {
         padding-top: 30px;
         padding-right: 32px;
         padding-left: 34px;
@@ -1349,7 +1357,7 @@ padding: 10px 0;
 }
 .post-card__images{
     position: relative;
-    @include mq(md) {
+    @include mq(lg) {
       display: flex;
     //   justify-content: center;
     }
@@ -1358,7 +1366,7 @@ padding: 10px 0;
     position: absolute;
     top: -58px;
     left: -26px;
-    @include mq(md) {
+    @include mq(lg) {
         top: -101px;
         left: -131px;
     }
@@ -1366,7 +1374,7 @@ padding: 10px 0;
 .post-card__terrace{
     outline: 1px solid #fff;
     outline-offset: -14px;
-    @include mq(md) {
+    @include mq(lg) {
         outline-offset: -20px;
     }
 }
@@ -1374,7 +1382,7 @@ padding: 10px 0;
     outline: 1px solid #fff;
     outline-offset: -10px;
     margin-top: -2px;
-    @include mq(md) {
+    @include mq(lg) {
       margin-top: 0;
       outline-offset: -20px;
     }
@@ -1382,7 +1390,7 @@ padding: 10px 0;
 .card-text__wrapper{
     padding-top: 21px;
     padding-left: 14px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-top: 0;
         padding-left: 9px;
     //   display: flex;
@@ -1390,7 +1398,7 @@ padding: 10px 0;
     }
 }
 .test-wrap{
-    @include mq(md) {
+    @include mq(lg) {
       
     }
 }
@@ -1400,7 +1408,7 @@ padding: 10px 0;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1.5px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
         float: left;
@@ -1419,7 +1427,7 @@ padding: 10px 0;
     text-decoration-thickness: 1px;
     text-decoration-color: #4F4F4F;
     text-underline-offset: 12px;
-    @include mq(md) {
+    @include mq(lg) {
       text-align: left;
       margin-right: 220px;
       padding-top: 45px;
@@ -1428,7 +1436,7 @@ padding: 10px 0;
 }
 .card-text-image{
     position: relative;
-    @include mq(md) {
+    @include mq(lg) {
       position: relative;
       right: 20px;
     }
@@ -1441,19 +1449,20 @@ padding: 10px 0;
 // contact
 .contact{
 background-image: url(/image/sp/img：野菜\(背景\).png);
-@include mq(md) {
+background-size: 100%;
+@include mq(lg) {
   background-image: url(/image/pc/img：野菜.png);
 }
 }
 .contact__inner{
     padding: 64px 16px;
-    @include mq(md) {
+    @include mq(lg) {
         padding: 130px 0;
     }
 }
 .contact__wrapper{
     background: #F2F2F2;
-    @include mq(md) {
+    @include mq(lg) {
         width: 800px;
         height: 1032px;
         margin: 0 auto;
@@ -1469,7 +1478,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-top: 64px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
     }
@@ -1483,7 +1492,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     letter-spacing: 1.6px;
     padding-top: 10px;
     padding-bottom: 58px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
         padding-top: 8px;
@@ -1500,7 +1509,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);/*位置調整*/
         background-color: #159741;/*線の色*/
-        @include mq(md) {
+        @include mq(lg) {
           bottom: 30px;
         }
     }
@@ -1512,7 +1521,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     letter-spacing: 0.48px;
     padding-left: 16px;
     padding-bottom: 11px;
-    @include mq(md) {
+    @include mq(lg) {
         text-align: center;
         padding-left: 0;
         padding-bottom: 28px;
@@ -1523,12 +1532,12 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
     max-width: 600px;
     margin: 0 auto;
     padding: 20px 20px 31px 17px;
-    @include mq(md) {
+    @include mq(lg) {
         max-width: 562px;
         padding: 20px 31px 31px 20px;
     }
     .margin-bottom{
-        @include mq(md) {
+        @include mq(lg) {
           margin-bottom: 50px;
         }
     }
@@ -1540,7 +1549,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
             color: #333;
             font-size: 16px;
             font-weight: 400;
-            @include mq(md) {
+            @include mq(lg) {
                 font-size: 18px;
                 margin-left: 1px;
             }
@@ -1564,7 +1573,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
             border: 1px solid #2F2F2F;
             background: #fff;
             margin-top: 6px;
-            @include mq(md) {
+            @include mq(lg) {
                 padding: 11px 11px 12px 23px;
             }
             &::placeholder {
@@ -1588,7 +1597,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
 }
 
 .form-textarea {
-    width: 100%;
+    max-width: 100%;
     height: 150px;
     background: #fff;
     padding: 10px;
@@ -1605,7 +1614,7 @@ background-image: url(/image/sp/img：野菜\(背景\).png);
 }
  
 .form-group2{
-    @include mq(md) {
+    @include mq(lg) {
       text-align: center;
       margin-top: -13px;
       margin-left: 33px;
@@ -1615,14 +1624,14 @@ input[type="checkbox"] {
     width: 30px;
     height: 30px;
     margin-right: 5px;
-    @include mq(md) {
+    @include mq(lg) {
         margin-right: 10px;
         margin-top: 8px;
     }
 }
 .privacy-text{
     padding-bottom: 5px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
     }
@@ -1639,13 +1648,13 @@ input[type="checkbox"] {
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
     }
 }
 .submit-btn{
-    @include mq(md) {
+    @include mq(lg) {
       text-align: center;
     }
 }
@@ -1664,7 +1673,7 @@ input[type="checkbox"] {
     padding-bottom: 14px;
     margin-top: 32px;
     margin-left: 5px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 239px;
         height: 56px;
         margin-top: 34px;
@@ -1682,13 +1691,13 @@ input[type="checkbox"] {
 }
 .footer__inner{
     padding: 48px 46px 10px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-top: 56px;
         padding-bottom: 9px;
     }
 }
 .sns-icons__wrpper{
-@include mq(md) {
+@include mq(lg) {
   
 }
 }
@@ -1698,7 +1707,7 @@ input[type="checkbox"] {
     padding-right: 27px;
     padding-bottom: 40px;
     gap: 40px;
-    @include mq(md) {
+    @include mq(lg) {
       justify-content: center;
       padding-bottom: 38px;
       gap: 40px;
@@ -1712,7 +1721,7 @@ input[type="checkbox"] {
     position: absolute;
     top: 5.8px;
     left: 5.8px;
-    @include mq(md) {
+    @include mq(lg) {
       top: 4.6px;
       left: 4.6px;
     }
@@ -1724,7 +1733,7 @@ input[type="checkbox"] {
     position: absolute;
     top: 10.7px;
     left: 6.7px;
-    @include mq(md) {
+    @include mq(lg) {
         top: 8.5px;
         left: 5.3px;
       }
@@ -1736,7 +1745,7 @@ input[type="checkbox"] {
     position: absolute;
     top: 12px;
     left: 12px;
-    @include mq(md) {
+    @include mq(lg) {
       top: 9.6px;
       left: 9.6px;
     }
@@ -1757,7 +1766,7 @@ input[type="checkbox"] {
     font-weight: 400;
     letter-spacing: 0.48px;
     gap: 32px;
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 18px;;
         letter-spacing: 0.54px;
         justify-content: center;
@@ -1770,7 +1779,7 @@ input[type="checkbox"] {
 .footer-logo{
     text-align: center;
     padding-top: 35px;
-    @include mq(md) {
+    @include mq(lg) {
       padding-top: 37px;
     }
     img{
@@ -1785,7 +1794,7 @@ input[type="checkbox"] {
     font-weight: 400;
     letter-spacing: 0.36px;
     padding-top: 23px;
-    @include mq(md) {
+    @include mq(lg) {
         padding-top: 15px;
         padding-left: 6px;
     }
