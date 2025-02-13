@@ -523,14 +523,7 @@ li{
 }
 
 .parallax-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    transform: translateY(0);
-    transition: transform 0.01s ease-out;
-    will-change: transform; /* パフォーマンスを向上させる */
+
 
 }
 
@@ -1170,6 +1163,12 @@ li{
         margin-bottom: 0;
     }
 }
+.map-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover; /* 必要なら画像をトリミングしてフィットさせる */
+}
+
 .map-image{
     width: 100%;
 }
