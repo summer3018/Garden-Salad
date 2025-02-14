@@ -1519,7 +1519,7 @@ li {
 .post-card__container {
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 64px;
+  padding-bottom: 11px;
 }
 @media (min-width: 1025px) {
   .post-card__container {
@@ -1647,25 +1647,47 @@ li {
   top: -10px;
   left: 22px;
 }
-.card-text-image::before {
+
+.Green-underline:nth-of-type(2) {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+}
+
+.Green-underline:nth-of-type(3) {
+  position: absolute;
+  top: 28px;
+  left: 23px;
+}
+
+.green-text {
+  color: #159741;
+  font-family: Satisfy;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  padding-left: 23px;
+  transform: rotate(-6deg);
+}
+.green-text::before {
   content: "";
   position: absolute;
   width: 285px;
   height: 1px;
-  background-color: red;
+  background-color: #159741;
   top: 43px;
   left: 23px;
-  transform: rotate(-7deg);
+  transform: rotate(-1deg);
 }
-.card-text-image::after {
+.green-text::after {
   content: "";
   position: absolute;
   width: 285px;
   height: 1px;
-  background-color: red;
-  transform: rotate(-7deg);
-  top: 49px;
-  left: 23px;
+  background-color: #159741;
+  transform: rotate(-1deg);
+  top: 48px;
+  left: 22px;
 }
 
 .contact {
