@@ -1234,7 +1234,7 @@ li{
 .union-image{
     position: absolute;
     right: 64px;
-    bottom: 67px;
+    bottom: 62px;
     @include mq(lg) {
         right: 394px;
         bottom: 162px;
@@ -1243,7 +1243,7 @@ li{
 .shop-logo{
     position: absolute;
     right: 73px;
-    bottom: 90px;
+    bottom: 85px;
     @include mq(lg) {
         right: 410px;
         bottom: 205px;
@@ -1514,6 +1514,29 @@ padding: 10px 0;
         top: -10px;
         left: 22px;
     }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 285px;
+        height: 1px;
+        background-color: red;
+        top: 43px;
+        left: 23px;
+        transform: rotate(-7deg)
+    }
+
+    // 2本目の線（擬似要素 ::after）
+    &::after {
+        content: "";
+        position: absolute;
+        width: 285px;
+        height: 1px;
+        background-color: red;
+        transform: rotate(-7deg);
+        top: 49px;
+        left: 23px;
+
+    }
 }
 // contact
 .contact{
@@ -1585,7 +1608,6 @@ background-size: 100%;
 }
 .contact-text{
     color: #333;
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
@@ -1604,7 +1626,7 @@ background-size: 100%;
     padding: 20px 20px 31px 17px;
     @include mq(lg) {
         max-width: 562px;
-        padding: 20px 31px 31px 20px;
+        padding: 20px 22px 31px 20px;
     }
     .margin-bottom{
         @include mq(lg) {
@@ -1644,6 +1666,7 @@ background-size: 100%;
             background: #fff;
             margin-top: 6px;
             @include mq(lg) {
+                width: 100%;
                 padding: 11px 11px 12px 23px;
             }
             &::placeholder {
@@ -1666,8 +1689,9 @@ background-size: 100%;
     }
 }
 
+
 .form-textarea {
-    max-width: 100%;
+    max-width: 102%;
     height: 150px;
     background: #fff;
     padding: 10px;
@@ -1675,11 +1699,8 @@ background-size: 100%;
     border: 1px solid #2F2F2F;
     &::placeholder {
         color: #BDBDBD;
-        font-family: "Noto Sans JP";
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
       }
 }
  
@@ -1691,7 +1712,7 @@ background-size: 100%;
     }
 }
 
-label {
+.checkbox-label {
     display: inline-flex;
     align-items: center; // チェックボックスとテキストを揃える
 }
@@ -1699,9 +1720,9 @@ label {
 input[type="checkbox"] {
     width: 30px;
     height: 30px;
-    margin-right: 5px;
+    margin-right: 12px;
     @include mq(lg) {
-        margin-right: 10px;
+        margin-right: 20px;
         margin-top: 8px;
     }
 }
@@ -1710,10 +1731,14 @@ input[type="checkbox"] {
     padding-bottom: 5px;
     display: inline-block;
     position: relative;
-    top: -5px; // 5px上に移動
+    top: -1px;
+    left: 3px;
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
+        top: 6px;
+        right: 9px;
+    
     }
 }
 
@@ -1757,8 +1782,8 @@ input[type="checkbox"] {
     @include mq(lg) {
         width: 239px;
         height: 56px;
-        margin-top: 34px;
-        margin-left: 9px;
+        margin-top: 36px;
+        margin-left: 0px;
     }
 
     &:hover {

@@ -1324,7 +1324,7 @@ li {
 .union-image {
   position: absolute;
   right: 64px;
-  bottom: 67px;
+  bottom: 62px;
 }
 @media (min-width: 1025px) {
   .union-image {
@@ -1336,7 +1336,7 @@ li {
 .shop-logo {
   position: absolute;
   right: 73px;
-  bottom: 90px;
+  bottom: 85px;
 }
 @media (min-width: 1025px) {
   .shop-logo {
@@ -1647,6 +1647,26 @@ li {
   top: -10px;
   left: 22px;
 }
+.card-text-image::before {
+  content: "";
+  position: absolute;
+  width: 285px;
+  height: 1px;
+  background-color: red;
+  top: 43px;
+  left: 23px;
+  transform: rotate(-7deg);
+}
+.card-text-image::after {
+  content: "";
+  position: absolute;
+  width: 285px;
+  height: 1px;
+  background-color: red;
+  transform: rotate(-7deg);
+  top: 49px;
+  left: 23px;
+}
 
 .contact {
   background-image: url(/image/sp/img：野菜\(背景\).png);
@@ -1730,7 +1750,6 @@ li {
 
 .contact-text {
   color: #333;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
@@ -1753,7 +1772,7 @@ li {
 @media (min-width: 1025px) {
   .contact-form {
     max-width: 562px;
-    padding: 20px 31px 31px 20px;
+    padding: 20px 22px 31px 20px;
   }
 }
 @media (min-width: 1025px) {
@@ -1796,6 +1815,7 @@ li {
 @media (min-width: 1025px) {
   .contact-form .form-group .form-input,
   .contact-form .form-group .form-textarea {
+    width: 100%;
     padding: 11px 11px 12px 23px;
   }
 }
@@ -1824,7 +1844,7 @@ li {
 }
 
 .form-textarea {
-  max-width: 100%;
+  max-width: 102%;
   height: 150px;
   background: #fff;
   padding: 10px;
@@ -1833,19 +1853,13 @@ li {
 }
 .form-textarea::-moz-placeholder {
   color: #BDBDBD;
-  font-family: "Noto Sans JP";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .form-textarea::placeholder {
   color: #BDBDBD;
-  font-family: "Noto Sans JP";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 @media (min-width: 1025px) {
@@ -1856,7 +1870,7 @@ li {
   }
 }
 
-label {
+.checkbox-label {
   display: inline-flex;
   align-items: center;
 }
@@ -1864,11 +1878,11 @@ label {
 input[type=checkbox] {
   width: 30px;
   height: 30px;
-  margin-right: 5px;
+  margin-right: 12px;
 }
 @media (min-width: 1025px) {
   input[type=checkbox] {
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 8px;
   }
 }
@@ -1877,12 +1891,15 @@ input[type=checkbox] {
   padding-bottom: 5px;
   display: inline-block;
   position: relative;
-  top: -5px;
+  top: -1px;
+  left: 3px;
 }
 @media (min-width: 1025px) {
   .privacy-text {
     font-size: 18px;
     letter-spacing: 0.9px;
+    top: 6px;
+    right: 9px;
   }
 }
 
@@ -1933,8 +1950,8 @@ input[type=checkbox] {
   .form-button {
     width: 239px;
     height: 56px;
-    margin-top: 34px;
-    margin-left: 9px;
+    margin-top: 36px;
+    margin-left: 0px;
   }
 }
 .form-button:hover {
