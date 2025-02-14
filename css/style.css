@@ -1192,6 +1192,7 @@ li {
 }
 
 .instagram-card__btn-text {
+  all: unset; /* ブラウザのデフォルトスタイルをリセット */
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -1214,14 +1215,8 @@ li {
     padding-bottom: 17px;
     padding-right: 77px;
     padding-left: 58px;
-    /* padding: 13px 58px 17px 77px; */
-    cursor: pointer;
     margin-right: 18px;
   }
-}
-.instagram-card__btn-text:hover {
-  background: #333;
-  color: #fff;
 }
 
 .external-icon {
