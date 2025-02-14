@@ -570,13 +570,6 @@ li {
   will-change: transform; /* パフォーマンスを向上させる */
 }
 
-.test {
-  width: 100%;
-  height: 3px;
-  background: #d40000;
-  transform: rotate(-45deg);
-}
-
 .menu {
   background: #2F2F2F;
   position: relative;
@@ -1128,8 +1121,8 @@ li {
     content: "";
     position: absolute;
     width: 35px;
-    height: 2px;
-    background-color: #f11f8d;
+    height: 1px;
+    background-color: #333;
     transform: rotate(54deg);
   }
   .instagram-card__text::before {
@@ -1139,11 +1132,11 @@ li {
     margin-left: 22%;
   }
   .instagram-card__text::after {
-    top: 0;
-    right: 10px;
+    top: 1px;
+    right: 12px;
     transform: rotate(-54deg);
-    margin-top: 41px;
-    margin-right: 22%;
+    margin-top: 39px;
+    margin-right: 21%;
   }
 }
 
@@ -1160,7 +1153,9 @@ li {
   .instagram-card__image-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    gap: 20px;
+    gap: 16px;
+    padding-left: 47px;
+    padding-right: 62px;
   }
 }
 .instagram-card__image-container img {
@@ -1187,12 +1182,13 @@ li {
 @media (min-width: 1025px) {
   .instagram-card__ID {
     font-size: 18px;
-    padding-top: 8px;
+    padding-top: 7px;
     padding-bottom: 26px;
   }
 }
 
 .instagram-card__btn-text {
+  position: relative;
   display: inline-flex;
   align-items: center;
   border: 1px solid #333;
@@ -1210,8 +1206,13 @@ li {
 @media (min-width: 1025px) {
   .instagram-card__btn-text {
     font-size: 16px;
-    padding: 13px 42px 17px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-right: 77px;
+    padding-left: 58px;
+    /* padding: 13px 58px 17px 77px; */
     cursor: pointer;
+    margin-right: 18px;
   }
 }
 .instagram-card__btn-text:hover {
@@ -1225,6 +1226,17 @@ li {
   margin-bottom: -3px;
   margin-left: 16px;
   margin-right: 17px;
+}
+@media (min-width: 768px) {
+  .external-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -2px;
+    margin-left: 113px;
+    position: absolute;
+    top: 17px;
+    left: 134px;
+  }
 }
 
 .shop {
@@ -1470,19 +1482,22 @@ li {
 @media (min-width: 1025px) {
   .shop-header {
     width: 20%;
-    padding: 10px;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-left: 11px;
   }
 }
 
 @media (min-width: 1025px) {
   .shop-date {
-    padding: 10px 60px 10px 10px;
+    padding: 10px 80px 0px 6px;
   }
 }
 
 @media (min-width: 1025px) {
   .shop-date__access {
-    line-height: 200%;
+    padding-top: 7px;
+    line-height: 162%;
   }
 }
 
@@ -1843,6 +1858,11 @@ li {
   }
 }
 
+label {
+  display: inline-flex;
+  align-items: center;
+}
+
 input[type=checkbox] {
   width: 30px;
   height: 30px;
@@ -1857,6 +1877,9 @@ input[type=checkbox] {
 
 .privacy-text {
   padding-bottom: 5px;
+  display: inline-block;
+  position: relative;
+  top: -5px;
 }
 @media (min-width: 1025px) {
   .privacy-text {
