@@ -105,6 +105,9 @@ li {
   font-weight: 400;
   letter-spacing: 0.42px;
 }
+.nav_header-list a:hover {
+  border-bottom: solid 2px #159741;
+}
 @media (min-width: 1025px) {
   .nav_header-list a {
     font-size: 18px;
@@ -1921,6 +1924,9 @@ input[type=checkbox] {
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
+.privacy-text-accent:hover {
+  opacity: 0.7;
+}
 @media (min-width: 1025px) {
   .privacy-text-accent {
     font-size: 18px;
@@ -1993,6 +1999,9 @@ input[type=checkbox] {
 
 .twitter-icon {
   position: relative;
+}
+.twitter-icon:hover {
+  background-color: #fff;
 }
 
 .twitter-icon__image {
