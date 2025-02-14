@@ -533,6 +533,12 @@ li{
     will-change: transform; /* パフォーマンスを向上させる */
 
 }
+.test{
+    width:100%;
+    height:3px;
+    background:#d40000;
+    transform: rotate(-45deg);
+}
 
 
 // menu
@@ -739,6 +745,7 @@ li{
         height: 367px;
         margin-left: 54px;
         margin-bottom: 85px;
+        top: -17px;
     }
 }
 .menu-card1__Recommendation{
@@ -875,6 +882,7 @@ li{
         display: flex; /* 横並びにする */
         justify-content: center; /* 中央寄せ */
         gap: 32px; /* 要素間の余白（必要に応じて調整） */
+        margin-bottom: -6px;
     }
 }
 // card2
@@ -888,8 +896,9 @@ li{
     padding-left: 31px;
     padding-top: 5px;
     @include mq(lg) {
-        left: 85px;
-        bottom: 17px;    }
+        left: 54px;
+        bottom: 22px;
+    }
     img{
         
     }
@@ -901,8 +910,8 @@ li{
     position: relative;
     bottom: 55px;
     @include mq(lg) {
-      margin-right: 0;
-      bottom: 94px;
+        margin-right: 3px;
+        bottom: 98px;
     }
 
 }
@@ -929,8 +938,8 @@ li{
     padding-left: 34px;
     padding-top: 6px;
     @include mq(lg) {
-        bottom: 17px;
-        left: 29px;
+        bottom: 23px;
+        left: -9px;
     }
     img{
         
@@ -943,8 +952,8 @@ li{
     position: relative;
     bottom: 55px;
     @include mq(lg) {
-      margin-left: 0;
-      bottom: 90px;
+        margin-left: -3px;
+        bottom: 96px;
     }
 }
 .card__title3{
@@ -1010,13 +1019,15 @@ li{
         padding-bottom: 19px;
     }
 }
-.instagram-card__text{
+.instagram-card__text {
     color: #333;
     text-align: justify;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.8px;
     padding: 0 32px 22px;
+    position: relative; // 追加
+
     @include mq(lg) {
         text-align: center;
         font-size: 18px;
@@ -1025,8 +1036,35 @@ li{
         padding-bottom: 34px;
         padding-left: 46px;
         padding-right: 42px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 35px; // 斜め線の長さ
+            height: 2px; // 斜め線の太さ
+            background-color: #f11f8d;
+            transform: rotate(54deg);
+            
+        }
+
+        &::before {
+            left: -2px;
+            top: -1px;
+            margin-top: 41px;
+            margin-left: 22%;
+        }
+
+        &::after {
+            top: 0;
+            right: 10px;
+            transform: rotate(-54deg);
+            margin-top: 41px;
+            margin-right: 22%;
+        }
     }
 }
+
 .instagram-card__image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); // スマホ時は2列

@@ -570,6 +570,13 @@ li {
   will-change: transform; /* パフォーマンスを向上させる */
 }
 
+.test {
+  width: 100%;
+  height: 3px;
+  background: #d40000;
+  transform: rotate(-45deg);
+}
+
 .menu {
   background: #2F2F2F;
   position: relative;
@@ -794,6 +801,7 @@ li {
     height: 367px;
     margin-left: 54px;
     margin-bottom: 85px;
+    top: -17px;
   }
 }
 
@@ -946,6 +954,7 @@ li {
     display: flex; /* 横並びにする */
     justify-content: center; /* 中央寄せ */
     gap: 32px; /* 要素間の余白（必要に応じて調整） */
+    margin-bottom: -6px;
   }
 }
 
@@ -958,8 +967,8 @@ li {
 }
 @media (min-width: 1025px) {
   .menu-image__2 {
-    left: 85px;
-    bottom: 17px;
+    left: 54px;
+    bottom: 22px;
   }
 }
 .card2-text__wrapper {
@@ -971,8 +980,8 @@ li {
 }
 @media (min-width: 1025px) {
   .card2-text__wrapper {
-    margin-right: 0;
-    bottom: 94px;
+    margin-right: 3px;
+    bottom: 98px;
   }
 }
 
@@ -1004,8 +1013,8 @@ li {
 }
 @media (min-width: 1025px) {
   .menu-image__3 {
-    bottom: 17px;
-    left: 29px;
+    bottom: 23px;
+    left: -9px;
   }
 }
 .card3-text__wrapper {
@@ -1017,8 +1026,8 @@ li {
 }
 @media (min-width: 1025px) {
   .card3-text__wrapper {
-    margin-left: 0;
-    bottom: 90px;
+    margin-left: -3px;
+    bottom: 96px;
   }
 }
 
@@ -1103,6 +1112,7 @@ li {
   font-weight: 400;
   letter-spacing: 0.8px;
   padding: 0 32px 22px;
+  position: relative;
 }
 @media (min-width: 1025px) {
   .instagram-card__text {
@@ -1113,6 +1123,27 @@ li {
     padding-bottom: 34px;
     padding-left: 46px;
     padding-right: 42px;
+  }
+  .instagram-card__text::before, .instagram-card__text::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #f11f8d;
+    transform: rotate(54deg);
+  }
+  .instagram-card__text::before {
+    left: -2px;
+    top: -1px;
+    margin-top: 41px;
+    margin-left: 22%;
+  }
+  .instagram-card__text::after {
+    top: 0;
+    right: 10px;
+    transform: rotate(-54deg);
+    margin-top: 41px;
+    margin-right: 22%;
   }
 }
 
