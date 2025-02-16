@@ -1924,20 +1924,25 @@ input[type="checkbox"] {
         padding-left: 6px;
     }
 }
+.page-top {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17px; // 必要に応じて調整
+    @include mq(md) {
+      padding-right: 60px;
+    }
+}
 
 .page-top__btn {
-    position: fixed; /* 画面に固定 */
-    bottom: 25px;
-    right: 17px;
     width: 68px;
-    height: 55px;/* ボタンの高さ */
+    height: 0px;
+    margin-top: -33px;
     cursor: pointer;
-    z-index: 1000; /* 他の要素より上に配置 */
+    /* 他の要素より上に配置 */
     @include mq(md) {
-        bottom: 20px;
-        right: 60px;
         width: 120px;
-        height: 120px;
+        /* height: 120px; */
+        margin-top: -60px;
     }
 }
 
