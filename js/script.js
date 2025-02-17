@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" }); // スムーズにトップへスクロール
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const submitButton = document.querySelector(".form-button");
+
+    submitButton.addEventListener("click", function () {
+        submitButton.disabled = true;
+    });
+});
+

@@ -1643,11 +1643,6 @@ background-size: 100%;
         max-width: 562px;
         padding: 20px 22px 31px 20px;
     }
-    .margin-bottom{
-        @include mq(lg) {
-          margin-bottom: 50px;
-        }
-    }
 
     .form-group {
         margin-bottom: 31px;
@@ -1818,6 +1813,12 @@ input[type="checkbox"] {
 
     &:hover {
         opacity: 0.7;
+    }
+    &:disabled{
+        background: #BDBDBD;
+        cursor: not-allowed;
+        opacity: 0.7;
+
     }
 }
 // footer
