@@ -1881,7 +1881,7 @@ li {
 }
 
 @media (min-width: 1025px) {
-  .form-group2 {
+  .form-checkbox {
     text-align: center;
     margin-top: -13px;
     margin-left: 33px;
