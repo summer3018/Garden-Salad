@@ -1699,9 +1699,10 @@ background-size: 100%;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                &:focus{
-                    display: none;
-                }
+              }
+
+              &:focus::placeholder{
+                opacity: 0;
               }
         }
 

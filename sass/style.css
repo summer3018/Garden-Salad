@@ -1854,12 +1854,12 @@ li {
   font-weight: 400;
   line-height: normal;
 }
-.contact-form .form-group .form-input::-moz-placeholder:focus, .contact-form .form-group .form-textarea::-moz-placeholder:focus {
-  display: none;
+.contact-form .form-group .form-input:focus::-moz-placeholder, .contact-form .form-group .form-textarea:focus::-moz-placeholder {
+  opacity: 0;
 }
-.contact-form .form-group .form-input::placeholder:focus,
-.contact-form .form-group .form-textarea::placeholder:focus {
-  display: none;
+.contact-form .form-group .form-input:focus::placeholder,
+.contact-form .form-group .form-textarea:focus::placeholder {
+  opacity: 0;
 }
 .contact-form .form-group .form-textarea {
   height: 160px;
