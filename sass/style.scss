@@ -1632,7 +1632,9 @@ background-size: 100%;
         padding-bottom: 28px;
     }
 }
+.contact-form{
 
+}
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -1682,6 +1684,14 @@ background-size: 100%;
                 width: 100%;
                 padding: 11px 11px 12px 23px;
             }
+            &:hover{
+                border: 1px solid #159741;
+                box-shadow: 0px 0px 4px 0px #159741;
+            }
+            &:focus{
+                border: 1px solid #159741;
+                box-shadow: 0px 0px 4px 0px #159741;
+            }
             &::placeholder {
                 color: #BDBDBD;
                 font-family: "Noto Sans JP";
@@ -1689,6 +1699,9 @@ background-size: 100%;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                &:focus{
+                    display: none;
+                }
               }
         }
 

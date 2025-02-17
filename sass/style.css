@@ -1827,6 +1827,16 @@ li {
     padding: 11px 11px 12px 23px;
   }
 }
+.contact-form .form-group .form-input:hover,
+.contact-form .form-group .form-textarea:hover {
+  border: 1px solid #159741;
+  box-shadow: 0px 0px 4px 0px #159741;
+}
+.contact-form .form-group .form-input:focus,
+.contact-form .form-group .form-textarea:focus {
+  border: 1px solid #159741;
+  box-shadow: 0px 0px 4px 0px #159741;
+}
 .contact-form .form-group .form-input::-moz-placeholder, .contact-form .form-group .form-textarea::-moz-placeholder {
   color: #BDBDBD;
   font-family: "Noto Sans JP";
@@ -1843,6 +1853,13 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.contact-form .form-group .form-input::-moz-placeholder:focus, .contact-form .form-group .form-textarea::-moz-placeholder:focus {
+  display: none;
+}
+.contact-form .form-group .form-input::placeholder:focus,
+.contact-form .form-group .form-textarea::placeholder:focus {
+  display: none;
 }
 .contact-form .form-group .form-textarea {
   height: 160px;
