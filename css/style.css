@@ -575,8 +575,14 @@ li {
 
 .menu {
   background: #2F2F2F;
-  position: relative;
+  outline: 1px solid #FFF;
+  outline-offset: -24px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .menu {
+    outline-offset: -72px;
+  }
 }
 
 .menu__inner {
@@ -585,24 +591,6 @@ li {
 @media (min-width: 1025px) {
   .menu__inner {
     padding: 152px 72px 112px;
-  }
-}
-.menu__inner::after {
-  position: absolute;
-  border: 1px solid #FFF;
-  content: "";
-  top: 24px;
-  bottom: 24px;
-  right: 16px;
-  left: 16px;
-  margin-bottom: 24px;
-}
-@media (min-width: 1025px) {
-  .menu__inner::after {
-    top: 72px;
-    bottom: 72px;
-    right: 72px;
-    left: 72px;
   }
 }
 
@@ -1221,13 +1209,20 @@ li {
     margin-right: 18px;
   }
 }
+.instagram-card__btn-text:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 .external-icon {
+  display: inline-block;
   width: 19px;
   height: 19px;
   margin-bottom: -3px;
   margin-left: 16px;
   margin-right: 17px;
+  background-image: url("/image/radix-icons_external-link.png");
+  background-size: cover;
 }
 @media (min-width: 768px) {
   .external-icon {
@@ -1239,6 +1234,12 @@ li {
     top: 17px;
     left: 134px;
   }
+}
+.external-icon:hover {
+  background-image: url("/image/external-link (wihte).png");
+}
+.external-icon img {
+  display: none;
 }
 
 .shop {
@@ -1920,11 +1921,13 @@ input[type=checkbox]:hover {
 input[type=checkbox]:checked::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 11px;
+  left: 14px;
   width: 10px;
-  height: 16px;
-  background-image: url("/image/green-check.png");
+  height: 20px;
+  border-right: 2px solid #159741;
+  border-bottom: 2px solid #159741;
+  transform: translate(-50%, -50%) rotate(48deg);
 }
 
 .privacy-text {

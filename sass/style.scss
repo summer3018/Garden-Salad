@@ -543,30 +543,35 @@ li{
 // menu
 .menu{
     background: #2F2F2F;
-    position: relative;
+    outline: 1px solid #FFF;
+    outline-offset: -24px;
+    // position: relative;
     text-align: center;
+    @include mq(md) {
+        outline-offset: -72px;
+    }
 }
 .menu__inner{
     padding: 56px 0 111px;
     @include mq(lg) {
       padding: 152px 72px 112px;
     }
-    &::after{
-        position: absolute;
-        border: 1px solid #FFF;
-        content: "";
-        top: 24px;
-        bottom: 24px;
-        right: 16px;
-        left: 16px;
-        margin-bottom: 24px;
-        @include mq(lg) {
-            top: 72px;
-            bottom: 72px;
-            right: 72px;
-            left: 72px;
-        }
-    }
+    // &::after{
+    //     position: absolute;
+    //     border: 1px solid #FFF;
+    //     content: "";
+    //     top: 24px;
+    //     bottom: 24px;
+    //     right: 16px;
+    //     left: 16px;
+    //     margin-bottom: 24px;
+    //     @include mq(lg) {
+    //         top: 72px;
+    //         bottom: 72px;
+    //         right: 72px;
+    //         left: 72px;
+    //     }
+    // }
 }
 .menu-title__container{
 }
@@ -581,6 +586,7 @@ li{
         letter-spacing: 0.9px;
         padding-left: 5px;
     }
+
 }
 .menu-title__en{
     color: #FFF;
@@ -1138,13 +1144,20 @@ li{
         padding-left: 58px;
         margin-right: 18px;
     }
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
 }
 .external-icon {
+    display: inline-block;
     width: 19px;
     height: 19px;
     margin-bottom: -3px;
     margin-left: 16px;
     margin-right: 17px;
+    background-image: url("/image/radix-icons_external-link.png");
+    background-size: cover;
     @include mq(md) {
         width: 20px;
         height: 20px;
@@ -1154,6 +1167,13 @@ li{
         position: absolute;
         top: 17px;
         left: 134px;
+    }
+    &:hover {
+        background-image: url("/image/external-link\ \(wihte\).png");
+    }
+
+    img {
+        display: none; // `img` タグを非表示にする
     }
 
 }
@@ -1769,14 +1789,13 @@ input[type="checkbox"] {
         &::after {
             content: "";
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 11px;
+            left: 14px;
             width: 10px;
-            height: 16px;
-            background-image: url("/image/green-check.png");
-            // border-right: 1px solid $accent-color;
-            // border-bottom: 1px solid red;
-            // transform: translate(-50%, -50%) rotate(45deg);
+            height: 20px;
+            border-right: 2px solid #159741;
+            border-bottom: 2px solid #159741;
+            transform: translate(-50%, -50%) rotate(48deg);
         }
     }
 }
