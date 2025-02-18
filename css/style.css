@@ -2015,22 +2015,17 @@ input[type=checkbox] {
 }
 
 .twitter-icon {
-  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("/image/Twitter(footer).png");
+  background-size: cover;
 }
 .twitter-icon:hover {
-  background-image: url(image/pc/Twitter-hover.png);
+  background-image: url("/image/Twitter(hover).png");
 }
-
-.twitter-icon__image {
-  position: absolute;
-  top: 5.8px;
-  left: 5.8px;
-}
-@media (min-width: 1025px) {
-  .twitter-icon__image {
-    top: 4.6px;
-    left: 4.6px;
-  }
+.twitter-icon img {
+  display: none;
 }
 
 .instagram-icon {

@@ -1851,22 +1851,38 @@ input[type="checkbox"] {
     }
 
 }
-.twitter-icon{
-    position: relative;
-    &:hover{
-        background-image: url(image/pc/Twitter-hover.png);
-    }
-}
-.twitter-icon__image{
-    position: absolute;
-    top: 5.8px;
-    left: 5.8px;
-    @include mq(lg) {
-      top: 4.6px;
-      left: 4.6px;
+.twitter-icon {
+    display: inline-block;
+    width: 50px; // 画像のサイズに合わせる
+    height: 50px; 
+    background-image: url("/image/Twitter\(footer\).png");
+    background-size: cover;
+
+    &:hover {
+        background-image: url("/image/Twitter\(hover\).png");
     }
 
+    img {
+        display: none; // `img` タグを非表示にする
+    }
 }
+
+// .twitter-icon{
+//     position: relative;
+//     &:hover{
+//         background-image: url(image/pc/Twitter-hover.png);
+//     }
+// }
+// .twitter-icon__image{
+//     position: absolute;
+//     top: 5.8px;
+//     left: 5.8px;
+//     @include mq(lg) {
+//       top: 4.6px;
+//       left: 4.6px;
+//     }
+
+// }
 .instagram-icon{
     position: relative;
 }
