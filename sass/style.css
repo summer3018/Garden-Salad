@@ -1213,6 +1213,9 @@ li {
   background-color: #000;
   color: #fff;
 }
+.instagram-card__btn-text:hover .external-icon {
+  content: url("/image/external-link (wihte).png");
+}
 
 .external-icon {
   width: 19px;

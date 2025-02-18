@@ -1147,6 +1147,10 @@ li{
     &:hover{
         background-color: #000;
         color: #fff;
+
+        .external-icon {
+            content: url('/image/external-link\ \(wihte\).png'); // hover時の画像
+        }
     }
 }
 .external-icon {
@@ -1160,7 +1164,6 @@ li{
         height: 20px;
         margin-bottom: -2px;
         margin-left: 113px;
-        // margin-right: 14px;
         position: absolute;
         top: 17px;
         left: 134px;
