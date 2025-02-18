@@ -579,7 +579,7 @@ li {
   outline-offset: -24px;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .menu {
     outline-offset: -72px;
   }
@@ -927,7 +927,6 @@ li {
   .menu-card1__text {
     font-size: 24px;
     letter-spacing: 0.72px;
-    /* padding-top: 1px; */
     margin-left: 76px;
     margin-right: 75px;
   }
@@ -935,9 +934,9 @@ li {
 
 @media (min-width: 1025px) {
   .menu-card__wrap {
-    display: flex; /* 横並びにする */
-    justify-content: center; /* 中央寄せ */
-    gap: 32px; /* 要素間の余白（必要に応じて調整） */
+    display: flex;
+    justify-content: center;
+    gap: 32px;
     margin-bottom: -6px;
   }
 }
@@ -1183,7 +1182,6 @@ li {
 }
 
 .instagram-card__btn-text {
-  all: unset; /* ブラウザのデフォルトスタイルをリセット */
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -1224,7 +1222,7 @@ li {
   margin-left: 16px;
   margin-right: 17px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .external-icon {
     width: 20px;
     height: 20px;
@@ -1318,27 +1316,20 @@ li {
 .union__image-wrap {
   position: relative;
 }
+
 .union-image {
   position: absolute;
+  width: 72.895px;
+  height: 73.595px;
   right: 64px;
   bottom: 62px;
 }
 @media (min-width: 1025px) {
   .union-image {
+    width: 150px;
+    height: 151.441px;
     right: 394px;
     bottom: 157px;
-  }
-}
-
-.shop-logo {
-  position: absolute;
-  right: 73px;
-  bottom: 85px;
-}
-@media (min-width: 1025px) {
-  .shop-logo {
-    right: 410px;
-    bottom: 205px;
   }
 }
 
@@ -1479,7 +1470,6 @@ li {
 @media (min-width: 1025px) {
   .shop-header {
     width: 20%;
-    /* padding: 10px; */
     padding-top: 10px;
     padding-left: 11px;
   }
@@ -1639,7 +1629,7 @@ li {
   padding-left: 23px;
   transform: rotate(-6deg);
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .green-text {
     font-size: 40px;
     letter-spacing: 2px;
@@ -1661,12 +1651,12 @@ li {
 .green-text::after {
   content: "";
   position: absolute;
-  width: 311px;
+  width: 320px;
   height: 1px;
   background-color: #159741;
   transform: rotate(-1deg);
   top: 51px;
-  right: -4px;
+  right: -9px;
 }
 
 .contact {
@@ -2159,7 +2149,7 @@ input[type=checkbox]:checked::after {
   justify-content: flex-end;
   padding-right: 17px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .page-top {
     padding-right: 60px;
   }
@@ -2172,10 +2162,9 @@ input[type=checkbox]:checked::after {
   cursor: pointer;
   /* 他の要素より上に配置 */
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .page-top__btn {
     width: 120px;
-    /* height: 120px; */
     margin-top: -60px;
   }
 }

@@ -56,10 +56,8 @@ li{
 //  header
 .header{
     background: $base-color;
-    // width: 375px;
     height: 60px;
     @include mq(lg) {
-        // width: 100%;
         height: 90px;
     }
 }
@@ -151,7 +149,6 @@ li{
     max-width: 100%;
     height: 243px;
     background-image: url(/image/sp/img_mv\(SP\).png);
-    // background-size: 100%;
     background-position: 66px 0;
     padding-bottom: 20px;
     @include mq(lg) {
@@ -360,7 +357,7 @@ li{
     @include mq(lg) {
       display: flex;
       flex-direction: row-reverse;
-      align-items: center; // 横方向に中央寄せ
+      align-items: center; 
       justify-content: flex-end;
       margin-bottom: 11px;
     }
@@ -373,7 +370,7 @@ li{
     @include mq(lg) {
       display: flex;
       flex-direction: row-reverse;
-      align-items: center; // 横方向に中央寄せ
+      align-items: center; 
       justify-content: flex-end;
     }
 }
@@ -505,8 +502,6 @@ li{
         @include mq(lg) {
             width: 450px;
             padding-bottom: 53px;
-            // height: 288px;
-            // object-fit: cover;
         }
 
     }
@@ -517,12 +512,10 @@ li{
     min-width: 375px;
     height: 267px;
     position: relative;
-    // height: 400px; /* お好みの高さに調整 */
     overflow: hidden;
     margin-top: -23px;
     @include mq(lg) {
         min-width: 1025px;
-        // width: 1440px;
         height: 450px;
     }
 }
@@ -545,9 +538,8 @@ li{
     background: #2F2F2F;
     outline: 1px solid #FFF;
     outline-offset: -24px;
-    // position: relative;
     text-align: center;
-    @include mq(md) {
+    @include mq(lg) {
         outline-offset: -72px;
     }
 }
@@ -556,22 +548,6 @@ li{
     @include mq(lg) {
       padding: 152px 72px 112px;
     }
-    // &::after{
-    //     position: absolute;
-    //     border: 1px solid #FFF;
-    //     content: "";
-    //     top: 24px;
-    //     bottom: 24px;
-    //     right: 16px;
-    //     left: 16px;
-    //     margin-bottom: 24px;
-    //     @include mq(lg) {
-    //         top: 72px;
-    //         bottom: 72px;
-    //         right: 72px;
-    //         left: 72px;
-    //     }
-    // }
 }
 .menu-title__container{
 }
@@ -696,7 +672,7 @@ li{
 }
 .menu-card__text {
     display: flex;
-    justify-content: space-between; // 均等配置
+    justify-content: space-between; 
     color: #333;
     font-size: 14px;
     font-weight: 400;
@@ -717,9 +693,6 @@ li{
 .menu-card1__wrapper{
     @include mq(lg) {
         display: flex;
-
-        // justify-content: center;
-        // gap: 60px;
     }
 }
 .menu-image__1{
@@ -860,7 +833,7 @@ li{
 }
 .menu-card1__text{
     display: flex;
-    justify-content: space-between; // 均等配置
+    justify-content: space-between; 
     color: #333;
     font-size: 14px;
     font-weight: 400;
@@ -872,21 +845,16 @@ li{
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
-            /* padding-top: 1px; */
     margin-left: 76px;
     margin-right: 75px;
     }
-    // span{
-    //     @include mq(lg) {
-    //         gap: 10px;
-    //     }
-    // }
+
 }
 .menu-card__wrap{
     @include mq(lg) {
-        display: flex; /* 横並びにする */
-        justify-content: center; /* 中央寄せ */
-        gap: 32px; /* 要素間の余白（必要に応じて調整） */
+        display: flex; 
+        justify-content: center; 
+        gap: 32px; 
         margin-bottom: -6px;
     }
 }
@@ -993,7 +961,6 @@ li{
         height: 544px;
         outline-offset: -13px;
         margin: 0 auto;
-        // margin-top: 80px;
         margin-bottom: 82px;
     }
 
@@ -1035,7 +1002,7 @@ li{
     font-weight: 400;
     letter-spacing: 0.8px;
     padding: 0 32px 22px;
-    position: relative; // 追加
+    position: relative; 
 
     @include mq(lg) {
         text-align: center;
@@ -1078,7 +1045,7 @@ li{
     display: grid;
     grid-template-columns: repeat(2, 1fr); // スマホ時は2列
     grid-template-rows: repeat(2, 1fr); // スマホ時は2行
-    gap: 10px; // 画像間の間隔を設定
+    gap: 10px; 
     justify-content: center;
     align-items: center;
     padding: 0 20px 2px 20px;
@@ -1119,7 +1086,6 @@ li{
 }
 
 .instagram-card__btn-text {
-    all: unset; /* ブラウザのデフォルトスタイルをリセット */
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -1134,8 +1100,6 @@ li{
     padding-bottom: 17px;
     padding-left: 37px;
     cursor: pointer;
-
-    
     @include mq(lg) {
         font-size: 16px;
         padding-top: 13px;
@@ -1149,7 +1113,7 @@ li{
         color: #fff;
 
         .external-icon {
-            content: url('/image/external-link\ \(wihte\).png'); // hover時の画像
+            content: url('/image/external-link\ \(wihte\).png'); 
         }
     }
 }
@@ -1159,7 +1123,7 @@ li{
     margin-bottom: -3px;
     margin-left: 16px;
     margin-right: 17px;
-    @include mq(md) {
+    @include mq(lg) {
         width: 20px;
         height: 20px;
         margin-bottom: -2px;
@@ -1246,28 +1210,18 @@ li{
 }
 .union__image-wrap{
     position: relative;
-    // top: 5px;
-    @include mq(lg) {
-        // right: 328px;
-        // top: -90px;
-    }
 }
 .union-image{
     position: absolute;
+    width: 72.895px;
+    height: 73.595px;
     right: 64px;
     bottom: 62px;
     @include mq(lg) {
+        width: 150px;
+        height: 151.441px;
         right: 394px;
         bottom: 157px;
-    }
-}
-.shop-logo{
-    position: absolute;
-    right: 73px;
-    bottom: 85px;
-    @include mq(lg) {
-        right: 410px;
-        bottom: 205px;
     }
 }
 .shop-detail{
@@ -1388,11 +1342,9 @@ padding: 10px 0;
     font-weight: normal;
     width: 25%;
     text-align: left;
-    // padding-left: 28px;
     vertical-align: top;
     @include mq(lg) {
         width: 20%;
-        /* padding: 10px; */
         padding-top: 10px;
         padding-left: 11px;
     }
@@ -1400,7 +1352,6 @@ padding: 10px 0;
 .shop-date{
     @include mq(lg) {
         padding: 10px 80px 0px 6px;
-        // line-height: 150%;
     }
 }
 .shop-date__access{
@@ -1449,7 +1400,6 @@ padding: 10px 0;
     position: relative;
     @include mq(lg) {
       display: flex;
-    //   justify-content: center;
     }
 }
 .post-card__stamp{
@@ -1483,8 +1433,7 @@ padding: 10px 0;
     @include mq(lg) {
         padding-top: 0;
         padding-left: 9px;
-    //   display: flex;
-      gap: 135px;
+        gap: 135px;
     }
 }
 .test-wrap{
@@ -1532,7 +1481,7 @@ padding: 10px 0;
     letter-spacing: 1.8px;
     padding-left: 23px;
     transform: rotate(-6deg);
-    @include mq(md) {
+    @include mq(lg) {
         font-size: 40px;
         letter-spacing: 2px;
         text-align: right;
@@ -1555,12 +1504,12 @@ padding: 10px 0;
     &::after {
         content: "";
         position: absolute;
-        width: 311px;
+        width: 320px;
         height: 1px;
         background-color: $accent-color;
         transform: rotate(-1deg);
         top: 51px;
-        right: -4px;
+        right: -9px;
     }
 }
 
@@ -1776,8 +1725,6 @@ input[type="checkbox"] {
     }
 
     &:checked {
-        // background-color: $accent-color;
-        // border-color: $accent-color;
 
         &::after {
             content: "";
@@ -1977,7 +1924,6 @@ input[type="checkbox"] {
 }
 .footer-nav{
     display: flex;
-    // justify-content: space-between;
     color: #333;
     font-family: $font-reross;
     font-size: 16px;
@@ -2022,7 +1968,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: flex-end;
     padding-right: 17px; // 必要に応じて調整
-    @include mq(md) {
+    @include mq(lg) {
       padding-right: 60px;
     }
 }
@@ -2033,9 +1979,8 @@ input[type="checkbox"] {
     margin-top: -33px;
     cursor: pointer;
     /* 他の要素より上に配置 */
-    @include mq(md) {
+    @include mq(lg) {
         width: 120px;
-        /* height: 120px; */
         margin-top: -60px;
     }
 }
@@ -2043,7 +1988,7 @@ input[type="checkbox"] {
 .page-top__btn img {
     width: 100%;
     height: auto;
-    @include mq(md) {
+    @include mq(lg) {
 
     }
 }
