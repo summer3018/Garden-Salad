@@ -1150,14 +1150,11 @@ li{
     }
 }
 .external-icon {
-    display: inline-block;
     width: 19px;
     height: 19px;
     margin-bottom: -3px;
     margin-left: 16px;
     margin-right: 17px;
-    background-image: url("/image/radix-icons_external-link.png");
-    background-size: cover;
     @include mq(md) {
         width: 20px;
         height: 20px;
@@ -1167,13 +1164,6 @@ li{
         position: absolute;
         top: 17px;
         left: 134px;
-    }
-    &:hover {
-        background-image: url("/image/external-link\ \(wihte\).png");
-    }
-
-    img {
-        display: none; // `img` タグを非表示にする
     }
 
 }

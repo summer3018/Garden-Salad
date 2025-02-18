@@ -1215,14 +1215,11 @@ li {
 }
 
 .external-icon {
-  display: inline-block;
   width: 19px;
   height: 19px;
   margin-bottom: -3px;
   margin-left: 16px;
   margin-right: 17px;
-  background-image: url("/image/radix-icons_external-link.png");
-  background-size: cover;
 }
 @media (min-width: 768px) {
   .external-icon {
@@ -1234,12 +1231,6 @@ li {
     top: 17px;
     left: 134px;
   }
-}
-.external-icon:hover {
-  background-image: url("/image/external-link (wihte).png");
-}
-.external-icon img {
-  display: none;
 }
 
 .shop {
