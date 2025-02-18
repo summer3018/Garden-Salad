@@ -263,7 +263,7 @@ li{
     color: $font-white;
     text-align: center;
     font-size: 20px;
-    line-height: 150%; /* 30px */
+    line-height: 150%; 
     padding-bottom: 24px;
     letter-spacing: 1px;
     padding-left: 17px;
@@ -280,7 +280,7 @@ li{
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%; 
     letter-spacing: 0.48px;
     @include mq(lg) {
         font-size: 18px;
@@ -449,7 +449,7 @@ li{
     text-align: justify;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%; 
     letter-spacing: 0.48px;
     padding-bottom: 32px;
     padding-left: 9px;
@@ -771,7 +771,7 @@ li{
     color: #333;
     font-size: 24px;
     font-weight: 700;
-    line-height: 150%; /* 36px */
+    line-height: 150%; 
     letter-spacing: 2.4px;
     padding-top: 121px;
     padding-bottom: 13px;
@@ -1180,7 +1180,7 @@ li{
         padding-top: 8px;
         padding-right: 5px;
     }
-    &::after{
+    &::before{
         content: '';
         position: absolute;
         left: 50%;
@@ -1192,7 +1192,6 @@ li{
         transform: translateX(-50%);/*位置調整*/
         background-color: #159741;/*線の色*/
         @include mq(lg) {
-            left: 45rem;
             bottom: 52px;
         }
     }
@@ -1206,17 +1205,18 @@ li{
     }
 }
 .map-image{
-    width: 100%;
+
 }
 .union__image-wrap{
-    position: relative;
-}
-.union-image{
     position: absolute;
     width: 72.895px;
     height: 73.595px;
     right: 64px;
     bottom: 62px;
+}
+.union-image{
+    position: absolute;
+
     @include mq(lg) {
         width: 150px;
         height: 151.441px;
@@ -1246,7 +1246,7 @@ li{
     font-family: $font-reross;
     font-size: 32px;
     font-weight: 400;
-    line-height: 100%; /* 32px */
+    line-height: 100%; 
     letter-spacing: 0.96px;
     @include mq(lg) {
       margin: 0;
@@ -1257,7 +1257,7 @@ li{
         font-family: $font-reross;
         font-size: 18px;
         font-weight: 400;
-        line-height: 100%; /* 18px */
+        line-height: 100%; 
         padding-right: 4px;
         @include mq(lg) {
             color: #333;
@@ -1287,20 +1287,19 @@ li{
 }
 
 .shop-text-wrapper{
-    @include mq(lg) {
-    }
+
 }
 .shop-adress{
     font-size: 16px;
     font-weight: 400;
-    line-height: 170%; /* 27.2px */
+    line-height: 170%;
     letter-spacing: 0.48px;
     padding-left: 28px;
     padding-top: 2px;
     padding-bottom: 2px;
     @include mq(lg) {
         font-size: 18px;
-        line-height: 200%; /* 36px */
+        line-height: 200%; 
         letter-spacing: 0.54px;
         padding-left: 26px;
         padding-bottom: 1px;
@@ -1309,20 +1308,20 @@ li{
 .shop-information{
     font-size: 16px;
     font-weight: 400;
-    line-height: 170%; /* 27.2px */
+    line-height: 170%;
     letter-spacing: 0.48px;
     padding-left: 28px;
     padding-bottom: 40px;
     padding-top: 4px;
     @include mq(lg) {
         font-size: 18px;
-        line-height: 200%; /* 36px */
+        line-height: 200%; 
         letter-spacing: 0.54px;
     }
 }
 .shop-table {
 font-size: 16px;
-line-height: 170%; /* 27.2px */
+line-height: 170%;
 letter-spacing: 0.48px;
 padding: 0px 26px 34px;
 @include mq(lg) {
@@ -1381,7 +1380,6 @@ padding: 10px 0;
     padding-bottom: 11px;
     @include mq(lg) {
         padding: 0px 147px 115px;
-
     }
 }
 .post-card__wrapper{
@@ -1394,7 +1392,6 @@ padding: 10px 0;
         padding-left: 34px;
         padding-bottom: 0px;
     }
-    
 }
 .post-card__images{
     position: relative;
@@ -1461,7 +1458,7 @@ padding: 10px 0;
     font-family: "Noto Sans JP";
     font-size: 16px;
     font-weight: 400;
-    line-height: 250%; /* 40px */
+    line-height: 250%; 
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
     text-decoration-color: #4F4F4F;
@@ -1764,7 +1761,7 @@ input[type="checkbox"] {
     color: $accent-color;
     font-size: 16px;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%; 
     letter-spacing: 0.8px;
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1791,7 +1788,7 @@ input[type="checkbox"] {
     height: 56px;
     font-size: 18px;
     font-weight: 500;
-    line-height: 150%; /* 27px */
+    line-height: 150%; 
     letter-spacing: 0.9px;
     cursor: pointer;
     background: $accent-color;
@@ -1967,7 +1964,7 @@ input[type="checkbox"] {
 .page-top {
     display: flex;
     justify-content: flex-end;
-    padding-right: 17px; // 必要に応じて調整
+    padding-right: 17px;
     @include mq(lg) {
       padding-right: 60px;
     }
@@ -1978,7 +1975,6 @@ input[type="checkbox"] {
     height: 0px;
     margin-top: -33px;
     cursor: pointer;
-    /* 他の要素より上に配置 */
     @include mq(lg) {
         width: 120px;
         margin-top: -60px;
