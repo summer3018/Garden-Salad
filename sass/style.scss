@@ -1337,19 +1337,19 @@ li{
     }
 }
 .shop-table {
-font-size: 16px;
-line-height: 170%;
-letter-spacing: 0.48px;
-padding: 0px 26px 34px;
-@include mq(lg) {
-        max-width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-        font-size: 18px;
-        line-height: 150%;
-        letter-spacing: 0.54px;
-        margin-left: 15px;
-    }
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 0.48px;
+    padding: 0px 26px 34px;
+    @include mq(lg) {
+            max-width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0.54px;
+            margin-left: 15px;
+        }
 }
 .shop-row{
 padding: 10px 0;
