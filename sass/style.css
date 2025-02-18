@@ -2022,7 +2022,7 @@ input[type=checkbox] {
   position: relative;
 }
 .twitter-icon:hover {
-  background-color: #fff;
+  background-image: url(image/pc/Twitter-hover.png);
 }
 
 .twitter-icon__image {

@@ -1854,7 +1854,7 @@ input[type="checkbox"] {
 .twitter-icon{
     position: relative;
     &:hover{
-        background-color: #fff;
+        background-image: url(image/pc/Twitter-hover.png);
     }
 }
 .twitter-icon__image{
@@ -1865,6 +1865,7 @@ input[type="checkbox"] {
       top: 4.6px;
       left: 4.6px;
     }
+
 }
 .instagram-icon{
     position: relative;
