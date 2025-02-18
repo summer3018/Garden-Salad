@@ -1897,22 +1897,7 @@ input[type="checkbox"] {
         display: none; // `img` タグを非表示にする
     }
 }
-// .twitter-icon{
-//     position: relative;
-//     &:hover{
-//         background-image: url(image/pc/Twitter-hover.png);
-//     }
-// }
-// .twitter-icon__image{
-//     position: absolute;
-//     top: 5.8px;
-//     left: 5.8px;
-//     @include mq(lg) {
-//       top: 4.6px;
-//       left: 4.6px;
-//     }
 
-// }
 .instagram-icon{
     position: relative;
 }
@@ -1936,11 +1921,8 @@ input[type="checkbox"] {
       top: 9.6px;
       left: 9.6px;
     }
+}
 
-}
-.icon-background__image{
-    
-}
 .footer-nav__wapper{
 
 }
