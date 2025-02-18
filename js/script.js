@@ -36,3 +36,26 @@ document.addEventListener("DOMContentLoaded", function () {
         submitButton.disabled = true;
     });
 });
+
+// モーダル
+const openModal = document.getElementById("openModal");
+const modal = document.getElementById("modal"); // ここを修正
+const closeModal = document.getElementById("closeModal");
+
+// モーダルを開く
+openModal.addEventListener("click", function(event) {
+  event.preventDefault(); // href="#" のデフォルト動作を無効化
+  modal.style.display = "flex";
+});
+
+// モーダルを閉じる
+closeModal.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+// モーダルの外側をクリックしたら閉じる
+window.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
