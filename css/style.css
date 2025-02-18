@@ -1964,6 +1964,7 @@ input[type=checkbox]:checked::after {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+  pointer-events: auto;
 }
 .privacy-text-accent:hover {
   opacity: 0.7;
