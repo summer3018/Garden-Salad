@@ -520,14 +520,14 @@ li {
 }
 
 @media (min-width: 1025px) {
-  .about-image-wrpper-01 {
+  .about-image-wrapper-01 {
     padding-right: 67px;
     margin-top: 30px;
   }
 }
 
 @media (min-width: 1025px) {
-  .about-image-wrpper-03 {
+  .about-image-wrapper-03 {
     margin-right: 71px;
   }
 }
@@ -1905,7 +1905,7 @@ input[type=checkbox] {
   border-radius: 4px;
   position: relative;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition: 0.2s, border-color 0.2s;
 }
 @media (min-width: 1025px) {
   input[type=checkbox] {
@@ -1924,9 +1924,7 @@ input[type=checkbox]:checked::after {
   left: 50%;
   width: 10px;
   height: 16px;
-  border-right: 1px solid #159741;
-  border-bottom: 1px solid red;
-  transform: translate(-50%, -50%) rotate(45deg);
+  background-image: url("/image/green-check.png");
 }
 
 .privacy-text {

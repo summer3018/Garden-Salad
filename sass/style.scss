@@ -479,16 +479,16 @@ li{
       margin-right: 150px;
     }
 }
-.about-image-wrpper-01{
+.about-image-wrapper-01{
     @include mq(lg) {
         padding-right: 67px;
         margin-top: 30px;
     }
 }
-.about-image-wrpper-02{
+.about-image-wrapper-02{
 
 }
-.about-image-wrpper-03{
+.about-image-wrapper-03{
     @include mq(lg) {
       margin-right: 71px;
     }
@@ -1751,7 +1751,7 @@ input[type="checkbox"] {
     border-radius: 4px;
     position: relative;
     cursor: pointer;
-    transition: background 0.2s, border-color 0.2s;
+    transition: 0.2s, border-color 0.2s;
 
     @include mq(lg) {
         margin-right: 20px;
@@ -1773,9 +1773,10 @@ input[type="checkbox"] {
             left: 50%;
             width: 10px;
             height: 16px;
-            border-right: 1px solid $accent-color;
-            border-bottom: 1px solid red;
-            transform: translate(-50%, -50%) rotate(45deg);
+            background-image: url("/image/green-check.png");
+            // border-right: 1px solid $accent-color;
+            // border-bottom: 1px solid red;
+            // transform: translate(-50%, -50%) rotate(45deg);
         }
     }
 }
@@ -1869,7 +1870,7 @@ input[type="checkbox"] {
         padding-bottom: 9px;
     }
 }
-.sns-icons__wrpper{
+.sns-icons__wrapper{
 @include mq(lg) {
   
 }
@@ -1959,7 +1960,7 @@ input[type="checkbox"] {
     }
 }
 
-.footer-nav__wapper{
+.footer-nav__wrapper{
 
 }
 .footer-nav{
