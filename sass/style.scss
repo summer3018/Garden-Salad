@@ -1737,17 +1737,49 @@ background-size: 100%;
 .checkbox-label {
     display: inline-flex;
     align-items: center; // チェックボックスとテキストを揃える
+    cursor: default; // チェックボックス以外をクリックしても反応しないようにする
 }
 
 input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 30px;
     height: 30px;
     margin-right: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+
     @include mq(lg) {
         margin-right: 20px;
         margin-top: 8px;
     }
+
+    &:checked {
+        background-color: $accent-color;
+        border-color: $accent-color;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 16px;
+            border-right: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
 }
+
+.privacy-text {
+    pointer-events: none; // テキストをクリックしてもチェックがつかないようにする
+}
+
 
 .privacy-text {
     padding-bottom: 5px;
