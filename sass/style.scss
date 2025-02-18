@@ -1196,34 +1196,43 @@ li{
         }
     }
 }
-.shop__access-map{
+.shop__access-map {
+    position: relative; // 子要素のabsolute配置の基準にする
     margin-bottom: 53px;
+    
     @include mq(lg) {
         padding-top: 29px;
         padding-left: 3px;
         margin-bottom: 0;
+        width: 100%;
     }
 }
-.map-image{
 
+.map-image {
+    width: 100%;
 }
-.union__image-wrap{
+
+.union__image-wrap {
     position: absolute;
+    top: 45%;
+    right: 17%;
+    
+    @include mq(lg) {
+        top: 38%;
+        right: 27%;
+    }
+}
+
+.union-image {
     width: 72.895px;
     height: 73.595px;
-    right: 64px;
-    bottom: 62px;
-}
-.union-image{
-    position: absolute;
 
     @include mq(lg) {
         width: 150px;
         height: 151.441px;
-        right: 394px;
-        bottom: 157px;
     }
 }
+
 .shop-detail{
     @include mq(lg) {
       display: flex;

@@ -1298,6 +1298,7 @@ li {
 }
 
 .shop__access-map {
+  position: relative;
   margin-bottom: 53px;
 }
 @media (min-width: 1025px) {
@@ -1305,26 +1306,34 @@ li {
     padding-top: 29px;
     padding-left: 3px;
     margin-bottom: 0;
+    width: 100%;
   }
+}
+
+.map-image {
+  width: 100%;
 }
 
 .union__image-wrap {
   position: absolute;
-  width: 72.895px;
-  height: 73.595px;
-  right: 64px;
-  bottom: 62px;
+  top: 45%;
+  right: 17%;
+}
+@media (min-width: 1025px) {
+  .union__image-wrap {
+    top: 38%;
+    right: 27%;
+  }
 }
 
 .union-image {
-  position: absolute;
+  width: 72.895px;
+  height: 73.595px;
 }
 @media (min-width: 1025px) {
   .union-image {
     width: 150px;
     height: 151.441px;
-    right: 394px;
-    bottom: 157px;
   }
 }
 
