@@ -1319,6 +1319,18 @@ li {
   top: 45%;
   right: 17%;
 }
+@media (min-width: 767px) {
+  .union__image-wrap {
+    top: 60%;
+    right: 22%;
+  }
+}
+@media (min-width: 768px) {
+  .union__image-wrap {
+    top: 64%;
+    right: 23%;
+  }
+}
 @media (min-width: 1025px) {
   .union__image-wrap {
     top: 38%;

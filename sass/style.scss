@@ -1216,6 +1216,14 @@ li{
     position: absolute;
     top: 45%;
     right: 17%;
+    @include mq(sm) {
+        top: 60%;
+        right: 22%;
+    }
+    @include mq(md) {
+        top: 64%;
+        right: 23%;
+    }
     
     @include mq(lg) {
         top: 38%;
