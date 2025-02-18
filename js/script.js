@@ -1,4 +1,4 @@
-
+// パララックス
 document.addEventListener('scroll', () => {
     const image = document.querySelector('.parallax-image');
     const scrollPosition = window.scrollY;
@@ -9,6 +9,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
+// topへ戻るボタン
 document.addEventListener("DOMContentLoaded", function () {
     const pageTopBtn = document.querySelector(".page-top__btn");
 
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// disabled(無効化)
 document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.querySelector(".form-button");
 
@@ -34,4 +36,3 @@ document.addEventListener("DOMContentLoaded", function () {
         submitButton.disabled = true;
     });
 });
-
