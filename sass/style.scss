@@ -1757,10 +1757,14 @@ input[type="checkbox"] {
         margin-right: 20px;
         margin-top: 8px;
     }
+    &:hover{
+        border: 1px solid #159741;
+        box-shadow: 0px 0px 4px 0px #159741;
+    }
 
     &:checked {
-        background-color: $accent-color;
-        border-color: $accent-color;
+        // background-color: $accent-color;
+        // border-color: $accent-color;
 
         &::after {
             content: "";
@@ -1769,8 +1773,8 @@ input[type="checkbox"] {
             left: 50%;
             width: 10px;
             height: 16px;
-            border-right: 3px solid #fff;
-            border-bottom: 3px solid #fff;
+            border-right: 1px solid $accent-color;
+            border-bottom: 1px solid red;
             transform: translate(-50%, -50%) rotate(45deg);
         }
     }
