@@ -2033,6 +2033,34 @@ input[type=checkbox] {
 }
 
 .instagram-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("/image/Instagram(footer).png");
+  background-size: cover;
+}
+.instagram-icon:hover {
+  background-image: url("/image/Instagram(hover).png");
+}
+.instagram-icon img {
+  display: none;
+}
+
+.tiktok-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("/image/TikTok(footer).png");
+  background-size: cover;
+}
+.tiktok-icon:hover {
+  background-image: url("/image/TikTok(hover).png");
+}
+.tiktok-icon img {
+  display: none;
+}
+
+.instagram-icon {
   position: relative;
 }
 

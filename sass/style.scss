@@ -1867,6 +1867,36 @@ input[type="checkbox"] {
     }
 }
 
+.instagram-icon {
+    display: inline-block;
+    width: 50px; // 画像のサイズに合わせる
+    height: 50px; 
+    background-image: url("/image/Instagram\(footer\).png");
+    background-size: cover;
+
+    &:hover {
+        background-image: url("/image/Instagram\(hover\).png");
+    }
+
+    img {
+        display: none; // `img` タグを非表示にする
+    }
+}
+.tiktok-icon {
+    display: inline-block;
+    width: 50px; // 画像のサイズに合わせる
+    height: 50px; 
+    background-image: url("/image/TikTok\(footer\).png");
+    background-size: cover;
+
+    &:hover {
+        background-image: url("/image/TikTok\(hover\).png");
+    }
+
+    img {
+        display: none; // `img` タグを非表示にする
+    }
+}
 // .twitter-icon{
 //     position: relative;
 //     &:hover{
