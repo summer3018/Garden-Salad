@@ -1971,6 +1971,7 @@ input[type="checkbox"] {
     font-weight: 400;
     letter-spacing: 0.48px;
     gap: 32px;
+    cursor: pointer;
     @include mq(lg) {
         font-size: 18px;;
         letter-spacing: 0.54px;

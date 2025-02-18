@@ -2128,6 +2128,7 @@ input[type=checkbox]:checked::after {
   font-weight: 400;
   letter-spacing: 0.48px;
   gap: 32px;
+  cursor: pointer;
 }
 @media (min-width: 1025px) {
   .footer-nav {
