@@ -542,7 +542,7 @@ li{
     position: relative; // 疑似要素の位置指定の基準
 
     @include mq(lg) {
-        outline-offset: -72px;
+        // outline-offset: -72px;
     }
 
     &::before {
@@ -558,10 +558,10 @@ li{
 
     @include mq(lg) {
         &::before {
-            // top: 72px;
-            // bottom: 72px;
-            // left: 72px;
-            // right: 72px;
+            top: 72px;
+            bottom: 95px;
+            left: 72px;
+            right: 72px;
         }
     }
 }
@@ -1887,8 +1887,8 @@ input[type="checkbox"] {
 }
 .twitter-icon {
     display: inline-block;
-    width: 50px; // 画像のサイズに合わせる
-    height: 50px; 
+    width: 40px; // 画像のサイズに合わせる
+    height: 40px; 
     background-image: url("/image/Twitter\(footer\).png");
     background-size: cover;
 
@@ -1903,8 +1903,8 @@ input[type="checkbox"] {
 
 .instagram-icon {
     display: inline-block;
-    width: 50px; // 画像のサイズに合わせる
-    height: 50px; 
+    width: 40px; // 画像のサイズに合わせる
+    height: 40px; 
     background-image: url("/image/Instagram\(footer\).png");
     background-size: cover;
 
@@ -1918,8 +1918,8 @@ input[type="checkbox"] {
 }
 .tiktok-icon {
     display: inline-block;
-    width: 50px; // 画像のサイズに合わせる
-    height: 50px; 
+    width: 40px; // 画像のサイズに合わせる
+    height: 40px; 
     background-image: url("/image/TikTok\(footer\).png");
     background-size: cover;
 
