@@ -534,15 +534,38 @@ li{
 
 
 // menu
-.menu{
+.menu {
     background: #2F2F2F;
     outline: 1px solid #FFF;
-    outline-offset: -24px;
+    // outline-offset: -24px;
     text-align: center;
+    position: relative; // 疑似要素の位置指定の基準
+
     @include mq(lg) {
         outline-offset: -72px;
     }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 24px;  // 上のオフセット
+        bottom: 48px; // 下のオフセット
+        left: 16px;  // 左のオフセット
+        right: 16px; // 右のオフセット
+        border: 1px solid #FFF;  // outline 風のボーダー
+        pointer-events: none; // クリックなどの邪魔にならないように
+    }
+
+    @include mq(lg) {
+        &::before {
+            // top: 72px;
+            // bottom: 72px;
+            // left: 72px;
+            // right: 72px;
+        }
+    }
 }
+
 .menu__inner{
     padding: 56px 0 111px;
     @include mq(lg) {

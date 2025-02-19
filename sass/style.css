@@ -576,15 +576,24 @@ li {
 .menu {
   background: #2F2F2F;
   outline: 1px solid #FFF;
-  outline-offset: -24px;
   text-align: center;
+  position: relative;
 }
 @media (min-width: 1025px) {
   .menu {
     outline-offset: -72px;
   }
 }
-
+.menu::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  bottom: 48px;
+  left: 16px;
+  right: 16px;
+  border: 1px solid #FFF;
+  pointer-events: none;
+}
 .menu__inner {
   padding: 56px 0 111px;
 }
