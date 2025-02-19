@@ -1059,7 +1059,6 @@ li {
 .instagram-card__title {
   background: #159741;
   position: relative;
-  z-index: 1;
   margin-left: 57px;
   margin-right: 58px;
   margin-bottom: 24px;
@@ -2200,15 +2199,17 @@ input[type=checkbox]:checked::after {
   background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
 }
 
 .modal-content {
   background: white;
   padding: 20px;
   border-radius: 5px;
+  width: 80%;
   max-width: 80%;
   text-align: center;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 
 .privacy-title__jp {
@@ -2266,10 +2267,8 @@ input[type=checkbox]:checked::after {
   color: #000;
   text-align: justify;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 24px */
-  margin: 0 20px;
 }
 .privacy-text h3 {
   font-size: 18px;

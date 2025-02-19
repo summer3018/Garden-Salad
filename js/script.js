@@ -38,24 +38,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // モーダル
-const openModal = document.getElementById("openModal");
-const modal = document.getElementById("modal"); // ここを修正
-const closeModal = document.getElementById("closeModal");
+const modal = document.getElementById("modal");
+const openModalBtn = document.getElementById("openModal");
+const closeModalBtn = document.getElementById("closeModal");
 
 // モーダルを開く
-openModal.addEventListener("click", function(event) {
+openModalBtn.addEventListener("click", (event) => {
   event.preventDefault(); // href="#" のデフォルト動作を無効化
   modal.style.display = "flex";
+  document.body.style.overflow = "hidden"; // 背景スクロールを無効化
 });
 
 // モーダルを閉じる
-closeModal.addEventListener("click", function() {
+closeModalBtn.addEventListener("click", () => {
   modal.style.display = "none";
+  document.body.style.overflow = ""; // スクロールを元に戻す
 });
 
 // モーダルの外側をクリックしたら閉じる
-window.addEventListener("click", function(event) {
+window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";
+    document.body.style.overflow = ""; // スクロールを元に戻す
   }
 });
