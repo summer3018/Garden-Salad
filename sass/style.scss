@@ -517,7 +517,7 @@ li{
         content: "";
         position: absolute;
         top: 33px;  // 上のオフセット
-        bottom: 26px; // 下のオフセット
+        bottom: 24px; // 下のオフセット
         left: 16px;  // 左のオフセット
         right: 16px; // 右のオフセット
         border: 1px solid #FFF;  // outline 風のボーダー
@@ -535,7 +535,7 @@ li{
 }
 
 .menu__inner{
-    padding: 63px 0 89px;
+    padding: 63px 0 87px;
     @include mq(lg) {
       padding: 152px 72px 112px;
     }
@@ -888,7 +888,7 @@ li{
     }
 }
 .card__price2{
-    padding-left: 10px;
+    // padding-left: 10px;
     @include mq(lg) {
         padding-bottom: 22px;
         padding-left: 0;
@@ -930,7 +930,7 @@ li{
     }
 }
 .card__price3{
-    padding-left: 10px;
+    // padding-left: 10px;
     @include mq(lg) {
         padding-bottom: 22px;
         padding-left: 0;
@@ -942,7 +942,7 @@ li{
 .instagram-card{
     background: #F2F2F2;
     outline: 1px solid #333;
-    outline-offset: -10px;
+    outline-offset: -11px;
     margin-left: 41px;
     margin-right: 34px;
     margin-bottom: -31px;
@@ -959,7 +959,6 @@ li{
 .instagram-card__title{
     background: #159741;
     position: relative;
-    // z-index: 1;
     margin-left: 57px;
     margin-right: 58px;
     margin-bottom: 24px;
@@ -1065,7 +1064,7 @@ li{
     color: #333;
     font-size: 16px;
     font-weight: 400;
-    padding-top: 4px;
+    padding-top: 5px;
     padding-bottom: 24px;
     padding-right: 10px;
     
@@ -1087,9 +1086,9 @@ li{
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.48px;
-    padding-top: 13px;
+    padding-top: 14px;
     padding-bottom: 17px;
-    padding-left: 37px;
+    padding-left: 40px;
     cursor: pointer;
     @include mq(lg) {
         font-size: 16px;
@@ -1130,7 +1129,7 @@ li{
     background: #F2F2F2;
 }
 .shop__inner{
-    padding-top: 62px;
+    padding-top: 65px;
     @include mq(lg) {
       padding-top: 120px;
 
@@ -1159,7 +1158,7 @@ li{
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1.6px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-bottom: 68px;
     @include mq(lg) {
         font-size: 48px;
@@ -1480,7 +1479,7 @@ padding: 10px 0;
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 1.8px;
-    padding-left: 23px;
+    padding-left: 24px;
     transform: rotate(-6deg);
     @include mq(lg) {
         font-size: 40px;
@@ -1493,24 +1492,24 @@ padding: 10px 0;
        &::before {
         content: "";
         position: absolute;
-        width: 318px;
+        width: 286px;
         height: 1px;
         background-color: #159741;
         transform: rotate(-1deg);
-        top: 45px;
-        right: -8px;
+        top: 43px;
+        right: 4px;
     }
 
     // 2本目の線（擬似要素 ::after）
     &::after {
         content: "";
         position: absolute;
-        width: 320px;
+        width: 286px;
         height: 1px;
-        background-color: $accent-color;
+        background-color: #159741;
         transform: rotate(-1deg);
-        top: 51px;
-        right: -9px;
+        top: 49px;
+        right: 5px;
     }
 }
 
@@ -1523,7 +1522,7 @@ background-size: 100%;
 }
 }
 .contact__inner{
-    padding: 64px 16px;
+    padding: 62px 16px 64px;
     @include mq(lg) {
         padding: 130px 0;
     }
@@ -1545,7 +1544,7 @@ background-size: 100%;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.7px;
-    padding-top: 64px;
+    padding-top: 65px;
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
@@ -1558,8 +1557,8 @@ background-size: 100%;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1.6px;
-    padding-top: 10px;
-    padding-bottom: 58px;
+    padding-top: 7px;
+    padding-bottom: 60px;
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;

@@ -556,7 +556,7 @@ li {
   content: "";
   position: absolute;
   top: 33px;
-  bottom: 26px;
+  bottom: 24px;
   left: 16px;
   right: 16px;
   border: 1px solid #FFF;
@@ -572,7 +572,7 @@ li {
 }
 
 .menu__inner {
-  padding: 63px 0 89px;
+  padding: 63px 0 87px;
 }
 @media (min-width: 1025px) {
   .menu__inner {
@@ -965,9 +965,6 @@ li {
   }
 }
 
-.card__price2 {
-  padding-left: 10px;
-}
 @media (min-width: 1025px) {
   .card__price2 {
     padding-bottom: 22px;
@@ -1012,9 +1009,6 @@ li {
   }
 }
 
-.card__price3 {
-  padding-left: 10px;
-}
 @media (min-width: 1025px) {
   .card__price3 {
     padding-bottom: 22px;
@@ -1026,7 +1020,7 @@ li {
 .instagram-card {
   background: #F2F2F2;
   outline: 1px solid #333;
-  outline-offset: -10px;
+  outline-offset: -11px;
   margin-left: 41px;
   margin-right: 34px;
   margin-bottom: -31px;
@@ -1154,7 +1148,7 @@ li {
   color: #333;
   font-size: 16px;
   font-weight: 400;
-  padding-top: 4px;
+  padding-top: 5px;
   padding-bottom: 24px;
   padding-right: 10px;
 }
@@ -1177,9 +1171,9 @@ li {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.48px;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 17px;
-  padding-left: 37px;
+  padding-left: 40px;
   cursor: pointer;
 }
 @media (min-width: 1025px) {
@@ -1224,7 +1218,7 @@ li {
 }
 
 .shop__inner {
-  padding-top: 62px;
+  padding-top: 65px;
 }
 @media (min-width: 1025px) {
   .shop__inner {
@@ -1254,7 +1248,7 @@ li {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-bottom: 68px;
 }
 @media (min-width: 1025px) {
@@ -1629,7 +1623,7 @@ li {
   font-size: 36px;
   font-weight: 400;
   letter-spacing: 1.8px;
-  padding-left: 23px;
+  padding-left: 24px;
   transform: rotate(-6deg);
 }
 @media (min-width: 1025px) {
@@ -1644,22 +1638,22 @@ li {
 .green-text::before {
   content: "";
   position: absolute;
-  width: 318px;
+  width: 286px;
   height: 1px;
   background-color: #159741;
   transform: rotate(-1deg);
-  top: 45px;
-  right: -8px;
+  top: 43px;
+  right: 4px;
 }
 .green-text::after {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 286px;
   height: 1px;
   background-color: #159741;
   transform: rotate(-1deg);
-  top: 51px;
-  right: -9px;
+  top: 49px;
+  right: 5px;
 }
 
 .contact {
@@ -1673,7 +1667,7 @@ li {
 }
 
 .contact__inner {
-  padding: 64px 16px;
+  padding: 62px 16px 64px;
 }
 @media (min-width: 1025px) {
   .contact__inner {
@@ -1698,7 +1692,7 @@ li {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
-  padding-top: 64px;
+  padding-top: 65px;
 }
 @media (min-width: 1025px) {
   .contact-title__jp {
@@ -1714,8 +1708,8 @@ li {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.6px;
-  padding-top: 10px;
-  padding-bottom: 58px;
+  padding-top: 7px;
+  padding-bottom: 60px;
 }
 @media (min-width: 1025px) {
   .contact-title__en {
