@@ -421,7 +421,6 @@ li {
 .about-text-bg03 {
   background-image: url(/image/sp/03.png);
   background-position: right 68px;
-  margin-bottom: 14px;
 }
 @media (min-width: 1025px) {
   .about-text-bg03 {
@@ -549,42 +548,19 @@ li {
 }
 
 .parallax {
+  margin-top: 0;
   background-image: url("/image/salad-5904093_1920 1.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  max-width: 375px;
+  max-height: 250px;
   height: 100vh;
-}
-
-.parallax__image {
-  min-width: 375px;
-  height: 267px;
-  position: relative;
-  overflow: hidden;
-  margin-top: -23px;
-}
-@media (min-width: 1025px) {
-  .parallax__image {
-    min-width: 1025px;
-    height: 450px;
-  }
-}
-
-.parallax-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  transform: translateY(0);
-  transition: transform 0.01s ease-out;
-  will-change: transform; /* パフォーマンスを向上させる */
 }
 
 .menu {
   background: #2F2F2F;
-  outline: 1px solid #FFF;
   text-align: center;
   position: relative;
 }
