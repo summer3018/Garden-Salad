@@ -588,7 +588,7 @@ li {
 }
 
 .menu__inner {
-  padding: 55px 0 87px;
+  padding: 55px 0 85px;
 }
 @media (min-width: 1025px) {
   .menu__inner {
@@ -1045,7 +1045,7 @@ li {
   content: "";
   position: absolute;
   top: 10px;
-  bottom: 10px;
+  bottom: 12px;
   left: 10px;
   right: 10px;
   border: 1px solid #333;
