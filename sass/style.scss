@@ -304,7 +304,7 @@ li{
     padding-right: 15px;
     @include mq(lg) {
       padding-top: 129px;
-      padding-bottom: 105px;
+      padding-bottom: 98px;
       padding-right: 180px;
       padding-left: 180px;
 
@@ -490,6 +490,20 @@ li{
       margin-right: 71px;
     }
 }
+.about-image-03{
+    img{
+        padding-bottom: 66px;
+        max-width: 100%;
+        @include mq(sm) {
+          max-width: 699px;
+        }
+        @include mq(lg) {
+            width: 450px;
+            padding-bottom: 53px;
+        }
+    }
+    
+}
 
 
 .about-image{
@@ -516,7 +530,7 @@ li{
     &::before {
         content: "";
         position: absolute;
-        top: 33px;  // 上のオフセット
+        top: 24px;  // 上のオフセット
         bottom: 24px; // 下のオフセット
         left: 16px;  // 左のオフセット
         right: 16px; // 右のオフセット
@@ -527,7 +541,7 @@ li{
     @include mq(lg) {
         &::before {
             top: 72px;
-            bottom: 95px;
+            bottom: 72px;
             left: 72px;
             right: 72px;
         }
@@ -535,9 +549,9 @@ li{
 }
 
 .menu__inner{
-    padding: 63px 0 87px;
+    padding: 55px 0 87px;
     @include mq(lg) {
-      padding: 152px 72px 112px;
+      padding: 152px 72px 87px;
     }
 }
 .menu-title__container{
@@ -941,20 +955,35 @@ li{
 // instagram card
 .instagram-card{
     background: #F2F2F2;
-    outline: 1px solid #333;
-    outline-offset: -11px;
+    position: relative;
+    // outline: 1px solid #333;
+    // outline-offset: -11px;
     margin-left: 41px;
     margin-right: 34px;
     margin-bottom: -31px;
     margin-top: 4px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        border: 1px solid #333;  // outline 風のボーダー
+        pointer-events: none; // クリックなどの邪魔にならないように
+    }
     @include mq(lg) {
         width: 1080px;
         height: 544px;
-        outline-offset: -13px;
         margin: 0 auto;
         margin-bottom: 82px;
+        &::before{
+            top: 10px;
+            bottom: 15px;
+            left: 14px;
+            right: 13px;
+        }
     }
-
 }
 .instagram-card__title{
     background: #159741;
@@ -2082,7 +2111,12 @@ input[type="checkbox"] {
     background-size: 134%;
     max-width: 375px;
     max-height: 250px;
-    height: 100vh;      
+    height: 100vh;
+    @include mq(lg) {
+      max-width: 1440px;
+      max-height: 450px;
+      background-size: 100%;
+    }   
 }
 
 // parallax2
@@ -2095,6 +2129,11 @@ input[type="checkbox"] {
     background-size: 134%;
     max-width: 375px;
     max-height: 250px;
-    height: 100vh;      
+    height: 100vh;
+    @include mq(lg) {
+        max-width: 1440px;
+        max-height: 450px;
+        background-size: 100%;
+      } 
 }
   
