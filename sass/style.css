@@ -2102,38 +2102,6 @@ input[type=checkbox]:checked::after {
   display: none;
 }
 
-.instagram-icon {
-  position: relative;
-}
-
-.instagram-icon__image {
-  position: absolute;
-  top: 10.7px;
-  left: 6.7px;
-}
-@media (min-width: 1025px) {
-  .instagram-icon__image {
-    top: 8.5px;
-    left: 5.3px;
-  }
-}
-
-.tiktok-icon {
-  position: relative;
-}
-
-.tiktok-icon__image {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-@media (min-width: 1025px) {
-  .tiktok-icon__image {
-    top: 9.6px;
-    left: 9.6px;
-  }
-}
-
 .footer-nav {
   display: flex;
   color: #333;
