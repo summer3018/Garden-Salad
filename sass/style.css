@@ -2296,12 +2296,26 @@ input[type=checkbox]:checked::after {
   max-width: 375px;
   max-height: 250px;
   height: 100vh;
+  width: 100vw;
+}
+@media (min-width: 767px) {
+  .parallax {
+    max-width: 767px;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax {
+    min-width: 768px;
+    max-height: 450px;
+    width: 100vw;
+  }
 }
 @media (min-width: 1025px) {
   .parallax {
-    max-width: 1440px;
-    max-height: 450px;
-    background-size: 100%;
+    min-width: 1440px;
+    max-width: none;
+    width: 100vw;
   }
 }
 
@@ -2316,11 +2330,24 @@ input[type=checkbox]:checked::after {
   max-height: 250px;
   height: 100vh;
 }
+@media (min-width: 767px) {
+  .parallax2 {
+    max-width: 767px;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  .parallax2 {
+    min-width: 768px;
+    max-height: 450px;
+    width: 100vw;
+  }
+}
 @media (min-width: 1025px) {
   .parallax2 {
-    max-width: 1440px;
-    max-height: 450px;
-    background-size: 100%;
+    min-width: 1440px;
+    max-width: none;
+    width: 100vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,7 +18,7 @@
 
 $breakpoints: (
   sm: 767px, // スマホ用
-  md: 768px, // タブレット用（768px以上）
+  md: 768px, // タブレット用（768px以上1024px以下）
   lg: 1025px // PC用（1025px以上）
 );
 
@@ -2114,11 +2114,21 @@ input[type="checkbox"] {
     max-width: 375px;
     max-height: 250px;
     height: 100vh;
-    @include mq(lg) {
-      max-width: 1440px;
+    width: 100vw;
+    @include mq(sm) {
+      max-width: 767px;
+      background-size: cover;
+    }
+    @include mq(md) {
+      min-width: 768px;
       max-height: 450px;
-      background-size: 100%;
-    }   
+      width: 100vw;
+    }
+    @include mq(lg) {
+        min-width: 1440px; // 1440px以上なら最小幅を指定
+        max-width: none; // max-widthの制限を解除
+        width: 100vw;
+    }
 }
 
 // parallax2
@@ -2132,10 +2142,19 @@ input[type="checkbox"] {
     max-width: 375px;
     max-height: 250px;
     height: 100vh;
-    @include mq(lg) {
-        max-width: 1440px;
+    @include mq(sm) {
+        max-width: 767px;
+        background-size: cover;
+      }
+      @include mq(md) {
+        min-width: 768px;
         max-height: 450px;
-        background-size: 100%;
-      } 
+        width: 100vw;
+      }
+      @include mq(lg) {
+          min-width: 1440px; // 1440px以上なら最小幅を指定
+          max-width: none; // max-widthの制限を解除
+          width: 100vw;
+      }
 }
   
