@@ -62,3 +62,20 @@ window.addEventListener("click", (event) => {
     document.body.style.overflow = ""; // スクロールを元に戻す
   }
 });
+
+document.querySelectorAll('.footer-nav a', '.nav_header-lists a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // デフォルトの動作を無効化
+
+        const targetId = this.getAttribute('href').substring(1); // #を除いたIDを取得
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop, // 対象要素の位置までスクロール
+                behavior: 'smooth' // スムーズにスクロール
+            });
+        }
+    });
+});
+
