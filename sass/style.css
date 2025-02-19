@@ -547,18 +547,6 @@ li {
   }
 }
 
-.parallax {
-  margin-top: 0;
-  background-image: url("/image/salad-5904093_1920 1.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 375px;
-  max-height: 250px;
-  height: 100vh;
-}
-
 .menu {
   background: #2F2F2F;
   text-align: center;
@@ -567,8 +555,8 @@ li {
 .menu::before {
   content: "";
   position: absolute;
-  top: 24px;
-  bottom: 48px;
+  top: 33px;
+  bottom: 26px;
   left: 16px;
   right: 16px;
   border: 1px solid #FFF;
@@ -584,7 +572,7 @@ li {
 }
 
 .menu__inner {
-  padding: 56px 0 111px;
+  padding: 63px 0 89px;
 }
 @media (min-width: 1025px) {
   .menu__inner {
@@ -1236,7 +1224,7 @@ li {
 }
 
 .shop__inner {
-  padding-top: 45px;
+  padding-top: 62px;
 }
 @media (min-width: 1025px) {
   .shop__inner {
@@ -2047,13 +2035,19 @@ input[type=checkbox]:checked::after {
 
 .twitter-icon {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-image: url("/image/Twitter(footer).png");
   background-size: cover;
 }
 .twitter-icon:hover {
   background-image: url("/image/Twitter(hover).png");
+}
+@media (min-width: 768px) {
+  .twitter-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 .twitter-icon img {
   display: none;
@@ -2061,13 +2055,19 @@ input[type=checkbox]:checked::after {
 
 .instagram-icon {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-image: url("/image/Instagram(footer).png");
   background-size: cover;
 }
 .instagram-icon:hover {
   background-image: url("/image/Instagram(hover).png");
+}
+@media (min-width: 768px) {
+  .instagram-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 .instagram-icon img {
   display: none;
@@ -2075,13 +2075,19 @@ input[type=checkbox]:checked::after {
 
 .tiktok-icon {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-image: url("/image/TikTok(footer).png");
   background-size: cover;
 }
 .tiktok-icon:hover {
   background-image: url("/image/TikTok(hover).png");
+}
+@media (min-width: 768px) {
+  .tiktok-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 .tiktok-icon img {
   display: none;
@@ -2254,5 +2260,29 @@ input[type=checkbox]:checked::after {
   margin-top: 10px;
   color: blue;
   text-decoration: underline;
+}
+
+.parallax {
+  margin-top: 0;
+  background-image: url("/image/salad-5904093_1920 1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 134%;
+  max-width: 375px;
+  max-height: 250px;
+  height: 100vh;
+}
+
+.parallax2 {
+  margin-top: 0;
+  background-image: url("/image/cafe-768771_1920 1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 134%;
+  max-width: 375px;
+  max-height: 250px;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

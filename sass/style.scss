@@ -507,19 +507,6 @@ li{
     }
 }
 
-// parallax
-.parallax{
-    margin-top: 0;
-    background-image: url("/image/salad-5904093_1920\ 1.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 375px;
-    max-height: 250px;
-    height: 100vh;      
-}
-
 // menu
 .menu {
     background: #2F2F2F;
@@ -529,8 +516,8 @@ li{
     &::before {
         content: "";
         position: absolute;
-        top: 24px;  // 上のオフセット
-        bottom: 48px; // 下のオフセット
+        top: 33px;  // 上のオフセット
+        bottom: 26px; // 下のオフセット
         left: 16px;  // 左のオフセット
         right: 16px; // 右のオフセット
         border: 1px solid #FFF;  // outline 風のボーダー
@@ -548,7 +535,7 @@ li{
 }
 
 .menu__inner{
-    padding: 56px 0 111px;
+    padding: 63px 0 89px;
     @include mq(lg) {
       padding: 152px 72px 112px;
     }
@@ -1138,16 +1125,12 @@ li{
     }
 
 }
-// parallax2
-.parallax2{
-
-}
 // shop
 .shop{
     background: #F2F2F2;
 }
 .shop__inner{
-    padding-top: 45px;
+    padding-top: 62px;
     @include mq(lg) {
       padding-top: 120px;
 
@@ -1868,13 +1851,17 @@ input[type="checkbox"] {
 }
 .twitter-icon {
     display: inline-block;
-    width: 40px; // 画像のサイズに合わせる
-    height: 40px; 
+    width: 50px; // 画像のサイズに合わせる
+    height: 50px; 
     background-image: url("/image/Twitter\(footer\).png");
     background-size: cover;
 
     &:hover {
         background-image: url("/image/Twitter\(hover\).png");
+    }
+    @include mq(md) {
+        width: 40px; // 画像のサイズに合わせる
+        height: 40px; 
     }
 
     img {
@@ -1884,13 +1871,17 @@ input[type="checkbox"] {
 
 .instagram-icon {
     display: inline-block;
-    width: 40px; // 画像のサイズに合わせる
-    height: 40px; 
+    width: 50px; // 画像のサイズに合わせる
+    height: 50px; 
     background-image: url("/image/Instagram\(footer\).png");
     background-size: cover;
 
     &:hover {
         background-image: url("/image/Instagram\(hover\).png");
+    }
+    @include mq(md) {
+        width: 40px; // 画像のサイズに合わせる
+        height: 40px; 
     }
 
     img {
@@ -1899,13 +1890,17 @@ input[type="checkbox"] {
 }
 .tiktok-icon {
     display: inline-block;
-    width: 40px; // 画像のサイズに合わせる
-    height: 40px; 
+    width: 50px; // 画像のサイズに合わせる
+    height: 50px; 
     background-image: url("/image/TikTok\(footer\).png");
     background-size: cover;
 
     &:hover {
         background-image: url("/image/TikTok\(hover\).png");
+    }
+    @include mq(md) {
+        width: 40px; // 画像のサイズに合わせる
+        height: 40px; 
     }
 
     img {
@@ -2077,4 +2072,30 @@ input[type="checkbox"] {
     color: blue;
     text-decoration: underline;
   }
+
+// parallax
+.parallax{
+    margin-top: 0;
+    background-image: url("/image/salad-5904093_1920\ 1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 134%;
+    max-width: 375px;
+    max-height: 250px;
+    height: 100vh;      
+}
+
+// parallax2
+.parallax2{
+    margin-top: 0;
+    background-image: url("/image/cafe-768771_1920\ 1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 134%;
+    max-width: 375px;
+    max-height: 250px;
+    height: 100vh;      
+}
   
