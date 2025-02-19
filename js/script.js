@@ -63,9 +63,9 @@ window.addEventListener("click", (event) => {
   }
 });
 
-document.querySelectorAll('.footer-nav a', '.nav_header-lists a').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault(); // デフォルトの動作を無効化
+        e.preventDefault(); // デフォルトのジャンプ動作を無効化
 
         const targetId = this.getAttribute('href').substring(1); // #を除いたIDを取得
         const targetElement = document.getElementById(targetId);
@@ -78,4 +78,3 @@ document.querySelectorAll('.footer-nav a', '.nav_header-lists a').forEach(anchor
         }
     });
 });
-
