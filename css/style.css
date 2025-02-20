@@ -1075,13 +1075,14 @@ li {
 }
 @media (min-width: 1025px) {
   .card3__title {
-    padding-top: 75px;
+    padding-top: 77px;
+    padding-left: 5px;
   }
 }
 
 @media (min-width: 1025px) {
   .card3__price {
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     padding-left: 0;
     padding-right: 15px;
   }
@@ -1102,8 +1103,8 @@ li {
     font-size: 24px;
     letter-spacing: 0.72px;
     padding-top: 1px;
-    margin-left: 41px;
-    margin-right: 43px;
+    margin-left: 42px;
+    margin-right: 41px;
   }
 }
 
@@ -1133,8 +1134,8 @@ li {
     margin-bottom: 82px;
   }
   .instagram-card::before {
-    top: 10px;
-    bottom: 15px;
+    top: 12px;
+    bottom: 13px;
     left: 14px;
     right: 13px;
   }
@@ -1326,7 +1327,7 @@ li {
 }
 @media (min-width: 1025px) {
   .shop__inner {
-    padding-top: 120px;
+    padding-top: 122px;
   }
 }
 
@@ -1416,7 +1417,7 @@ li {
 }
 @media (min-width: 1025px) {
   .union__image-wrap {
-    top: 38%;
+    top: 37.5%;
     right: 27%;
   }
 }
