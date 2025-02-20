@@ -1680,14 +1680,38 @@ li {
 }
 
 .post-card__takeout {
-  outline: 1px solid #fff;
-  outline-offset: -10px;
+  position: relative;
+  display: inline-block;
   margin-top: -2px;
+}
+.post-card__takeout::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid #fff;
 }
 @media (min-width: 1025px) {
   .post-card__takeout {
     margin-top: 0;
-    outline-offset: -20px;
+  }
+  .post-card__takeout::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    right: 20px;
+    bottom: 26px;
+    border: 1px solid #fff;
+    pointer-events: none;
+  }
+}
+@media (min-width: 1025px) and (min-width: 768px) {
+  .post-card__takeout img {
+    width: 449.691px;
+    height: 430.748px;
   }
 }
 
@@ -1717,7 +1741,7 @@ li {
     float: left;
     margin-right: 50px;
     margin-bottom: 50px;
-    padding-top: 27px;
+    padding-top: 22px;
   }
 }
 
@@ -1736,7 +1760,7 @@ li {
   .card-text {
     text-align: left;
     margin-right: 220px;
-    padding-top: 45px;
+    padding-top: 39px;
   }
 }
 
