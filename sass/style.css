@@ -1639,6 +1639,7 @@ li {
 
 .post-card__stamp {
   position: absolute;
+  z-index: 2;
   top: -58px;
   left: -26px;
 }
@@ -1650,12 +1651,31 @@ li {
 }
 
 .post-card__terrace {
-  outline: 1px solid #fff;
-  outline-offset: -14px;
+  position: relative;
+  display: inline-block;
+}
+.post-card__terrace::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid #fff;
+  pointer-events: none;
 }
 @media (min-width: 1025px) {
-  .post-card__terrace {
-    outline-offset: -20px;
+  .post-card__terrace img {
+    width: 629.568px;
+    height: 430.748px;
+  }
+}
+@media (min-width: 1025px) {
+  .post-card__terrace::before {
+    top: 18px;
+    left: 28px;
+    right: 28px;
+    bottom: 25px;
   }
 }
 

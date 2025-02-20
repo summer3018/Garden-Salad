@@ -1498,6 +1498,7 @@ padding: 10px 0;
         padding-right: 32px;
         padding-left: 34px;
         padding-bottom: 0px;
+
     }
 }
 .post-card__images{
@@ -1508,24 +1509,57 @@ padding: 10px 0;
 }
 .post-card__stamp{
     position: absolute;
+    z-index: 2;
     top: -58px;
     left: -26px;
+    img{
+        
+    }
     @include mq(lg) {
         top: -101px;
         left: -131px;
     }
 }
 .post-card__terrace{
-    outline: 1px solid #fff;
-    outline-offset: -14px;
+    // outline: 1px solid #fff;
+    // outline-offset: -14px;
+    position: relative; // 疑似要素の基準
+    display: inline-block; // 画像のサイズに合わせる
+    &::before{
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        border: 1px solid #fff;
+        // z-index: 10;
+        pointer-events: none;
+    }
+    img{
+        @include mq(lg) {
+            width: 629.568px;
+            height: 430.748px;
+        }
+
+    }
     @include mq(lg) {
-        outline-offset: -20px;
+        // outline-offset: -20px;
+        &::before{
+            top: 18px;
+            left: 28px;
+            right: 28px;
+            bottom: 25px;
+        }
     }
 }
 .post-card__takeout{
     outline: 1px solid #fff;
     outline-offset: -10px;
     margin-top: -2px;
+    img{
+
+    }
     @include mq(lg) {
       margin-top: 0;
       outline-offset: -20px;
