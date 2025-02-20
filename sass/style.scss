@@ -1651,7 +1651,7 @@ padding: 10px 0;
         height: 1px;
         background-color: #159741;
         transform: rotate(-1deg);
-        top: 43px;
+        top: 44px;
         right: 4px;
     }
 
@@ -1998,7 +1998,7 @@ input[type="checkbox"] {
     gap: 40px;
     @include mq(lg) {
       justify-content: center;
-      padding-bottom: 38px;
+      padding-bottom: 39px;
       gap: 40px;
     }
 
@@ -2079,6 +2079,7 @@ input[type="checkbox"] {
         letter-spacing: 0.54px;
         justify-content: center;
         gap: 40px;
+        padding-right: 4px;
     }
 }
 .footer-nav-text{

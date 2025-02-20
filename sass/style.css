@@ -1791,7 +1791,7 @@ li {
   height: 1px;
   background-color: #159741;
   transform: rotate(-1deg);
-  top: 43px;
+  top: 44px;
   right: 4px;
 }
 .green-text::after {
@@ -2171,7 +2171,7 @@ input[type=checkbox]:checked::after {
 @media (min-width: 1025px) {
   .sns-icons {
     justify-content: center;
-    padding-bottom: 38px;
+    padding-bottom: 39px;
     gap: 40px;
   }
 }
@@ -2252,6 +2252,7 @@ input[type=checkbox]:checked::after {
     letter-spacing: 0.54px;
     justify-content: center;
     gap: 40px;
+    padding-right: 4px;
   }
 }
 
