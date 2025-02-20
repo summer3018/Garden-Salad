@@ -666,25 +666,6 @@ li{
 .menu-card__pfc{
 
 }
-.menu-card__text {
-    display: flex;
-    justify-content: space-between; 
-    color: #333;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.42px;
-    margin: 0 21px;
-    padding-top: 1px;
-
-    @include mq(lg) {
-        font-size: 24px;
-        letter-spacing: 0.72px;
-        padding-top: 1px;
-        margin-left: 41px;
-        margin-right: 43px; 
-    }
-}
-
 // card1
 .menu-card1__wrapper{
     @include mq(lg) {
@@ -717,12 +698,30 @@ li{
     margin-bottom: 32px;
     position: relative;
     top: -12px;
+    &::before{
+        content: "";
+        position: absolute;
+        border: 1px solid #333;
+        top: 15px;
+        bottom: 11px;
+        left: 10px;
+        right: 16px;
+    }
     @include mq(lg) {
         width: 592px;
         height: 367px;
         margin-left: 54px;
         margin-bottom: 85px;
         top: -17px;
+        &::before{
+            content: "";
+            position: absolute;
+            border: 1px solid #333;
+            top: 13px;
+            bottom: 13px;
+            left: 13px;
+            right: 13px;
+        }
     }
 }
 .menu-card1__Recommendation{
@@ -780,13 +779,14 @@ li{
         letter-spacing: 3px;
         padding-top: 112px;
         padding-bottom: 8px;
+        padding-left: 2px;
 
     }
 }
 .menu-card1__price{
     padding-bottom: 16px;
     @include mq(lg) {
-        padding-bottom: 23px;
+        padding-bottom: 22px;
         padding-right: 10px;
         padding-top: 2px;
     }
@@ -887,7 +887,7 @@ li{
     &::before{
         content: "";
         position: absolute;
-        border: 1px solid blue;
+        border: 1px solid #333;
         top: 15px;
         bottom: 11px;
         left: 10px;
@@ -897,33 +897,51 @@ li{
         width: 524px;
         height: 280px;
         margin-right: 8px;
-        bottom: 100px;
+        bottom: 99px;
+        right: 4px;
         &::before{
             content: "";
             position: absolute;
             border: 1px solid #333;
             top: 15px;
             bottom: 11px;
-            left: 10px;
-            right: 16px;
+            left: 14px;
+            right: 12px;
         }
     }
 
 }
-.card__title2{
+.card2__title{
     padding-top: 58px;
     padding-bottom: 11px;
     @include mq(lg) {
-        padding-top: 73px;
-        padding-right: 5px;
+        padding-top: 74px;
+        padding-right: 0px;
     }
 }
-.card__price2{
+.card2__price{
     // padding-left: 10px;
     @include mq(lg) {
-        padding-bottom: 22px;
+        padding-bottom: 21px;
         padding-left: 0;
         padding-right: 18px;
+    }
+}
+.menu-card2__text{
+    display: flex;
+    justify-content: space-between; 
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    margin: 0 21px;
+    padding-top: 1px;
+    @include mq(lg) {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+        padding-top: 1px;
+        margin-left: 43px;
+        margin-right: 40px;
     }
 }
 // card3
@@ -936,7 +954,7 @@ li{
     padding-top: 6px;
     @include mq(lg) {
         bottom: 23px;
-        left: -9px;
+        left: -13px;
     }
     img{
         
@@ -951,26 +969,62 @@ li{
     margin-bottom: -10px;
     position: relative;
     bottom: 55px;
+    &::before{
+        content: "";
+        position: absolute;
+        border: 1px solid #333;
+        top: 15px;
+        bottom: 11px;
+        left: 10px;
+        right: 16px;
+    }
     @include mq(lg) {
         width: 524px;
         height: 280px;
         margin-left: -10px;
         bottom: 98px;
+        &::before{
+            content: "";
+            position: absolute;
+            border: 1px solid #333;
+            top: 14px;
+            bottom: 12px;
+            left: 12px;
+            right: 13px;
+        }
     }
 }
-.card__title3{
+.card3__title{
     padding-top: 56px;
     padding-bottom: 11px;
     @include mq(lg) {
       padding-top: 75px;
     }
 }
-.card__price3{
+.card3__price{
     // padding-left: 10px;
     @include mq(lg) {
-        padding-bottom: 22px;
+        padding-bottom: 24px;
         padding-left: 0;
         padding-right: 15px;
+    }
+}
+.menu-card3__text{
+    display: flex;
+    justify-content: space-between; 
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    margin: 0 21px;
+    padding-top: 1px;
+
+    @include mq(lg) {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+        padding-top: 1px;
+        margin-left: 41px;
+        margin-right: 43px; 
     }
 }
 
@@ -2119,7 +2173,7 @@ input[type="checkbox"] {
     cursor: pointer;
     display: block;
     margin-top: 10px;
-    color: blue;
+    color: #333;
     text-decoration: underline;
   }
 

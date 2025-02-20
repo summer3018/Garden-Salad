@@ -717,26 +717,6 @@ li {
   }
 }
 
-.menu-card__text {
-  display: flex;
-  justify-content: space-between;
-  color: #333;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.42px;
-  margin: 0 21px;
-  padding-top: 1px;
-}
-@media (min-width: 1025px) {
-  .menu-card__text {
-    font-size: 24px;
-    letter-spacing: 0.72px;
-    padding-top: 1px;
-    margin-left: 41px;
-    margin-right: 43px;
-  }
-}
-
 @media (min-width: 1025px) {
   .menu-card1__wrapper {
     display: flex;
@@ -769,6 +749,15 @@ li {
   position: relative;
   top: -12px;
 }
+.card1-text__wrapper::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #333;
+  top: 15px;
+  bottom: 11px;
+  left: 10px;
+  right: 16px;
+}
 @media (min-width: 1025px) {
   .card1-text__wrapper {
     width: 592px;
@@ -776,6 +765,15 @@ li {
     margin-left: 54px;
     margin-bottom: 85px;
     top: -17px;
+  }
+  .card1-text__wrapper::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #333;
+    top: 13px;
+    bottom: 13px;
+    left: 13px;
+    right: 13px;
   }
 }
 
@@ -845,6 +843,7 @@ li {
     letter-spacing: 3px;
     padding-top: 112px;
     padding-bottom: 8px;
+    padding-left: 2px;
   }
 }
 
@@ -853,7 +852,7 @@ li {
 }
 @media (min-width: 1025px) {
   .menu-card1__price {
-    padding-bottom: 23px;
+    padding-bottom: 22px;
     padding-right: 10px;
     padding-top: 2px;
   }
@@ -957,7 +956,7 @@ li {
 .card2-text__wrapper::before {
   content: "";
   position: absolute;
-  border: 1px solid blue;
+  border: 1px solid #333;
   top: 15px;
   bottom: 11px;
   left: 10px;
@@ -968,7 +967,8 @@ li {
     width: 524px;
     height: 280px;
     margin-right: 8px;
-    bottom: 100px;
+    bottom: 99px;
+    right: 4px;
   }
   .card2-text__wrapper::before {
     content: "";
@@ -976,27 +976,47 @@ li {
     border: 1px solid #333;
     top: 15px;
     bottom: 11px;
-    left: 10px;
-    right: 16px;
+    left: 14px;
+    right: 12px;
   }
 }
 
-.card__title2 {
+.card2__title {
   padding-top: 58px;
   padding-bottom: 11px;
 }
 @media (min-width: 1025px) {
-  .card__title2 {
-    padding-top: 73px;
-    padding-right: 5px;
+  .card2__title {
+    padding-top: 74px;
+    padding-right: 0px;
   }
 }
 
 @media (min-width: 1025px) {
-  .card__price2 {
-    padding-bottom: 22px;
+  .card2__price {
+    padding-bottom: 21px;
     padding-left: 0;
     padding-right: 18px;
+  }
+}
+
+.menu-card2__text {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  margin: 0 21px;
+  padding-top: 1px;
+}
+@media (min-width: 1025px) {
+  .menu-card2__text {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    padding-top: 1px;
+    margin-left: 43px;
+    margin-right: 40px;
   }
 }
 
@@ -1009,7 +1029,7 @@ li {
 @media (min-width: 1025px) {
   .menu-image__3 {
     bottom: 23px;
-    left: -9px;
+    left: -13px;
   }
 }
 .card3-text__wrapper {
@@ -1022,6 +1042,15 @@ li {
   position: relative;
   bottom: 55px;
 }
+.card3-text__wrapper::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #333;
+  top: 15px;
+  bottom: 11px;
+  left: 10px;
+  right: 16px;
+}
 @media (min-width: 1025px) {
   .card3-text__wrapper {
     width: 524px;
@@ -1029,23 +1058,52 @@ li {
     margin-left: -10px;
     bottom: 98px;
   }
+  .card3-text__wrapper::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #333;
+    top: 14px;
+    bottom: 12px;
+    left: 12px;
+    right: 13px;
+  }
 }
 
-.card__title3 {
+.card3__title {
   padding-top: 56px;
   padding-bottom: 11px;
 }
 @media (min-width: 1025px) {
-  .card__title3 {
+  .card3__title {
     padding-top: 75px;
   }
 }
 
 @media (min-width: 1025px) {
-  .card__price3 {
-    padding-bottom: 22px;
+  .card3__price {
+    padding-bottom: 24px;
     padding-left: 0;
     padding-right: 15px;
+  }
+}
+
+.menu-card3__text {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  margin: 0 21px;
+  padding-top: 1px;
+}
+@media (min-width: 1025px) {
+  .menu-card3__text {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    padding-top: 1px;
+    margin-left: 41px;
+    margin-right: 43px;
   }
 }
 
@@ -2294,7 +2352,7 @@ input[type=checkbox]:checked::after {
   cursor: pointer;
   display: block;
   margin-top: 10px;
-  color: blue;
+  color: #333;
   text-decoration: underline;
 }
 
