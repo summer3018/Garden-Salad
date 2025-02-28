@@ -1663,12 +1663,6 @@ li {
 }
 
 .post-card__terrace {
-  background-image: url("/image/img：オープンテラス.png");
-  width: 323px;
-  height: 282px;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   display: inline-block;
 }
@@ -1683,9 +1677,10 @@ li {
   pointer-events: none;
 }
 .post-card__terrace img {
-  max-width: 100%;
   width: 323px;
   height: 282px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 1025px) {
   .post-card__terrace img {

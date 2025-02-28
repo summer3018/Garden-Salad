@@ -1528,12 +1528,12 @@ padding: 10px 0;
     }
 }
 .post-card__terrace{
-    background-image: url("/image/img：オープンテラス.png");
-    width: 323px;
-    height: 282px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image: url("/image/img：オープンテラス.png");
+    // width: 323px;
+    // height: 282px;
+    // background-size: 100% auto;
+    // background-repeat: no-repeat;
+    // background-position: center;
     position: relative; // 疑似要素の基準
     display: inline-block; // 画像のサイズに合わせる
     &::before{
@@ -1547,9 +1547,10 @@ padding: 10px 0;
         pointer-events: none;
     }
     img{
-        max-width: 100%;
+        // max-width: 100%;
         width: 323px;
         height: 282px;
+        object-fit: cover;
         @include mq(lg) {
             width: 629.568px;
             height: 430.748px;
