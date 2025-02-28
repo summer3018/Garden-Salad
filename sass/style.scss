@@ -120,7 +120,6 @@ li{
     }
 
     @include mq(lg) {
-    //   justify-content: flex-end;
       gap: 40px;
       margin-top: 15px;
     }
@@ -194,7 +193,6 @@ li{
         padding-left: calc((19px + 178px) / 2);
     }
 
-
     @include mq(lg) {
         font-size: 100px;
         line-height: 100px;
@@ -205,7 +203,10 @@ li{
 .mv-text__en-farst {
     padding-top: 24px;
     margin-bottom: -10px;
-
+    @include mq(md) {
+      padding-top: calc((24px + 85px) / 2);
+      margin-bottom: calc((-10px + 3px) / 2);
+    }
 
     @include mq(lg) {
         padding-top: 85px;
@@ -222,8 +223,8 @@ li{
     line-height: 36px;
     @include mq(md) {
         font-size: calc((36px + 100px) / 2);
+        margin-top: calc((-6px + 1px) / 2);
     }
-
 
     @include mq(lg) {
         margin-top: 1px;
@@ -246,7 +247,6 @@ li{
         font-size: calc((14px + 32px) / 2);
         padding-left: calc((17px + 180px) / 2);
     }
-
 
     @include mq(lg) {
         font-size: 32px;
@@ -278,7 +278,6 @@ li{
         height: calc((31px + 64px) / 2);
     }
 
-
     @include mq(lg) {
         width: 524px;
         height: 64px;
@@ -293,10 +292,15 @@ li{
 .concept{
     position: relative;
     top: -2px;
-    background: $base-color;
+    background-color: $base-color;
     background-image: url(/image/sp/pGarden\ Salad\(sp\).png);
     background-repeat: no-repeat;
     background-position: 6px 274px;
+    @include mq(md) {
+        background-image: url(/image/pc/Garden\ Salad\(pc\).png);
+        background-position: bottom;
+        background-size: contain;
+    }
     @include mq(lg) {
       background-image: url(/image/pc/Garden\ Salad\(pc\).png);
       background-position: bottom;
@@ -307,6 +311,10 @@ li{
     padding-bottom: 40px;
     padding-right: 32px;
     padding-left: 33px;
+    @include mq(md) {
+      padding-top: calc((31px + 122px) / 2);
+      padding-bottom: calc((40px + 83px) / 2);
+    }
     @include mq(lg) {
       padding-top: 122px;
       padding-bottom: 83px;
@@ -320,6 +328,11 @@ li{
     padding-bottom: 24px;
     letter-spacing: 1px;
     padding-left: 17px;
+    @include mq(md) {
+      font-size: calc((20px + 30px) / 2);
+      padding-bottom: 36px;
+      padding-left: calc((17px + 3px) / 2);
+    }
     @include mq(lg) {
         font-size: 30px;
         font-weight: 700;
