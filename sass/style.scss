@@ -436,7 +436,7 @@ li{
     }
 }
 .about-text-container-01{
-    @include mq(lg) {
+    @include mq(md) {
       display: flex;
       flex-direction: row-reverse;
       align-items: center; 
@@ -444,12 +444,12 @@ li{
       margin-bottom: 11px;
     }
 }.about-text-container-02{
-    @include mq(lg) {
+    @include mq(md) {
       display: flex;
       margin-bottom: 11px;
     }
 }.about-text-container-03{
-    @include mq(lg) {
+    @include mq(md) {
       display: flex;
       flex-direction: row-reverse;
       align-items: center; 
@@ -467,6 +467,10 @@ li{
 .about-text-bg02{
     background-image: url(/image/sp/02.png);
     background-position: right 79px;
+    @include mq(md) {
+        background-image: url(/image/sp/02.png);
+        background-position: left 176px top 4px;
+    }
     @include mq(lg) {
       background-image: url(/image/pc/02\ \(pc\).png);
       background-position: left 256px top 33px;
@@ -475,7 +479,6 @@ li{
 .about-text-bg03{
     background-image: url(/image/sp/03.png);
     background-position: right 68px;
-    // margin-bottom: 14px;
     @include mq(lg) {
       background-image: url(/image/pc/03\ \(pc\).png);
       background-position: right 1px top 31px;

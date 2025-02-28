@@ -461,7 +461,7 @@ li {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 600px) {
   .about-text-container-01 {
     display: flex;
     flex-direction: row-reverse;
@@ -471,14 +471,14 @@ li {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 600px) {
   .about-text-container-02 {
     display: flex;
     margin-bottom: 11px;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 600px) {
   .about-text-container-03 {
     display: flex;
     flex-direction: row-reverse;
@@ -501,6 +501,12 @@ li {
 .about-text-bg02 {
   background-image: url(/image/sp/02.png);
   background-position: right 79px;
+}
+@media (min-width: 600px) {
+  .about-text-bg02 {
+    background-image: url(/image/sp/02.png);
+    background-position: left 176px top 4px;
+  }
 }
 @media (min-width: 1025px) {
   .about-text-bg02 {
