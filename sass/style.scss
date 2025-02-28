@@ -34,13 +34,13 @@ li{
 }
 .pc-none{
     display: block;
-    @include mq(lg) {
+    @include mq(md) {
       display: none;
     }
 }
 .pc-block{
     display: none;
-    @include mq(lg) {
+    @include mq(md) {
       display: block;
     }
 }
@@ -371,6 +371,11 @@ li{
     padding-top: 61px;
     padding-left: 16px;
     padding-right: 15px;
+    @include mq(md) {
+      padding-top: calc((61px + 129px) / 2);
+      padding-left: calc((16px + 180px) / 2);
+      padding-right: calc((15px + 180px) /2);
+    }
     @include mq(lg) {
       padding-top: 129px;
       padding-bottom: 98px;
@@ -388,6 +393,9 @@ li{
     letter-spacing: 0.7px;
     padding-bottom: 8px;
     padding-left: 1px;
+    @include mq(md) {
+      font-size: 16px;
+    }
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
@@ -404,6 +412,9 @@ li{
     padding-bottom: 12px;
     padding-left: 3px;
     margin-bottom: 56px;
+    @include mq(md) {
+      font-size: calc((32px + 48px) / 2);
+    }
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
