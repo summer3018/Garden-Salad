@@ -1,13 +1,20 @@
-@mixin mq($breakpoint) {
+// ブレークポイント用のmixin（min-width / max-width 両対応）
+@mixin mq($breakpoint, $direction: min) {
+  @if $direction == min {
     @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
-        @content;
+      @content;
     }
+  } @else if $direction == max {
+    @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
 }
-
+// ブレークポイントの定義
 $breakpoints: (
-  sm: 0px, // スマホ用（1px以上599px以下）
-  md: 600x, // タブレット用（600px以上1024px以下）
-  lg: 1025px // PC用（1025px以上）
+  sm: 599px,  // スマホ用（599px以下）
+  md: 600px,  // タブレット用（600px以上1024px以下）
+  lg: 1025px  // PC用（1025px以上）
 );
 
 $font-black: #333;
@@ -37,12 +44,26 @@ li{
       display: block;
     }
 }
+// body{
+//     @include mq(sm) {
+//       color: green;
+//     }
+//     @include mq(md) {
+//       color: red;
+//     }
+//     @include mq(lg) {
+//       color: blue;
+//     }
+// }
 
 
 //  header
 .header{
     background: $base-color;
     height: 60px;
+    @include mq(md) {
+      height: 75px;
+    }
     @include mq(lg) {
         height: 90px;
     }
@@ -70,14 +91,11 @@ li{
         }
     }
 }
-.logo__header-sp{
-    display: block;
-    @include mq(lg) {
-      display: none;
-    }
-}
+
 .logo__header-pc{
-    display: none;
+    // display: none;
+    width: 55px;
+    height: 29.397px;
     @include mq(lg) {
       display: block;
     }
@@ -93,9 +111,12 @@ li{
     justify-content: flex-end; /* 右寄せにする */
     gap: 20px; /* リストアイテム間の均等な間隔 */
     margin-left: 65px;
+    @include mq(md) {
+      gap: 30px;
+    }
 
     @include mq(lg) {
-      justify-content: flex-end;
+    //   justify-content: flex-end;
       gap: 40px;
       margin-top: 15px;
     }
@@ -110,6 +131,9 @@ li{
         letter-spacing: 0.42px;
         &:hover {
             border-bottom: solid 2px $accent-color;
+        }
+        @include mq(md) {
+          font-size: 16px;
         }
         @include mq(lg) {
             font-size: 18px;

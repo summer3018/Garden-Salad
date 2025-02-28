@@ -30,6 +30,11 @@ li {
   background: #2f2f2f;
   height: 60px;
 }
+@media (min-width: 600px) {
+  .header {
+    height: 75px;
+  }
+}
 @media (min-width: 1025px) {
   .header {
     height: 90px;
@@ -59,17 +64,9 @@ li {
   }
 }
 
-.logo__header-sp {
-  display: block;
-}
-@media (min-width: 1025px) {
-  .logo__header-sp {
-    display: none;
-  }
-}
-
 .logo__header-pc {
-  display: none;
+  width: 55px;
+  height: 29.397px;
 }
 @media (min-width: 1025px) {
   .logo__header-pc {
@@ -83,9 +80,13 @@ li {
   gap: 20px; /* リストアイテム間の均等な間隔 */
   margin-left: 65px;
 }
+@media (min-width: 600px) {
+  .nav_header-lists {
+    gap: 30px;
+  }
+}
 @media (min-width: 1025px) {
   .nav_header-lists {
-    justify-content: flex-end;
     gap: 40px;
     margin-top: 15px;
   }
@@ -103,6 +104,11 @@ li {
 }
 .nav_header-list a:hover {
   border-bottom: solid 2px #159741;
+}
+@media (min-width: 600px) {
+  .nav_header-list a {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1025px) {
   .nav_header-list a {
@@ -534,7 +540,7 @@ li {
   padding-bottom: 66px;
   max-width: 100%;
 }
-@media (min-width: 0px) {
+@media (min-width: 599px) {
   .about-image-03 img {
     max-width: 699px;
   }
@@ -550,7 +556,7 @@ li {
   padding-bottom: 57px;
   max-width: 100%;
 }
-@media (min-width: 0px) {
+@media (min-width: 599px) {
   .about-image img {
     max-width: 699px;
   }
@@ -1401,7 +1407,7 @@ li {
   top: 45%;
   right: 17%;
 }
-@media (min-width: 0px) {
+@media (min-width: 599px) {
   .union__image-wrap {
     top: 60%;
     right: 22%;
@@ -2436,7 +2442,7 @@ input[type=checkbox]:checked::after {
   height: 100vh;
   width: 100%;
 }
-@media (min-width: 0px) {
+@media (min-width: 599px) {
   .parallax {
     max-width: 767px;
     background-size: cover;
@@ -2468,7 +2474,7 @@ input[type=checkbox]:checked::after {
   max-height: 250px;
   height: 100vh;
 }
-@media (min-width: 0px) {
+@media (min-width: 599px) {
   .parallax2 {
     max-width: 767px;
     background-size: cover;
