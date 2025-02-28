@@ -56,21 +56,17 @@ li {
   .header__logo {
     margin-left: -20px;
     margin-top: -5px;
-  }
-}
-@media (min-width: 1025px) {
-  .header__logo img {
     padding-left: 18px;
   }
 }
-
-.logo__header-pc {
+.header__logo img {
   width: 55px;
   height: 29.397px;
 }
 @media (min-width: 1025px) {
-  .logo__header-pc {
-    display: block;
+  .header__logo img {
+    width: 117.871px;
+    height: 63px;
   }
 }
 

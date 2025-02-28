@@ -84,21 +84,21 @@ li{
     @include mq(lg) {
         margin-left: -20px;
         margin-top: -5px;
+        padding-left: 18px;
     }
     img{
+        width: 55px;
+        height: 29.397px;
         @include mq(lg) {
-            padding-left: 18px;
+            width: 117.871px;
+            height: 63px;
         }
+
     }
 }
 
 .logo__header-pc{
-    // display: none;
-    width: 55px;
-    height: 29.397px;
-    @include mq(lg) {
-      display: block;
-    }
+
 }
 .header-right{
 
