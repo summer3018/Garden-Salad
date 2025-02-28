@@ -791,7 +791,7 @@ li{
     img{
         width: 315px;
         height: 311px;
-    @include mq(lg) {
+    @include mq(md) {
         width: 451px;
         height: 445px;
     }
@@ -805,7 +805,7 @@ li{
     margin-right: 37px;
     margin-bottom: 32px;
     position: relative;
-    top: -12px;
+    top: -16px;
     &::before{
         content: "";
         position: absolute;
@@ -814,6 +814,9 @@ li{
         bottom: 9px;
         left: 10px;
         right: 10px;
+    }
+    @include mq(md) {
+      width: calc((300px + 592px) / 2);
     }
     @include mq(lg) {
         width: 592px;
@@ -973,8 +976,6 @@ li{
     position: relative;
     z-index: 1;
     padding-right: 6px;
-    padding-left: 31px;
-    padding-top: 5px;
     @include mq(lg) {
         left: 54px;
         bottom: 22px;
@@ -982,7 +983,7 @@ li{
     img{
         width: 305px;
         height: 317px;
-    @include mq(lg) {
+    @include mq(md) {
         width: 417px;
         height: 434px;
     }
@@ -997,7 +998,7 @@ li{
     margin-bottom: -13px;
     background: #F2F2F2;
     position: relative;
-    bottom: 55px;
+    bottom: 60px;
     &::before{
         content: "";
         position: absolute;
@@ -1064,8 +1065,7 @@ li{
 .menu-image__3{
     position: relative;
     z-index: 1;
-    padding-left: 34px;
-    padding-top: 6px;
+
     @include mq(lg) {
         bottom: 23px;
         left: -13px;
@@ -1087,7 +1087,7 @@ li{
     margin-right: 34px;
     margin-bottom: -10px;
     position: relative;
-    bottom: 55px;
+    bottom: 60px;
     &::before{
         content: "";
         position: absolute;
@@ -1156,7 +1156,6 @@ li{
     margin-left: 41px;
     margin-right: 34px;
     margin-bottom: -31px;
-    margin-top: 4px;
     &::before {
         content: "";
         position: absolute;

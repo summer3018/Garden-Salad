@@ -875,7 +875,7 @@ li {
   width: 315px;
   height: 311px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 600px) {
   .menu-image__1 img {
     width: 451px;
     height: 445px;
@@ -890,7 +890,7 @@ li {
   margin-right: 37px;
   margin-bottom: 32px;
   position: relative;
-  top: -12px;
+  top: -16px;
 }
 .card1-text__wrapper::before {
   content: "";
@@ -900,6 +900,11 @@ li {
   bottom: 9px;
   left: 10px;
   right: 10px;
+}
+@media (min-width: 600px) {
+  .card1-text__wrapper {
+    width: 446px;
+  }
 }
 @media (min-width: 1025px) {
   .card1-text__wrapper {
@@ -1077,8 +1082,6 @@ li {
   position: relative;
   z-index: 1;
   padding-right: 6px;
-  padding-left: 31px;
-  padding-top: 5px;
 }
 @media (min-width: 1025px) {
   .menu-image__2 {
@@ -1090,7 +1093,7 @@ li {
   width: 305px;
   height: 317px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 600px) {
   .menu-image__2 img {
     width: 417px;
     height: 434px;
@@ -1105,7 +1108,7 @@ li {
   margin-bottom: -13px;
   background: #F2F2F2;
   position: relative;
-  bottom: 55px;
+  bottom: 60px;
 }
 .card2-text__wrapper::before {
   content: "";
@@ -1177,8 +1180,6 @@ li {
 .menu-image__3 {
   position: relative;
   z-index: 1;
-  padding-left: 34px;
-  padding-top: 6px;
 }
 @media (min-width: 1025px) {
   .menu-image__3 {
@@ -1205,7 +1206,7 @@ li {
   margin-right: 34px;
   margin-bottom: -10px;
   position: relative;
-  bottom: 55px;
+  bottom: 60px;
 }
 .card3-text__wrapper::before {
   content: "";
@@ -1279,7 +1280,6 @@ li {
   margin-left: 41px;
   margin-right: 34px;
   margin-bottom: -31px;
-  margin-top: 4px;
 }
 .instagram-card::before {
   content: "";
