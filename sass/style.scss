@@ -590,7 +590,6 @@ li{
     
 }
 
-
 .about-image{
     img{
         padding-bottom: 57px;
@@ -647,6 +646,9 @@ li{
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-bottom: 9px;
+    @include mq(md) {
+      font-size: 16px;
+    }
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
@@ -661,6 +663,9 @@ li{
     font-weight: 400;
     letter-spacing: 1.6px;
     position: relative;
+    @include mq(md) {
+      font-size: calc((32px + 48px) / 2);
+    }
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
@@ -690,11 +695,15 @@ li{
     letter-spacing: 0.48px;
     margin-top: 60px;
     margin-bottom: 19px;
+    @include mq(md) {
+      margin-top: calc((60px + 43px) / 2);
+      margin-bottom: calc((19px + 122px) / 2);
+    }
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
-        margin-bottom: 122px;
         margin-top: 43px;
+        margin-bottom: 122px;
     }
 }
 
@@ -704,6 +713,9 @@ li{
     font-weight: 700;
     letter-spacing: 2.4px;
     padding-bottom: 16px;
+    @include mq(md) {
+      font-size: 27px;
+    }
     @include mq(lg) {
         font-size: 30px;
         letter-spacing: 3px;
@@ -718,6 +730,9 @@ li{
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
+    @include mq(md) {
+      font-size: calc((18px + 24px) / 2);
+    }
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 2.4px;
@@ -730,6 +745,9 @@ li{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+    @include mq(md) {
+      font-size: 35px;
+    }
     @include mq(lg) {
         font-size: 40px;
         letter-spacing: 4px;
@@ -740,6 +758,9 @@ li{
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
+    @include mq(md) {
+        font-size: 15px;  
+    }
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 1.8px;
@@ -750,7 +771,7 @@ li{
 }
 // card1
 .menu-card1__wrapper{
-    @include mq(lg) {
+    @include mq(md) {
         display: flex;
         margin-right: 10%;
     }
@@ -768,7 +789,12 @@ li{
         padding-right: 0;
     }
     img{
-        
+        width: 315px;
+        height: 311px;
+    @include mq(lg) {
+        width: 451px;
+        height: 445px;
+    }
     }
 }
 .card1-text__wrapper{
@@ -954,6 +980,12 @@ li{
         bottom: 22px;
     }
     img{
+        width: 305px;
+        height: 317px;
+    @include mq(lg) {
+        width: 417px;
+        height: 434px;
+    }
         
     }
 }
@@ -1039,7 +1071,12 @@ li{
         left: -13px;
     }
     img{
-        
+        width: 308px;
+        height: 312px;
+    @include mq(md) {
+        width: 427px;
+        height: 432px;
+        }
     }
 }
 .card3-text__wrapper{
