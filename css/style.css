@@ -353,6 +353,11 @@ li {
   line-height: 150%;
   letter-spacing: 0.48px;
 }
+@media (min-width: 600px) {
+  .concept-texts {
+    font-size: 17px;
+  }
+}
 @media (min-width: 1025px) {
   .concept-texts {
     font-size: 18px;

@@ -348,6 +348,9 @@ li{
     font-weight: 400;
     line-height: 150%; 
     letter-spacing: 0.48px;
+    @include mq(md) {
+      font-size: 17px;
+    }
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
