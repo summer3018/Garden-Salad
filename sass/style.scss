@@ -5,8 +5,8 @@
 }
 
 $breakpoints: (
-  sm: 0px, // スマホ用（1px以上767px以下）
-  md: 768px, // タブレット用（768px以上1024px以下）
+  sm: 0px, // スマホ用（1px以上599px以下）
+  md: 600x, // タブレット用（600px以上1024px以下）
   lg: 1025px // PC用（1025px以上）
 );
 
@@ -37,6 +37,7 @@ li{
       display: block;
     }
 }
+
 
 //  header
 .header{
@@ -126,9 +127,6 @@ li{
     position: relative;
     top: -1px;
 
-    @include mq(md) {
-        height: 450px; // タブレット用
-    }
 
     @include mq(lg) {
         max-width: 100%;
@@ -144,12 +142,6 @@ li{
     padding-bottom: 20px;
     background-size: contain;
 
-    @include mq(md) {
-        height: 400px; // タブレット用
-        background-image: url("/image/pc/img_mv\ \(PC\).png");
-        background-position: right; // 中央配置
-    }
-
     @include mq(lg) {
         height: 650px;
         background-image: url("/image/pc/img_mv\ \(PC\).png");
@@ -164,10 +156,6 @@ li{
     font-weight: 400;
     padding-left: 19px;
 
-    @include mq(md) {
-        font-size: 70px; // タブレット用
-        padding-left: 100px;
-    }
 
     @include mq(lg) {
         font-size: 100px;
@@ -180,10 +168,6 @@ li{
     padding-top: 24px;
     margin-bottom: -10px;
 
-    @include mq(md) {
-        padding-top: 50px;
-        margin-bottom: 0;
-    }
 
     @include mq(lg) {
         padding-top: 85px;
@@ -199,10 +183,6 @@ li{
     font-weight: 400;
     line-height: 36px;
 
-    @include mq(md) {
-        font-size: 70px; // タブレット用
-        line-height: 70px;
-    }
 
     @include mq(lg) {
         margin-top: 1px;
@@ -222,11 +202,6 @@ li{
     letter-spacing: 0.7px;
     padding-left: 17px;
 
-    @include mq(md) {
-        font-size: 24px; // タブレット用
-        letter-spacing: 1.2px;
-        padding-left: 100px;
-    }
 
     @include mq(lg) {
         font-size: 32px;
@@ -242,12 +217,6 @@ li{
     padding-bottom: 9px;
     padding-left: 8px;
 
-    @include mq(md) {
-        padding-top: 30px;
-        padding-bottom: 12px;
-        padding-left: 12px;
-    }
-
     @include mq(lg) {
         padding-bottom: 22px;
         padding-left: 19px;
@@ -260,11 +229,6 @@ li{
     background: $accent-color;
     padding: 4px 8px 7px 0px;
 
-    @include mq(md) {
-        width: 400px; // タブレット用
-        height: 50px;
-        padding: 6px 15px 6px 0;
-    }
 
     @include mq(lg) {
         width: 524px;
@@ -1349,7 +1313,7 @@ li{
         top: 60%;
         right: 22%;
     }
-    @include mq(md) {
+    @include mq(lg) {
         top: 64%;
         right: 23%;
     }
@@ -2072,7 +2036,7 @@ input[type="checkbox"] {
     &:hover {
         background-image: url("/image/Twitter\(hover\).png");
     }
-    @include mq(md) {
+    @include mq(lg) {
         width: 40px; // 画像のサイズに合わせる
         height: 40px; 
     }
@@ -2092,7 +2056,7 @@ input[type="checkbox"] {
     &:hover {
         background-image: url("/image/Instagram\(hover\).png");
     }
-    @include mq(md) {
+    @include mq(lg) {
         width: 40px; // 画像のサイズに合わせる
         height: 40px; 
     }
@@ -2111,7 +2075,7 @@ input[type="checkbox"] {
     &:hover {
         background-image: url("/image/TikTok\(hover\).png");
     }
-    @include mq(md) {
+    @include mq(lg) {
         width: 40px; // 画像のサイズに合わせる
         height: 40px; 
     }
@@ -2298,12 +2262,12 @@ input[type="checkbox"] {
     max-width: 375px;
     max-height: 250px;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     @include mq(sm) {
       max-width: 767px;
       background-size: cover;
     }
-    @include mq(md) {
+    @include mq(lg) {
       min-width: 768px;
       max-height: 450px;
       width: 100vw;
@@ -2330,7 +2294,7 @@ input[type="checkbox"] {
         max-width: 767px;
         background-size: cover;
       }
-      @include mq(md) {
+      @include mq(lg) {
         min-width: 768px;
         max-height: 450px;
         width: 100vw;

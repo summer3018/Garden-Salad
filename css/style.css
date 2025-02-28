@@ -117,11 +117,6 @@ li {
   position: relative;
   top: -1px;
 }
-@media (min-width: 768px) {
-  .mv {
-    height: 450px;
-  }
-}
 @media (min-width: 1025px) {
   .mv {
     max-width: 100%;
@@ -136,13 +131,6 @@ li {
   background-position: 67px 0;
   padding-bottom: 20px;
   background-size: contain;
-}
-@media (min-width: 768px) {
-  .mv-bg-image {
-    height: 400px;
-    background-image: url("/image/pc/img_mv (PC).png");
-    background-position: right;
-  }
 }
 @media (min-width: 1025px) {
   .mv-bg-image {
@@ -159,12 +147,6 @@ li {
   font-weight: 400;
   padding-left: 19px;
 }
-@media (min-width: 768px) {
-  .mv-texts__en {
-    font-size: 70px;
-    padding-left: 100px;
-  }
-}
 @media (min-width: 1025px) {
   .mv-texts__en {
     font-size: 100px;
@@ -176,12 +158,6 @@ li {
 .mv-text__en-farst {
   padding-top: 24px;
   margin-bottom: -10px;
-}
-@media (min-width: 768px) {
-  .mv-text__en-farst {
-    padding-top: 50px;
-    margin-bottom: 0;
-  }
 }
 @media (min-width: 1025px) {
   .mv-text__en-farst {
@@ -197,12 +173,6 @@ li {
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-}
-@media (min-width: 768px) {
-  .salad {
-    font-size: 70px;
-    line-height: 70px;
-  }
 }
 @media (min-width: 1025px) {
   .salad {
@@ -222,13 +192,6 @@ li {
   letter-spacing: 0.7px;
   padding-left: 17px;
 }
-@media (min-width: 768px) {
-  .mv-texts__jp {
-    font-size: 24px;
-    letter-spacing: 1.2px;
-    padding-left: 100px;
-  }
-}
 @media (min-width: 1025px) {
   .mv-texts__jp {
     font-size: 32px;
@@ -244,13 +207,6 @@ li {
   padding-bottom: 9px;
   padding-left: 8px;
 }
-@media (min-width: 768px) {
-  .mv-text__jp-farst {
-    padding-top: 30px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-  }
-}
 @media (min-width: 1025px) {
   .mv-text__jp-farst {
     padding-bottom: 22px;
@@ -263,13 +219,6 @@ li {
   height: 31px;
   background: #159741;
   padding: 4px 8px 7px 0px;
-}
-@media (min-width: 768px) {
-  .mv-text__jp-second-wrapper {
-    width: 400px;
-    height: 50px;
-    padding: 6px 15px 6px 0;
-  }
 }
 @media (min-width: 1025px) {
   .mv-text__jp-second-wrapper {
@@ -1458,7 +1407,7 @@ li {
     right: 22%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .union__image-wrap {
     top: 64%;
     right: 23%;
@@ -2255,7 +2204,7 @@ input[type=checkbox]:checked::after {
 .twitter-icon:hover {
   background-image: url("/image/Twitter(hover).png");
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .twitter-icon {
     width: 40px;
     height: 40px;
@@ -2275,7 +2224,7 @@ input[type=checkbox]:checked::after {
 .instagram-icon:hover {
   background-image: url("/image/Instagram(hover).png");
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .instagram-icon {
     width: 40px;
     height: 40px;
@@ -2295,7 +2244,7 @@ input[type=checkbox]:checked::after {
 .tiktok-icon:hover {
   background-image: url("/image/TikTok(hover).png");
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .tiktok-icon {
     width: 40px;
     height: 40px;
@@ -2485,7 +2434,7 @@ input[type=checkbox]:checked::after {
   max-width: 375px;
   max-height: 250px;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 @media (min-width: 0px) {
   .parallax {
@@ -2493,7 +2442,7 @@ input[type=checkbox]:checked::after {
     background-size: cover;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .parallax {
     min-width: 768px;
     max-height: 450px;
@@ -2525,7 +2474,7 @@ input[type=checkbox]:checked::after {
     background-size: cover;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .parallax2 {
     min-width: 768px;
     max-height: 450px;
