@@ -1663,6 +1663,12 @@ li {
 }
 
 .post-card__terrace {
+  background-image: url("/image/img：オープンテラス.png");
+  width: 323px;
+  height: 282px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   display: inline-block;
 }
@@ -1672,11 +1678,12 @@ li {
   top: 14px;
   left: 14px;
   right: 14px;
-  bottom: 14px;
+  bottom: 13px;
   border: 1px solid #fff;
   pointer-events: none;
 }
 .post-card__terrace img {
+  max-width: 100%;
   width: 323px;
   height: 282px;
 }
@@ -1687,23 +1694,27 @@ li {
   }
 }
 @media (min-width: 1025px) {
+  .post-card__terrace {
+    width: 629.568px;
+    height: 430.748px;
+  }
   .post-card__terrace::before {
     top: 18px;
     left: 28px;
     right: 28px;
-    bottom: 25px;
+    bottom: 21px;
   }
 }
 
 .post-card__takeout {
   position: relative;
   display: inline-block;
-  margin-top: -2px;
+  margin-top: -5px;
 }
 .post-card__takeout::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 14px;
   right: 14px;
   bottom: 14px;
@@ -1736,7 +1747,7 @@ li {
 }
 
 .card-text__wrapper {
-  padding-top: 21px;
+  padding-top: 15px;
   padding-left: 14px;
 }
 @media (min-width: 1025px) {
