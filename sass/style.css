@@ -1995,12 +1995,12 @@ li {
 }
 
 .contact {
-  background-image: url(/image/sp/img：野菜\(背景\).png);
+  background-image: url(/image/sp/vegetable-background.png);
   background-size: 100%;
 }
 @media (min-width: 1025px) {
   .contact {
-    background-image: url(/image/pc/img：野菜.png);
+    background-image: url(/image/pc/vegetable-background.png);
   }
 }
 
