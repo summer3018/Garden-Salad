@@ -853,6 +853,7 @@ li {
   .menu-card1__wrapper {
     display: flex;
     margin-right: 10%;
+    justify-content: center;
   }
 }
 
@@ -2079,10 +2080,11 @@ li {
   letter-spacing: 0.48px;
   padding-left: 16px;
   padding-bottom: 11px;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 1025px) {
   .contact-text {
-    text-align: center;
     padding-left: 0;
     padding-bottom: 28px;
   }
@@ -2198,6 +2200,10 @@ li {
   font-weight: 400;
 }
 
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 1025px) {
   .form-checkbox {
     text-align: center;
@@ -2352,6 +2358,7 @@ input[type=checkbox]:checked::after {
   padding-left: 26px;
   padding-right: 27px;
   padding-bottom: 40px;
+  justify-content: center;
   gap: 40px;
 }
 @media (min-width: 1025px) {
@@ -2429,6 +2436,7 @@ input[type=checkbox]:checked::after {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
+  justify-content: center;
   gap: 32px;
   cursor: pointer;
 }
