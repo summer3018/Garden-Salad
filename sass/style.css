@@ -2093,7 +2093,7 @@ li {
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px 20px 31px 17px;
+  padding: 20px 20px 33px 17px;
 }
 @media (min-width: 1025px) {
   .contact-form {
@@ -2221,11 +2221,12 @@ input[type=checkbox] {
   width: 30px;
   height: 30px;
   margin-right: 12px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #2F2F2F;
+  background: #FFF;
   position: relative;
   cursor: pointer;
   transition: 0.2s, border-color 0.2s;
+  margin-top: -8px;
 }
 @media (min-width: 1025px) {
   input[type=checkbox] {
@@ -2314,9 +2315,9 @@ input[type=checkbox]:checked::after {
   cursor: pointer;
   background: #159741;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 16px;
   padding-bottom: 14px;
-  margin-top: 32px;
+  margin-top: 34px;
   margin-left: 5px;
 }
 @media (min-width: 1025px) {
