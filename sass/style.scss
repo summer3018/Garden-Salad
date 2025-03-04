@@ -444,12 +444,12 @@ li{
       flex-direction: row-reverse;
       align-items: center; 
       justify-content: flex-end;
-      margin-bottom: 11px;
+      margin-bottom: 5px;
     }
 }.about-text-container-02{
     @include mq(md) {
       display: flex;
-      margin-bottom: 11px;
+      margin-bottom: 5px;
     }
 }.about-text-container-03{
     @include mq(md) {
@@ -638,7 +638,7 @@ li{
 .menu__inner{
     padding: 50px 0 85px;
     @include mq(lg) {
-      padding: 151px 72px 87px;
+      padding: 148px 72px 87px;
     }
 }
 .menu-title__container{
@@ -981,8 +981,8 @@ li{
     z-index: 1;
     padding-right: 6px;
     @include mq(lg) {
-        left: 54px;
-        bottom: 22px;
+        left: 9px;
+        bottom: 17px;
     }
     img{
         width: 305px;
@@ -1071,8 +1071,8 @@ li{
     z-index: 1;
 
     @include mq(lg) {
-        bottom: 23px;
-        left: -13px;
+        bottom: 16px;
+        left: -40px;
     }
     img{
         width: 308px;
@@ -1905,7 +1905,8 @@ background-size: 100%;
 
     .form-group {
         margin-bottom: 31px;
-
+        display: grid;
+        justify-items: center;
         .form-label {
             color: #333;
             font-size: 16px;
@@ -2081,11 +2082,7 @@ input[type="checkbox"] {
         letter-spacing: 0.9px;
     }
 }
-.submit-btn{
-    @include mq(lg) {
-      text-align: center;
-    }
-}
+
 .form-button{
     color: #FFF;
     width: 300px;

@@ -467,14 +467,14 @@ li {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 11px;
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: 600px) {
   .about-text-container-02 {
     display: flex;
-    margin-bottom: 11px;
+    margin-bottom: 5px;
   }
 }
 
@@ -689,7 +689,7 @@ li {
 }
 @media (min-width: 1025px) {
   .menu__inner {
-    padding: 151px 72px 87px;
+    padding: 148px 72px 87px;
   }
 }
 
@@ -1086,8 +1086,8 @@ li {
 }
 @media (min-width: 1025px) {
   .menu-image__2 {
-    left: 54px;
-    bottom: 22px;
+    left: 9px;
+    bottom: 17px;
   }
 }
 .menu-image__2 img {
@@ -1184,8 +1184,8 @@ li {
 }
 @media (min-width: 1025px) {
   .menu-image__3 {
-    bottom: 23px;
-    left: -13px;
+    bottom: 16px;
+    left: -40px;
   }
 }
 .menu-image__3 img {
@@ -2103,6 +2103,8 @@ li {
 }
 .contact-form .form-group {
   margin-bottom: 31px;
+  display: grid;
+  justify-items: center;
 }
 .contact-form .form-group .form-label {
   color: #333;
@@ -2297,12 +2299,6 @@ input[type=checkbox]:checked::after {
   .privacy-text-accent {
     font-size: 18px;
     letter-spacing: 0.9px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .submit-btn {
-    text-align: center;
   }
 }
 
