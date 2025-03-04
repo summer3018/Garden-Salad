@@ -326,8 +326,8 @@ li{
     text-align: center;
     font-size: 20px;
     line-height: 150%; 
-    padding-bottom: 24px;
     letter-spacing: 1px;
+    padding-bottom: 24px;
     padding-left: 17px;
     @include mq(md) {
       font-size: calc((20px + 30px) / 2);
@@ -371,7 +371,7 @@ li{
 .about__inner{
     padding-top: 61px;
     padding-left: 16px;
-    padding-right: 15px;
+    // padding-right: 15px;
     @include mq(md) {
       padding-top: calc((61px + 129px) / 2);
       padding-left: calc((16px + 180px) / 2);
@@ -394,6 +394,7 @@ li{
     letter-spacing: 0.7px;
     padding-bottom: 8px;
     padding-left: 1px;
+    padding-right: 13px;
     @include mq(md) {
       font-size: 16px;
     }
@@ -412,6 +413,7 @@ li{
     letter-spacing: 1.6px;
     padding-bottom: 12px;
     padding-left: 3px;
+    padding-right: 13px;
     margin-bottom: 56px;
     @include mq(md) {
       font-size: calc((32px + 48px) / 2);
@@ -423,7 +425,7 @@ li{
     &::before{
         content: '';
         position: absolute;
-        left: 50%;
+        left: 48%;
         bottom: 0px;/*線の上下位置*/
         display: inline-block;
         width: 50px;/*線の長さ*/
@@ -544,7 +546,7 @@ li{
     letter-spacing: 0.48px;
     padding-bottom: 32px;
     padding-left: 9px;
-    padding-right: 7px;
+    
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
@@ -552,30 +554,35 @@ li{
     }
 }
 .about__text01{
+    padding-right: 22px;
     @include mq(lg) {
         margin-right: 155px;
     }
 }
 .about__text02{
+    padding-right: 23px;
     @include mq(lg) {
+        padding-right: 22px;
         margin-right: 34px;
         // margin-right: 223px;
     }
 }
 .about__text03{
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    padding-right: 22px;
     @include mq(lg) {
       margin-right: 150px;
     }
 }
 .about-image-wrapper-01{
+    padding-right: 15px;
     @include mq(lg) {
         // padding-right: 67px;
         margin-top: 30px;
     }
 }
 .about-image-wrapper-02{
-
+    padding-right: 15px;
 }
 .about-image-wrapper-03{
     @include mq(lg) {
@@ -584,6 +591,7 @@ li{
 }
 .about-image-03{
     img{
+        padding-right: 16px;
         padding-bottom: 66px;
         max-width: 100%;
         @include mq(sm) {
@@ -1228,7 +1236,9 @@ li{
     letter-spacing: 0.8px;
     padding: 0 32px 22px;
     position: relative; 
-
+    &::after{
+    content: "！";
+    }
     @include mq(lg) {
         text-align: center;
         font-size: 18px;
