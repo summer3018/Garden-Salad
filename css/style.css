@@ -2482,7 +2482,16 @@ input[type=checkbox]:checked::after {
 .page-top__btn img {
   width: 100%;
   height: auto;
+  width: 70px;
+  height: 70px;
 }
+@media (min-width: 1025px) {
+  .page-top__btn img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 /* モーダルのスタイル */
 .modal {
   display: none;

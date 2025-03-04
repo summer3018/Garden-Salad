@@ -2275,8 +2275,11 @@ input[type="checkbox"] {
 .page-top__btn img {
     width: 100%;
     height: auto;
+    width: 70px;
+    height: 70px;
     @include mq(lg) {
-
+        width: 120px;
+        height: 120px;
     }
 }
 
