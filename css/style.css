@@ -1768,6 +1768,19 @@ li {
   }
 }
 
+.image-exterior {
+  width: 343px;
+  height: 298px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1025px) {
+  .image-exterior {
+    width: 700px;
+    height: 500px;
+  }
+}
+
 .post-card__container {
   padding-left: 16px;
   padding-right: 16px;
@@ -1840,6 +1853,7 @@ li {
   pointer-events: none;
 }
 .post-card__terrace img {
+  max-width: 100%;
   width: 323px;
   height: 282px;
   -o-object-fit: cover;

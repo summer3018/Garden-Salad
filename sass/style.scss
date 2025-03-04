@@ -1610,7 +1610,13 @@ padding: 10px 0;
     }
 }
 .image-exterior{
-
+    width: 343px;
+    height: 298px;
+    object-fit: cover;
+    @include mq(lg) {
+        width: 700px;
+        height: 500px;
+    }
 }
 .post-card__container{
     padding-left: 16px;
@@ -1676,7 +1682,7 @@ padding: 10px 0;
         pointer-events: none;
     }
     img{
-        // max-width: 100%;
+        max-width: 100%;
         width: 323px;
         height: 282px;
         object-fit: cover;
