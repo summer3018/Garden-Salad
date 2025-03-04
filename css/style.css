@@ -468,6 +468,7 @@ li {
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 5px;
+    gap: 67px;
   }
 }
 
@@ -475,6 +476,7 @@ li {
   .about-text-container-02 {
     display: flex;
     margin-bottom: 5px;
+    gap: 223px;
   }
 }
 
@@ -484,6 +486,7 @@ li {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
+    gap: 71px;
   }
 }
 
@@ -600,12 +603,6 @@ li {
   }
 }
 
-@media (min-width: 1025px) {
-  .about__text02 {
-    margin-right: 223px;
-  }
-}
-
 .about__text03 {
   margin-bottom: 13px;
 }
@@ -617,14 +614,7 @@ li {
 
 @media (min-width: 1025px) {
   .about-image-wrapper-01 {
-    padding-right: 67px;
     margin-top: 30px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .about-image-wrapper-03 {
-    margin-right: 71px;
   }
 }
 

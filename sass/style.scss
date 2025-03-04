@@ -445,18 +445,23 @@ li{
       align-items: center; 
       justify-content: flex-end;
       margin-bottom: 5px;
+      gap: 67px;
     }
-}.about-text-container-02{
+}
+.about-text-container-02{
     @include mq(md) {
       display: flex;
       margin-bottom: 5px;
+      gap: 223px;
     }
-}.about-text-container-03{
+}
+.about-text-container-03{
     @include mq(md) {
       display: flex;
       flex-direction: row-reverse;
       align-items: center; 
       justify-content: flex-end;
+      gap: 71px;
     }
 }
 .about-text-bg01{
@@ -555,7 +560,7 @@ li{
 }
 .about__text02{
     @include mq(lg) {
-        margin-right: 223px;
+        // margin-right: 223px;
     }
 }
 .about__text03{
@@ -566,7 +571,7 @@ li{
 }
 .about-image-wrapper-01{
     @include mq(lg) {
-        padding-right: 67px;
+        // padding-right: 67px;
         margin-top: 30px;
     }
 }
@@ -575,7 +580,7 @@ li{
 }
 .about-image-wrapper-03{
     @include mq(lg) {
-      margin-right: 71px;
+    //   margin-right: 71px;
     }
 }
 .about-image-03{
