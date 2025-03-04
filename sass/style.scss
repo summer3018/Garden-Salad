@@ -774,6 +774,8 @@ li{
 }
 // card1
 .menu-card1__wrapper{
+    display: grid;
+    justify-items: center;
     @include mq(md) {
         display: flex;
         margin-right: 10%;
@@ -974,6 +976,8 @@ li{
 }
 // card2
 .menu-card2__wrapper{
+    display: grid;
+    justify-items: center;
 
 }
 .menu-image__2{
@@ -2165,6 +2169,20 @@ input[type="checkbox"] {
         display: none; // `img` タグを非表示にする
     }
 }
+// .test-icon{
+//     width: 40px;
+//     height: 40px;
+//     fill: #fff;
+//     background-color:  #2F2F2F;
+//     border: 1px solid #2f2f2f;
+//     border-radius: 50%;
+//     padding: 4.6px 3.9px 3.9px 4.6px;
+//     &:hover{
+//         fill: #2f2f2f;
+//         background-color: #fff;
+//     }
+    
+// }
 
 .instagram-icon {
     display: inline-block;
