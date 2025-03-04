@@ -72,6 +72,7 @@ li{
     padding: 15px 16px 17px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     @include mq(lg) {
         padding: 20px 71px 12px 33px;
 
@@ -101,9 +102,6 @@ li{
     }
 }
 
-.logo__header-pc{
-
-}
 .header-right{
 
 }
@@ -121,7 +119,7 @@ li{
 
     @include mq(lg) {
       gap: 40px;
-      margin-top: 15px;
+      margin-top: -10px;
     }
 }
 .nav_header-list{
@@ -452,7 +450,7 @@ li{
     @include mq(md) {
       display: flex;
       margin-bottom: 5px;
-      gap: 223px;
+      gap: 189px;
     }
 }
 .about-text-container-03{
@@ -560,6 +558,7 @@ li{
 }
 .about__text02{
     @include mq(lg) {
+        margin-right: 34px;
         // margin-right: 223px;
     }
 }
@@ -1428,43 +1427,14 @@ li{
         width: 100%;
     }
 }
-
 .map-image {
     width: 100%;
 }
 
-.union__image-wrap {
-    position: absolute;
-    top: 45%;
-    right: 17%;
-    @include mq(sm) {
-        top: 60%;
-        right: 22%;
-    }
-    @include mq(lg) {
-        top: 64%;
-        right: 23%;
-    }
-    
-    @include mq(lg) {
-        top: 37.5%;
-        right: 27%;
-    }
-}
-
-.union-image {
-    width: 72.895px;
-    height: 73.595px;
-
-    @include mq(lg) {
-        width: 150px;
-        height: 151.441px;
-    }
-}
-
 .shop-detail{
-    @include mq(lg) {
+    @include mq(md) {
       display: flex;
+      gap: 125px;
     }
 }
 .shop-text-container{
@@ -1588,7 +1558,8 @@ padding: 10px 0;
 }
 .shop-date{
     @include mq(lg) {
-        padding: 10px 80px 0px 6px;
+        padding: 10px 0 0 6px;
+        // padding: 10px 80px 0px 6px;
     }
 }
 .shop-date__access{
@@ -1606,7 +1577,7 @@ padding: 10px 0;
         padding-right: 0;
         margin-bottom: 80px;
         margin-top: 80px;
-        padding-left: 80px;
+        // padding-left: 80px;
     }
 }
 .image-exterior{
