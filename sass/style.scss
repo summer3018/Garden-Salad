@@ -10,13 +10,13 @@
     }
   }
 }
+
 // ブレークポイントの定義
 $breakpoints: (
   sm: 599px,  // スマホ用（599px以下）
   md: 600px,  // タブレット用（600px以上1024px以下）
   lg: 1025px  // PC用（1025px以上）
 );
-
 $font-black: #333;
 $font-white: #FFF;
 $base-color: #2f2f2f;
@@ -26,24 +26,30 @@ $font-reross: "reross-quadratic", sans-serif;
 $font-Satisfy: "Satisfy", serif;
 
 a{
-    text-decoration: none;
     color: #333;
+    text-decoration: none;
 }
+
 li{
     list-style: none;
 }
+
 .pc-none{
     display: block;
+
     @include mq(md) {
       display: none;
     }
 }
+
 .pc-block{
     display: none;
+
     @include mq(md) {
       display: block;
     }
 }
+
 // body{
 //     @include mq(sm) {
 //       color: green;
@@ -61,42 +67,51 @@ li{
 .header{
     background: $base-color;
     height: 60px;
+
     @include mq(md) {
       height: 75px;
     }
+
     @include mq(lg) {
         height: 90px;
     }
 }
+
 .header__inner{
-    padding: 15px 16px 17px 16px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 15px 16px 17px;
+
     @include mq(lg) {
         padding: 20px 71px 12px 33px;
 
     }
 }
+
 .header-left{
 
 }
+
 .header__logo{
     @include mq(lg) {
         margin-left: -20px;
         margin-top: -5px;
         padding-left: 18px;
     }
+
     img{
-        width: 55px;
         height: 29.397px;
+        width: 55px;
+
         @include mq(md) {
-            width: calc((55px + 117.871px) / 2);
             height: calc((29.397px + 63px) / 2);
+            width: calc((55px + 117.871px) / 2);
         }
+
         @include mq(lg) {
-            width: 117.871px;
             height: 63px;
+            width: 117.871px;
         }
 
     }
@@ -105,15 +120,18 @@ li{
 .header-right{
 
 }
+
 .nav_header{
 
 }
+
 .nav_header-lists{
     display: flex; /* 横並びにする */
-    justify-content: flex-end; /* 右寄せにする */
     gap: 20px; /* リストアイテム間の均等な間隔 */
-    margin-left: 65px;
+    justify-content: flex-end; /* 右寄せにする */
     margin-bottom: 10px;
+    margin-left: 65px;
+
     @include mq(md) {
       gap: 30px;
     }
@@ -123,20 +141,25 @@ li{
       margin-top: -10px;
     }
 }
+
 .nav_header-list{
     justify-content: space-between;
+
     a{
         color: $font-white;
         font-family: $font-reross;
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0.42px;
+
         &:hover {
             border-bottom: solid 2px $accent-color;
         }
+
         @include mq(md) {
           font-size: 16px;
         }
+
         @include mq(lg) {
             font-size: 18px;
             letter-spacing: 0.54px;
@@ -152,32 +175,35 @@ li{
     height: 263px;
     position: relative;
     top: -1px;
+
     @include mq(md) {
       height: calc((263px + 650px) / 2);
     }
+
     @include mq(lg) {
-        max-width: 100%;
         height: 650px;
+        max-width: 100%;
     }
 }
 
 .mv-bg-image {
-    max-width: 100%;
-    height: 243px;
     background-image: url("/image/sp/img_mv\(SP\).png");
     background-position: right;
-    padding-bottom: 20px;
     background-size: contain;
+    height: 243px;
+    max-width: 100%;
+    padding-bottom: 20px;
+
     @include mq(md) {
         background-image: url("/image/pc/img_mv\ \(PC\).png");
-        height: calc((243px + 650px) / 2);
         background-position: right;
+        height: calc((243px + 650px) / 2);
     }
 
     @include mq(lg) {
-        height: 650px;
         background-image: url("/image/pc/img_mv\ \(PC\).png");
         background-position: right;
+        height: 650px;
     }
 }
 
@@ -187,6 +213,7 @@ li{
     font-size: 36px;
     font-weight: 400;
     padding-left: 19px;
+
     @include mq(md) {
         font-size: calc((36px + 100px) / 2);
         padding-left: calc((19px + 178px) / 2);
@@ -200,29 +227,32 @@ li{
 }
 
 .mv-text__en-first {
-    padding-top: 25px;
     margin-bottom: -10px;
+    padding-top: 25px;
+
     @include mq(md) {
-      padding-top: calc((24px + 85px) / 2);
       margin-bottom: calc((-10px + 3px) / 2);
+      padding-top: calc((24px + 85px) / 2);
     }
 
     @include mq(lg) {
-        padding-top: 85px;
         margin-bottom: 3px;
+        padding-top: 85px;
     }
 }
+
 .mv-text__en-second{
 
 }
 
 .salad {
-    margin-top: -6px;
     color: $accent-color;
     font-family: $font-reross;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+    margin-top: -6px;
+
     @include mq(md) {
         font-size: calc((36px + 100px) / 2);
         margin-top: calc((-6px + 1px) / 2);
@@ -245,6 +275,7 @@ li{
     font-weight: 500;
     letter-spacing: 0.7px;
     padding-left: 17px;
+
     @include mq(md) {
         font-size: calc((14px + 32px) / 2);
         padding-left: calc((17px + 180px) / 2);
@@ -260,9 +291,9 @@ li{
 }
 
 .mv-text__jp-farst {
-    padding-top: 20px;
     padding-bottom: 9px;
     padding-left: 8px;
+    padding-top: 20px;
 
     @include mq(lg) {
         padding-bottom: 22px;
@@ -271,19 +302,20 @@ li{
 }
 
 .mv-text__jp-second-wrapper {
-    width: 231px;
-    height: 31px;
     background: $accent-color;
-    padding: 4px 8px 7px 0px;
+    height: 31px;
+    padding: 4px 8px 7px 0;
+    width: 231px;
+
     @include mq(md) {
-        width: calc((231px + 524px) / 2);
         height: calc((31px + 64px) / 2);
+        width: calc((231px + 524px) / 2);
     }
 
     @include mq(lg) {
-        width: 524px;
         height: 64px;
         padding: 9px 20px 9px 0;
+        width: 524px;
     }
 }
 
@@ -292,49 +324,54 @@ li{
 
 
 .concept{
+    background-color: $base-color;
+    background-image: url("/image/sp/pGarden\ Salad\(sp\).png");
+    background-position: 6px 274px;
+    background-repeat: no-repeat;
     position: relative;
     top: -2px;
-    background-color: $base-color;
-    background-image: url(/image/sp/pGarden\ Salad\(sp\).png);
-    background-repeat: no-repeat;
-    background-position: 6px 274px;
+
     @include mq(md) {
-        background-image: url(/image/pc/Garden\ Salad\(pc\).png);
+        background-image: url("/image/pc/Garden\ Salad\(pc\).png");
         background-position: bottom;
         background-size: contain;
     }
+
     @include mq(lg) {
-      background-image: url(/image/pc/Garden\ Salad\(pc\).png);
+      background-image: url("/image/pc/Garden\ Salad\(pc\).png");
       background-position: bottom;
     }
 }
+
 .concept__inner{
-    padding-top: 31px;
-    padding-bottom: 40px;
-    padding-right: 32px;
-    padding-left: 33px;
+    padding: 31px 32px 40px 33px;
+
     @include mq(md) {
-      padding-top: calc((31px + 122px) / 2);
       padding-bottom: calc((40px + 83px) / 2);
+      padding-top: calc((31px + 122px) / 2);
     }
+
     @include mq(lg) {
-      padding-top: 122px;
       padding-bottom: 83px;
+      padding-top: 122px;
     }
 }
+
 .concept-title{
     color: $font-white;
-    text-align: center;
-    font-size: 20px;
-    line-height: 150%; 
+    font-size: 20px; 
     letter-spacing: 1px;
+    line-height: 150%;
     padding-bottom: 24px;
     padding-left: 17px;
+    text-align: center;
+
     @include mq(md) {
       font-size: calc((20px + 30px) / 2);
       padding-bottom: 36px;
       padding-left: calc((17px + 3px) / 2);
     }
+
     @include mq(lg) {
         font-size: 30px;
         font-weight: 700;
@@ -343,23 +380,28 @@ li{
         padding-left: 3px;
     }
 }
+
 .concept-texts{
     color: $font-white;
-    text-align: center;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 150%; 
+    font-weight: 400; 
     letter-spacing: 0.48px;
+    line-height: 150%;
+    text-align: center;
+
     @include mq(md) {
       font-size: 17px;
     }
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
     }
 }
+
 .concept-text{
     padding-bottom: 24px;
+
     @include mq(lg) {
       padding-bottom: 27px;
     }
@@ -369,137 +411,165 @@ li{
 .about{
     background: $main-color;
 }
+
 .about__inner{
-    padding-top: 61px;
     padding-left: 16px;
+    padding-top: 61px;
+
     @include mq(md) {
-      padding-top: calc((61px + 129px) / 2);
       padding-left: calc((16px + 180px) / 2);
       padding-right: calc((15px + 180px) /2);
+      padding-top: calc((61px + 129px) / 2);
     }
+
     @include mq(lg) {
-      padding-top: 129px;
-      padding-bottom: 98px;
-      padding-right: 180px;
-      padding-left: 180px;
+      padding: 129px 180px 98px;
 
     }
 }
+
 .about-subtitle{
     color: $accent-color;
-    text-align: center;
-    margin: 0 auto;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.7px;
+    margin: 0 auto;
     padding-bottom: 8px;
     padding-left: 1px;
     padding-right: 13px;
+    text-align: center;
+
     @include mq(md) {
       font-size: 16px;
     }
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
         padding-right: 2px;
     }
 }
+
 .about-title{
-    position: relative;
     color: $font-black;
     font-family: $font-reross;
-    text-align: center;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1.6px;
+    margin-bottom: 56px;
     padding-bottom: 12px;
     padding-left: 3px;
     padding-right: 13px;
-    margin-bottom: 56px;
+    position: relative;
+    text-align: center;
+
     @include mq(md) {
       font-size: calc((32px + 48px) / 2);
     }
+
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
         padding-right: 2px;
     }
+
     &::before{
+        background-color: #159741;
+        bottom: 0;
         content: '';
-        position: absolute;
-        left: 48%;
-        bottom: 0px;/*線の上下位置*/
         display: inline-block;
-        width: 50px;/*線の長さ*/
-        height: 2px;/*線の太さ*/
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);/*位置調整*/
-        background-color: #159741;/*線の色*/
+        height: 2px;
+        left: 48%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 50px;
+
+/* 線の上下位置 */
+
+/* 線の長さ */
+
+/* 線の太さ */
+
+/* 位置調整 */
+
+/* 線の色 */
         @include mq(lg) {
           bottom: -6px;
           left: 50%;
         }
     }
 }
+
 .about-text-container-01{
     @include mq(md) {
+      align-items: center;
       display: flex;
       flex-direction: row-reverse;
-      align-items: center; 
+      gap: 67px; 
       justify-content: flex-end;
       margin-bottom: 5px;
-      gap: 67px;
     }
 }
+
 .about-text-container-02{
     @include mq(md) {
       display: flex;
-      margin-bottom: 5px;
       gap: 189px;
+      margin-bottom: 5px;
     }
+
     @include mq(lg) {
-        margin-bottom: 7px;
         gap: 174px;
+        margin-bottom: 7px;
 
     }
 }
+
 .about-text-container-03{
     @include mq(md) {
+      align-items: center;
       display: flex;
       flex-direction: row-reverse;
-      align-items: center; 
+      gap: 71px; 
       justify-content: flex-end;
-      gap: 71px;
     }
 }
+
 .about-text-bg01{
-    background-image: url(/image/sp/01.png);
+    background-image: url("/image/sp/01.png");
     background-position: calc(100% - 16px) 45px;
+
     @include mq(lg) {
-      background-image: url(/image/pc/01\ \(pc\).png);
+      background-image: url("/image/pc/01\ \(pc\).png");
       background-position: right 38px top 63px;
     }
 }
+
 .about-text-bg02{
-    background-image: url(/image/sp/02.png);
+    background-image: url("/image/sp/02.png");
     background-position: calc(100% - 16px) 79px;
+
         @include mq(md) {
-        background-image: url(/image/sp/02.png);
+        background-image: url("/image/sp/02.png");
         background-position: left 176px top 4px;
     }
+
     @include mq(lg) {
-      background-image: url(/image/pc/02\ \(pc\).png);
+      background-image: url("/image/pc/02\ \(pc\).png");
       background-position: left 256px top 33px;
     }
 }
+
 .about-text-bg03{
-    background-image: url(/image/sp/03.png);
+    background-image: url("/image/sp/03.png");
     background-position: calc(100% - 16px) 68px;
+
     @include mq(lg) {
-      background-image: url(/image/pc/03\ \(pc\).png);
+      background-image: url("/image/pc/03\ \(pc\).png");
       background-position: right 1px top 31px;
     }
 }
+
 .about-text-wrapper{
     
 }
@@ -511,49 +581,56 @@ li{
     letter-spacing: 1.2px;
     padding-bottom: 16px;
     padding-left: 9px;
+
     @include mq(lg) {
         font-size: 30px;
         letter-spacing: 1.5px;
         padding-left: 0;
     }
+
     span{
         color: $accent-color;
         font-size: 24px;
         font-weight: 700;
         letter-spacing: 1.2px;
+
         @include mq(lg) {
             font-size: 30px;
             letter-spacing: 1.5px;
         }
     }
 }
+
 .about-heading-01{
     @include mq(lg) {
-        margin-top: 21px;
         margin-bottom: 7px;
+        margin-top: 21px;
     }
 }
+
 .about-heading-02{
     @include mq(lg) {
-      margin-top: 40px;
       margin-bottom: 7px;
+      margin-top: 40px;
     }
 }
+
 .about-heading-03{
     @include mq(lg) {
-      margin-top: -9px;
       margin-bottom: 7px;
+      margin-top: -9px;
     }
 }
+
 .about-text{
     color: $font-black;
-    text-align: justify;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 150%; 
+    font-weight: 400; 
     letter-spacing: 0.48px;
+    line-height: 150%;
     padding-bottom: 32px;
     padding-left: 9px;
+    text-align: justify;
     
     @include mq(lg) {
         font-size: 18px;
@@ -561,58 +638,73 @@ li{
         padding-left: 0;
     }
 }
+
 .about__text01{
     padding-right: 22px;
+
     @include mq(lg) {
         margin-right: 140px;
     }
 }
+
 .about__text02{
     padding-right: 23px;
+
     @include mq(lg) {
-        padding-right: 22px;
         margin-right: 34px;
+        padding-right: 22px;
+
         // margin-right: 223px;
     }
 }
+
 .about__text03{
     margin-bottom: 15px;
     padding-right: 22px;
+
     @include mq(lg) {
       margin-right: 150px;
       padding-right: 8px;
     }
 }
+
 .about-image-wrapper-01{
     padding-right: 15px;
+
     @include mq(lg) {
-        padding-right: 0px;
         margin-top: 30px;
+        padding-right: 0;
     }
 }
+
 .about-image-wrapper-02{
     padding-right: 15px;
+
     @include mq(lg) {
-      padding-right: 0px;
+      padding-right: 0;
     }
 }
+
 .about-image-wrapper-03{
     @include mq(lg) {
     //   margin-right: 71px;
     }
 }
+
 .about-image-03{
     img{
-        padding-right: 16px;
-        padding-bottom: 66px;
         max-width: 100%;
+        padding-bottom: 66px;
+        padding-right: 16px;
+
         @include mq(sm) {
           max-width: 699px;
         }
+
         @include mq(lg) {
-            width: 450px;
             padding-bottom: 53px;
-            padding-right: 0px;
+            padding-right: 0;
+            width: 450px;
         }
     }
     
@@ -620,14 +712,16 @@ li{
 
 .about-image{
     img{
-        padding-bottom: 52px;
         max-width: 100%;
+        padding-bottom: 52px;
+
         @include mq(sm) {
           max-width: 699px;
         }
+
         @include mq(lg) {
-            width: 450px;
             padding-bottom: 53px;
+            width: 450px;
         }
 
     }
@@ -636,47 +730,46 @@ li{
 // menu
 .menu {
     background: #2F2F2F;
-    text-align: center;
     position: relative; // 疑似要素の位置指定の基準
+    text-align: center;
 
     &::before {
-        content: "";
-        position: absolute;
-        top: 17px;  // 上のオフセット
-        bottom: 24px; // 下のオフセット
-        left: 16px;  // 左のオフセット
-        right: 16px; // 右のオフセット
         border: 1px solid #FFF;  // outline 風のボーダー
+        content: "";  // 左のオフセット
+        inset: 17px 16px 24px; // 下のオフセット
         pointer-events: none; // クリックなどの邪魔にならないように
+        position: absolute; // 右のオフセット  // 上のオフセット
     }
 
     @include mq(lg) {
         &::before {
-            top: 66px;
-            bottom: 72px;
-            left: 72px;
-            right: 72px;
+            inset: 66px 72px 72px;
         }
     }
 }
 
 .menu__inner{
     padding: 50px 0 85px;
+
     @include mq(lg) {
       padding: 148px 72px 87px;
     }
 }
+
 .menu-title__container{
 }
+
 .menu-title__jp{
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-bottom: 7px;
+
     @include mq(md) {
       font-size: 16px;
     }
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
@@ -684,6 +777,7 @@ li{
     }
 
 }
+
 .menu-title__en{
     color: #FFF;
     font-family: $font-reross;
@@ -691,47 +785,63 @@ li{
     font-weight: 400;
     letter-spacing: 1.6px;
     position: relative;
+
     @include mq(md) {
       font-size: calc((32px + 48px) / 2);
     }
+
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
         padding-bottom: 7px;
         padding-left: 7px;
     }
+
     &::after{
+        background-color: #fff;
+        bottom: -12px;
         content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -12px;/*線の上下位置*/
         display: inline-block;
-        width: 50px;/*線の長さ*/
-        height: 2px;/*線の太さ*/
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);/*位置調整*/
-        background-color: #fff;/*線の色*/
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 50px;
+
+/* 線の上下位置 */
+
+/* 線の長さ */
+
+/* 線の太さ */
+
+/* 位置調整 */
+
+/* 線の色 */
     }
 }
+
 .menu-text__wrapper{
 
 }
+
 .menu-text-pfc{
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
-    margin-top: 60px;
     margin-bottom: 19px;
+    margin-top: 60px;
+
     @include mq(md) {
-      margin-top: calc((60px + 43px) / 2);
       margin-bottom: calc((19px + 122px) / 2);
+      margin-top: calc((60px + 43px) / 2);
     }
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
-        margin-top: 43px;
         margin-bottom: 122px;
+        margin-top: 43px;
     }
 }
 
@@ -741,147 +851,168 @@ li{
     font-weight: 700;
     letter-spacing: 2.4px;
     padding-bottom: 16px;
+
     @include mq(md) {
       font-size: 27px;
     }
+
     @include mq(lg) {
         font-size: 30px;
         letter-spacing: 3px;
     }
 }
+
 .menu-card__price{
     padding-bottom: 16px;
 }
+
 .menu-card__price-en{
     color: #333;
     font-family: $font-reross;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
+
     @include mq(md) {
       font-size: calc((18px + 24px) / 2);
     }
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 2.4px;
         padding-right: 8px;
     }
 }
+
 .menu-card__price-price{
     color: #333;
     font-family: $font-reross;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+
     @include mq(md) {
       font-size: 35px;
     }
+
     @include mq(lg) {
         font-size: 40px;
         letter-spacing: 4px;
     }
 }
+
 .menu-card__price-tax{
     color: #333;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
+
     @include mq(md) {
         font-size: 15px;  
     }
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 1.8px;
     }
 }
+
 .menu-card__pfc{
 
 }
+
 // card1
 .menu-card1__wrapper{
     display: grid;
     justify-items: center;
+
     @include mq(md) {
         display: flex;
-        margin-right: 10%;
         justify-content: center;
+        margin-right: 10%;
     }
 }
+
 .menu-image__1{
+    padding-left: 24px;
+    padding-right: 36px;
     position: relative;
     top: 30px;
     z-index: 2;
-    padding-left: 24px;
-    padding-right: 36px;
+
     @include mq(lg) {
-        top: auto;
         bottom: 68px;
         left: 136px;
         padding-right: 0;
+        top: auto;
     }
+
     img{
-        width: 315px;
         height: 311px;
+        width: 315px;
+
     @include mq(md) {
-        width: 451px;
         height: 445px;
+        width: 451px;
     }
     }
 }
+
 .card1-text__wrapper{
-    width: 300px;
-    height: 323px;
     background: #F2F2F2;
+    height: 323px;
+    margin-bottom: 32px;
     margin-left: 38px;
     margin-right: 37px;
-    margin-bottom: 32px;
     position: relative;
     top: -16px;
+    width: 300px;
+
     &::before{
-        content: "";
-        position: absolute;
         border: 1px solid #333;
-        top: 11px;
-        bottom: 9px;
-        left: 10px;
-        right: 10px;
+        content: "";
+        inset: 11px 10px 9px;
+        position: absolute;
     }
+
     @include mq(md) {
       width: calc((300px + 592px) / 2);
     }
+
     @include mq(lg) {
-        width: 592px;
         height: 367px;
-        margin-left: 46px;
         margin-bottom: 85px;
+        margin-left: 46px;
         top: -17px;
+        width: 592px;
+
         &::before{
-            content: "";
-            position: absolute;
             border: 1px solid #333;
-            top: 13px;
-            bottom: 13px;
-            left: 13px;
-            right: 13px;
+            content: "";
+            inset: 13px;
+            position: absolute;
         }
     }
 }
+
 .menu-card1__Recommendation{
-    width: 211px;
-    height: 97px;
-    border: 2px solid #159741;
     background: #159741;
+    border: 2px solid #159741;
+    height: 97px;
+    left: 45px;
     margin: 0 auto;
     position: absolute;
-    left: 45px;
+    width: 211px;
+
     @include mq(lg) {
-        width: 251px;
         height: 78px;
         margin-left: 125px;
         margin-right: 170px;
         padding-bottom: 35px;
+        width: 251px;
     }
 }
+
 .menu-card1__Recommendation-en{
     color: #FFF;
     font-family: $font-Satisfy;
@@ -889,79 +1020,92 @@ li{
     font-weight: 400;
     letter-spacing: 0.36px;
     margin-top: 37px;
+
     @include mq(lg) {
         font-size: 14px;
         letter-spacing: 0.42px;
-        margin-top: 7px;
         margin-left: 2px;
+        margin-top: 7px;
     }
 }
+
 .menu-card1__Recommendation-jp{
     color: #FFF;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.54px;
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
         margin-left: 5px;
     }
 }
+
 .menu-card1__title{
     color: #333;
     font-size: 24px;
-    font-weight: 700;
-    line-height: 150%; 
+    font-weight: 700; 
     letter-spacing: 2.4px;
-    padding-top: 121px;
+    line-height: 150%;
     padding-bottom: 13px;
+    padding-top: 121px;
+
     @include mq(lg) {
-        text-align: center;
         font-size: 30px;
         letter-spacing: 3px;
-        padding-top: 112px;
         padding-bottom: 8px;
         padding-left: 2px;
+        padding-top: 112px;
+        text-align: center;
 
     }
 }
+
 .menu-card1__price{
     padding-bottom: 16px;
+
     @include mq(lg) {
         padding-bottom: 22px;
         padding-right: 10px;
         padding-top: 2px;
     }
 }
+
 .menu-card1__price-en{
     color: #333;
     font-family: $font-reross;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.8px;
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 2.4px;
         padding-right: 5px;
     }
 }
+
 .menu-card1__price-price{
     color: #333;
     font-family: $font-reross;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+
     @include mq(lg) {
         font-size: 40px;
         letter-spacing: 4px;
     }
     
 }
+
 .menu-card1__price-tax{
     color: #333;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 1.8px;
@@ -969,19 +1113,21 @@ li{
 
     }
 }
+
 .menu-card1__pfc{
 
 }
-.menu-card1__text{
-    display: flex;
-    justify-content: space-between; 
+
+.menu-card1__text{ 
     color: #333;
+    display: flex;
     font-size: 14px;
     font-weight: 400;
+    justify-content: space-between;
     letter-spacing: 0.42px;
-    padding-top: 1px;
     margin-left: 22px;
     margin-right: 21px;
+    padding-top: 1px;
 
     @include mq(lg) {
         font-size: 24px;
@@ -991,82 +1137,89 @@ li{
     }
 
 }
+
 .menu-card__wrap{
     @include mq(lg) {
         display: flex; 
-        justify-content: center; 
         gap: 32px; 
+        justify-content: center; 
         margin-bottom: -6px;
     }
 }
+
 // card2
 .menu-card2__wrapper{
     display: grid;
     justify-items: center;
 
 }
+
 .menu-image__2{
+    padding-right: 8px;
     position: relative;
     z-index: 1;
-    padding-right: 8px;
+
     @include mq(lg) {
-        left: 10px;
         bottom: 17px;
+        left: 10px;
     }
+
     img{
-        width: 305px;
         height: 317px;
+        width: 305px;
+
     @include mq(md) {
-        width: 417px;
         height: 434px;
+        width: 417px;
     }
         
     }
 }
+
 .card2-text__wrapper{
-    width: 300px;
+    background: #F2F2F2;
+    bottom: 60px;
     height: 222px;
+    margin-bottom: -13px;
     margin-left: 38px;
     margin-right: 37px;
-    margin-bottom: -13px;
-    background: #F2F2F2;
     position: relative;
-    bottom: 60px;
+    width: 300px;
+
     &::before{
-        content: "";
-        position: absolute;
         border: 1px solid #333;
-        top: 9px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
+        content: "";
+        inset: 9px 10px 10px;
+        position: absolute;
     }
+
     @include mq(lg) {
-        width: 524px;
+        bottom: 99px;
         height: 280px;
         margin-right: 8px;
-        bottom: 99px;
         right: 4px;
+        width: 524px;
+
         &::before{
-            content: "";
-            position: absolute;
             border: 1px solid #333;
-            top: 15px;
-            bottom: 11px;
-            left: 14px;
-            right: 12px;
+            content: "";
+            inset: 15px 12px 11px 14px;
+            position: absolute;
         }
     }
 
 }
+
 .card2__title{
-    padding-top: 58px;
     padding-bottom: 11px;
+    padding-top: 58px;
+
     @include mq(lg) {
+        padding-right: 0;
         padding-top: 74px;
-        padding-right: 0px;
     }
 }
+
 .card2__price{
     // padding-left: 10px;
     @include mq(lg) {
@@ -1075,26 +1228,30 @@ li{
         padding-right: 18px;
     }
 }
-.menu-card2__text{
-    display: flex;
-    justify-content: space-between; 
+
+.menu-card2__text{ 
     color: #333;
+    display: flex;
     font-size: 14px;
     font-weight: 400;
+    justify-content: space-between;
     letter-spacing: 0.42px;
     margin: 0 21px;
     padding-top: 1px;
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
-        padding-top: 1px;
         margin-left: 43px;
         margin-right: 40px;
+        padding-top: 1px;
     }
 }
+
 // card3
 .menu-card3__wrapper{
  }
+
 .menu-image__3{
     position: relative;
     z-index: 1;
@@ -1103,56 +1260,59 @@ li{
         bottom: 16px;
         left: -40px;
     }
+
     img{
-        width: 308px;
         height: 312px;
+        width: 308px;
+
     @include mq(md) {
-        width: 427px;
         height: 432px;
+        width: 427px;
         }
     }
 }
+
 .card3-text__wrapper{
-    width: 300px;
-    height: 222px;
     background: #F2F2F2;
+    bottom: 60px;
+    height: 222px;
+    margin-bottom: -10px;
     margin-left: 41px;
     margin-right: 34px;
-    margin-bottom: -10px;
     position: relative;
-    bottom: 60px;
+    width: 300px;
+
     &::before{
-        content: "";
-        position: absolute;
         border: 1px solid #333;
-        top: 9px;
-        bottom: 10px;
-        left: 10px;
-        right: 10px;
+        content: "";
+        inset: 9px 10px 10px;
+        position: absolute;
     }
+
     @include mq(lg) {
-        width: 524px;
+        bottom: 98px;
         height: 280px;
         margin-left: -10px;
-        bottom: 98px;
+        width: 524px;
+
         &::before{
-            content: "";
-            position: absolute;
             border: 1px solid #333;
-            top: 14px;
-            bottom: 12px;
-            left: 12px;
-            right: 13px;
+            content: "";
+            inset: 14px 13px 12px 12px;
+            position: absolute;
         }
     }
 }
+
 .card3__title{
-    padding-top: 56px;
     padding-bottom: 11px;
+    padding-top: 56px;
+
     @include mq(lg) {
-        padding-top: 77px;
-        padding-left: 5px;    }
+        padding-left: 5px;
+        padding-top: 77px;    }
 }
+
 .card3__price{
     // padding-left: 10px;
     @include mq(lg) {
@@ -1161,12 +1321,13 @@ li{
         padding-right: 15px;
     }
 }
-.menu-card3__text{
-    display: flex;
-    justify-content: space-between; 
+
+.menu-card3__text{ 
     color: #333;
+    display: flex;
     font-size: 14px;
     font-weight: 400;
+    justify-content: space-between;
     letter-spacing: 0.42px;
     margin: 0 21px;
     padding-top: 1px;
@@ -1174,146 +1335,149 @@ li{
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
-        padding-top: 1px;
         margin-left: 42px;
         margin-right: 41px;
+        padding-top: 1px;
     }
 }
 
 // instagram card
 .instagram-card{
     background: #F2F2F2;
-    position: relative;
+    margin-bottom: -31px;
+
     // outline: 1px solid #333;
     // outline-offset: -11px;
     margin-left: 41px;
     margin-right: 34px;
-    margin-bottom: -31px;
+    position: relative;
+
     &::before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        bottom: 12px;
-        left: 10px;
-        right: 10px;
         border: 1px solid #333;  // outline 風のボーダー
+        content: "";
+        inset: 10px 10px 12px;
         pointer-events: none; // クリックなどの邪魔にならないように
+        position: absolute;
     }
+
     @include mq(lg) {
-        width: 1080px;
         height: 544px;
         margin: 0 auto;
         margin-bottom: 82px;
+        width: 1080px;
+
         &::before{
-            top: 12px;
-            bottom: 13px;
-            left: 14px;
-            right: 13px;
+            inset: 12px 13px 13px 14px;
         }
     }
 }
+
 .instagram-card__title{
     background: #159741;
-    position: relative;
+    margin-bottom: 24px;
     margin-left: 57px;
     margin-right: 58px;
-    margin-bottom: 24px;
+    position: relative;
+
     @include mq(lg) {
-        width: 360px;
-        height: 73px;
         display: inline-block;
+        height: 73px;
         margin-bottom: 0;
         margin-left: 45px;
         margin-right: 58px;
+        width: 360px;
     }
 }
+
 .instagram-card__title-en{
     color: #FFF;
     font-family: $font-reross;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 1.2px;
-    padding: 7px 34px 11px 34px;
+    padding: 7px 34px 11px;
+
     @include mq(lg) {
         font-size: 30px;
         letter-spacing: 1.5px;
-        padding-top: 14px;
         padding-bottom: 19px;
+        padding-top: 14px;
     }
 }
+
 .instagram-card__text {
     color: #333;
-    text-align: justify;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.8px;
     padding: 0 32px 22px;
-    position: relative; 
+    position: relative;
+    text-align: justify; 
+
     &::after{
     content: "！";
     }
+
     @include mq(lg) {
-        text-align: center;
         font-size: 18px;
         letter-spacing: 0.9px;
-        padding-top: 27px;
-        padding-bottom: 34px;
-        padding-left: 46px;
-        padding-right: 42px;
+        padding: 27px 42px 34px 46px;
+        text-align: center;
 
         &::before,
         &::after {
-            content: "";
-            position: absolute;
-            width: 35px; // 斜め線の長さ
-            height: 1px; // 斜め線の太さ
             background-color: #333;
+            content: "";
+            height: 1px; // 斜め線の太さ
+            position: absolute;
             transform: rotate(54deg);
+            width: 35px; // 斜め線の長さ
             
         }
 
         &::before {
             left: -2px;
-            top: -1px;
-            margin-top: 41px;
             margin-left: 22%;
+            margin-top: 41px;
+            top: -1px;
         }
 
         &::after {
-            top: 1px;
-            right: 12px;
-            transform: rotate(-54deg);
-            margin-top: 39px;
             margin-right: 21%;
+            margin-top: 39px;
+            right: 12px;
+            top: 1px;
+            transform: rotate(-54deg);
         }
     }
 }
 
 .instagram-card__image-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); // スマホ時は2列
-    grid-template-rows: repeat(2, 1fr); // スマホ時は2行
-    gap: 10px; 
-    justify-content: center;
     align-items: center;
-    padding: 0 20px 2px 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); // スマホ時は2列
+    grid-template-rows: repeat(2, 1fr); // スマホ時は2行 
+    justify-content: center;
+    padding: 0 20px 2px;
+
     @include mq(lg) {
+        gap: 16px;
         grid-template-columns: repeat(4, 1fr); // PC時は横1列に4枚
         grid-template-rows: 1fr; // PC時は1行
-        gap: 16px;
         padding-left: 47px;
         padding-right: 62px;
         }
 
     img {
-        max-width: 100%;
         height: auto;
-        max-width: 125px;
         max-height: 125px;
+        max-width: 100%;
+        max-width: 125px;
 
         @include mq(lg) {
-            max-width: 231px;
             max-height: 231px;
+            max-width: 231px;
         }
     }
 }
@@ -1322,40 +1486,39 @@ li{
     color: #333;
     font-size: 16px;
     font-weight: 400;
-    padding-top: 4px;
     padding-bottom: 24px;
     padding-right: 10px;
+    padding-top: 4px;
     
     @include mq(lg) {
         font-size: 18px;
-        padding-top: 7px;
         padding-bottom: 26px;
+        padding-top: 7px;
     }
 }
 
 .instagram-card__btn-text {
-    position: relative;
-    display: inline-flex;
     align-items: center;
     border: 1px solid #333;
-    margin: 0 20px 34px;
     color: #333;
-    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.48px;
-    padding-top: 14px;
+    margin: 0 20px 34px;
     padding-bottom: 17px;
     padding-left: 40px;
-    cursor: pointer;
+    padding-top: 14px;
+    position: relative;
+    text-align: center;
+
     @include mq(lg) {
         font-size: 16px;
-        padding-top: 13px;
-        padding-bottom: 17px;
-        padding-right: 77px;
-        padding-left: 58px;
         margin-right: 18px;
+        padding: 13px 77px 17px 58px;
     }
+
     &:hover{
         background-color: #000;
         color: #fff;
@@ -1365,42 +1528,49 @@ li{
         }
     }
 }
+
 .external-icon {
-    width: 19px;
     height: 19px;
     margin-bottom: -3px;
     margin-left: 16px;
     margin-right: 17px;
+    width: 19px;
+
     @include mq(lg) {
-        width: 20px;
         height: 20px;
+        left: 134px;
         margin-bottom: -2px;
         margin-left: 113px;
         position: absolute;
         top: 17px;
-        left: 134px;
+        width: 20px;
     }
 
 }
+
 // shop
 .shop{
     background: #F2F2F2;
 }
+
 .shop__inner{
     padding-top: 65px;
+
     @include mq(lg) {
       padding-top: 122px;
     }
 }
+
 .shop-title__container{
 
 }
+
 .shop-title__jp{
-    text-align: center;
     color: #159741;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.7px;
+    text-align: center;
     
     @include mq(lg) {
         font-size: 18px;
@@ -1408,48 +1578,62 @@ li{
         padding-right: 5px;
     }
 }
+
 .shop-title__en{
-    position: relative;
-    text-align: center;
     font-family: $font-reross;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1.6px;
-    padding-top: 8px;
     padding-bottom: 68px;
+    padding-top: 8px;
+    position: relative;
+    text-align: center;
+
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
-        padding-top: 8px;
         padding-right: 5px;
+        padding-top: 8px;
     }
+
     &::before{
+        background-color: #159741;
+        bottom: 56px;
         content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 56px;/*線の上下位置*/
         display: inline-block;
-        width: 50px;/*線の長さ*/
-        height: 2px;/*線の太さ*/
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);/*位置調整*/
-        background-color: #159741;/*線の色*/
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 50px;
+
+/* 線の上下位置 */
+
+/* 線の長さ */
+
+/* 線の太さ */
+
+/* 位置調整 */
+
+/* 線の色 */
         @include mq(lg) {
             bottom: 52px;
         }
     }
 }
+
 .shop__access-map {
-    position: relative; // 子要素のabsolute配置の基準にする
     margin-bottom: 53px;
+    position: relative; // 子要素のabsolute配置の基準にする
     
     @include mq(lg) {
-        padding-top: 29px;
-        padding-left: 3px;
         margin-bottom: 0;
+        padding-left: 3px;
+        padding-top: 29px;
         width: 100%;
     }
 }
+
 .map-image {
     width: 100%;
 }
@@ -1460,54 +1644,61 @@ li{
       gap: 125px;
     }
 }
+
 .shop-text-container{
     @include mq(lg) {
-        margin-top: 149px;
         margin-left: 154px;
+        margin-top: 149px;
       
     }
 }
+
 .shop__name-wrapper{
     @include mq(lg) {
         display: flex;
     }
 }
+
 .shop-name{
-    text-align: center;
     font-family: $font-reross;
     font-size: 32px;
-    font-weight: 400;
-    line-height: 100%; 
+    font-weight: 400; 
     letter-spacing: 0.96px;
+    line-height: 100%;
+    text-align: center;
+
     @include mq(lg) {
       margin: 0;
       padding-left: 30px;
     }
+
     span{
-        text-align: center;
         font-family: $font-reross;
         font-size: 18px;
         font-weight: 400;
         line-height: 100%; 
         padding-right: 4px;
+        text-align: center;
+
         @include mq(lg) {
             color: #333;
-            text-align: center;
             font-family: Reross;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            text-align: center;
         }
     }
 }
 
 .shop-ruby{
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
     padding-bottom: 24px;
+    text-align: center;
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
@@ -1520,141 +1711,165 @@ li{
 .shop-text-wrapper{
 
 }
+
 .shop-adress{
     font-size: 16px;
     font-weight: 400;
-    line-height: 170%;
     letter-spacing: 0.48px;
+    line-height: 170%;
+    padding-bottom: 2px;
     padding-left: 28px;
     padding-top: 2px;
-    padding-bottom: 2px;
+
     @include mq(lg) {
-        font-size: 18px;
-        line-height: 200%; 
+        font-size: 18px; 
         letter-spacing: 0.54px;
-        padding-left: 26px;
+        line-height: 200%;
         padding-bottom: 1px;
+        padding-left: 26px;
     }
 }
+
 .shop-information{
     font-size: 16px;
     font-weight: 400;
-    line-height: 170%;
     letter-spacing: 0.48px;
-    padding-left: 28px;
+    line-height: 170%;
     padding-bottom: 40px;
+    padding-left: 28px;
     padding-top: 4px;
+
     @include mq(lg) {
-        font-size: 18px;
-        line-height: 200%; 
+        font-size: 18px; 
         letter-spacing: 0.54px;
+        line-height: 200%;
     }
 }
+
 .shop-table {
     font-size: 16px;
-    line-height: 170%;
     letter-spacing: 0.48px;
-    padding: 0px 26px 34px;
+    line-height: 170%;
+    padding: 0 26px 34px;
+
     @include mq(lg) {
-            max-width: 100%;
             border-collapse: collapse;
             font-size: 18px;
-            line-height: 150%;
             letter-spacing: 0.54px;
-            margin-top: 10px;
+            line-height: 150%;
             margin-left: 15px;
+            margin-top: 10px;
+            max-width: 100%;
         }
 }
+
 .shop-row{
 padding: 10px 0;
 }
+
 .shop-header {
     font-weight: normal;
-    width: 25%;
     text-align: left;
     vertical-align: top;
+    width: 25%;
+
     @include mq(lg) {
-        width: 20%;
-        padding-top: 10px;
         padding-left: 11px;
+        padding-top: 10px;
+        width: 20%;
     }
 }
+
 .shop-date{
     @include mq(lg) {
         padding: 10px 0 0 6px;
     }
 }
+
 .shop-date__access{
     @include mq(lg) {
-        padding-top: 7px;
         line-height: 162%;
+        padding-top: 7px;
     }
 }
+
 .shop-image__exterior{
-    padding: 0 16px;
     margin-bottom: 95px;
+    padding: 0 16px;
+
     @include mq(lg) {
-        text-align: right;
         margin: 0 0 0 auto;
         margin-bottom: 76px;
         margin-top: 80px;
         padding-right: 0;
+        text-align: right;
     }
 }
+
 .image-exterior{
-    width: 343px;
     height: 298px;
     object-fit: cover;
+    width: 343px;
+
     @include mq(lg) {
-        width: 700px;
         height: 500px;
+        width: 700px;
     }
 }
+
 .post-card__container{
+    padding-bottom: 66px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 66px;
+
     @include mq(lg) {
-        padding: 0px 147px 115px;
+        padding: 0 147px 115px;
     }
 }
+
 .post-card__wrapper{
     background: #fff;
-    padding: 16px 10px 62px 10px;
-    box-shadow: 0px 4px 20px 0px rgba(161, 159, 159, 0.60);
+    box-shadow: 0 4px 20px 0 rgb(161 159 159 / 60%);
+    padding: 16px 10px 62px;
+
     @include mq(lg) {
-        padding-top: 30px;
-        padding-right: 32px;
-        padding-left: 34px;
-        padding-bottom: 0px;
+        padding: 30px 32px 0 34px;
 
     }
 }
+
 .post-card__images{
     position: relative;
+
     @include mq(lg) {
       display: flex;
     }
 }
+
 .post-card__stamp{
-    position: absolute;
-    z-index: 2;
-    top: -56px;
     left: -26px;
+    position: absolute;
+    top: -56px;
+    z-index: 2;
+
     @include mq(lg) {
-        top: -105px;
         left: -131px;
+        top: -105px;
     }
+
     img{
-        width: 112px;
         height: 93px;
+        width: 112px;
+
         @include mq(lg) {
-            width: 288px;
             height: 240px;
+            width: 288px;
         }
     }
 }
+
 .post-card__terrace{
+    display: inline-block; // 画像のサイズに合わせる
     // background-image: url("/image/img：オープンテラス.png");
     // width: 323px;
     // height: 282px;
@@ -1662,121 +1877,125 @@ padding: 10px 0;
     // background-repeat: no-repeat;
     // background-position: center;
     position: relative; // 疑似要素の基準
-    display: inline-block; // 画像のサイズに合わせる
     &::before{
-        content: "";
-        position: absolute;
-        top: 14px;
-        left: 14px;
-        right: 14px;
-        bottom: 13px;
         border: 1px solid #fff;
+        content: "";
+        inset: 14px 14px 13px;
         pointer-events: none;
+        position: absolute;
     }
+
     img{
-        max-width: 100%;
-        width: 323px;
         height: 282px;
+        max-width: 100%;
         object-fit: cover;
+        width: 323px;
+
         @include mq(lg) {
-            width: 629.568px;
             height: 430.748px;
+            width: 629.568px;
         }
     }
+
     @include mq(lg) {
-        width: 629.568px;
         height: 430.748px;
+        width: 629.568px;
+
         &::before{
-            top: 18px;
-            left: 28px;
-            right: 28px;
-            bottom: 21px;
+            inset: 18px 28px 21px;
         }
     }
 
 }
+
 .post-card__takeout{
-    position: relative; // 疑似要素の基準
     display: inline-block; // 画像のサイズに合わせる
     margin-top: -5px;
+    position: relative; // 疑似要素の基準
     &::before{
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 14px;
-        right: 14px;
-        bottom: 14px;
         border: 1px solid #fff;
+        content: "";
+        inset: 10px 14px 14px;
+        position: absolute;
     }
+
     img{
-        width: 323px;
         height: 209px;
+        width: 323px;
+
         @include mq(lg) {
-            width: 449.691px;
             height: 430.748px;
+            width: 449.691px;
         }
     }
+
     @include mq(lg) {
         margin-top: 0;
+
         &::before{
-        content: "";
-        position: absolute;
-        top: 18px;
-        left: 19px;
-        right: 20px;
-        bottom: 26px;
         border: 1px solid #fff;
+        content: "";
+        inset: 18px 20px 26px 19px;
         pointer-events: none;
+        position: absolute;
     }
 
     }
 }
+
 .card-text__wrapper{
-    padding-top: 15px;
     padding-left: 14px;
+    padding-top: 15px;
+
     @include mq(lg) {
-        padding-top: 0;
-        padding-left: 9px;
         gap: 135px;
+        padding-left: 9px;
+        padding-top: 0;
     }
 }
+
 .test-wrap{
     @include mq(lg) {
       
     }
 }
+
 .card-text__title{
     color: #333;
     font-family: $font-Satisfy;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1.5px;
+
     @include mq(lg) {
+        float: left;
         font-size: 48px;
         letter-spacing: 2.4px;
-        float: left;
-        margin-right: 50px;
         margin-bottom: 50px;
+        margin-right: 50px;
         padding-top: 22px;
     }
 }
+
 .card-text{
     color: #4F4F4F;
     font-family: "Noto Sans JP";
     font-size: 16px;
     font-weight: 400;
-    line-height: 250%; 
+    line-height: 250%;
+    text-decoration-color: #4F4F4F; 
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
-    text-decoration-color: #4F4F4F;
     text-underline-offset: 12px;
+
     @include mq(lg) {
-      text-align: left;
       margin-right: 220px;
       padding-top: 39px;
+      text-align: left;
 
     }
 }
+
 .green-text{
     color: #159741;
     font-family: $font-Satisfy;
@@ -1785,130 +2004,156 @@ padding: 10px 0;
     letter-spacing: 1.8px;
     padding-left: 24px;
     transform: rotate(-6deg);
+
     @include mq(lg) {
         font-size: 40px;
         letter-spacing: 2px;
-        text-align: right;
-        margin-top: -12px;
         margin-right: 7px;
+        margin-top: -12px;
+        text-align: right;
     }
 
        &::before {
-        content: "";
-        position: absolute;
-        width: 286px;
-        height: 1px;
         background-color: #159741;
-        transform: rotate(-1deg);
-        top: 44px;
+        content: "";
+        height: 1px;
+        position: absolute;
         right: 4px;
+        top: 44px;
+        transform: rotate(-1deg);
+        width: 286px;
     }
 
     // 2本目の線（擬似要素 ::after）
     &::after {
-        content: "";
-        position: absolute;
-        width: 286px;
-        height: 1px;
         background-color: #159741;
-        transform: rotate(0deg);
-        top: 51px;
+        content: "";
+        height: 1px;
+        position: absolute;
         right: -4px;
+        top: 51px;
+        transform: rotate(0deg);
+        width: 286px;
     }
 }
 
 // contact
 .contact{
-background-image: url(/image/sp/vegetable-background.png);
+background-image: url("/image/sp/vegetable-background.png");
 background-size: 100%;
+
 @include mq(lg) {
-  background-image: url(/image/pc/vegetable-background.png);
+  background-image: url("/image/pc/vegetable-background.png");
 }
 }
+
 .contact__inner{
     padding: 62px 16px 64px;
+
     @include mq(lg) {
         padding: 130px 0;
     }
 }
+
 .contact__wrapper{
     background: #F2F2F2;
+
     @include mq(lg) {
-        width: 800px;
         height: 1032px;
         margin: 0 auto;
+        width: 800px;
     }
 }
+
 .contact-title__container{
     
 }
+
 .contact-title__jp{
-    text-align: center;
     color: #159741;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-top: 65px;
+    text-align: center;
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
     }
 }
+
 .contact-title__en{
-    position: relative;
-    text-align: center;
     font-family: $font-reross;
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 1.6px;
-    padding-top: 7px;
     padding-bottom: 60px;
+    padding-top: 7px;
+    position: relative;
+    text-align: center;
+
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
-        padding-top: 8px;
         padding-bottom: 42px;
+        padding-top: 8px;
     }
+
     &::after{
+        background-color: #159741;
+        bottom: 47px;
         content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 47px;/*線の上下位置*/
         display: inline-block;
-        width: 50px;/*線の長さ*/
-        height: 2px;/*線の太さ*/
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);/*位置調整*/
-        background-color: #159741;/*線の色*/
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 50px;
+
+/* 線の上下位置 */
+
+/* 線の長さ */
+
+/* 線の太さ */
+
+/* 位置調整 */
+
+/* 線の色 */
         @include mq(lg) {
           bottom: 30px;
         }
     }
 }
+
 .contact-text{
     color: #333;
+    display: flex;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.48px;
-    padding-left: 16px;
-    padding-bottom: 11px;
-    display: flex;
     justify-content: center;
+    letter-spacing: 0.48px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+
     @include mq(lg) {
+        padding-bottom: 28px;
+
         // text-align: center;
         padding-left: 0;
-        padding-bottom: 28px;
     }
 }
+
 .test-btn{
     display: grid;
     justify-items: center;
 }
 
 .contact-form {
-    max-width: 600px;
     margin: 0 auto;
+    max-width: 600px;
     padding: 20px 20px 33px 17px;
+
     @include mq(lg) {
         max-width: 562px;
         padding: 20px 22px 31px 20px;
@@ -1916,12 +2161,14 @@ background-size: 100%;
 
     .form-group {
         margin-bottom: 31px;
+
         // display: grid;
         // justify-items: center;
         .form-label {
             color: #333;
             font-size: 16px;
             font-weight: 400;
+
             @include mq(lg) {
                 font-size: 18px;
                 margin-left: 1px;
@@ -1929,35 +2176,40 @@ background-size: 100%;
             
 
             .required {
+                background: #159741;
+                border-radius: 6px;
                 color: #FFF;
                 font-size: 12px;
                 font-weight: 400;
-                border-radius: 6px;
-                background: #159741;
-                padding: 1px 7px 3px 8px;
                 margin-left: 6px;
+                padding: 1px 7px 3px 8px;
             }
         }
+
         .form-input,
         .form-textarea{
-            width: 102%;
-            padding: 15px;
-            font-size: 16px;
-            border: 1px solid #2F2F2F;
             background: #fff;
+            border: 1px solid #2F2F2F;
+            font-size: 16px;
             margin-top: 6px;
+            padding: 15px;
+            width: 102%;
+
             @include mq(lg) {
-                width: 100%;
                 padding: 11px 11px 12px 23px;
+                width: 100%;
             }
+
             &:hover{
                 border: 1px solid #159741;
-                box-shadow: 0px 0px 4px 0px #159741;
+                box-shadow: 0 0 4px 0 #159741;
             }
+
             &:focus{
                 border: 1px solid #159741;
-                box-shadow: 0px 0px 4px 0px #159741;
+                box-shadow: 0 0 4px 0 #159741;
             }
+
             &::placeholder {
                 color: #BDBDBD;
                 font-family: "Noto Sans JP";
@@ -1984,12 +2236,13 @@ background-size: 100%;
 
 
 .form-textarea {
-    max-width: 102%;
-    height: 150px;
     background: #fff;
-    padding: 10px;
-    font-size: 16px;
     border: 1px solid #2F2F2F;
+    font-size: 16px;
+    height: 150px;
+    max-width: 102%;
+    padding: 10px;
+
     &::placeholder {
         color: #BDBDBD;
         font-size: 16px;
@@ -2000,54 +2253,53 @@ background-size: 100%;
 .form-checkbox {
     display: flex;
     justify-content: center;
+
     @include mq(lg) {
-        text-align: center;
-        margin-top: -13px;
         margin-left: 33px;
+        margin-top: -13px;
+        text-align: center;
     }
 }
 
 .checkbox-label {
-    display: inline-flex;
     align-items: center; // チェックボックスとテキストを揃える
     cursor: default; // チェックボックス以外をクリックしても反応しないようにする
+    display: inline-flex;
 }
 
 input[type="checkbox"] {
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 30px;
+    background: #FFF;
+    border: 1px solid #2F2F2F;
+    cursor: pointer;
     height: 30px;
     margin-right: 12px;
-    border: 1px solid #2F2F2F;
-    background: #FFF;
-    position: relative;
-    cursor: pointer;
-    transition: 0.2s, border-color 0.2s;
     margin-top: -8px;
+    position: relative;
+    transition: 0.2s, border-color 0.2s;
+    width: 30px;
 
     @include mq(lg) {
         margin-right: 20px;
         margin-top: 8px;
     }
+
     &:hover{
         border: 1px solid #159741;
-        box-shadow: 0px 0px 4px 0px #159741;
+        box-shadow: 0 0 4px 0 #159741;
     }
 
     &:checked {
-
         &::after {
+            border-bottom: 2px solid #159741;
+            border-right: 2px solid #159741;
             content: "";
+            height: 20px;
+            left: 14px;
             position: absolute;
             top: 11px;
-            left: 14px;
-            width: 10px;
-            height: 20px;
-            border-right: 2px solid #159741;
-            border-bottom: 2px solid #159741;
             transform: translate(-50%, -50%) rotate(48deg);
+            width: 10px;
         }
     }
 }
@@ -2058,36 +2310,39 @@ input[type="checkbox"] {
 
 
 .privacy-text {
-    padding-bottom: 5px;
     display: inline-block;
+    left: 3px;
+    padding-bottom: 5px;
     position: relative;
     top: -1px;
-    left: 3px;
+
     @include mq(lg) {
         font-size: 18px;
-        letter-spacing: 0.9px;
-        top: 6px;
-        right: 0px;
         left: -9px;
+        letter-spacing: 0.9px;
+        right: 0;
+        top: 6px;
     }
 }
 
 .privacy-text-accent{
     color: $accent-color;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 150%; 
+    font-weight: 400; 
     letter-spacing: 0.8px;
+    line-height: 150%;
+    pointer-events: auto; // リンクはクリックできるようにする
     text-decoration-line: underline;
-    text-decoration-style: solid;
     text-decoration-skip-ink: none;
+    text-decoration-style: solid;
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
-    pointer-events: auto; // リンクはクリックできるようにする
+
     &:hover{
         opacity: 0.7;
     }
+
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
@@ -2095,30 +2350,32 @@ input[type="checkbox"] {
 }
 
 .form-button{
+    background: $accent-color;
     color: #FFF;
-    width: 300px;
-    height: 56px;
+    cursor: pointer;
     font-size: 18px;
     font-weight: 500;
-    line-height: 150%; 
+    height: 56px; 
     letter-spacing: 0.9px;
-    cursor: pointer;
-    background: $accent-color;
-    text-align: center;
-    padding-top: 16px;
-    padding-bottom: 14px;
-    margin-top: 35px;
+    line-height: 150%;
     margin-left: 5px;
+    margin-top: 35px;
+    padding-bottom: 14px;
+    padding-top: 16px;
+    text-align: center;
+    width: 300px;
+
     @include mq(lg) {
-        width: 239px;
         height: 56px;
+        margin-left: 0;
         margin-top: 36px;
-        margin-left: 0px;
+        width: 239px;
     }
 
     &:hover {
         opacity: 0.7;
     }
+
     &:disabled{
         background: #BDBDBD;
         cursor: not-allowed;
@@ -2126,56 +2383,65 @@ input[type="checkbox"] {
 
     }
 }
+
 // footer
 .footer{
     background: #F2F2F2;
     
 }
+
 .footer__inner{
     padding: 48px 46px 10px;
+
     @include mq(lg) {
-        padding-top: 56px;
         padding-bottom: 9px;
+        padding-top: 56px;
     }
 }
+
 .sns-icons__wrapper{
 @include mq(lg) {
   
 }
 }
+
 .sns-icons{
     display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 40px;
     padding-left: 26px;
     padding-right: 27px;
-    padding-bottom: 40px;
-    justify-content: center;
-    gap: 40px;
+
     @include mq(lg) {
+      gap: 40px;
       justify-content: center;
       padding-bottom: 39px;
-      gap: 40px;
     }
 
 }
-.twitter-icon {
-    display: inline-block;
-    width: 50px; // 画像のサイズに合わせる
-    height: 50px; 
+
+.twitter-icon { 
     background-image: url("/image/Twitter\(footer\).png");
     background-size: cover;
+    display: inline-block;
+    height: 50px;
+    width: 50px; // 画像のサイズに合わせる
 
     &:hover {
         background-image: url("/image/Twitter\(hover\).png");
     }
+
     @include mq(lg) {
-        width: 40px; // 画像のサイズに合わせる
-        height: 40px; 
+        height: 40px;
+        width: 40px; // 画像のサイズに合わせる 
     }
 
     img {
         display: none; // `img` タグを非表示にする
     }
 }
+
 // .test-icon{
 //     width: 40px;
 //     height: 40px;
@@ -2191,38 +2457,41 @@ input[type="checkbox"] {
     
 // }
 
-.instagram-icon {
-    display: inline-block;
-    width: 50px; // 画像のサイズに合わせる
-    height: 50px; 
+.instagram-icon { 
     background-image: url("/image/Instagram\(footer\).png");
     background-size: cover;
+    display: inline-block;
+    height: 50px;
+    width: 50px; // 画像のサイズに合わせる
 
     &:hover {
         background-image: url("/image/Instagram\(hover\).png");
     }
+
     @include mq(lg) {
-        width: 40px; // 画像のサイズに合わせる
-        height: 40px; 
+        height: 40px;
+        width: 40px; // 画像のサイズに合わせる 
     }
 
     img {
         display: none; // `img` タグを非表示にする
     }
 }
-.tiktok-icon {
-    display: inline-block;
-    width: 50px; // 画像のサイズに合わせる
-    height: 50px; 
+
+.tiktok-icon { 
     background-image: url("/image/TikTok\(footer\).png");
     background-size: cover;
+    display: inline-block;
+    height: 50px;
+    width: 50px; // 画像のサイズに合わせる
 
     &:hover {
         background-image: url("/image/TikTok\(hover\).png");
     }
+
     @include mq(lg) {
-        width: 40px; // 画像のサイズに合わせる
-        height: 40px; 
+        height: 40px;
+        width: 40px; // 画像のサイズに合わせる 
     }
 
     img {
@@ -2233,224 +2502,261 @@ input[type="checkbox"] {
 .footer-nav__wrapper{
 
 }
+
 .footer-nav{
-    display: flex;
     color: #333;
+    cursor: pointer;
+    display: flex;
     font-family: $font-reross;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.48px;
-    justify-content: center;
     gap: 32px;
-    cursor: pointer;
+    justify-content: center;
+    letter-spacing: 0.48px;
+
     @include mq(lg) {
-        font-size: 18px;;
-        letter-spacing: 0.54px;
-        justify-content: center;
+        font-size: 18px;
         gap: 40px;
+        justify-content: center;;
+        letter-spacing: 0.54px;
         padding-right: 4px;
     }
 }
+
 .footer-nav-text{
 
 }
+
 .footer-logo{
-    text-align: center;
     padding-top: 35px;
+    text-align: center;
+
     @include mq(lg) {
       padding-top: 37px;
     }
+
     img{
         
     }
 
 }
+
 .footer-text{
     color: #333;
-    text-align: center;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.36px;
     padding-top: 23px;
+    text-align: center;
+
     @include mq(lg) {
-        padding-top: 15px;
         padding-left: 6px;
+        padding-top: 15px;
     }
 }
+
 .page-top {
     display: flex;
     justify-content: flex-end;
     padding-right: 17px;
+
     @include mq(lg) {
       padding-right: 60px;
     }
 }
 
 .page-top__btn {
-    width: 68px;
-    height: 0px;
-    margin-top: -33px;
     cursor: pointer;
+    height: 0;
+    margin-top: -33px;
+    width: 68px;
+
     @include mq(lg) {
-        width: 120px;
         margin-top: -60px;
+        width: 120px;
     }
 }
 
 .page-top__btn img {
-    width: 100%;
     height: auto;
-    width: 70px;
     height: 70px;
+    width: 100%;
+    width: 70px;
+
     @include mq(lg) {
-        width: 120px;
         height: 120px;
+        width: 120px;
     }
 }
 
 /* モーダルのスタイル */
 .modal {
+    align-items: center;
+    background: rgb(0 0 0 / 50%);
     display: none;
+    height: 100%;
+    justify-content: center;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
   }
+
   .modal-content {
     background: white;
-    padding: 20px;
     border-radius: 5px;
-    width: 80%;
-    max-width: 80%;
-    text-align: center;
     max-height: 80vh; // 画面の80%までの高さ
+    max-width: 80%;
     overflow-y: scroll; // モーダル内のコンテンツをスクロール可能に
+    padding: 20px;
+    text-align: center;
+    width: 80%;
   }
+
   .privacy-title__container{
     
   }
+
   .privacy-title__jp{
-      text-align: center;
       color: $accent-color;
       font-size: 12px;
       font-weight: 400;
       letter-spacing: 0.7px;
       padding-top: 64px;
+      text-align: center;
+
       @include mq(lg) {
           font-size: 18px;
           letter-spacing: 0.9px;
           padding-top: 10px;
       }
   }
+
   .privacy-title__en{
-      position: relative;
-      text-align: center;
       font-family: $font-reross;
       font-size: 24px;
       font-weight: 400;
       letter-spacing: 1.6px;
-      padding-top: 10px;
       padding-bottom: 58px;
+      padding-top: 10px;
+      position: relative;
+      text-align: center;
+
       @include mq(lg) {
           font-size: 48px;
           letter-spacing: 2.4px;
-          padding-top: 8px;
           padding-bottom: 42px;
+          padding-top: 8px;
       }
+
       &::after{
+          background-color: #159741;
+          bottom: 47px;
           content: '';
-          position: absolute;
-          left: 50%;
-          bottom: 47px;/*線の上下位置*/
           display: inline-block;
-          width: 50px;/*線の長さ*/
-          height: 2px;/*線の太さ*/
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);/*位置調整*/
-          background-color: #159741;/*線の色*/
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+          width: 50px;
+
+/* 線の上下位置 */
+
+/* 線の長さ */
+
+/* 線の太さ */
+
+/* 位置調整 */
+
+/* 線の色 */
           @include mq(lg) {
             bottom: 30px;
           }
       }
   }
+
   .privacy-text{
     color: #000;
-    text-align: justify;
     font-size: 16px;
     font-weight: 500;
     line-height: 150%; /* 24px */
+    text-align: justify;
+
     // margin: 0 20px;
     h3{
         font-size: 18px;
-        padding: 10px 0;
         margin: 0 auto;
-        text-align: center;
         margin-top: 20px;
+        padding: 10px 0;
+        text-align: center;
     }
   }
+
   .close {
+    color: #333;
     cursor: pointer;
     display: block;
     margin-top: 10px;
-    color: #333;
     text-decoration: underline;
   }
 
 // parallax
 .parallax{
-    margin-top: 0;
-    background-image: url("/image/salad-5904093_1920\ 1.png");
     background-attachment: fixed;
+    background-image: url("/image/salad-5904093_1920\ 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 134%;
-    max-width: 375px;
-    max-height: 250px;
     height: 100vh;
+    margin-top: 0;
+    max-height: 250px;
+    max-width: 375px;
     width: 100%;
+
     @include mq(sm) {
-      max-width: 767px;
       background-size: cover;
+      max-width: 767px;
     }
+
     @include mq(lg) {
-      min-width: 768px;
       max-height: 450px;
+      min-width: 768px;
       width: 100vw;
     }
+
     @include mq(lg) {
-        min-width: 1440px; // 1440px以上なら最小幅を指定
         max-width: none; // max-widthの制限を解除
+        min-width: 1440px; // 1440px以上なら最小幅を指定
         width: 100vw;
     }
 }
 
 // parallax2
 .parallax2{
-    margin-top: 0;
-    background-image: url("/image/cafe-768771_1920\ 1.png");
     background-attachment: fixed;
+    background-image: url("/image/cafe-768771_1920\ 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 134%;
-    max-width: 375px;
-    max-height: 250px;
     height: 100vh;
+    margin-top: 0;
+    max-height: 250px;
+    max-width: 375px;
+
     @include mq(sm) {
-        max-width: 767px;
         background-size: cover;
+        max-width: 767px;
       }
+
       @include mq(lg) {
-        min-width: 768px;
         max-height: 450px;
+        min-width: 768px;
         width: 100vw;
       }
+
       @include mq(lg) {
-          min-width: 1440px; // 1440px以上なら最小幅を指定
           max-width: none; // max-widthの制限を解除
+          min-width: 1440px; // 1440px以上なら最小幅を指定
           width: 100vw;
       }
 }
