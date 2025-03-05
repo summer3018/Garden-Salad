@@ -2660,16 +2660,16 @@ input[type="checkbox"] {
 
   .privacy-text{
     color: #000;
+    display: inline-block;
     font-size: 16px;
     font-weight: 500;
-    line-height: 150%; /* 24px */
-    text-align: justify;
-    display: inline-block;
     left: 3px;
+    line-height: 150%; /* 24px */
     padding-bottom: 5px;
-    position: relative;
-    top: -1px;
     pointer-events: none; // テキストをクリックしてもチェックがつかないようにする
+    position: relative;
+    text-align: justify;
+    top: -1px;
 
     @include mq(lg) {
         font-size: 18px;
