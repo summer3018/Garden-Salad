@@ -1217,8 +1217,8 @@ li {
 
 .card2__title {
   padding-bottom: 11px;
-  padding-top: 58px;
   padding-left: 4px;
+  padding-top: 58px;
 }
 @media (min-width: 1025px) {
   .card2__title {
@@ -1823,7 +1823,7 @@ li {
 }
 
 .post-card__container {
-  padding-bottom: 66px;
+  padding-bottom: 64px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -2179,7 +2179,7 @@ li {
   border: 1px solid #2F2F2F;
   font-size: 16px;
   margin-top: 6px;
-  padding: 15px;
+  padding: 15px 15px 21px;
   width: 102%;
 }
 @media (min-width: 1025px) {

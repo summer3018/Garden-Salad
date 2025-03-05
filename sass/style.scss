@@ -487,6 +487,7 @@ li{
         position: absolute;
         transform: translateX(-50%);
         width: 50px;
+
         @include mq(lg) {
           bottom: -6px;
           left: 50%;
@@ -608,6 +609,7 @@ li{
 
 .about-heading-02{
     padding-bottom: 17px;
+
     @include mq(lg) {
       margin-bottom: 7px;
       margin-top: 40px;
@@ -616,6 +618,7 @@ li{
 
 .about-heading-03{
     padding-bottom: 17px;
+
     @include mq(lg) {
       margin-bottom: 7px;
       margin-top: -9px;
@@ -691,6 +694,7 @@ li{
 
 .about-image-wrapper-03{
     padding-right: 15px;
+
     @include mq(lg) {
       padding-right: 0;
     }
@@ -752,6 +756,7 @@ li{
     img{
         max-width: 100%;
         padding-bottom: 59px;
+
         // padding-right: 16px;
 
         @include mq(sm) {
@@ -1251,8 +1256,9 @@ li{
 
 .card2__title{
     padding-bottom: 11px;
-    padding-top: 58px;
     padding-left: 4px;
+    padding-top: 58px;
+
     @include mq(lg) {
         padding-right: 0;
         padding-top: 74px;
@@ -1262,6 +1268,7 @@ li{
 .card2__price{
     padding-bottom: 19px;
     padding-right: 5px;
+
     @include mq(lg) {
         padding-bottom: 21px;
         padding-left: 0;
@@ -1356,6 +1363,7 @@ li{
 .card3__price{
     padding-bottom: 19px;
     padding-right: 5px;
+
     @include mq(lg) {
         padding-bottom: 22px;
         padding-left: 0;
@@ -1860,7 +1868,7 @@ padding: 10px 0;
 }
 
 .post-card__container{
-    padding-bottom: 66px;
+    padding-bottom: 64px;
     padding-left: 16px;
     padding-right: 16px;
 
@@ -2234,7 +2242,7 @@ background-size: 100%;
             border: 1px solid #2F2F2F;
             font-size: 16px;
             margin-top: 6px;
-            padding: 15px;
+            padding: 15px 15px 21px;
             width: 102%;
 
             @include mq(lg) {
