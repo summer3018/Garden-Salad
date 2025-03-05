@@ -5,7 +5,8 @@
       "order/properties-alphabetical-order": true,
       "selector-class-pattern": null,
       "block-no-empty": null,
-      "font-family-no-missing-generic-family-keyword": null
+      "font-family-no-missing-generic-family-keyword": null,
+      "scss/no-global-function-names": null
     }
   }
   

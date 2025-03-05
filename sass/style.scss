@@ -1,11 +1,11 @@
 // ブレークポイント用のmixin（min-width / max-width 両対応）
 @mixin mq($breakpoint, $direction: min) {
   @if $direction == min {
-    @media (min-width: #{map.get($breakpoints, $breakpoint)}) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
       @content;
     }
   } @else if $direction == max {
-    @media (max-width: #{map.get($breakpoints, $breakpoint)}) {
+    @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
       @content;
     }
   }
@@ -13,7 +13,7 @@
 
 // ブレークポイントの定義
 $breakpoints: (
-  sm: 599px,  // スマホ用（599px以下）
+  sm: 1px,  // スマホ用（599px以下）
   md: 600px,  // タブレット用（600px以上1024px以下）
   lg: 1025px  // PC用（1025px以上）
 );
@@ -27,7 +27,7 @@ $font-satisfy: "Satisfy", serif;
 
 body {
     font-family: Roboto, Arial, sans-serif;
-  }  
+}  
 
 a{
     color: #333;
@@ -58,9 +58,11 @@ li{
 //     @include mq(sm) {
 //       color: green;
 //     }
+
 //     @include mq(md) {
 //       color: red;
 //     }
+
 //     @include mq(lg) {
 //       color: blue;
 //     }
@@ -690,38 +692,23 @@ li{
 }
 
 .about-image-wrapper-03{
+    padding-right: 15px;
+
     @include mq(lg) {
+        padding-right: 0;
+
     //   margin-right: 71px;
     }
 }
 
-.about-image-03{
-    img{
-        max-width: 100%;
-        padding-bottom: 66px;
-        padding-right: 16px;
-
-        @include mq(sm) {
-          max-width: 699px;
-        }
-
-        @include mq(lg) {
-            padding-bottom: 53px;
-            padding-right: 0;
-            width: 450px;
-        }
-    }
-    
-}
-
 .about-image{
     img{
-        max-width: 100%;
         padding-bottom: 52px;
+        width: 100%;
 
-        @include mq(sm) {
-          max-width: 699px;
-        }
+        // @include mq(sm) {
+        //   max-width: 699px;
+        // }
 
         @include mq(lg) {
             padding-bottom: 53px;
@@ -740,7 +727,7 @@ li{
     &::before {
         border: 1px solid #FFF;  // outline 風のボーダー
         content: "";  // 左のオフセット
-        inset: 17px 16px 24px; // 下のオフセット
+        inset: 31px 16px 24px; // 下のオフセット
         pointer-events: none; // クリックなどの邪魔にならないように
         position: absolute; // 右のオフセット  // 上のオフセット
     }
@@ -753,7 +740,7 @@ li{
 }
 
 .menu__inner{
-    padding: 50px 0 85px;
+    padding: 64px 0 85px;
 
     @include mq(lg) {
       padding: 148px 72px 87px;
@@ -1511,9 +1498,7 @@ li{
     font-weight: 700;
     letter-spacing: 0.48px;
     margin: 0 20px 34px;
-    padding-bottom: 17px;
-    padding-left: 40px;
-    padding-top: 14px;
+    padding: 14px 4px 17px 35px;
     position: relative;
     text-align: center;
 
@@ -1527,24 +1512,27 @@ li{
         background-color: #000;
         color: #fff;
 
-        .external-icon {
+        img {
             content: url('/image/external-link\ \(wihte\).png'); 
-            height: 19px;
-            margin-bottom: -3px;
-            margin-left: 16px;
-            margin-right: 17px;
-            width: 19px;
-
-            @include mq(lg) {
-                height: 20px;
-                left: 134px;
-                margin-bottom: -2px;
-                margin-left: 113px;
-                position: absolute;
-                top: 17px;
-                width: 20px;
-            }
         }
+    }
+}
+
+.external-icon{
+    height: 19px;
+    margin-bottom: -3px;
+    margin-left: 16px;
+    margin-right: 1px;
+    width: 19px;
+
+    @include mq(lg) {
+        height: 20px;
+        left: 134px;
+        margin-bottom: -2px;
+        margin-left: 113px;
+        position: absolute;
+        top: 17px;
+        width: 20px;
     }
 }
 
@@ -2220,7 +2208,7 @@ background-size: 100%;
         }
 
         .form-checkbox {
-            margin-right: 10px;
+            
         }
     }
 }
@@ -2228,6 +2216,8 @@ background-size: 100%;
 .form-checkbox {
     display: flex;
     justify-content: center;
+
+    // margin-right: 10px;
 
     @include mq(lg) {
         margin-left: 33px;

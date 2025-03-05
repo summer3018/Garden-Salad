@@ -660,32 +660,18 @@ li {
   }
 }
 
-.about-image-03 img {
-  max-width: 100%;
-  padding-bottom: 66px;
-  padding-right: 16px;
-}
-@media (min-width: 599px) {
-  .about-image-03 img {
-    max-width: 699px;
-  }
+.about-image-wrapper-03 {
+  padding-right: 15px;
 }
 @media (min-width: 1025px) {
-  .about-image-03 img {
-    padding-bottom: 53px;
+  .about-image-wrapper-03 {
     padding-right: 0;
-    width: 450px;
   }
 }
 
 .about-image img {
-  max-width: 100%;
   padding-bottom: 52px;
-}
-@media (min-width: 599px) {
-  .about-image img {
-    max-width: 699px;
-  }
+  width: 100%;
 }
 @media (min-width: 1025px) {
   .about-image img {
@@ -702,7 +688,7 @@ li {
 .menu::before {
   border: 1px solid #FFF;
   content: "";
-  inset: 17px 16px 24px;
+  inset: 31px 16px 24px;
   pointer-events: none;
   position: absolute;
 }
@@ -713,7 +699,7 @@ li {
 }
 
 .menu__inner {
-  padding: 50px 0 85px;
+  padding: 64px 0 85px;
 }
 @media (min-width: 1025px) {
   .menu__inner {
@@ -1459,9 +1445,7 @@ li {
   font-weight: 700;
   letter-spacing: 0.48px;
   margin: 0 20px 34px;
-  padding-bottom: 17px;
-  padding-left: 40px;
-  padding-top: 14px;
+  padding: 14px 4px 17px 35px;
   position: relative;
   text-align: center;
 }
@@ -1476,7 +1460,7 @@ li {
   background-color: #000;
   color: #fff;
 }
-.instagram-card__btn-text:hover .external-icon {
+.instagram-card__btn-text:hover img {
   content: url("/image/external-link (wihte).png");
 }
 
@@ -1484,7 +1468,7 @@ li {
   height: 19px;
   margin-bottom: -3px;
   margin-left: 16px;
-  margin-right: 17px;
+  margin-right: 1px;
   width: 19px;
 }
 @media (min-width: 1025px) {
@@ -2127,41 +2111,32 @@ li {
   font-size: 16px;
   margin-top: 6px;
   padding: 15px;
-  width: 102%;
+  width: 100%;
 }
 @media (min-width: 1025px) {
   .contact-form .form-group .form-input,
 .contact-form .form-group .form-textarea {
     padding: 11px 11px 12px 23px;
-    width: 100%;
   }
 }
-.contact-form .form-group .form-input:hover,
-.contact-form .form-group .form-textarea:hover {
-  border: 1px solid #159741;
-  box-shadow: 0 0 4px 0 #159741;
-}
-.contact-form .form-group .form-input:focus,
+.contact-form .form-group .form-input:hover, .contact-form .form-group .form-input:focus,
+.contact-form .form-group .form-textarea:hover,
 .contact-form .form-group .form-textarea:focus {
-  border: 1px solid #159741;
+  border-color: #159741;
   box-shadow: 0 0 4px 0 #159741;
 }
 .contact-form .form-group .form-input::-moz-placeholder, .contact-form .form-group .form-textarea::-moz-placeholder {
   color: #BDBDBD;
   font-family: "Noto Sans JP";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .contact-form .form-group .form-input::placeholder,
 .contact-form .form-group .form-textarea::placeholder {
   color: #BDBDBD;
   font-family: "Noto Sans JP";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .contact-form .form-group .form-input:focus::-moz-placeholder, .contact-form .form-group .form-textarea:focus::-moz-placeholder {
   opacity: 0;
@@ -2173,29 +2148,6 @@ li {
 .contact-form .form-group .form-textarea {
   height: 160px;
 }
-.contact-form .form-group .form-checkbox {
-  margin-right: 10px;
-}
-
-.form-textarea {
-  background: #fff;
-  border: 1px solid #2F2F2F;
-  font-size: 16px;
-  height: 150px;
-  max-width: 102%;
-  padding: 10px;
-}
-.form-textarea::-moz-placeholder {
-  color: #BDBDBD;
-  font-size: 16px;
-  font-weight: 400;
-}
-.form-textarea::placeholder {
-  color: #BDBDBD;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .form-checkbox {
   display: flex;
   justify-content: center;
@@ -2564,16 +2516,16 @@ input[type=checkbox]:checked::after {
 
 .privacy-text {
   color: #000;
+  display: inline-block;
   font-size: 16px;
   font-weight: 500;
-  line-height: 150%; /* 24px */
-  text-align: justify;
-  display: inline-block;
   left: 3px;
+  line-height: 150%; /* 24px */
   padding-bottom: 5px;
-  position: relative;
-  top: -1px;
   pointer-events: none;
+  position: relative;
+  text-align: justify;
+  top: -1px;
 }
 @media (min-width: 1025px) {
   .privacy-text {
@@ -2612,7 +2564,7 @@ input[type=checkbox]:checked::after {
   max-width: 375px;
   width: 100%;
 }
-@media (min-width: 599px) {
+@media (min-width: 1px) {
   .parallax {
     background-size: cover;
     max-width: 767px;
@@ -2644,7 +2596,7 @@ input[type=checkbox]:checked::after {
   max-height: 250px;
   max-width: 375px;
 }
-@media (min-width: 599px) {
+@media (min-width: 1px) {
   .parallax2 {
     background-size: cover;
     max-width: 767px;
