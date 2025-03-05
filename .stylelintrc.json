@@ -2,11 +2,10 @@
     "extends": ["stylelint-config-standard-scss"],
     "plugins": ["stylelint-order"],
     "rules": {
-      "order/properties-alphabetical-order": true
-    },
-    "rules": {
-        "selector-class-pattern": null,
-        "block-no-empty": null
-      }
+      "order/properties-alphabetical-order": true,
+      "selector-class-pattern": null,
+      "block-no-empty": null,
+      "font-family-no-missing-generic-family-keyword": null
+    }
   }
   
