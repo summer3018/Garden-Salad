@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 a {
@@ -2250,27 +2250,6 @@ input[type=checkbox]:checked::after {
   width: 10px;
 }
 
-.privacy-text {
-  pointer-events: none;
-}
-
-.privacy-text {
-  display: inline-block;
-  left: 3px;
-  padding-bottom: 5px;
-  position: relative;
-  top: -1px;
-}
-@media (min-width: 1025px) {
-  .privacy-text {
-    font-size: 18px;
-    left: -9px;
-    letter-spacing: 0.9px;
-    right: 0;
-    top: 6px;
-  }
-}
-
 .privacy-text-accent {
   color: #159741;
   font-size: 16px;
@@ -2589,6 +2568,21 @@ input[type=checkbox]:checked::after {
   font-weight: 500;
   line-height: 150%; /* 24px */
   text-align: justify;
+  display: inline-block;
+  left: 3px;
+  padding-bottom: 5px;
+  position: relative;
+  top: -1px;
+  pointer-events: none;
+}
+@media (min-width: 1025px) {
+  .privacy-text {
+    font-size: 18px;
+    left: -9px;
+    letter-spacing: 0.9px;
+    right: 0;
+    top: 6px;
+  }
 }
 .privacy-text h3 {
   font-size: 18px;
