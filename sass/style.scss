@@ -113,6 +113,7 @@ li{
     justify-content: flex-end; /* 右寄せにする */
     gap: 20px; /* リストアイテム間の均等な間隔 */
     margin-left: 65px;
+    margin-bottom: 10px;
     @include mq(md) {
       gap: 30px;
     }
@@ -401,6 +402,7 @@ li{
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.9px;
+        padding-right: 2px;
     }
 }
 .about-title{
@@ -421,6 +423,7 @@ li{
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
+        padding-right: 2px;
     }
     &::before{
         content: '';
@@ -435,6 +438,7 @@ li{
         background-color: #159741;/*線の色*/
         @include mq(lg) {
           bottom: -6px;
+          left: 50%;
         }
     }
 }
@@ -453,6 +457,10 @@ li{
       display: flex;
       margin-bottom: 5px;
       gap: 189px;
+    }
+    @include mq(lg) {
+        gap: 174px;
+
     }
 }
 .about-text-container-03{
@@ -556,7 +564,7 @@ li{
 .about__text01{
     padding-right: 22px;
     @include mq(lg) {
-        margin-right: 155px;
+        margin-right: 140px;
     }
 }
 .about__text02{
@@ -577,12 +585,15 @@ li{
 .about-image-wrapper-01{
     padding-right: 15px;
     @include mq(lg) {
-        // padding-right: 67px;
+        padding-right: 0px;
         margin-top: 30px;
     }
 }
 .about-image-wrapper-02{
     padding-right: 15px;
+    @include mq(lg) {
+      padding-right: 0px;
+    }
 }
 .about-image-wrapper-03{
     @include mq(lg) {
@@ -1924,7 +1935,7 @@ background-size: 100%;
                 border-radius: 6px;
                 background: #159741;
                 padding: 1px 7px 3px 8px;
-                margin-left: 10px;
+                margin-left: 6px;
             }
         }
         .form-input,

@@ -82,6 +82,7 @@ li {
   justify-content: flex-end; /* 右寄せにする */
   gap: 20px; /* リストアイテム間の均等な間隔 */
   margin-left: 65px;
+  margin-bottom: 10px;
 }
 @media (min-width: 600px) {
   .nav_header-lists {
@@ -419,6 +420,7 @@ li {
   .about-subtitle {
     font-size: 18px;
     letter-spacing: 0.9px;
+    padding-right: 2px;
   }
 }
 
@@ -444,6 +446,7 @@ li {
   .about-title {
     font-size: 48px;
     letter-spacing: 2.4px;
+    padding-right: 2px;
   }
 }
 .about-title::before {
@@ -460,6 +463,7 @@ li {
 @media (min-width: 1025px) {
   .about-title::before {
     bottom: -6px;
+    left: 50%;
   }
 }
 
@@ -479,6 +483,11 @@ li {
     display: flex;
     margin-bottom: 5px;
     gap: 189px;
+  }
+}
+@media (min-width: 1025px) {
+  .about-text-container-02 {
+    gap: 174px;
   }
 }
 
@@ -603,7 +612,7 @@ li {
 }
 @media (min-width: 1025px) {
   .about__text01 {
-    margin-right: 155px;
+    margin-right: 140px;
   }
 }
 
@@ -632,12 +641,18 @@ li {
 }
 @media (min-width: 1025px) {
   .about-image-wrapper-01 {
+    padding-right: 0px;
     margin-top: 30px;
   }
 }
 
 .about-image-wrapper-02 {
   padding-right: 15px;
+}
+@media (min-width: 1025px) {
+  .about-image-wrapper-02 {
+    padding-right: 0px;
+  }
 }
 
 .about-image-03 img {
@@ -2133,7 +2148,7 @@ li {
   border-radius: 6px;
   background: #159741;
   padding: 1px 7px 3px 8px;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 .contact-form .form-group .form-input,
 .contact-form .form-group .form-textarea {
