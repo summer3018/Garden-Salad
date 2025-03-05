@@ -229,9 +229,9 @@ li{
     }
 
     @include mq(lg) {
-        margin-top: 1px;
         font-size: 100px;
         line-height: 100px;
+        margin-top: 1px;
     }
 
     span {
@@ -372,7 +372,6 @@ li{
 .about__inner{
     padding-top: 61px;
     padding-left: 16px;
-    // padding-right: 15px;
     @include mq(md) {
       padding-top: calc((61px + 129px) / 2);
       padding-left: calc((16px + 180px) / 2);
@@ -459,6 +458,7 @@ li{
       gap: 189px;
     }
     @include mq(lg) {
+        margin-bottom: 7px;
         gap: 174px;
 
     }
@@ -580,6 +580,7 @@ li{
     padding-right: 22px;
     @include mq(lg) {
       margin-right: 150px;
+      padding-right: 8px;
     }
 }
 .about-image-wrapper-01{
@@ -611,6 +612,7 @@ li{
         @include mq(lg) {
             width: 450px;
             padding-bottom: 53px;
+            padding-right: 0px;
         }
     }
     
@@ -650,7 +652,7 @@ li{
 
     @include mq(lg) {
         &::before {
-            top: 72px;
+            top: 66px;
             bottom: 72px;
             left: 72px;
             right: 72px;
@@ -814,7 +816,7 @@ li{
     @include mq(lg) {
         top: auto;
         bottom: 68px;
-        left: 143px;
+        left: 136px;
         padding-right: 0;
     }
     img{
@@ -850,7 +852,7 @@ li{
     @include mq(lg) {
         width: 592px;
         height: 367px;
-        margin-left: 54px;
+        margin-left: 46px;
         margin-bottom: 85px;
         top: -17px;
         &::before{
@@ -1008,7 +1010,7 @@ li{
     z-index: 1;
     padding-right: 8px;
     @include mq(lg) {
-        left: 9px;
+        left: 10px;
         bottom: 17px;
     }
     img{
@@ -1509,9 +1511,9 @@ li{
     @include mq(lg) {
         font-size: 18px;
         letter-spacing: 0.54px;
-        padding-bottom: 25px;
         margin-left: -1px;
         margin-top: 6px;
+        padding-bottom: 25px;
     }
 }
 
@@ -1556,10 +1558,10 @@ li{
     @include mq(lg) {
             max-width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
             font-size: 18px;
             line-height: 150%;
             letter-spacing: 0.54px;
+            margin-top: 10px;
             margin-left: 15px;
         }
 }
@@ -1580,7 +1582,6 @@ padding: 10px 0;
 .shop-date{
     @include mq(lg) {
         padding: 10px 0 0 6px;
-        // padding: 10px 80px 0px 6px;
     }
 }
 .shop-date__access{
@@ -1595,10 +1596,9 @@ padding: 10px 0;
     @include mq(lg) {
         text-align: right;
         margin: 0 0 0 auto;
-        padding-right: 0;
-        margin-bottom: 80px;
+        margin-bottom: 76px;
         margin-top: 80px;
-        // padding-left: 80px;
+        padding-right: 0;
     }
 }
 .image-exterior{
@@ -1642,7 +1642,7 @@ padding: 10px 0;
     top: -56px;
     left: -26px;
     @include mq(lg) {
-        top: -101px;
+        top: -105px;
         left: -131px;
     }
     img{

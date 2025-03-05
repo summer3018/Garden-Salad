@@ -216,9 +216,9 @@ li {
 }
 @media (min-width: 1025px) {
   .salad {
-    margin-top: 1px;
     font-size: 100px;
     line-height: 100px;
+    margin-top: 1px;
   }
 }
 .salad span {
@@ -487,6 +487,7 @@ li {
 }
 @media (min-width: 1025px) {
   .about-text-container-02 {
+    margin-bottom: 7px;
     gap: 174px;
   }
 }
@@ -633,6 +634,7 @@ li {
 @media (min-width: 1025px) {
   .about__text03 {
     margin-right: 150px;
+    padding-right: 8px;
   }
 }
 
@@ -669,6 +671,7 @@ li {
   .about-image-03 img {
     width: 450px;
     padding-bottom: 53px;
+    padding-right: 0px;
   }
 }
 
@@ -705,7 +708,7 @@ li {
 }
 @media (min-width: 1025px) {
   .menu::before {
-    top: 72px;
+    top: 66px;
     bottom: 72px;
     left: 72px;
     right: 72px;
@@ -900,7 +903,7 @@ li {
   .menu-image__1 {
     top: auto;
     bottom: 68px;
-    left: 143px;
+    left: 136px;
     padding-right: 0;
   }
 }
@@ -943,7 +946,7 @@ li {
   .card1-text__wrapper {
     width: 592px;
     height: 367px;
-    margin-left: 54px;
+    margin-left: 46px;
     margin-bottom: 85px;
     top: -17px;
   }
@@ -1123,7 +1126,7 @@ li {
 }
 @media (min-width: 1025px) {
   .menu-image__2 {
-    left: 9px;
+    left: 10px;
     bottom: 17px;
   }
 }
@@ -1669,9 +1672,9 @@ li {
   .shop-ruby {
     font-size: 18px;
     letter-spacing: 0.54px;
-    padding-bottom: 25px;
     margin-left: -1px;
     margin-top: 6px;
+    padding-bottom: 25px;
   }
 }
 
@@ -1721,10 +1724,10 @@ li {
   .shop-table {
     max-width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
     font-size: 18px;
     line-height: 150%;
     letter-spacing: 0.54px;
+    margin-top: 10px;
     margin-left: 15px;
   }
 }
@@ -1768,9 +1771,9 @@ li {
   .shop-image__exterior {
     text-align: right;
     margin: 0 0 0 auto;
-    padding-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
     margin-top: 80px;
+    padding-right: 0;
   }
 }
 
@@ -1829,7 +1832,7 @@ li {
 }
 @media (min-width: 1025px) {
   .post-card__stamp {
-    top: -101px;
+    top: -105px;
     left: -131px;
   }
 }
