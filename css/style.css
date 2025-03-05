@@ -1436,32 +1436,36 @@ li {
 }
 
 .instagram-card__btn-text {
+  display: inline-flex;
   align-items: center;
+  position: relative;
+  background: transparent;
   border: 1px solid #333;
   color: #333;
-  cursor: pointer;
-  display: inline-flex;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.48px;
+  cursor: pointer;
+  text-align: center;
   margin: 0 20px 34px;
   padding: 14px 4px 17px 35px;
-  position: relative;
-  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
 }
-@media (min-width: 1025px) {
-  .instagram-card__btn-text {
-    font-size: 16px;
-    margin-right: 18px;
-    padding: 13px 77px 17px 58px;
-  }
+.instagram-card__btn-text img {
+  content: url("/image/external-link.png");
 }
 .instagram-card__btn-text:hover {
   background-color: #000;
   color: #fff;
 }
 .instagram-card__btn-text:hover img {
-  content: url("/image/external-link (wihte).png");
+  content: url("/image/external-link-white.png");
+}
+@media (min-width: 1025px) {
+  .instagram-card__btn-text {
+    margin-right: 18px;
+    padding: 13px 77px 17px 58px;
+  }
 }
 
 .external-icon {
@@ -1788,12 +1792,6 @@ li {
   top: -56px;
   z-index: 2;
 }
-@media (min-width: 1025px) {
-  .post-card__stamp {
-    left: -131px;
-    top: -105px;
-  }
-}
 .post-card__stamp img {
   height: 93px;
   width: 112px;
@@ -1802,6 +1800,12 @@ li {
   .post-card__stamp img {
     height: 240px;
     width: 288px;
+  }
+}
+@media (min-width: 1025px) {
+  .post-card__stamp {
+    left: -131px;
+    top: -105px;
   }
 }
 
@@ -2416,7 +2420,6 @@ input[type=checkbox]:checked::after {
     width: 120px;
   }
 }
-
 .page-top__btn img {
   height: auto;
   height: 70px;
