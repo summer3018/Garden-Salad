@@ -2206,6 +2206,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-top: 8px;
 }
 .contact-form .form-group .form-input::placeholder,
 .contact-form .form-group .form-textarea::placeholder {
@@ -2215,6 +2216,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-top: 8px;
 }
 .contact-form .form-group .form-input:focus::-moz-placeholder, .contact-form .form-group .form-textarea:focus::-moz-placeholder {
   opacity: 0;
