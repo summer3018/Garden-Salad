@@ -487,16 +487,6 @@ li{
         position: absolute;
         transform: translateX(-50%);
         width: 50px;
-
-/* 線の上下位置 */
-
-/* 線の長さ */
-
-/* 線の太さ */
-
-/* 位置調整 */
-
-/* 線の色 */
         @include mq(lg) {
           bottom: -6px;
           left: 50%;
@@ -578,6 +568,7 @@ li{
     
 }
 
+// about-heading
 .about-heading{
     color: $font-black;
     font-size: 24px;
@@ -605,6 +596,7 @@ li{
     }
 }
 
+
 .about-heading-01{
     padding-bottom: 20px;
 
@@ -616,7 +608,6 @@ li{
 
 .about-heading-02{
     padding-bottom: 17px;
-
     @include mq(lg) {
       margin-bottom: 7px;
       margin-top: 40px;
@@ -624,6 +615,7 @@ li{
 }
 
 .about-heading-03{
+    padding-bottom: 17px;
     @include mq(lg) {
       margin-bottom: 7px;
       margin-top: -9px;
@@ -699,7 +691,6 @@ li{
 
 .about-image-wrapper-03{
     padding-right: 15px;
-
     @include mq(lg) {
       padding-right: 0;
     }
@@ -760,8 +751,8 @@ li{
 .about-image-03{
     img{
         max-width: 100%;
-        padding-bottom: 66px;
-        padding-right: 16px;
+        padding-bottom: 59px;
+        // padding-right: 16px;
 
         @include mq(sm) {
           max-width: 699px;
@@ -784,7 +775,7 @@ li{
     &::before {
         border: 1px solid #FFF;  // outline 風のボーダー
         content: "";  // 左のオフセット
-        inset: 17px 16px 24px; // 下のオフセット
+        inset: 23px 16px 24px; // 下のオフセット
         pointer-events: none; // クリックなどの邪魔にならないように
         position: absolute; // 右のオフセット  // 上のオフセット
     }
@@ -797,7 +788,7 @@ li{
 }
 
 .menu__inner{
-    padding: 50px 0 85px;
+    padding: 56px 0 85px;
 
     @include mq(lg) {
       padding: 148px 72px 87px;
@@ -1096,8 +1087,8 @@ li{
     font-weight: 700; 
     letter-spacing: 2.4px;
     line-height: 150%;
-    padding-bottom: 13px;
-    padding-top: 121px;
+    padding-bottom: 9px;
+    padding-top: 124px;
 
     @include mq(lg) {
         font-size: 30px;
@@ -1111,7 +1102,7 @@ li{
 }
 
 .menu-card1__price{
-    padding-bottom: 16px;
+    padding-bottom: 19px;
 
     @include mq(lg) {
         padding-bottom: 22px;
@@ -1261,7 +1252,7 @@ li{
 .card2__title{
     padding-bottom: 11px;
     padding-top: 58px;
-
+    padding-left: 4px;
     @include mq(lg) {
         padding-right: 0;
         padding-top: 74px;
@@ -1269,7 +1260,8 @@ li{
 }
 
 .card2__price{
-    // padding-left: 10px;
+    padding-bottom: 19px;
+    padding-right: 5px;
     @include mq(lg) {
         padding-bottom: 21px;
         padding-left: 0;
@@ -1353,7 +1345,7 @@ li{
 }
 
 .card3__title{
-    padding-bottom: 11px;
+    padding-bottom: 12px;
     padding-top: 56px;
 
     @include mq(lg) {
@@ -1362,7 +1354,8 @@ li{
 }
 
 .card3__price{
-    // padding-left: 10px;
+    padding-bottom: 19px;
+    padding-right: 5px;
     @include mq(lg) {
         padding-bottom: 22px;
         padding-left: 0;
@@ -1422,7 +1415,7 @@ li{
 
 .instagram-card__title{
     background: #159741;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     margin-left: 57px;
     margin-right: 58px;
     position: relative;
@@ -1534,9 +1527,10 @@ li{
     color: #333;
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 24px;
-    padding-right: 10px;
-    padding-top: 4px;
+    padding-bottom: 25px;
+    padding-right: 13px;
+    padding-top: 5px;
+
     
     @include mq(lg) {
         font-size: 18px;

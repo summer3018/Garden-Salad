@@ -457,11 +457,6 @@ li {
   position: absolute;
   transform: translateX(-50%);
   width: 50px;
-  /* 線の上下位置 */
-  /* 線の長さ */
-  /* 線の太さ */
-  /* 位置調整 */
-  /* 線の色 */
 }
 @media (min-width: 1025px) {
   .about-title::before {
@@ -592,6 +587,9 @@ li {
   }
 }
 
+.about-heading-03 {
+  padding-bottom: 17px;
+}
 @media (min-width: 1025px) {
   .about-heading-03 {
     margin-bottom: 7px;
@@ -618,8 +616,8 @@ li {
 }
 
 .about__text01 {
-  padding-right: 22px;
   padding-bottom: 30px;
+  padding-right: 22px;
 }
 @media (min-width: 1025px) {
   .about__text01 {
@@ -628,8 +626,8 @@ li {
 }
 
 .about__text02 {
-  padding-right: 24px;
   padding-bottom: 30px;
+  padding-right: 24px;
 }
 @media (min-width: 1025px) {
   .about__text02 {
@@ -727,8 +725,7 @@ li {
 
 .about-image-03 img {
   max-width: 100%;
-  padding-bottom: 66px;
-  padding-right: 16px;
+  padding-bottom: 59px;
 }
 @media (min-width: 599px) {
   .about-image-03 img {
@@ -751,7 +748,7 @@ li {
 .menu::before {
   border: 1px solid #FFF;
   content: "";
-  inset: 17px 16px 24px;
+  inset: 23px 16px 24px;
   pointer-events: none;
   position: absolute;
 }
@@ -762,7 +759,7 @@ li {
 }
 
 .menu__inner {
-  padding: 50px 0 85px;
+  padding: 56px 0 85px;
 }
 @media (min-width: 1025px) {
   .menu__inner {
@@ -1062,8 +1059,8 @@ li {
   font-weight: 700;
   letter-spacing: 2.4px;
   line-height: 150%;
-  padding-bottom: 13px;
-  padding-top: 121px;
+  padding-bottom: 9px;
+  padding-top: 124px;
 }
 @media (min-width: 1025px) {
   .menu-card1__title {
@@ -1077,7 +1074,7 @@ li {
 }
 
 .menu-card1__price {
-  padding-bottom: 16px;
+  padding-bottom: 19px;
 }
 @media (min-width: 1025px) {
   .menu-card1__price {
@@ -1221,6 +1218,7 @@ li {
 .card2__title {
   padding-bottom: 11px;
   padding-top: 58px;
+  padding-left: 4px;
 }
 @media (min-width: 1025px) {
   .card2__title {
@@ -1229,6 +1227,10 @@ li {
   }
 }
 
+.card2__price {
+  padding-bottom: 19px;
+  padding-right: 5px;
+}
 @media (min-width: 1025px) {
   .card2__price {
     padding-bottom: 21px;
@@ -1310,7 +1312,7 @@ li {
 }
 
 .card3__title {
-  padding-bottom: 11px;
+  padding-bottom: 12px;
   padding-top: 56px;
 }
 @media (min-width: 1025px) {
@@ -1320,6 +1322,10 @@ li {
   }
 }
 
+.card3__price {
+  padding-bottom: 19px;
+  padding-right: 5px;
+}
 @media (min-width: 1025px) {
   .card3__price {
     padding-bottom: 22px;
@@ -1376,7 +1382,7 @@ li {
 
 .instagram-card__title {
   background: #159741;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   margin-left: 57px;
   margin-right: 58px;
   position: relative;
@@ -1486,9 +1492,9 @@ li {
   color: #333;
   font-size: 16px;
   font-weight: 400;
-  padding-bottom: 24px;
-  padding-right: 10px;
-  padding-top: 4px;
+  padding-bottom: 25px;
+  padding-right: 13px;
+  padding-top: 5px;
 }
 @media (min-width: 1025px) {
   .instagram-card__ID {
