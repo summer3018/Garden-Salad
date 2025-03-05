@@ -1,11 +1,11 @@
 // ブレークポイント用のmixin（min-width / max-width 両対応）
 @mixin mq($breakpoint, $direction: min) {
   @if $direction == min {
-    @media (min-width: #{map.get($breakpoints, $breakpoint)}) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
       @content;
     }
   } @else if $direction == max {
-    @media (max-width: #{map.get($breakpoints, $breakpoint)}) {
+    @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
       @content;
     }
   }
@@ -133,7 +133,7 @@ li{
     display: flex; /* 横並びにする */
     gap: 20px; /* リストアイテム間の均等な間隔 */
     justify-content: flex-end; /* 右寄せにする */
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     margin-left: 65px;
 
     @include mq(md) {
@@ -348,7 +348,7 @@ li{
 }
 
 .concept__inner{
-    padding: 31px 32px 40px 33px;
+    padding: 32px 32px 39px 33px;
 
     @include mq(md) {
       padding-bottom: calc((40px + 83px) / 2);
@@ -606,6 +606,7 @@ li{
 }
 
 .about-heading-01{
+    padding-bottom: 20px;
     @include mq(lg) {
         margin-bottom: 7px;
         margin-top: 21px;
@@ -613,6 +614,7 @@ li{
 }
 
 .about-heading-02{
+    padding-bottom: 17px;
     @include mq(lg) {
       margin-bottom: 7px;
       margin-top: 40px;
@@ -626,6 +628,7 @@ li{
     }
 }
 
+// about-text
 .about-text{
     color: $font-black;
     font-size: 16px;
@@ -645,15 +648,15 @@ li{
 
 .about__text01{
     padding-right: 22px;
-
+    padding-bottom: 30px;
     @include mq(lg) {
         margin-right: 140px;
     }
 }
 
 .about__text02{
-    padding-right: 23px;
-
+    padding-right: 24px;
+    padding-bottom: 30px;
     @include mq(lg) {
         margin-right: 34px;
         padding-right: 22px;
@@ -672,9 +675,9 @@ li{
     }
 }
 
+// about-image-wrapper
 .about-image-wrapper-01{
     padding-right: 15px;
-
     @include mq(lg) {
         margin-top: 30px;
         padding-right: 0;
@@ -683,18 +686,68 @@ li{
 
 .about-image-wrapper-02{
     padding-right: 15px;
-
     @include mq(lg) {
       padding-right: 0;
     }
 }
 
 .about-image-wrapper-03{
+    padding-right: 15px;
     @include mq(lg) {
-    //   margin-right: 71px;
+      padding-right: 0;
     }
 }
 
+//  about-image
+.about-image{
+    img{
+        max-width: 100%;
+        padding-bottom: 52px;
+
+        @include mq(sm) {
+          max-width: 699px;
+        }
+
+        @include mq(lg) {
+            padding-bottom: 53px;
+            width: 450px;
+        }
+
+    }
+}
+
+.about-image-01{
+    img{
+        max-width: 100%;
+        padding-bottom: 51px;
+
+        @include mq(sm) {
+          max-width: 699px;
+        }
+
+        @include mq(lg) {
+            padding-bottom: 53px;
+            width: 450px;
+        }
+
+    }
+}
+.about-image-02{
+    img{
+        max-width: 100%;
+        padding-bottom: 52px;
+
+        @include mq(sm) {
+          max-width: 699px;
+        }
+
+        @include mq(lg) {
+            padding-bottom: 53px;
+            width: 450px;
+        }
+
+    }
+}
 .about-image-03{
     img{
         max-width: 100%;
@@ -710,24 +763,6 @@ li{
             padding-right: 0;
             width: 450px;
         }
-    }
-    
-}
-
-.about-image{
-    img{
-        max-width: 100%;
-        padding-bottom: 52px;
-
-        @include mq(sm) {
-          max-width: 699px;
-        }
-
-        @include mq(lg) {
-            padding-bottom: 53px;
-            width: 450px;
-        }
-
     }
 }
 
@@ -1527,7 +1562,7 @@ li{
         background-color: #000;
         color: #fff;
 
-        .external-icon {
+        img {
             content: url('/image/external-link\ \(wihte\).png'); 
         }
     }
@@ -2148,7 +2183,7 @@ background-size: 100%;
     }
 }
 
-.test-btn{
+.form-btn{
     display: grid;
     justify-items: center;
 }
