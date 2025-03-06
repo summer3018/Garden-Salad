@@ -144,8 +144,8 @@ li {
 }
 
 .mv-bg-image {
-  background-image: url("/image/img_mv .png");
-  background-position: calc(100% + 16px) center;
+  background-image: url("/image/sp/img_mv .png");
+  background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
   height: 243px;
@@ -154,11 +154,13 @@ li {
 }
 @media (min-width: 600px) {
   .mv-bg-image {
+    background-image: url("/image/pc/img_mv (PC).png");
     height: 446.5px;
   }
 }
 @media (min-width: 1000px) {
   .mv-bg-image {
+    background-image: url("/image/pc/img_mv (PC).png");
     height: 650px;
   }
 }

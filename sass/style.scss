@@ -191,8 +191,8 @@ li{
 }
 
 .mv-bg-image {
-    background-image: url("/image/img_mv\ .png");
-    background-position: calc(100% + 16px) center; 
+    background-image: url("/image/sp/img_mv\ .png");
+    background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
     height: 243px;
@@ -200,12 +200,12 @@ li{
     padding-bottom: 20px;
 
     @include mq(md) {
-        // background-image: url("/image/img_mv\ .png");
+        background-image: url("/image/pc/img_mv (PC).png");
         height: calc((243px + 650px) / 2);
     }
 
     @include mq(lg) {
-        // background-image: url("/image/img_mv.png");
+        background-image: url("/image/pc/img_mv (PC).png");
         height: 650px;
     }
 }
