@@ -1466,6 +1466,15 @@ li {
   justify-content: center;
   padding: 0 20px 2px;
 }
+@media (min-width: 600px) {
+  .instagram-card__image-container {
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding-left: 47px;
+    padding-right: 62px;
+  }
+}
 @media (min-width: 1025px) {
   .instagram-card__image-container {
     gap: 16px;
@@ -1478,8 +1487,14 @@ li {
 .instagram-card__image-container img {
   height: auto;
   max-height: 125px;
-  max-width: 100%;
+  width: 100%;
   max-width: 125px;
+}
+@media (min-width: 600px) {
+  .instagram-card__image-container img {
+    max-height: 231px;
+    max-width: 231px;
+  }
 }
 @media (min-width: 1025px) {
   .instagram-card__image-container img {
