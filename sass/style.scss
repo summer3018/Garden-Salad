@@ -193,8 +193,8 @@ li{
 .mv-bg-image {
     background-image: url("/image/sp/img_mv\ .png");
     background-position: right;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 243px;
     max-width: 100%;
     padding-bottom: 20px;
@@ -789,7 +789,7 @@ li{
 
     @include mq(lg) {
         &::before {
-            inset: 72px 72px 72px;
+            inset: 72px;
         }
     }
 }
@@ -1046,19 +1046,19 @@ li{
     border: 2px solid #159741;
     height: 97px;
     left: 50%;
-    transform: translate(-50%, 0%);
     margin: 0 auto;
     position: absolute;
+    transform: translate(-50%, 0%);
     width: 211px;
 
     @include mq(lg) {
         height: 78px;
+        left: 50%;
         margin-left: 125px;
         margin-right: 170px;
         padding-bottom: 35px;
-        width: 251px;
-        left: 50%;
         transform: translate(-100%, 0%);
+        width: 251px;
     }
 }
 
@@ -1229,13 +1229,13 @@ li{
     background: #F2F2F2;
     bottom: 60px;
     height: 222px;
+    margin: 0 auto;
     margin-bottom: -13px;
     margin-left: 38px;
     margin-right: 37px;
     position: relative;
-    width: 300px;
-    margin: 0 auto;
     text-align: center;
+    width: 300px;
 
     &::before{
         border: 1px solid #333;
@@ -1243,6 +1243,7 @@ li{
         inset: 9px 10px 10px;
         position: absolute;
     }
+
     @include mq(md) {
         width: calc((300px + 524px) / 2 );
       }
@@ -1333,13 +1334,13 @@ li{
     background: #F2F2F2;
     bottom: 60px;
     height: 222px;
+    margin: 0 auto;
     margin-bottom: -10px;
     margin-left: 41px;
     margin-right: 34px;
     position: relative;
-    width: 300px;
-    margin: 0 auto;
     text-align: center;
+    width: 300px;
 
     &::before{
         border: 1px solid #333;
@@ -1347,6 +1348,7 @@ li{
         inset: 9px 10px 10px;
         position: absolute;
     }
+
     @include mq(md) {
       width: calc((300px + 524px) / 2 );
     }
@@ -1787,7 +1789,10 @@ li{
 }
 
 .shop-text-wrapper{
-
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .shop-adress{
@@ -1874,6 +1879,7 @@ padding: 10px 0;
 .shop-image__exterior{
     margin-bottom: 95px;
     padding: 0 16px;
+    text-align: center;
 
     @include mq(lg) {
         margin: 0 0 0 auto;
@@ -1887,7 +1893,14 @@ padding: 10px 0;
 .image-exterior{
     height: 298px;
     object-fit: cover;
+    text-align: center;
     width: 343px;
+
+    @include mq(md) {
+      height: calc((298px + 500px) / 2) ;
+      width: calc((343px + 700px) / 2 );
+      
+    }
 
     @include mq(lg) {
         height: 500px;
@@ -2119,6 +2132,7 @@ padding: 10px 0;
 .contact{
 background-image: url("/image/pc/vegetable-background.png");
 background-position: center center;
+
 // background-size: 100%;
 
 // @include mq(lg) {
@@ -2296,7 +2310,7 @@ background-position: center center;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                padding-top: 0px;
+                padding-top: 0;
               }
 
               &:focus::placeholder{

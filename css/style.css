@@ -146,8 +146,8 @@ li {
 .mv-bg-image {
   background-image: url("/image/sp/img_mv .png");
   background-position: right;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 243px;
   max-width: 100%;
   padding-bottom: 20px;
@@ -755,7 +755,7 @@ li {
 }
 @media (min-width: 1000px) {
   .menu::before {
-    inset: 72px 72px 72px;
+    inset: 72px;
   }
 }
 
@@ -1009,20 +1009,20 @@ li {
   border: 2px solid #159741;
   height: 97px;
   left: 50%;
-  transform: translate(-50%, 0%);
   margin: 0 auto;
   position: absolute;
+  transform: translate(-50%, 0%);
   width: 211px;
 }
 @media (min-width: 1000px) {
   .menu-card1__Recommendation {
     height: 78px;
+    left: 50%;
     margin-left: 125px;
     margin-right: 170px;
     padding-bottom: 35px;
-    width: 251px;
-    left: 50%;
     transform: translate(-100%, 0%);
+    width: 251px;
   }
 }
 
@@ -1191,13 +1191,13 @@ li {
   background: #F2F2F2;
   bottom: 60px;
   height: 222px;
+  margin: 0 auto;
   margin-bottom: -13px;
   margin-left: 38px;
   margin-right: 37px;
   position: relative;
-  width: 300px;
-  margin: 0 auto;
   text-align: center;
+  width: 300px;
 }
 .card2-text__wrapper::before {
   border: 1px solid #333;
@@ -1295,13 +1295,13 @@ li {
   background: #F2F2F2;
   bottom: 60px;
   height: 222px;
+  margin: 0 auto;
   margin-bottom: -10px;
   margin-left: 41px;
   margin-right: 34px;
   position: relative;
-  width: 300px;
-  margin: 0 auto;
   text-align: center;
+  width: 300px;
 }
 .card3-text__wrapper::before {
   border: 1px solid #333;
@@ -1743,6 +1743,13 @@ li {
   }
 }
 
+.shop-text-wrapper {
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 .shop-adress {
   font-size: 16px;
   font-weight: 400;
@@ -1831,6 +1838,7 @@ li {
 .shop-image__exterior {
   margin-bottom: 95px;
   padding: 0 16px;
+  text-align: center;
 }
 @media (min-width: 1000px) {
   .shop-image__exterior {
@@ -1846,7 +1854,14 @@ li {
   height: 298px;
   -o-object-fit: cover;
      object-fit: cover;
+  text-align: center;
   width: 343px;
+}
+@media (min-width: 600px) {
+  .image-exterior {
+    height: 399px;
+    width: 521.5px;
+  }
 }
 @media (min-width: 1000px) {
   .image-exterior {
@@ -2234,7 +2249,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 0px;
+  padding-top: 0;
 }
 .contact-form .form-group .form-input::placeholder,
 .contact-form .form-group .form-textarea::placeholder {
@@ -2244,7 +2259,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 0px;
+  padding-top: 0;
 }
 .contact-form .form-group .form-input:focus::-moz-placeholder, .contact-form .form-group .form-textarea:focus::-moz-placeholder {
   opacity: 0;
