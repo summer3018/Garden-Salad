@@ -96,7 +96,7 @@ li {
 @media (min-width: 1000px) {
   .nav_header-lists {
     gap: 40px;
-    margin-top: -10px;
+    margin-top: -5px;
   }
 }
 
@@ -154,13 +154,12 @@ li {
 }
 @media (min-width: 600px) {
   .mv-bg-image {
-    background-image: url("/image/pc/img_mv (PC).png");
+    background-image: url("/image/pc/img_mv.png");
     height: 446.5px;
   }
 }
 @media (min-width: 1000px) {
   .mv-bg-image {
-    background-image: url("/image/pc/img_mv (PC).png");
     height: 650px;
   }
 }
@@ -254,7 +253,7 @@ li {
 .mv-text__jp-farst {
   padding-bottom: 9px;
   padding-left: 8px;
-  padding-top: 20px;
+  padding-top: 23px;
 }
 @media (min-width: 1000px) {
   .mv-text__jp-farst {
@@ -316,8 +315,8 @@ li {
 }
 @media (min-width: 1000px) {
   .concept__inner {
-    padding-bottom: 83px;
-    padding-top: 122px;
+    padding-bottom: 81px;
+    padding-top: 125px;
   }
 }
 
@@ -393,7 +392,7 @@ li {
 }
 @media (min-width: 1000px) {
   .about__inner {
-    padding: 129px 180px 98px;
+    padding: 129px 180px 92px;
   }
 }
 
@@ -756,7 +755,7 @@ li {
 }
 @media (min-width: 1000px) {
   .menu::before {
-    inset: 66px 72px 72px;
+    inset: 72px 72px 72px;
   }
 }
 
@@ -765,7 +764,7 @@ li {
 }
 @media (min-width: 1000px) {
   .menu__inner {
-    padding: 148px 72px 87px;
+    padding: 152px 72px 87px;
   }
 }
 
@@ -1071,9 +1070,9 @@ li {
   .menu-card1__title {
     font-size: 30px;
     letter-spacing: 3px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     padding-left: 2px;
-    padding-top: 112px;
+    padding-top: 116px;
     text-align: center;
   }
 }
@@ -1083,7 +1082,7 @@ li {
 }
 @media (min-width: 1000px) {
   .menu-card1__price {
-    padding-bottom: 22px;
+    padding-bottom: 28px;
     padding-right: 10px;
     padding-top: 2px;
   }
@@ -1157,7 +1156,7 @@ li {
     display: flex;
     gap: 32px;
     justify-content: center;
-    margin-bottom: -6px;
+    margin-bottom: -16px;
   }
 }
 
@@ -1174,7 +1173,7 @@ li {
 @media (min-width: 1000px) {
   .menu-image__2 {
     bottom: 17px;
-    left: 10px;
+    left: -6px;
   }
 }
 .menu-image__2 img {
@@ -1205,6 +1204,11 @@ li {
   content: "";
   inset: 9px 10px 10px;
   position: absolute;
+}
+@media (min-width: 600px) {
+  .card2-text__wrapper {
+    width: 412px;
+  }
 }
 @media (min-width: 1000px) {
   .card2-text__wrapper {
@@ -1240,9 +1244,9 @@ li {
 }
 @media (min-width: 1000px) {
   .card2__price {
-    padding-bottom: 21px;
+    padding-bottom: 29px;
     padding-left: 0;
-    padding-right: 18px;
+    padding-right: 13px;
   }
 }
 
@@ -1273,7 +1277,7 @@ li {
 @media (min-width: 1000px) {
   .menu-image__3 {
     bottom: 16px;
-    left: -40px;
+    left: -21px;
   }
 }
 .menu-image__3 img {
@@ -1304,6 +1308,11 @@ li {
   content: "";
   inset: 9px 10px 10px;
   position: absolute;
+}
+@media (min-width: 600px) {
+  .card3-text__wrapper {
+    width: 412px;
+  }
 }
 @media (min-width: 1000px) {
   .card3-text__wrapper {
@@ -1337,7 +1346,7 @@ li {
 }
 @media (min-width: 1000px) {
   .card3__price {
-    padding-bottom: 22px;
+    padding-bottom: 30px;
     padding-left: 0;
     padding-right: 15px;
   }
@@ -2206,7 +2215,7 @@ li {
 @media (min-width: 1000px) {
   .contact-form .form-group .form-input,
 .contact-form .form-group .form-textarea {
-    padding: 11px 11px 12px 23px;
+    padding: 11px 11px 18px 23px;
     width: 100%;
   }
 }
@@ -2227,7 +2236,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 .contact-form .form-group .form-input::placeholder,
 .contact-form .form-group .form-textarea::placeholder {
@@ -2237,7 +2246,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 .contact-form .form-group .form-input:focus::-moz-placeholder, .contact-form .form-group .form-textarea:focus::-moz-placeholder {
   opacity: 0;
@@ -2373,7 +2382,7 @@ input[type=checkbox]:checked::after {
   .form-button {
     height: 56px;
     margin-left: 0;
-    margin-top: 36px;
+    margin-top: 40px;
     width: 239px;
   }
 }

@@ -142,7 +142,7 @@ li{
 
     @include mq(lg) {
       gap: 40px;
-      margin-top: -10px;
+      margin-top: -5px;
     }
 }
 
@@ -200,12 +200,12 @@ li{
     padding-bottom: 20px;
 
     @include mq(md) {
-        background-image: url("/image/pc/img_mv (PC).png");
+        background-image: url("/image/pc/img_mv.png");
         height: calc((243px + 650px) / 2);
     }
 
     @include mq(lg) {
-        background-image: url("/image/pc/img_mv (PC).png");
+        // background-image: url("/image/pc/img_mv (PC).png");
         height: 650px;
     }
 }
@@ -296,7 +296,7 @@ li{
 .mv-text__jp-farst {
     padding-bottom: 9px;
     padding-left: 8px;
-    padding-top: 20px;
+    padding-top: 23px;
 
     @include mq(lg) {
         padding-bottom: 22px;
@@ -355,8 +355,8 @@ li{
     }
 
     @include mq(lg) {
-      padding-bottom: 83px;
-      padding-top: 122px;
+      padding-bottom: 81px;
+      padding-top: 125px;
     }
 }
 
@@ -426,7 +426,7 @@ li{
     }
 
     @include mq(lg) {
-      padding: 129px 180px 98px;
+      padding: 129px 180px 92px;
 
     }
 }
@@ -789,7 +789,7 @@ li{
 
     @include mq(lg) {
         &::before {
-            inset: 66px 72px 72px;
+            inset: 72px 72px 72px;
         }
     }
 }
@@ -798,7 +798,7 @@ li{
     padding: 56px 0 85px;
 
     @include mq(lg) {
-      padding: 148px 72px 87px;
+      padding: 152px 72px 87px;
     }
 }
 
@@ -1103,9 +1103,9 @@ li{
     @include mq(lg) {
         font-size: 30px;
         letter-spacing: 3px;
-        padding-bottom: 8px;
+        padding-bottom: 5px;
         padding-left: 2px;
-        padding-top: 112px;
+        padding-top: 116px;
         text-align: center;
 
     }
@@ -1115,7 +1115,7 @@ li{
     padding-bottom: 19px;
 
     @include mq(lg) {
-        padding-bottom: 22px;
+        padding-bottom: 28px;
         padding-right: 10px;
         padding-top: 2px;
     }
@@ -1192,7 +1192,7 @@ li{
         display: flex; 
         gap: 32px; 
         justify-content: center; 
-        margin-bottom: -6px;
+        margin-bottom: -16px;
     }
 }
 
@@ -1210,7 +1210,7 @@ li{
 
     @include mq(lg) {
         bottom: 17px;
-        left: 10px;
+        left: -6px;
     }
 
     img{
@@ -1243,6 +1243,9 @@ li{
         inset: 9px 10px 10px;
         position: absolute;
     }
+    @include mq(md) {
+        width: calc((300px + 524px) / 2 );
+      }
 
     @include mq(lg) {
         bottom: 99px;
@@ -1277,9 +1280,9 @@ li{
     padding-right: 5px;
 
     @include mq(lg) {
-        padding-bottom: 21px;
+        padding-bottom: 29px;
         padding-left: 0;
-        padding-right: 18px;
+        padding-right: 13px;
     }
 }
 
@@ -1312,7 +1315,7 @@ li{
 
     @include mq(lg) {
         bottom: 16px;
-        left: -40px;
+        left: -21px;
     }
 
     img{
@@ -1344,6 +1347,9 @@ li{
         inset: 9px 10px 10px;
         position: absolute;
     }
+    @include mq(md) {
+      width: calc((300px + 524px) / 2 );
+    }
 
     @include mq(lg) {
         bottom: 98px;
@@ -1374,7 +1380,7 @@ li{
     padding-right: 5px;
 
     @include mq(lg) {
-        padding-bottom: 22px;
+        padding-bottom: 30px;
         padding-left: 0;
         padding-right: 15px;
     }
@@ -2269,7 +2275,7 @@ background-position: center center;
             width: 102%;
 
             @include mq(lg) {
-                padding: 11px 11px 12px 23px;
+                padding: 11px 11px 18px 23px;
                 width: 100%;
             }
 
@@ -2290,7 +2296,7 @@ background-position: center center;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                padding-top: 8px;
+                padding-top: 0px;
               }
 
               &:focus::placeholder{
@@ -2421,7 +2427,7 @@ input[type="checkbox"] {
     @include mq(lg) {
         height: 56px;
         margin-left: 0;
-        margin-top: 36px;
+        margin-top: 40px;
         width: 239px;
     }
 
