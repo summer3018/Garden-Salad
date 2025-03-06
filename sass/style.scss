@@ -533,6 +533,10 @@ li{
     background-image: url("/image/sp/01.png");
     background-position: calc(100% - 16px) 45px;
 
+    @include mq(md) {
+        background-position: calc(100% - 25px) 0px;
+    }
+
     @include mq(lg) {
       background-image: url("/image/pc/01\ \(pc\).png");
       background-position: right 38px top 63px;
@@ -543,9 +547,8 @@ li{
     background-image: url("/image/sp/02.png");
     background-position: calc(100% - 16px) 79px;
 
-        @include mq(md) {
-        background-image: url("/image/sp/02.png");
-        background-position: left 176px top 4px;
+    @include mq(md) {
+    background-position: left 94% top 4px;     
     }
 
     @include mq(lg) {
@@ -557,6 +560,10 @@ li{
 .about-text-bg03{
     background-image: url("/image/sp/03.png");
     background-position: calc(100% - 16px) 68px;
+
+    @include mq(md) {
+        background-position: calc(100% - 25px) 4px;
+    }
 
     @include mq(lg) {
       background-image: url("/image/pc/03\ \(pc\).png");
@@ -1246,6 +1253,8 @@ li{
 
     @include mq(md) {
         width: calc((300px + 524px) / 2 );
+        text-align: center;
+        margin: 0 auto;
       }
 
     @include mq(lg) {
@@ -1351,6 +1360,8 @@ li{
 
     @include mq(md) {
       width: calc((300px + 524px) / 2 );
+      text-align: center;
+      margin: 0 auto;
     }
 
     @include mq(lg) {
@@ -1931,7 +1942,9 @@ padding: 10px 0;
 
 .post-card__images{
     position: relative;
-
+    /* display: inline-table; */
+    text-align: center;
+    align-items: center;
     @include mq(lg) {
       display: flex;
     }
@@ -2013,6 +2026,12 @@ padding: 10px 0;
     img{
         height: 209px;
         width: 323px;
+        @include mq(md) {
+            height: 282px;
+            max-width: 100%;
+            object-fit: cover;
+            width: 323px;
+        }
 
         @include mq(lg) {
             height: 430.748px;
