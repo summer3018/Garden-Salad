@@ -156,10 +156,12 @@ li {
   .mv-bg-image {
     background-image: url("/image/pc/img_mv.png");
     height: 446.5px;
+    background-position: 135px;
   }
 }
 @media (min-width: 1000px) {
   .mv-bg-image {
+    background-position: right;
     height: 650px;
   }
 }
@@ -1058,6 +1060,11 @@ li {
   font-weight: 500;
   letter-spacing: 0.54px;
 }
+@media (min-width: 600px) {
+  .menu-card1__Recommendation-jp {
+    font-size: 21px;
+  }
+}
 @media (min-width: 1000px) {
   .menu-card1__Recommendation-jp {
     font-size: 24px;
@@ -1104,6 +1111,11 @@ li {
   font-weight: 400;
   letter-spacing: 1.8px;
 }
+@media (min-width: 600px) {
+  .menu-card1__price-en {
+    font-size: 21px;
+  }
+}
 @media (min-width: 1000px) {
   .menu-card1__price-en {
     font-size: 24px;
@@ -1119,6 +1131,11 @@ li {
   font-weight: 400;
   letter-spacing: 3px;
 }
+@media (min-width: 600px) {
+  .menu-card1__price-price {
+    font-size: 35px;
+  }
+}
 @media (min-width: 1000px) {
   .menu-card1__price-price {
     font-size: 40px;
@@ -1131,6 +1148,11 @@ li {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
+}
+@media (min-width: 600px) {
+  .menu-card1__price-tax {
+    font-size: 15px;
+  }
 }
 @media (min-width: 1000px) {
   .menu-card1__price-tax {
@@ -1150,6 +1172,11 @@ li {
   margin-left: 22px;
   margin-right: 21px;
   padding-top: 1px;
+}
+@media (min-width: 600px) {
+  .menu-card1__text {
+    font-size: 19px;
+  }
 }
 @media (min-width: 1000px) {
   .menu-card1__text {
@@ -1274,6 +1301,11 @@ li {
   margin: 0 21px;
   padding-top: 1px;
 }
+@media (min-width: 600px) {
+  .menu-card2__text {
+    font-size: 19px;
+  }
+}
 @media (min-width: 1000px) {
   .menu-card2__text {
     font-size: 24px;
@@ -1375,6 +1407,11 @@ li {
   margin: 0 21px;
   padding-top: 1px;
 }
+@media (min-width: 600px) {
+  .menu-card3__text {
+    font-size: 19px;
+  }
+}
 @media (min-width: 1000px) {
   .menu-card3__text {
     font-size: 24px;
@@ -1404,7 +1441,7 @@ li {
     height: 544px;
     margin: 0 auto;
     margin-bottom: 82px;
-    width: 1080px;
+    width: 100%;
   }
   .instagram-card::before {
     inset: 12px 13px 13px 14px;
@@ -1637,6 +1674,11 @@ li {
   padding-top: 8px;
   position: relative;
   text-align: center;
+}
+@media (min-width: 600px) {
+  .shop-title__en {
+    font-size: 40px;
+  }
 }
 @media (min-width: 1000px) {
   .shop-title__en {
@@ -1908,7 +1950,6 @@ li {
 .post-card__images {
   align-items: center;
   position: relative;
-  /* display: inline-table; */
   text-align: center;
 }
 @media (min-width: 1000px) {
@@ -2044,6 +2085,11 @@ li {
   font-weight: 400;
   letter-spacing: 1.5px;
 }
+@media (min-width: 600px) {
+  .card-text__title {
+    font-size: 39px;
+  }
+}
 @media (min-width: 1000px) {
   .card-text__title {
     float: left;
@@ -2162,6 +2208,11 @@ li {
   position: relative;
   text-align: center;
 }
+@media (min-width: 600px) {
+  .contact-title__en {
+    font-size: 40px;
+  }
+}
 @media (min-width: 1000px) {
   .contact-title__en {
     font-size: 48px;
@@ -2171,13 +2222,13 @@ li {
   }
 }
 .contact-title__en::after {
-  position: absolute;
   background-color: #159741;
   bottom: 47px;
   content: "";
   display: inline-block;
   height: 2px;
   left: 50%;
+  position: absolute;
   transform: translateX(-50%);
   width: 50px;
   /* 線の上下位置 */
@@ -2741,24 +2792,17 @@ input[type=checkbox]:checked::after {
   max-width: 375px;
   width: 100%;
 }
-@media (min-width: 599px) {
+@media (min-width: 600px) {
   .parallax {
     background-size: cover;
-    max-width: 767px;
+    max-width: 999px;
   }
 }
 @media (min-width: 1000px) {
   .parallax {
     max-height: 450px;
-    min-width: 768px;
-    width: 100vw;
-  }
-}
-@media (min-width: 1000px) {
-  .parallax {
     max-width: none;
-    min-width: 1440px;
-    width: 100vw;
+    min-width: 1000px;
   }
 }
 
@@ -2774,24 +2818,17 @@ input[type=checkbox]:checked::after {
   max-width: 375px;
   width: 100%;
 }
-@media (min-width: 599px) {
+@media (min-width: 600px) {
   .parallax2 {
     background-size: cover;
-    max-width: 767px;
+    max-width: 999px;
   }
 }
 @media (min-width: 1000px) {
   .parallax2 {
     max-height: 450px;
-    min-width: 768px;
-    width: 100vw;
-  }
-}
-@media (min-width: 1000px) {
-  .parallax2 {
     max-width: none;
-    min-width: 1440px;
-    width: 100vw;
+    min-width: 1000px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -202,10 +202,12 @@ li{
     @include mq(md) {
         background-image: url("/image/pc/img_mv.png");
         height: calc((243px + 650px) / 2);
+        background-position: 135px;
     }
 
     @include mq(lg) {
         // background-image: url("/image/pc/img_mv (PC).png");
+        background-position: right;
         height: 650px;
     }
 }
@@ -1091,6 +1093,10 @@ li{
     font-weight: 500;
     letter-spacing: 0.54px;
 
+    @include mq(md) {
+        font-size: calc((18px + 24px) / 2);
+      }
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
@@ -1135,6 +1141,10 @@ li{
     font-weight: 400;
     letter-spacing: 1.8px;
 
+    @include mq(md) {
+        font-size: calc((18px + 24px) / 2);
+      }
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 2.4px;
@@ -1148,6 +1158,9 @@ li{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 3px;
+    @include mq(md) {
+        font-size: calc((30px + 40px) / 2);
+      }
 
     @include mq(lg) {
         font-size: 40px;
@@ -1161,6 +1174,9 @@ li{
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.2px;
+    @include mq(md) {
+        font-size: calc((12px + 18px) / 2);
+      }
 
     @include mq(lg) {
         font-size: 18px;
@@ -1184,12 +1200,15 @@ li{
     margin-left: 22px;
     margin-right: 21px;
     padding-top: 1px;
+    @include mq(md) {
+      font-size: calc((14px + 24px) / 2);
+    }
 
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
-    margin-left: 76px;
-    margin-right: 75px;
+        margin-left: 76px;
+        margin-right: 75px;
     }
 
 }
@@ -1308,6 +1327,10 @@ li{
     margin: 0 21px;
     padding-top: 1px;
 
+    @include mq(md) {
+        font-size: calc((14px + 24px) / 2);
+      }
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
@@ -1412,6 +1435,10 @@ li{
     margin: 0 21px;
     padding-top: 1px;
 
+    @include mq(md) {
+        font-size: calc((14px + 24px) / 2);
+      }
+
     @include mq(lg) {
         font-size: 24px;
         letter-spacing: 0.72px;
@@ -1444,7 +1471,7 @@ li{
         height: 544px;
         margin: 0 auto;
         margin-bottom: 82px;
-        width: 1080px;
+        width: 100%;
 
         &::before{
             inset: 12px 13px 13px 14px;
@@ -1684,6 +1711,10 @@ li{
     padding-top: 8px;
     position: relative;
     text-align: center;
+
+    @include mq(md) {
+        font-size: calc((32px + 48px) / 2);
+      }
 
     @include mq(lg) {
         font-size: 48px;
@@ -1948,8 +1979,6 @@ padding: 10px 0;
 .post-card__images{
     align-items: center;
     position: relative;
-
-    /* display: inline-table; */
     text-align: center;
 
     @include mq(lg) {
@@ -1981,12 +2010,6 @@ padding: 10px 0;
 
 .post-card__terrace{
     display: inline-block; // 画像のサイズに合わせる
-    // background-image: url("/image/img：オープンテラス.png");
-    // width: 323px;
-    // height: 282px;
-    // background-size: 100% auto;
-    // background-repeat: no-repeat;
-    // background-position: center;
     position: relative; // 疑似要素の基準
     &::before{
         border: 1px solid #fff;
@@ -2092,6 +2115,10 @@ padding: 10px 0;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1.5px;
+
+    @include mq(md) {
+        font-size: calc((30px + 48px) / 2);
+      }
 
     @include mq(lg) {
         float: left;
@@ -2214,6 +2241,10 @@ background-position: center center;
     position: relative;
     text-align: center;
 
+    @include mq(md) {
+        font-size: calc((32px + 48px) / 2);
+      }
+
     @include mq(lg) {
         font-size: 48px;
         letter-spacing: 2.4px;
@@ -2259,8 +2290,6 @@ background-position: center center;
 
     @include mq(lg) {
         padding-bottom: 28px;
-
-        // text-align: center;
         padding-left: 0;
     }
 }
@@ -2283,8 +2312,6 @@ background-position: center center;
     .form-group {
         margin-bottom: 31px;
 
-        // display: grid;
-        // justify-items: center;
         .form-label {
             color: #333;
             font-size: 16px;
@@ -2543,6 +2570,7 @@ input[type="checkbox"] {
     }
 }
 
+// SVG
 // .test-icon{
 //     width: 40px;
 //     height: 40px;
@@ -2828,22 +2856,18 @@ input[type="checkbox"] {
     max-width: 375px;
     width: 100%;
 
-    @include mq(sm) {
+    @include mq(md) {
       background-size: cover;
-      max-width: 767px;
+      max-width: 999px;
     }
 
     @include mq(lg) {
       max-height: 450px;
-      min-width: 768px;
-      width: 100vw;
+      max-width: none; // max-widthの制限を解除
+      min-width: 1000px; // 1440px以上なら最小幅を指定
+    //   width: 100vw;
     }
 
-    @include mq(lg) {
-        max-width: none; // max-widthの制限を解除
-        min-width: 1440px; // 1440px以上なら最小幅を指定
-        width: 100vw;
-    }
 }
 
 // parallax2
@@ -2859,21 +2883,16 @@ input[type="checkbox"] {
     max-width: 375px;
     width: 100%;
 
-    @include mq(sm) {
+    @include mq(md) {
         background-size: cover;
-        max-width: 767px;
+        max-width: 999px;
       }
-
+  
       @include mq(lg) {
         max-height: 450px;
-        min-width: 768px;
-        width: 100vw;
-      }
-
-      @include mq(lg) {
-          max-width: none; // max-widthの制限を解除
-          min-width: 1440px; // 1440px以上なら最小幅を指定
-          width: 100vw;
+        max-width: none; // max-widthの制限を解除
+        min-width: 1000px; // 1440px以上なら最小幅を指定
+        // width: 100vw;
       }
 }
   
