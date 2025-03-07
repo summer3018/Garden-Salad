@@ -2129,14 +2129,24 @@ padding: 10px 0;
     margin-right: 4px;
     position: relative;
 
+    @include mq(md) {
+        bottom: 19px;
+        margin-left: 21px;
+        margin-right: 4px;
+        text-align: right;
+    }
+
     @include mq(lg) {
         bottom: 3px;
-        text-align: right;
     }
 
     img{
         height: 98.763px;
         width: 100%;
+
+        @include mq(md) {
+          width: 45%;
+        }
 
         @include mq(lg) {
             height: 100.139px;

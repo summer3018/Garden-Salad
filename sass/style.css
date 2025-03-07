@@ -2083,15 +2083,27 @@ li {
   margin-right: 4px;
   position: relative;
 }
+@media (min-width: 600px) {
+  .green-text__image {
+    bottom: 19px;
+    margin-left: 21px;
+    margin-right: 4px;
+    text-align: right;
+  }
+}
 @media (min-width: 1000px) {
   .green-text__image {
     bottom: 3px;
-    text-align: right;
   }
 }
 .green-text__image img {
   height: 98.763px;
   width: 100%;
+}
+@media (min-width: 600px) {
+  .green-text__image img {
+    width: 45%;
+  }
 }
 @media (min-width: 1000px) {
   .green-text__image img {
