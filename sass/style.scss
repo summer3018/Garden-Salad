@@ -1930,7 +1930,7 @@ padding: 10px 0;
     padding-right: 16px;
 
     @include mq(lg) {
-        padding: 0 147px 55px;
+        padding: 0 147px 120px;
     }
 }
 
@@ -2114,6 +2114,7 @@ padding: 10px 0;
     text-underline-offset: 12px;
 
     @include mq(lg) {
+      margin-bottom: -65px;  
       margin-right: 220px;
       padding-top: 39px;
       text-align: left;
@@ -2129,7 +2130,7 @@ padding: 10px 0;
     position: relative;
 
     @include mq(lg) {
-        bottom: 68px;
+        bottom: 3px;
         text-align: right;
     }
 

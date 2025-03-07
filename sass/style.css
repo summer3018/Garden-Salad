@@ -1890,7 +1890,7 @@ li {
 }
 @media (min-width: 1000px) {
   .post-card__container {
-    padding: 0 147px 55px;
+    padding: 0 147px 120px;
   }
 }
 
@@ -2070,6 +2070,7 @@ li {
 }
 @media (min-width: 1000px) {
   .card-text {
+    margin-bottom: -65px;
     margin-right: 220px;
     padding-top: 39px;
     text-align: left;
@@ -2084,7 +2085,7 @@ li {
 }
 @media (min-width: 1000px) {
   .green-text__image {
-    bottom: 68px;
+    bottom: 3px;
     text-align: right;
   }
 }
