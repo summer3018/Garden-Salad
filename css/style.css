@@ -504,7 +504,7 @@ li {
 }
 @media (min-width: 600px) {
   .about-text-bg01 {
-    background-position: calc(100% - 25px) 0px;
+    background-position: calc(100% - 25px) 0;
   }
 }
 @media (min-width: 1000px) {
@@ -1219,9 +1219,9 @@ li {
 }
 @media (min-width: 600px) {
   .card2-text__wrapper {
-    width: 412px;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
+    width: 412px;
   }
 }
 @media (min-width: 1000px) {
@@ -1322,9 +1322,9 @@ li {
 }
 @media (min-width: 600px) {
   .card3-text__wrapper {
-    width: 412px;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
+    width: 412px;
   }
 }
 @media (min-width: 1000px) {
@@ -1757,10 +1757,10 @@ li {
 }
 
 .shop-text-wrapper {
-  margin: 0 auto;
+  align-items: center;
   display: grid;
   justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .shop-adress {
@@ -1890,14 +1890,14 @@ li {
 }
 @media (min-width: 1000px) {
   .post-card__container {
-    padding: 0 147px 115px;
+    padding: 0 147px 55px;
   }
 }
 
 .post-card__wrapper {
   background: #fff;
   box-shadow: 0 4px 20px 0 rgba(161, 159, 159, 0.6);
-  padding: 16px 10px 62px;
+  padding: 16px 10px 11px;
 }
 @media (min-width: 1000px) {
   .post-card__wrapper {
@@ -1906,10 +1906,10 @@ li {
 }
 
 .post-card__images {
+  align-items: center;
   position: relative;
   /* display: inline-table; */
   text-align: center;
-  align-items: center;
 }
 @media (min-width: 1000px) {
   .post-card__images {
@@ -2007,8 +2007,8 @@ li {
 @media (min-width: 600px) {
   .post-card__takeout {
     display: inline-block;
-    margin-top: -5px;
     margin-left: -4px;
+    margin-top: -5px;
     position: relative;
   }
 }
@@ -2084,20 +2084,25 @@ li {
   transform: rotate(-6deg);
 }
 .green-text__image {
+  bottom: 19px;
   margin-left: 21px;
   margin-right: 4px;
   position: relative;
-  bottom: 10px;
+}
+@media (min-width: 1000px) {
+  .green-text__image {
+    bottom: 68px;
+    text-align: right;
+  }
 }
 .green-text__image img {
-  width: 100%;
   height: 98.763px;
+  width: 100%;
 }
 @media (min-width: 1000px) {
   .green-text__image img {
-    width: 1146px;
-    height: auto;
-    text-align: right;
+    height: 100.139px;
+    width: 313.369px;
   }
 }
 
@@ -2585,7 +2590,6 @@ input[type=checkbox]:checked::after {
     width: 120px;
   }
 }
-
 .page-top__btn img {
   height: auto;
   height: 70px;

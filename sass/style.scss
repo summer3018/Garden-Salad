@@ -534,7 +534,7 @@ li{
     background-position: calc(100% - 16px) 45px;
 
     @include mq(md) {
-        background-position: calc(100% - 25px) 0px;
+        background-position: calc(100% - 25px) 0;
     }
 
     @include mq(lg) {
@@ -1196,6 +1196,7 @@ li{
 
 .menu-card__wrap{
     margin-bottom: -10px;
+
     @include mq(lg) {
         display: flex; 
         gap: 32px; 
@@ -1253,9 +1254,9 @@ li{
     }
 
     @include mq(md) {
-        width: calc((300px + 524px) / 2 );
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
+        width: calc((300px + 524px) / 2 );
       }
 
     @include mq(lg) {
@@ -1345,6 +1346,7 @@ li{
     bottom: 60px;
     height: 222px;
     margin: 0 auto;
+
     // margin-bottom: -10px;
     // margin-left: 41px;
     // margin-right: 34px;
@@ -1360,9 +1362,9 @@ li{
     }
 
     @include mq(md) {
-      width: calc((300px + 524px) / 2 );
-      text-align: center;
       margin: 0 auto;
+      text-align: center;
+      width: calc((300px + 524px) / 2 );
     }
 
     @include mq(lg) {
@@ -1801,10 +1803,10 @@ li{
 }
 
 .shop-text-wrapper{
-    margin: 0 auto;
+    align-items: center;
     display: grid;
     justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .shop-adress{
@@ -1926,14 +1928,14 @@ padding: 10px 0;
     padding-right: 16px;
 
     @include mq(lg) {
-        padding: 0 147px 115px;
+        padding: 0 147px 55px;
     }
 }
 
 .post-card__wrapper{
     background: #fff;
     box-shadow: 0 4px 20px 0 rgb(161 159 159 / 60%);
-    padding: 16px 10px 62px;
+    padding: 16px 10px 11px;
 
     @include mq(lg) {
         padding: 30px 32px 0 34px;
@@ -1942,10 +1944,12 @@ padding: 10px 0;
 }
 
 .post-card__images{
+    align-items: center;
     position: relative;
+
     /* display: inline-table; */
     text-align: center;
-    align-items: center;
+
     @include mq(lg) {
       display: flex;
     }
@@ -2027,6 +2031,7 @@ padding: 10px 0;
     img{
         height: 209px;
         width: 323px;
+
         @include mq(md) {
             height: 282px;
             max-width: 100%;
@@ -2039,12 +2044,14 @@ padding: 10px 0;
             width: 449.691px;
         }
     }
+
     @include mq(md) {
         display: inline-block;
-        margin-top: -5px;
         margin-left: -4px;
+        margin-top: -5px;
         position: relative;
     }
+
     @include mq(lg) {
         margin-top: 0;
 
@@ -2120,6 +2127,7 @@ padding: 10px 0;
     letter-spacing: 1.8px;
     padding-left: 24px;
     transform: rotate(-6deg);
+
     @include mq(md) {
       
     }
@@ -2155,19 +2163,25 @@ padding: 10px 0;
     //     width: 286px;
     // }
 }
+
 .green-text__image{
+    bottom: 19px;
     margin-left: 21px;
     margin-right: 4px;
     position: relative;
-    bottom: 10px;
+
+    @include mq(lg) {
+        bottom: 68px;
+        text-align: right;
+    }
 
     img{
-        width: 100%;
         height: 98.763px;
+        width: 100%;
+
         @include mq(lg) {
-            width: 1146px;
-            height: auto;
-            text-align: right;
+            height: 100.139px;
+            width: 313.369px;
         }
     }
 }
@@ -2692,17 +2706,17 @@ input[type="checkbox"] {
         margin-top: -60px;
         width: 120px;
     }
-}
 
-.page-top__btn img {
-    height: auto;
-    height: 70px;
-    width: 100%;
-    width: 70px;
-
-    @include mq(lg) {
-        height: 120px;
-        width: 120px;
+    img{
+        height: auto;
+        height: 70px;
+        width: 100%;
+        width: 70px;
+    
+        @include mq(lg) {
+            height: 120px;
+            width: 120px;
+        }
     }
 }
 
