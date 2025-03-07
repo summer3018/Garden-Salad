@@ -28,13 +28,13 @@
     "space-between-declarations": "\n",
     "sort-order": [
         [
+            "position",
             "background",
             "background-image",
             "background-size",
             "background-repeat",
             "content",
             "display",
-            "position",
             "width",
             "height",
             "margin",
