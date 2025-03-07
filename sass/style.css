@@ -2076,15 +2076,6 @@ li {
   }
 }
 
-.green-text {
-  color: #159741;
-  font-family: "Satisfy", serif;
-  font-size: 36px;
-  font-weight: 400;
-  letter-spacing: 1.8px;
-  padding-left: 24px;
-  transform: rotate(-6deg);
-}
 .green-text__image {
   bottom: 19px;
   margin-left: 21px;
