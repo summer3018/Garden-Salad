@@ -1945,11 +1945,11 @@ li {
   position: relative;
 }
 .post-card__terrace::before {
-  pointer-events: none;
-  position: absolute;
   border: 1px solid #fff;
   content: "";
   inset: 14px 14px 13px;
+  pointer-events: none;
+  position: absolute;
 }
 .post-card__terrace img {
   height: 282px;
@@ -2085,7 +2085,7 @@ li {
 }
 @media (min-width: 600px) {
   .green-text__image {
-    bottom: 19px;
+    bottom: 36px;
     margin-left: 21px;
     margin-right: 4px;
     text-align: right;
