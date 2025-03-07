@@ -1,8 +1,0 @@
-{
-    "sort-order": [
-      ["position", "top", "right", "bottom", "left", "z-index"],
-      ["display", "flex", "flex-direction", "justify-content", "align-items"],
-      ["width", "height", "margin", "padding", "border"],
-      ["font", "font-size", "line-height", "color", "text-align"]
-    ]
-  }

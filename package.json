@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "css-declaration-sorter": "^7.2.0",
+    "postcss": "^8.5.3",
     "stylelint": "^16.15.0",
     "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-order": "^6.0.4"
