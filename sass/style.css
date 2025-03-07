@@ -1566,19 +1566,19 @@ li {
   position: relative;
   text-align: center;
 }
-@media (min-width: 1000px) {
-  .instagram-card__btn-text {
-    font-size: 16px;
-    margin-right: 18px;
-    padding: 13px 77px 17px 58px;
-  }
-}
 .instagram-card__btn-text:hover {
   background-color: #000;
   color: #fff;
 }
 .instagram-card__btn-text:hover img {
   content: url("/image/external-link (wihte).png");
+}
+@media (min-width: 1000px) {
+  .instagram-card__btn-text {
+    font-size: 16px;
+    margin-right: 18px;
+    padding: 13px 77px 17px 58px;
+  }
 }
 
 .external-icon {

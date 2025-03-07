@@ -1607,12 +1607,6 @@ li{
     position: relative;
     text-align: center;
 
-    @include mq(lg) {
-        font-size: 16px;
-        margin-right: 18px;
-        padding: 13px 77px 17px 58px;
-    }
-
     &:hover{
         background-color: #000;
         color: #fff;
@@ -1621,6 +1615,14 @@ li{
             content: url('/image/external-link\ \(wihte\).png'); 
         }
     }
+
+    @include mq(lg) {
+        font-size: 16px;
+        margin-right: 18px;
+        padding: 13px 77px 17px 58px;
+    }
+
+
 }
 
 .external-icon {
