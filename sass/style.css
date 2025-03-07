@@ -520,7 +520,7 @@ li {
 }
 @media (min-width: 600px) {
   .about-text-bg02 {
-    background-position: left 94% top 4px;
+    background-position: left 94% top 30px;
   }
 }
 @media (min-width: 1000px) {
@@ -536,7 +536,7 @@ li {
 }
 @media (min-width: 600px) {
   .about-text-bg03 {
-    background-position: calc(100% - 25px) 4px;
+    background-position: calc(100% - 25px) 10px;
   }
 }
 @media (min-width: 1000px) {
@@ -1160,6 +1160,9 @@ li {
   }
 }
 
+.menu-card__wrap {
+  margin-bottom: -10px;
+}
 @media (min-width: 1000px) {
   .menu-card__wrap {
     display: flex;
@@ -2001,6 +2004,14 @@ li {
     width: 449.691px;
   }
 }
+@media (min-width: 600px) {
+  .post-card__takeout {
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: -4px;
+    position: relative;
+  }
+}
 @media (min-width: 1000px) {
   .post-card__takeout {
     margin-top: 0;
@@ -2074,34 +2085,22 @@ li {
   padding-left: 24px;
   transform: rotate(-6deg);
 }
+.green-text__image {
+  margin-left: 21px;
+  margin-right: 4px;
+  position: relative;
+  bottom: 10px;
+}
+.green-text__image img {
+  width: 100%;
+  height: 98.763px;
+}
 @media (min-width: 1000px) {
-  .green-text {
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-right: 7px;
-    margin-top: -12px;
+  .green-text__image img {
+    width: 1146px;
+    height: auto;
     text-align: right;
   }
-}
-.green-text::before {
-  background-color: #159741;
-  content: "";
-  height: 1px;
-  position: absolute;
-  right: 4px;
-  top: 44px;
-  transform: rotate(-1deg);
-  width: 286px;
-}
-.green-text::after {
-  background-color: #159741;
-  content: "";
-  height: 1px;
-  position: absolute;
-  right: -4px;
-  top: 51px;
-  transform: rotate(0deg);
-  width: 286px;
 }
 
 .contact {
