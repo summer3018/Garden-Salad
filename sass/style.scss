@@ -193,7 +193,7 @@ li{
 
 .mv-bg-image {
     background-image: url("/image/sp/img_mv .png");
-    background-position: left 67px top;
+    background-position: left 4rem top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 243px;
@@ -202,7 +202,7 @@ li{
     @include mq(md) {
         background-image: url("/image/pc/img_mv.png");
         height: calc((243px + 650px) / 2);
-        background-position: 135px;
+        background-position: 9rem;
     }
 
     @include mq(lg) {
@@ -502,7 +502,8 @@ li{
       align-items: center;
       display: flex;
       flex-direction: row-reverse;
-      gap: 67px; 
+      gap: 6%;
+    //   gap: 67px; 
       justify-content: flex-end;
       margin-bottom: 5px;
     }
@@ -516,7 +517,8 @@ li{
 
     @include mq(lg) {
         display: flex;
-        gap: 174px;
+        gap: 16%;;
+        // gap: 174px;
         margin-bottom: 7px;
 
     }
@@ -527,7 +529,8 @@ li{
       align-items: center;
       display: flex;
       flex-direction: row-reverse;
-      gap: 71px; 
+      gap: 7%;
+    //   gap: 71px; 
       justify-content: flex-end;
     }
 }
@@ -1953,6 +1956,7 @@ padding: 10px 0;
     @include mq(lg) {
         height: 500px;
         width: 700px;
+        max-width: 100%;
     }
 }
 
@@ -2080,7 +2084,7 @@ padding: 10px 0;
     }
 
     @include mq(lg) {
-        margin-top: 0;
+        margin-top: 5px;
 
         &::before{
         border: 1px solid #fff;

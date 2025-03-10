@@ -146,7 +146,7 @@ li {
 
 .mv-bg-image {
   background-image: url("/image/sp/img_mv .png");
-  background-position: left 67px top;
+  background-position: left 4rem top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 243px;
@@ -156,7 +156,7 @@ li {
   .mv-bg-image {
     background-image: url("/image/pc/img_mv.png");
     height: 446.5px;
-    background-position: 135px;
+    background-position: 9rem;
   }
 }
 @media (min-width: 1000px) {
@@ -471,7 +471,7 @@ li {
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
-    gap: 67px;
+    gap: 6%;
     justify-content: flex-end;
     margin-bottom: 5px;
   }
@@ -486,7 +486,7 @@ li {
 @media (min-width: 1000px) {
   .about-text-container-02 {
     display: flex;
-    gap: 174px;
+    gap: 16%;
     margin-bottom: 7px;
   }
 }
@@ -496,7 +496,7 @@ li {
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
-    gap: 71px;
+    gap: 7%;
     justify-content: flex-end;
   }
 }
@@ -1923,6 +1923,7 @@ li {
   .image-exterior {
     height: 500px;
     width: 700px;
+    max-width: 100%;
   }
 }
 
@@ -2056,7 +2057,7 @@ li {
 }
 @media (min-width: 1000px) {
   .post-card__takeout {
-    margin-top: 0;
+    margin-top: 5px;
   }
   .post-card__takeout::before {
     border: 1px solid #fff;
