@@ -130,6 +130,7 @@ li {
   height: 263px;
   position: relative;
   top: -1px;
+  padding-bottom: 20px;
 }
 @media (min-width: 600px) {
   .mv {
@@ -145,12 +146,11 @@ li {
 
 .mv-bg-image {
   background-image: url("/image/sp/img_mv .png");
-  background-position: right;
+  background-position: left 67px top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 243px;
   max-width: 100%;
-  padding-bottom: 20px;
 }
 @media (min-width: 600px) {
   .mv-bg-image {
@@ -161,6 +161,7 @@ li {
 }
 @media (min-width: 1000px) {
   .mv-bg-image {
+    background-size: contain;
     background-position: right;
     height: 650px;
   }

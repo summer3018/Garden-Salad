@@ -179,6 +179,7 @@ li{
     height: 263px;
     position: relative;
     top: -1px;
+    padding-bottom: 20px;
 
     @include mq(md) {
       height: calc((263px + 650px) / 2);
@@ -191,13 +192,12 @@ li{
 }
 
 .mv-bg-image {
-    background-image: url("/image/sp/img_mv\ .png");
-    background-position: right;
+    background-image: url("/image/sp/img_mv .png");
+    background-position: left 67px top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 243px;
     max-width: 100%;
-    padding-bottom: 20px;
 
     @include mq(md) {
         background-image: url("/image/pc/img_mv.png");
@@ -207,6 +207,7 @@ li{
 
     @include mq(lg) {
         // background-image: url("/image/pc/img_mv (PC).png");
+        background-size: contain;
         background-position: right;
         height: 650px;
     }
