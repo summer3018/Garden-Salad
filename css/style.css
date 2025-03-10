@@ -2117,7 +2117,7 @@ li {
 @media (min-width: 1000px) {
   .card-text {
     margin-bottom: -65px;
-    margin-right: 220px;
+    margin-right: 14em;
     padding-top: 39px;
     text-align: left;
   }
