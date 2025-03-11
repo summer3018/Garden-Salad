@@ -2157,7 +2157,7 @@ padding: 10px 0;
     letter-spacing: 1.5px;
 
     @include mq(md) {
-        font-size: calc((11.875rem + 3rem) / 2);
+        font-size: calc((1.875rem + 3rem) / 2);
       }
 
     @include mq(lg) {
