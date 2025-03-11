@@ -207,7 +207,7 @@ li{
     @include mq(lg) {
         background-position: right;
         background-size: 75%;
-        height: 45.1389vw; // 650pxをvw換算（相対的にスケールする）
+        height: 45.1389vw;
     }
 }
 
