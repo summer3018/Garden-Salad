@@ -530,7 +530,7 @@ li {
 @media (min-width: 1000px) {
   .about-text-bg02 {
     background-image: url("/image/pc/02 (pc).png");
-    background-position: left 256px top 33px;
+    background-position: left 32% top 25%;
     background-size: 21vw;
   }
 }
@@ -652,7 +652,8 @@ li {
 }
 @media (min-width: 1000px) {
   .about__text01 {
-    margin-right: 140px;
+    /* margin-right: 140px; */
+    width: 28vw;
   }
 }
 
@@ -673,6 +674,8 @@ li {
 }
 @media (min-width: 1000px) {
   .about__text03 {
+    /* margin-right: 140px; */
+    width: 28vw;
     margin-right: 150px;
     padding-right: 8px;
   }
@@ -1277,8 +1280,8 @@ li {
   .card2-text__wrapper {
     bottom: 99px;
     height: 280px;
-    margin-right: 8px;
-    right: 4px;
+    /* margin-right: 8px; */
+    right: 2%;
     width: 36vw;
   }
   .card2-text__wrapper::before {
