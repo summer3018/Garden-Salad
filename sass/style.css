@@ -2821,7 +2821,7 @@ input[type=checkbox]:checked::after {
   height: 100vh;
   margin-top: 0;
   max-height: 250px;
-  max-width: 375px;
+  max-width: 599px;
   width: 100%;
 }
 @media (min-width: 600px) {
@@ -2847,7 +2847,7 @@ input[type=checkbox]:checked::after {
   height: 100vh;
   margin-top: 0;
   max-height: 250px;
-  max-width: 375px;
+  max-width: 599px;
   width: 100%;
 }
 @media (min-width: 600px) {
