@@ -83,19 +83,19 @@ li {
 
 .nav_header-lists {
   display: flex; /* 横並びにする */
-  gap: 1.3888888889vw;
+  gap: 1.389vw;
   justify-content: flex-end; /* 右寄せにする */
   margin-bottom: 6px;
   margin-left: 65px;
 }
 @media (min-width: 600px) {
   .nav_header-lists {
-    gap: 2.0833333333vw;
+    gap: 2.0833vw;
   }
 }
 @media (min-width: 1000px) {
   .nav_header-lists {
-    gap: 2.7777777778vw;
+    gap: 2.7778vw;
     margin-top: -5px;
   }
 }
@@ -128,9 +128,9 @@ li {
 .mv {
   background: #2f2f2f;
   height: 263px;
+  padding-bottom: 20px;
   position: relative;
   top: -1px;
-  padding-bottom: 20px;
 }
 @media (min-width: 600px) {
   .mv {
@@ -149,20 +149,20 @@ li {
   background-position: left 18vw top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 243px;
+  height: 15.1875rem;
   max-width: 100%;
 }
 @media (min-width: 600px) {
   .mv-bg-image {
-    height: 446.5px;
     background-position: 9rem;
+    height: 27.90625rem;
   }
 }
 @media (min-width: 1000px) {
   .mv-bg-image {
-    background-size: 75%;
     background-position: right;
-    height: 45.1388888889vw;
+    background-size: 75%;
+    height: 45.1389vw;
   }
 }
 
@@ -674,10 +674,10 @@ li {
 }
 @media (min-width: 1000px) {
   .about__text03 {
-    /* margin-right: 140px; */
-    width: 28vw;
     margin-right: 150px;
     padding-right: 8px;
+    /* margin-right: 140px; */
+    width: 28vw;
   }
 }
 
@@ -1200,7 +1200,7 @@ li {
 }
 @media (min-width: 600px) {
   .menu-card1__text {
-    font-size: 7.9375rem;
+    font-size: 1.1875rem;
   }
 }
 @media (min-width: 1000px) {
@@ -1946,8 +1946,8 @@ li {
 @media (min-width: 1000px) {
   .image-exterior {
     height: 500px;
-    width: 700px;
     max-width: 100%;
+    width: 700px;
   }
 }
 

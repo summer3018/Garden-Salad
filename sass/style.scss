@@ -131,17 +131,17 @@ li{
 
 .nav_header-lists{
     display: flex; /* 横並びにする */
-    gap: 1.3888888888888888vw;
+    gap: 1.389vw;
     justify-content: flex-end; /* 右寄せにする */
     margin-bottom: 6px;
     margin-left: 65px;
 
     @include mq(md) {
-      gap: 2.083333333333333vw;
+      gap: 2.0833vw;
     }
 
     @include mq(lg) {
-        gap: 2.7777777777777777vw;
+        gap: 2.7778vw;
         margin-top: -5px;
     }
 }
@@ -177,9 +177,9 @@ li{
 .mv {
     background: $base-color;
     height: 263px;
+    padding-bottom: 20px;
     position: relative;
     top: -1px;
-    padding-bottom: 20px;
 
     @include mq(md) {
       height: calc((263px + 650px) / 2);
@@ -196,22 +196,18 @@ li{
     background-position: left 18vw top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 243px;
+    height: 15.1875rem; // 243px → rem換算
     max-width: 100%;
 
     @include mq(md) {
-        // background-image: url("/image/pc/img_mv.png");
-        height: calc((243px + 650px) / 2);
         background-position: 9rem;
+        height: calc((15.1875rem + 40.625rem) / 2); // 243px + 650px → rem換算
     }
 
     @include mq(lg) {
-        // background-image: url("/image/pc/img_mv (PC).png");
-        background-size: 75%;
-        // background-position: left 25vw center;
         background-position: right;
-        // height: 650px;
-        height: 45.13888888888889vw;
+        background-size: 75%;
+        height: 45.1389vw; // 650pxをvw換算（相対的にスケールする）
     }
 }
 
@@ -504,6 +500,7 @@ li{
       display: flex;
       flex-direction: row-reverse;
       gap: 6%;
+
     //   gap: 67px; 
       justify-content: flex-end;
       margin-bottom: 5px;
@@ -519,6 +516,7 @@ li{
     @include mq(lg) {
         display: flex;
         gap: 16%;;
+
         // gap: 174px;
         margin-bottom: 7px;
 
@@ -531,6 +529,7 @@ li{
       display: flex;
       flex-direction: row-reverse;
       gap: 7%;
+
     //   gap: 71px; 
       justify-content: flex-end;
     }
@@ -581,17 +580,20 @@ li{
       background-size: 21vw;
     }
 }
+
 // about-text-wrapper
 .about-text-wrapper01{
 @include mq(lg) {
   width: 1000px / 563px * 100vw;
 }    
 }
+
 .about-text-wrapper02{
 @include mq(lg) {
     width: 1000px / 565px * 100vw;
 }    
 }
+
 .about-text-wrapper03{
 @include mq(lg) {
     width: 1000px / 578px * 100vw;
@@ -699,10 +701,11 @@ li{
     padding-right: 22px;
 
     @include mq(lg) {
-        /* margin-right: 140px; */
-        width: 28vw;
         margin-right: 150px;
         padding-right: 8px;
+
+        /* margin-right: 140px; */
+        width: 28vw;
     }
 }
 
@@ -1182,6 +1185,7 @@ li{
     font-size: 1.875rem;
     font-weight: 400;
     letter-spacing: 3px;
+
     @include mq(md) {
         font-size: calc((1.875rem + 2.5rem) / 2);
       }
@@ -1198,6 +1202,7 @@ li{
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 1.2px;
+
     @include mq(md) {
         font-size: calc((12px + 18px) / 2);
       }
@@ -1224,8 +1229,9 @@ li{
     margin-left: 22px;
     margin-right: 21px;
     padding-top: 1px;
+
     @include mq(md) {
-      font-size: calc((0.875rem + 15rem) / 2);
+      font-size: calc((0.875rem + 1.5rem) / 2);
     }
 
     @include mq(lg) {
@@ -1305,6 +1311,7 @@ li{
     @include mq(lg) {
         bottom: 99px;
         height: 280px;
+
         /* margin-right: 8px; */
         right: 2%;
         width: 36vw;
@@ -1418,6 +1425,7 @@ li{
         bottom: 98px;
         height: 280px;
         margin-left: -10px;
+
         // width: 524px;
         width: 36vw;
 
@@ -1976,8 +1984,8 @@ padding: 10px 0;
 
     @include mq(lg) {
         height: 500px;
-        width: 700px;
         max-width: 100%;
+        width: 700px;
     }
 }
 
@@ -1998,6 +2006,7 @@ padding: 10px 0;
 
     @include mq(lg) {
         padding: 30px 32px 0 34px;
+
         // padding: 3vw 3.2vw .4000000000000004vw;
 
     }
@@ -2010,6 +2019,7 @@ padding: 10px 0;
 
     @include mq(lg) {
       display: flex;
+
     //   width: calc(629.568px +  449.691px);
     // width: calc(43.72vw + 31.228541666666665vw);
     }
@@ -2172,6 +2182,7 @@ padding: 10px 0;
 
     @include mq(lg) {
       margin-bottom: -65px;  
+
     //   margin-right: 220px;
     margin-right: 14em;
       padding-top: 39px;
@@ -2217,6 +2228,7 @@ padding: 10px 0;
 .contact{
 background-image: url("/image/pc/vegetable-background.png");
 background-position: center center;
+
 @include mq(lg) {
     background-size: 100% 100%;
 
