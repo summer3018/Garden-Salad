@@ -207,7 +207,7 @@ li{
     @include mq(lg) {
         background-position: right;
         background-size: 75%;
-        height: 45.1389vw;
+        height: 45.1389vw; // 650pxをvw換算（相対的にスケールする）
     }
 }
 
@@ -1504,7 +1504,8 @@ li{
         height: 544px;
         margin: 0 auto;
         margin-bottom: 82px;
-        width: 100%;
+        width: 84%;
+        max-width: 1080px; // 画面が小さいときに崩れないように制限
 
         &::before{
             inset: 12px 13px 13px 14px;

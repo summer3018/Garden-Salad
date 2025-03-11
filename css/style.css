@@ -1466,7 +1466,8 @@ li {
     height: 544px;
     margin: 0 auto;
     margin-bottom: 82px;
-    width: 100%;
+    width: 84%;
+    max-width: 1080px;
   }
   .instagram-card::before {
     inset: 12px 13px 13px 14px;
