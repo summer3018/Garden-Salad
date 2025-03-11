@@ -192,15 +192,15 @@ li{
 }
 
 .mv-bg-image {
-    background-image: url("/image/sp/img_mv .png");
-    background-position: left 4rem top;
+    background-image: url("/image/img_mv\ .png");
+    background-position: left 18vw top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 243px;
     max-width: 100%;
 
     @include mq(md) {
-        background-image: url("/image/pc/img_mv.png");
+        // background-image: url("/image/pc/img_mv.png");
         height: calc((243px + 650px) / 2);
         background-position: 9rem;
     }
@@ -208,7 +208,7 @@ li{
     @include mq(lg) {
         // background-image: url("/image/pc/img_mv (PC).png");
         background-size: contain;
-        background-position: right;
+        background-position: left 25vw center;
         height: 650px;
     }
 }
@@ -429,8 +429,7 @@ li{
     }
 
     @include mq(lg) {
-      padding: 129px 180px 92px;
-
+      padding: 129px 180px 98px;
     }
 }
 
@@ -538,6 +537,7 @@ li{
 .about-text-bg01{
     background-image: url("/image/sp/01.png");
     background-position: calc(100% - 16px) 45px;
+    background-size: 18vw;
 
     @include mq(md) {
         background-position: calc(100% - 25px) 0;
@@ -546,6 +546,7 @@ li{
     @include mq(lg) {
       background-image: url("/image/pc/01\ \(pc\).png");
       background-position: right 38px top 63px;
+      background-size: 18vw;
     }
 }
 
@@ -560,6 +561,7 @@ li{
     @include mq(lg) {
       background-image: url("/image/pc/02\ \(pc\).png");
       background-position: left 256px top 33px;
+      background-size: 21vw;
     }
 }
 
@@ -574,11 +576,24 @@ li{
     @include mq(lg) {
       background-image: url("/image/pc/03\ \(pc\).png");
       background-position: right 1px top 31px;
+      background-size: 21vw;
     }
 }
-
-.about-text-wrapper{
-    
+// about-text-wrapper
+.about-text-wrapper01{
+@include mq(lg) {
+  width: 1000px / 563px * 100vw;
+}    
+}
+.about-text-wrapper02{
+@include mq(lg) {
+    width: 1000px / 565px * 100vw;
+}    
+}
+.about-text-wrapper03{
+@include mq(lg) {
+    width: 1000px / 578px * 100vw;
+}    
 }
 
 // about-heading
@@ -744,7 +759,7 @@ li{
 
         @include mq(lg) {
             padding-bottom: 53px;
-            width: 450px;
+            width: 31vw;
         }
 
     }
@@ -761,7 +776,7 @@ li{
 
         @include mq(lg) {
             padding-bottom: 53px;
-            width: 450px;
+            width: 31vw;
         }
 
     }
@@ -781,7 +796,7 @@ li{
         @include mq(lg) {
             padding-bottom: 53px;
             padding-right: 0;
-            width: 450px;
+            width: 31vw;
         }
     }
 }
@@ -1287,7 +1302,8 @@ li{
         height: 280px;
         margin-right: 8px;
         right: 4px;
-        width: 524px;
+        // width: 524px;
+        width: 36vw;
 
         &::before{
             border: 1px solid #333;
@@ -1398,7 +1414,8 @@ li{
         bottom: 98px;
         height: 280px;
         margin-left: -10px;
-        width: 524px;
+        // width: 524px;
+        width: 36vw;
 
         &::before{
             border: 1px solid #333;
