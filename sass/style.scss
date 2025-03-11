@@ -131,18 +131,18 @@ li{
 
 .nav_header-lists{
     display: flex; /* 横並びにする */
-    gap: 20px; /* リストアイテム間の均等な間隔 */
+    gap: 1.3888888888888888vw;
     justify-content: flex-end; /* 右寄せにする */
     margin-bottom: 6px;
     margin-left: 65px;
 
     @include mq(md) {
-      gap: 30px;
+      gap: 2.083333333333333vw;
     }
 
     @include mq(lg) {
-      gap: 40px;
-      margin-top: -5px;
+        gap: 2.7777777777777777vw;
+        margin-top: -5px;
     }
 }
 
@@ -152,7 +152,7 @@ li{
     a{
         color: $font-white;
         font-family: $font-reross;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
         letter-spacing: 0.42px;
 
@@ -161,11 +161,11 @@ li{
         }
 
         @include mq(md) {
-          font-size: 16px;
+          font-size: 1rem;
         }
 
         @include mq(lg) {
-            font-size: 18px;
+            font-size: 1.125rem;
             letter-spacing: 0.54px;
         }
 
@@ -207,26 +207,28 @@ li{
 
     @include mq(lg) {
         // background-image: url("/image/pc/img_mv (PC).png");
-        background-size: contain;
-        background-position: left 25vw center;
-        height: 650px;
+        background-size: 75%;
+        // background-position: left 25vw center;
+        background-position: right;
+        // height: 650px;
+        height: 45.13888888888889vw;
     }
 }
 
 .mv-texts__en {
     color: $font-white;
     font-family: $font-reross;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     padding-left: 19px;
 
     @include mq(md) {
-        font-size: calc((36px + 100px) / 2);
+        font-size: calc((2.25rem + 6.25rem) / 2);
         padding-left: calc((19px + 178px) / 2);
     }
 
     @include mq(lg) {
-        font-size: 100px;
+        font-size: 6.25rem;
         line-height: 100px;
         padding-left: 178px;
     }
@@ -254,18 +256,18 @@ li{
 .salad {
     color: $accent-color;
     font-family: $font-reross;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 36px;
     margin-top: -6px;
 
     @include mq(md) {
-        font-size: calc((36px + 100px) / 2);
+        font-size: calc((2.25rem + 6.25rem) / 2);
         margin-top: calc((-6px + 1px) / 2);
     }
 
     @include mq(lg) {
-        font-size: 100px;
+        font-size: 6.25rem;
         line-height: 100px;
         margin-top: 1px;
     }
@@ -277,18 +279,18 @@ li{
 
 .mv-texts__jp {
     color: #FFF;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     letter-spacing: 0.7px;
     padding-left: 17px;
 
     @include mq(md) {
-        font-size: calc((14px + 32px) / 2);
+        font-size: calc((0.875rem + 2rem) / 2);
         padding-left: calc((17px + 180px) / 2);
     }
 
     @include mq(lg) {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 700;
         letter-spacing: 1.6px;
         margin-top: 24px;
@@ -365,7 +367,7 @@ li{
 
 .concept-title{
     color: $font-white;
-    font-size: 20px; 
+    font-size: 1.25rem; 
     letter-spacing: 1px;
     line-height: 150%;
     padding-bottom: 24px;
@@ -373,13 +375,13 @@ li{
     text-align: center;
 
     @include mq(md) {
-      font-size: calc((20px + 30px) / 2);
+      font-size: calc((1.25rem + 1.875rem) / 2);
       padding-bottom: 36px;
       padding-left: calc((17px + 3px) / 2);
     }
 
     @include mq(lg) {
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 700;
         letter-spacing: 1.5px;
         padding-bottom: 48px;
@@ -389,18 +391,18 @@ li{
 
 .concept-texts{
     color: $font-white;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400; 
     letter-spacing: 0.48px;
     line-height: 150%;
     text-align: center;
 
     @include mq(md) {
-      font-size: 17px;
+      font-size: 1.0625rem;
     }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.54px;
     }
 }
@@ -435,7 +437,7 @@ li{
 
 .about-subtitle{
     color: $accent-color;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 0.7px;
     margin: 0 auto;
@@ -445,11 +447,11 @@ li{
     text-align: center;
 
     @include mq(md) {
-      font-size: 16px;
+      font-size: 1rem;
     }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.9px;
         padding-right: 2px;
     }
@@ -458,7 +460,7 @@ li{
 .about-title{
     color: $font-black;
     font-family: $font-reross;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.6px;
     margin-bottom: 56px;
@@ -469,11 +471,11 @@ li{
     text-align: center;
 
     @include mq(md) {
-      font-size: calc((32px + 48px) / 2);
+      font-size: calc((2rem + 3rem) / 2);
     }
 
     @include mq(lg) {
-        font-size: 48px;
+        font-size: 3rem;
         letter-spacing: 2.4px;
         padding-right: 2px;
     }
@@ -599,26 +601,26 @@ li{
 // about-heading
 .about-heading{
     color: $font-black;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1.2px;
     padding-bottom: 16px;
     padding-left: 9px;
 
     @include mq(lg) {
-        font-size: 30px;
+        font-size: 1.875rem;
         letter-spacing: 1.5px;
         padding-left: 0;
     }
 
     span{
         color: $accent-color;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
         letter-spacing: 1.2px;
 
         @include mq(lg) {
-            font-size: 30px;
+            font-size: 1.875rem;
             letter-spacing: 1.5px;
         }
     }
@@ -655,7 +657,7 @@ li{
 // about-text
 .about-text{
     color: $font-black;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400; 
     letter-spacing: 0.48px;
     line-height: 150%;
@@ -664,7 +666,7 @@ li{
     text-align: justify;
     
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.54px;
         padding-left: 0;
     }
@@ -838,17 +840,17 @@ li{
 
 .menu-title__jp{
     color: #FFF;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-bottom: 7px;
 
     @include mq(md) {
-      font-size: 16px;
+      font-size: 1rem;
     }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.9px;
         padding-left: 5px;
     }
@@ -858,17 +860,17 @@ li{
 .menu-title__en{
     color: #FFF;
     font-family: $font-reross;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.6px;
     position: relative;
 
     @include mq(md) {
-      font-size: calc((32px + 48px) / 2);
+      font-size: calc((2rem + 3rem) / 2);
     }
 
     @include mq(lg) {
-        font-size: 48px;
+        font-size: 3rem;
         letter-spacing: 2.4px;
         padding-bottom: 7px;
         padding-left: 7px;
@@ -903,7 +905,7 @@ li{
 
 .menu-text-pfc{
     color: #FFF;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.48px;
     margin-bottom: 19px;
@@ -915,7 +917,7 @@ li{
     }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.54px;
         margin-bottom: 122px;
         margin-top: 43px;
@@ -924,17 +926,17 @@ li{
 
 .menu-card__title{
     color: #333;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 2.4px;
     padding-bottom: 16px;
 
     @include mq(md) {
-      font-size: 27px;
+      font-size: 1.6875rem;
     }
 
     @include mq(lg) {
-        font-size: 30px;
+        font-size: 1.875rem;
         letter-spacing: 3px;
     }
 }
@@ -946,16 +948,16 @@ li{
 .menu-card__price-en{
     color: #333;
     font-family: $font-reross;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     letter-spacing: 1.8px;
 
     @include mq(md) {
-      font-size: calc((18px + 24px) / 2);
+      font-size: calc((1.125rem + 1.5rem) / 2);
     }
 
     @include mq(lg) {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: 2.4px;
         padding-right: 8px;
     }
@@ -964,32 +966,32 @@ li{
 .menu-card__price-price{
     color: #333;
     font-family: $font-reross;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     letter-spacing: 3px;
 
     @include mq(md) {
-      font-size: 35px;
+      font-size: 2.1875rem;
     }
 
     @include mq(lg) {
-        font-size: 40px;
+        font-size: 2.5rem;
         letter-spacing: 4px;
     }
 }
 
 .menu-card__price-tax{
     color: #333;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 1.2px;
 
     @include mq(md) {
-        font-size: 15px;  
+        font-size: 0.9375rem;  
     }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 1.8px;
     }
 }
@@ -1096,13 +1098,13 @@ li{
 .menu-card1__Recommendation-en{
     color: #FFF;
     font-family: $font-satisfy;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
     letter-spacing: 0.36px;
     margin-top: 37px;
 
     @include mq(lg) {
-        font-size: 14px;
+        font-size: 0.875rem;
         letter-spacing: 0.42px;
         margin-left: 2px;
         margin-top: 7px;
@@ -1111,16 +1113,16 @@ li{
 
 .menu-card1__Recommendation-jp{
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     letter-spacing: 0.54px;
 
     @include mq(md) {
-        font-size: calc((18px + 24px) / 2);
+        font-size: calc((1.125rem + 1.5rem) / 2);
       }
 
     @include mq(lg) {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: 0.72px;
         margin-left: 5px;
     }
@@ -1128,7 +1130,7 @@ li{
 
 .menu-card1__title{
     color: #333;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700; 
     letter-spacing: 2.4px;
     line-height: 150%;
@@ -1136,7 +1138,7 @@ li{
     padding-top: 124px;
 
     @include mq(lg) {
-        font-size: 30px;
+        font-size: 1.875rem;
         letter-spacing: 3px;
         padding-bottom: 5px;
         padding-left: 2px;
@@ -1159,16 +1161,16 @@ li{
 .menu-card1__price-en{
     color: #333;
     font-family: $font-reross;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     letter-spacing: 1.8px;
 
     @include mq(md) {
-        font-size: calc((18px + 24px) / 2);
+        font-size: calc((1.125rem + 1.5rem) / 2);
       }
 
     @include mq(lg) {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: 2.4px;
         padding-right: 5px;
     }
@@ -1177,15 +1179,15 @@ li{
 .menu-card1__price-price{
     color: #333;
     font-family: $font-reross;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     letter-spacing: 3px;
     @include mq(md) {
-        font-size: calc((30px + 40px) / 2);
+        font-size: calc((1.875rem + 2.5rem) / 2);
       }
 
     @include mq(lg) {
-        font-size: 40px;
+        font-size: 2.5rem;
         letter-spacing: 4px;
     }
     
@@ -1193,7 +1195,7 @@ li{
 
 .menu-card1__price-tax{
     color: #333;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 1.2px;
     @include mq(md) {
@@ -1201,7 +1203,7 @@ li{
       }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 1.8px;
         padding-left: 4px;
 
@@ -1215,7 +1217,7 @@ li{
 .menu-card1__text{ 
     color: #333;
     display: flex;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     justify-content: space-between;
     letter-spacing: 0.42px;
@@ -1223,11 +1225,11 @@ li{
     margin-right: 21px;
     padding-top: 1px;
     @include mq(md) {
-      font-size: calc((14px + 24px) / 2);
+      font-size: calc((0.875rem + 15rem) / 2);
     }
 
     @include mq(lg) {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: 0.72px;
         margin-left: 76px;
         margin-right: 75px;
@@ -1342,7 +1344,7 @@ li{
 .menu-card2__text{ 
     color: #333;
     display: flex;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     justify-content: space-between;
     letter-spacing: 0.42px;
@@ -1350,11 +1352,11 @@ li{
     padding-top: 1px;
 
     @include mq(md) {
-        font-size: calc((14px + 24px) / 2);
+        font-size: calc((0.875rem + 1.5rem) / 2);
       }
 
     @include mq(lg) {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: 0.72px;
         margin-left: 43px;
         margin-right: 40px;
@@ -1451,7 +1453,7 @@ li{
 .menu-card3__text{ 
     color: #333;
     display: flex;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     justify-content: space-between;
     letter-spacing: 0.42px;
@@ -1459,11 +1461,11 @@ li{
     padding-top: 1px;
 
     @include mq(md) {
-        font-size: calc((14px + 24px) / 2);
+        font-size: calc((0.875rem + 1.5rem) / 2);
       }
 
     @include mq(lg) {
-        font-size: 24px;
+        font-size: 1.5rem;
         letter-spacing: 0.72px;
         margin-left: 42px;
         margin-right: 41px;
@@ -1522,13 +1524,13 @@ li{
 .instagram-card__title-en{
     color: #FFF;
     font-family: $font-reross;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 1.2px;
     padding: 7px 34px 11px;
 
     @include mq(lg) {
-        font-size: 30px;
+        font-size: 1.875rem;
         letter-spacing: 1.5px;
         padding-bottom: 19px;
         padding-top: 14px;
@@ -1537,7 +1539,7 @@ li{
 
 .instagram-card__text {
     color: #333;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.8px;
     padding: 0 32px 22px;
@@ -1549,7 +1551,7 @@ li{
     }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.9px;
         padding: 27px 42px 34px 46px;
         text-align: center;
@@ -1627,7 +1629,7 @@ li{
 
 .instagram-card__ID{
     color: #333;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     padding-bottom: 25px;
     padding-right: 13px;
@@ -1635,7 +1637,7 @@ li{
 
     
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         padding-bottom: 26px;
         padding-top: 7px;
     }
@@ -1647,7 +1649,7 @@ li{
     color: #333;
     cursor: pointer;
     display: inline-flex;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.48px;
     margin: 0 20px 34px;
@@ -1667,7 +1669,7 @@ li{
     }
 
     @include mq(lg) {
-        font-size: 16px;
+        font-size: 1rem;
         margin-right: 18px;
         padding: 13px 77px 17px 58px;
     }
@@ -1713,13 +1715,13 @@ li{
 
 .shop-title__jp{
     color: #159741;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 0.7px;
     text-align: center;
     
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.9px;
         padding-right: 5px;
     }
@@ -1727,7 +1729,7 @@ li{
 
 .shop-title__en{
     font-family: $font-reross;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.6px;
     padding-bottom: 68px;
@@ -1736,11 +1738,11 @@ li{
     text-align: center;
 
     @include mq(md) {
-        font-size: calc((32px + 48px) / 2);
+        font-size: calc((2rem + 3rem) / 2);
       }
 
     @include mq(lg) {
-        font-size: 48px;
+        font-size: 3rem;
         letter-spacing: 2.4px;
         padding-right: 5px;
         padding-top: 8px;
@@ -1811,7 +1813,7 @@ li{
 
 .shop-name{
     font-family: $font-reross;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400; 
     letter-spacing: 0.96px;
     line-height: 100%;
@@ -1824,7 +1826,7 @@ li{
 
     span{
         font-family: $font-reross;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
         line-height: 100%; 
         padding-right: 4px;
@@ -1833,7 +1835,7 @@ li{
         @include mq(lg) {
             color: #333;
             font-family: Reross;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -1843,14 +1845,14 @@ li{
 }
 
 .shop-ruby{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.48px;
     padding-bottom: 24px;
     text-align: center;
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.54px;
         margin-left: -1px;
         margin-top: 6px;
@@ -1866,7 +1868,7 @@ li{
 }
 
 .shop-adress{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.48px;
     line-height: 170%;
@@ -1875,7 +1877,7 @@ li{
     padding-top: 2px;
 
     @include mq(lg) {
-        font-size: 18px; 
+        font-size: 1.125rem; 
         letter-spacing: 0.54px;
         line-height: 200%;
         padding-bottom: 1px;
@@ -1884,7 +1886,7 @@ li{
 }
 
 .shop-information{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.48px;
     line-height: 170%;
@@ -1893,21 +1895,21 @@ li{
     padding-top: 4px;
 
     @include mq(lg) {
-        font-size: 18px; 
+        font-size: 1.125rem; 
         letter-spacing: 0.54px;
         line-height: 200%;
     }
 }
 
 .shop-table {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.48px;
     line-height: 170%;
     padding: 0 26px 34px;
 
     @include mq(lg) {
             border-collapse: collapse;
-            font-size: 18px;
+            font-size: 1.125rem;
             letter-spacing: 0.54px;
             line-height: 150%;
             margin-left: 15px;
@@ -1996,6 +1998,7 @@ padding: 10px 0;
 
     @include mq(lg) {
         padding: 30px 32px 0 34px;
+        // padding: 3vw 3.2vw .4000000000000004vw;
 
     }
 }
@@ -2007,6 +2010,8 @@ padding: 10px 0;
 
     @include mq(lg) {
       display: flex;
+    //   width: calc(629.568px +  449.691px);
+    // width: calc(43.72vw + 31.228541666666665vw);
     }
 }
 
@@ -2136,17 +2141,17 @@ padding: 10px 0;
 .card-text__title{
     color: #333;
     font-family: $font-satisfy;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     letter-spacing: 1.5px;
 
     @include mq(md) {
-        font-size: calc((30px + 48px) / 2);
+        font-size: calc((11.875rem + 3rem) / 2);
       }
 
     @include mq(lg) {
         float: left;
-        font-size: 48px;
+        font-size: 3rem;
         letter-spacing: 2.4px;
         margin-bottom: 50px;
         margin-right: 50px;
@@ -2157,7 +2162,7 @@ padding: 10px 0;
 .card-text{
     color: #4F4F4F;
     font-family: "Noto Sans JP";
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 250%;
     text-decoration-color: #4F4F4F; 
@@ -2212,12 +2217,10 @@ padding: 10px 0;
 .contact{
 background-image: url("/image/pc/vegetable-background.png");
 background-position: center center;
+@include mq(lg) {
+    background-size: 100% 100%;
 
-// background-size: 100%;
-
-// @include mq(lg) {
-//   background-image: url("/image/pc/vegetable-background.png");
-// }
+}
 }
 
 .contact__inner{
@@ -2244,21 +2247,21 @@ background-position: center center;
 
 .contact-title__jp{
     color: #159741;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 0.7px;
     padding-top: 65px;
     text-align: center;
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.9px;
     }
 }
 
 .contact-title__en{
     font-family: $font-reross;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.6px;
     padding-bottom: 60px;
@@ -2267,11 +2270,11 @@ background-position: center center;
     text-align: center;
 
     @include mq(md) {
-        font-size: calc((32px + 48px) / 2);
+        font-size: calc((2rem + 3rem) / 2);
       }
 
     @include mq(lg) {
-        font-size: 48px;
+        font-size: 3rem;
         letter-spacing: 2.4px;
         padding-bottom: 42px;
         padding-top: 8px;
@@ -2306,7 +2309,7 @@ background-position: center center;
 .contact-text{
     color: #333;
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     justify-content: center;
     letter-spacing: 0.48px;
@@ -2339,11 +2342,11 @@ background-position: center center;
 
         .form-label {
             color: #333;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 400;
 
             @include mq(lg) {
-                font-size: 18px;
+                font-size: 1.125rem;
                 margin-left: 1px;
             }
             
@@ -2352,7 +2355,7 @@ background-position: center center;
                 background: #159741;
                 border-radius: 6px;
                 color: #FFF;
-                font-size: 12px;
+                font-size: 0.75rem;
                 font-weight: 400;
                 margin-left: 6px;
                 padding: 1px 7px 3px 8px;
@@ -2363,7 +2366,7 @@ background-position: center center;
         .form-textarea{
             background: #fff;
             border: 1px solid #2F2F2F;
-            font-size: 16px;
+            font-size: 1rem;
             margin-top: 6px;
             padding: 15px 15px 21px;
             width: 102%;
@@ -2386,7 +2389,7 @@ background-position: center center;
             &::placeholder {
                 color: #BDBDBD;
                 font-family: "Noto Sans JP";
-                font-size: 16px;
+                font-size: 1rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -2412,14 +2415,14 @@ background-position: center center;
 .form-textarea {
     background: #fff;
     border: 1px solid #2F2F2F;
-    font-size: 16px;
+    font-size: 1rem;
     height: 150px;
     max-width: 102%;
     padding: 10px;
 
     &::placeholder {
         color: #BDBDBD;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
       }
 }
@@ -2480,7 +2483,7 @@ input[type="checkbox"] {
 
 .privacy-text-accent{
     color: $accent-color;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400; 
     letter-spacing: 0.8px;
     line-height: 150%;
@@ -2497,7 +2500,7 @@ input[type="checkbox"] {
     }
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         letter-spacing: 0.9px;
     }
 }
@@ -2506,7 +2509,7 @@ input[type="checkbox"] {
     background: $accent-color;
     color: #FFF;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     height: 56px; 
     letter-spacing: 0.9px;
@@ -2662,14 +2665,14 @@ input[type="checkbox"] {
     cursor: pointer;
     display: flex;
     font-family: $font-reross;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     gap: 32px;
     justify-content: center;
     letter-spacing: 0.48px;
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         gap: 40px;
         justify-content: center;;
         letter-spacing: 0.54px;
@@ -2697,7 +2700,7 @@ input[type="checkbox"] {
 
 .footer-text{
     color: #333;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
     letter-spacing: 0.36px;
     padding-top: 23px;
@@ -2773,14 +2776,14 @@ input[type="checkbox"] {
 
   .privacy-title__jp{
       color: $accent-color;
-      font-size: 12px;
+      font-size: 0.75rem;
       font-weight: 400;
       letter-spacing: 0.7px;
       padding-top: 64px;
       text-align: center;
 
       @include mq(lg) {
-          font-size: 18px;
+          font-size: 1.125rem;
           letter-spacing: 0.9px;
           padding-top: 10px;
       }
@@ -2788,7 +2791,7 @@ input[type="checkbox"] {
 
   .privacy-title__en{
       font-family: $font-reross;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 400;
       letter-spacing: 1.6px;
       padding-bottom: 58px;
@@ -2797,7 +2800,7 @@ input[type="checkbox"] {
       text-align: center;
 
       @include mq(lg) {
-          font-size: 48px;
+          font-size: 3rem;
           letter-spacing: 2.4px;
           padding-bottom: 42px;
           padding-top: 8px;
@@ -2832,7 +2835,7 @@ input[type="checkbox"] {
   .privacy-text{
     color: #000;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     left: 3px;
     line-height: 150%; /* 24px */
@@ -2843,7 +2846,7 @@ input[type="checkbox"] {
     top: -1px;
 
     @include mq(lg) {
-        font-size: 18px;
+        font-size: 1.125rem;
         left: -9px;
         letter-spacing: 0.9px;
         right: 0;
@@ -2852,7 +2855,7 @@ input[type="checkbox"] {
 
     // margin: 0 20px;
     h3{
-        font-size: 18px;
+        font-size: 1.125rem;
         margin: 0 auto;
         margin-top: 20px;
         padding: 10px 0;

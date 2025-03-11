@@ -83,19 +83,19 @@ li {
 
 .nav_header-lists {
   display: flex; /* 横並びにする */
-  gap: 20px; /* リストアイテム間の均等な間隔 */
+  gap: 1.3888888889vw;
   justify-content: flex-end; /* 右寄せにする */
   margin-bottom: 6px;
   margin-left: 65px;
 }
 @media (min-width: 600px) {
   .nav_header-lists {
-    gap: 30px;
+    gap: 2.0833333333vw;
   }
 }
 @media (min-width: 1000px) {
   .nav_header-lists {
-    gap: 40px;
+    gap: 2.7777777778vw;
     margin-top: -5px;
   }
 }
@@ -106,7 +106,7 @@ li {
 .nav_header-list a {
   color: #FFF;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.42px;
 }
@@ -115,12 +115,12 @@ li {
 }
 @media (min-width: 600px) {
   .nav_header-list a {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1000px) {
   .nav_header-list a {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
   }
 }
@@ -160,28 +160,28 @@ li {
 }
 @media (min-width: 1000px) {
   .mv-bg-image {
-    background-size: contain;
-    background-position: left 25vw center;
-    height: 650px;
+    background-size: 75%;
+    background-position: right;
+    height: 45.1388888889vw;
   }
 }
 
 .mv-texts__en {
   color: #FFF;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   padding-left: 19px;
 }
 @media (min-width: 600px) {
   .mv-texts__en {
-    font-size: 68px;
+    font-size: 4.25rem;
     padding-left: 98.5px;
   }
 }
 @media (min-width: 1000px) {
   .mv-texts__en {
-    font-size: 100px;
+    font-size: 6.25rem;
     line-height: 100px;
     padding-left: 178px;
   }
@@ -207,20 +207,20 @@ li {
 .salad {
   color: #159741;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   line-height: 36px;
   margin-top: -6px;
 }
 @media (min-width: 600px) {
   .salad {
-    font-size: 68px;
+    font-size: 4.25rem;
     margin-top: -2.5px;
   }
 }
 @media (min-width: 1000px) {
   .salad {
-    font-size: 100px;
+    font-size: 6.25rem;
     line-height: 100px;
     margin-top: 1px;
   }
@@ -231,20 +231,20 @@ li {
 
 .mv-texts__jp {
   color: #FFF;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.7px;
   padding-left: 17px;
 }
 @media (min-width: 600px) {
   .mv-texts__jp {
-    font-size: 23px;
+    font-size: 1.4375rem;
     padding-left: 98.5px;
   }
 }
 @media (min-width: 1000px) {
   .mv-texts__jp {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.6px;
     margin-top: 24px;
@@ -324,7 +324,7 @@ li {
 
 .concept-title {
   color: #FFF;
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 1px;
   line-height: 150%;
   padding-bottom: 24px;
@@ -333,14 +333,14 @@ li {
 }
 @media (min-width: 600px) {
   .concept-title {
-    font-size: 25px;
+    font-size: 1.5625rem;
     padding-bottom: 36px;
     padding-left: 10px;
   }
 }
 @media (min-width: 1000px) {
   .concept-title {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     padding-bottom: 48px;
@@ -350,7 +350,7 @@ li {
 
 .concept-texts {
   color: #FFF;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.48px;
   line-height: 150%;
@@ -358,12 +358,12 @@ li {
 }
 @media (min-width: 600px) {
   .concept-texts {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 }
 @media (min-width: 1000px) {
   .concept-texts {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
   }
 }
@@ -400,7 +400,7 @@ li {
 
 .about-subtitle {
   color: #159741;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.7px;
   margin: 0 auto;
@@ -411,12 +411,12 @@ li {
 }
 @media (min-width: 600px) {
   .about-subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1000px) {
   .about-subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
     padding-right: 2px;
   }
@@ -425,7 +425,7 @@ li {
 .about-title {
   color: #333;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.6px;
   margin-bottom: 56px;
@@ -437,12 +437,12 @@ li {
 }
 @media (min-width: 600px) {
   .about-title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1000px) {
   .about-title {
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 2.4px;
     padding-right: 2px;
   }
@@ -572,7 +572,7 @@ li {
 
 .about-heading {
   color: #333;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.2px;
   padding-bottom: 16px;
@@ -580,20 +580,20 @@ li {
 }
 @media (min-width: 1000px) {
   .about-heading {
-    font-size: 30px;
+    font-size: 1.875rem;
     letter-spacing: 1.5px;
     padding-left: 0;
   }
 }
 .about-heading span {
   color: #159741;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.2px;
 }
 @media (min-width: 1000px) {
   .about-heading span {
-    font-size: 30px;
+    font-size: 1.875rem;
     letter-spacing: 1.5px;
   }
 }
@@ -630,7 +630,7 @@ li {
 
 .about-text {
   color: #333;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.48px;
   line-height: 150%;
@@ -640,7 +640,7 @@ li {
 }
 @media (min-width: 1000px) {
   .about-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
     padding-left: 0;
   }
@@ -806,19 +806,19 @@ li {
 
 .menu-title__jp {
   color: #FFF;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.7px;
   padding-bottom: 7px;
 }
 @media (min-width: 600px) {
   .menu-title__jp {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-title__jp {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
     padding-left: 5px;
   }
@@ -827,19 +827,19 @@ li {
 .menu-title__en {
   color: #FFF;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.6px;
   position: relative;
 }
 @media (min-width: 600px) {
   .menu-title__en {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-title__en {
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 2.4px;
     padding-bottom: 7px;
     padding-left: 7px;
@@ -864,7 +864,7 @@ li {
 
 .menu-text-pfc {
   color: #FFF;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.48px;
   margin-bottom: 19px;
@@ -878,7 +878,7 @@ li {
 }
 @media (min-width: 1000px) {
   .menu-text-pfc {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
     margin-bottom: 122px;
     margin-top: 43px;
@@ -887,19 +887,19 @@ li {
 
 .menu-card__title {
   color: #333;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 2.4px;
   padding-bottom: 16px;
 }
 @media (min-width: 600px) {
   .menu-card__title {
-    font-size: 27px;
+    font-size: 1.6875rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card__title {
-    font-size: 30px;
+    font-size: 1.875rem;
     letter-spacing: 3px;
   }
 }
@@ -911,18 +911,18 @@ li {
 .menu-card__price-en {
   color: #333;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 1.8px;
 }
 @media (min-width: 600px) {
   .menu-card__price-en {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card__price-en {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 2.4px;
     padding-right: 8px;
   }
@@ -931,36 +931,36 @@ li {
 .menu-card__price-price {
   color: #333;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
   letter-spacing: 3px;
 }
 @media (min-width: 600px) {
   .menu-card__price-price {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card__price-price {
-    font-size: 40px;
+    font-size: 2.5rem;
     letter-spacing: 4px;
   }
 }
 
 .menu-card__price-tax {
   color: #333;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 1.2px;
 }
 @media (min-width: 600px) {
   .menu-card__price-tax {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card__price-tax {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 1.8px;
   }
 }
@@ -1065,14 +1065,14 @@ li {
 .menu-card1__Recommendation-en {
   color: #FFF;
   font-family: "Satisfy", serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.36px;
   margin-top: 37px;
 }
 @media (min-width: 1000px) {
   .menu-card1__Recommendation-en {
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 0.42px;
     margin-left: 2px;
     margin-top: 7px;
@@ -1081,18 +1081,18 @@ li {
 
 .menu-card1__Recommendation-jp {
   color: #FFF;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: 0.54px;
 }
 @media (min-width: 600px) {
   .menu-card1__Recommendation-jp {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card1__Recommendation-jp {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.72px;
     margin-left: 5px;
   }
@@ -1100,7 +1100,7 @@ li {
 
 .menu-card1__title {
   color: #333;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 2.4px;
   line-height: 150%;
@@ -1109,7 +1109,7 @@ li {
 }
 @media (min-width: 1000px) {
   .menu-card1__title {
-    font-size: 30px;
+    font-size: 1.875rem;
     letter-spacing: 3px;
     padding-bottom: 5px;
     padding-left: 2px;
@@ -1132,18 +1132,18 @@ li {
 .menu-card1__price-en {
   color: #333;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 1.8px;
 }
 @media (min-width: 600px) {
   .menu-card1__price-en {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card1__price-en {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 2.4px;
     padding-right: 5px;
   }
@@ -1152,25 +1152,25 @@ li {
 .menu-card1__price-price {
   color: #333;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
   letter-spacing: 3px;
 }
 @media (min-width: 600px) {
   .menu-card1__price-price {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card1__price-price {
-    font-size: 40px;
+    font-size: 2.5rem;
     letter-spacing: 4px;
   }
 }
 
 .menu-card1__price-tax {
   color: #333;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 1.2px;
 }
@@ -1181,7 +1181,7 @@ li {
 }
 @media (min-width: 1000px) {
   .menu-card1__price-tax {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 1.8px;
     padding-left: 4px;
   }
@@ -1190,7 +1190,7 @@ li {
 .menu-card1__text {
   color: #333;
   display: flex;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   justify-content: space-between;
   letter-spacing: 0.42px;
@@ -1200,12 +1200,12 @@ li {
 }
 @media (min-width: 600px) {
   .menu-card1__text {
-    font-size: 19px;
+    font-size: 7.9375rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card1__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.72px;
     margin-left: 76px;
     margin-right: 75px;
@@ -1319,7 +1319,7 @@ li {
 .menu-card2__text {
   color: #333;
   display: flex;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   justify-content: space-between;
   letter-spacing: 0.42px;
@@ -1328,12 +1328,12 @@ li {
 }
 @media (min-width: 600px) {
   .menu-card2__text {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card2__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.72px;
     margin-left: 43px;
     margin-right: 40px;
@@ -1425,7 +1425,7 @@ li {
 .menu-card3__text {
   color: #333;
   display: flex;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   justify-content: space-between;
   letter-spacing: 0.42px;
@@ -1434,12 +1434,12 @@ li {
 }
 @media (min-width: 600px) {
   .menu-card3__text {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 }
 @media (min-width: 1000px) {
   .menu-card3__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.72px;
     margin-left: 42px;
     margin-right: 41px;
@@ -1494,14 +1494,14 @@ li {
 .instagram-card__title-en {
   color: #FFF;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 1.2px;
   padding: 7px 34px 11px;
 }
 @media (min-width: 1000px) {
   .instagram-card__title-en {
-    font-size: 30px;
+    font-size: 1.875rem;
     letter-spacing: 1.5px;
     padding-bottom: 19px;
     padding-top: 14px;
@@ -1510,7 +1510,7 @@ li {
 
 .instagram-card__text {
   color: #333;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.8px;
   padding: 0 32px 22px;
@@ -1522,7 +1522,7 @@ li {
 }
 @media (min-width: 1000px) {
   .instagram-card__text {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
     padding: 27px 42px 34px 46px;
     text-align: center;
@@ -1598,7 +1598,7 @@ li {
 
 .instagram-card__ID {
   color: #333;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   padding-bottom: 25px;
   padding-right: 13px;
@@ -1606,7 +1606,7 @@ li {
 }
 @media (min-width: 1000px) {
   .instagram-card__ID {
-    font-size: 18px;
+    font-size: 1.125rem;
     padding-bottom: 26px;
     padding-top: 7px;
   }
@@ -1618,7 +1618,7 @@ li {
   color: #333;
   cursor: pointer;
   display: inline-flex;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.48px;
   margin: 0 20px 34px;
@@ -1637,7 +1637,7 @@ li {
 }
 @media (min-width: 1000px) {
   .instagram-card__btn-text {
-    font-size: 16px;
+    font-size: 1rem;
     margin-right: 18px;
     padding: 13px 77px 17px 58px;
   }
@@ -1677,14 +1677,14 @@ li {
 
 .shop-title__jp {
   color: #159741;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.7px;
   text-align: center;
 }
 @media (min-width: 1000px) {
   .shop-title__jp {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
     padding-right: 5px;
   }
@@ -1692,7 +1692,7 @@ li {
 
 .shop-title__en {
   font-family: "reross-quadratic", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.6px;
   padding-bottom: 68px;
@@ -1702,12 +1702,12 @@ li {
 }
 @media (min-width: 600px) {
   .shop-title__en {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1000px) {
   .shop-title__en {
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 2.4px;
     padding-right: 5px;
     padding-top: 8px;
@@ -1774,7 +1774,7 @@ li {
 
 .shop-name {
   font-family: "reross-quadratic", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.96px;
   line-height: 100%;
@@ -1788,7 +1788,7 @@ li {
 }
 .shop-name span {
   font-family: "reross-quadratic", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 100%;
   padding-right: 4px;
@@ -1798,7 +1798,7 @@ li {
   .shop-name span {
     color: #333;
     font-family: Reross;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1807,7 +1807,7 @@ li {
 }
 
 .shop-ruby {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.48px;
   padding-bottom: 24px;
@@ -1815,7 +1815,7 @@ li {
 }
 @media (min-width: 1000px) {
   .shop-ruby {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
     margin-left: -1px;
     margin-top: 6px;
@@ -1831,7 +1831,7 @@ li {
 }
 
 .shop-adress {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.48px;
   line-height: 170%;
@@ -1841,7 +1841,7 @@ li {
 }
 @media (min-width: 1000px) {
   .shop-adress {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
     line-height: 200%;
     padding-bottom: 1px;
@@ -1850,7 +1850,7 @@ li {
 }
 
 .shop-information {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.48px;
   line-height: 170%;
@@ -1860,14 +1860,14 @@ li {
 }
 @media (min-width: 1000px) {
   .shop-information {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
     line-height: 200%;
   }
 }
 
 .shop-table {
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.48px;
   line-height: 170%;
   padding: 0 26px 34px;
@@ -1875,7 +1875,7 @@ li {
 @media (min-width: 1000px) {
   .shop-table {
     border-collapse: collapse;
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.54px;
     line-height: 150%;
     margin-left: 15px;
@@ -2107,19 +2107,19 @@ li {
 .card-text__title {
   color: #333;
   font-family: "Satisfy", serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
 @media (min-width: 600px) {
   .card-text__title {
-    font-size: 39px;
+    font-size: 7.4375rem;
   }
 }
 @media (min-width: 1000px) {
   .card-text__title {
     float: left;
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 2.4px;
     margin-bottom: 50px;
     margin-right: 50px;
@@ -2130,7 +2130,7 @@ li {
 .card-text {
   color: #4F4F4F;
   font-family: "Noto Sans JP";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 250%;
   text-decoration-color: #4F4F4F;
@@ -2186,6 +2186,11 @@ li {
   background-image: url("/image/pc/vegetable-background.png");
   background-position: center center;
 }
+@media (min-width: 1000px) {
+  .contact {
+    background-size: 100% 100%;
+  }
+}
 
 .contact__inner {
   padding: 62px 16px 64px;
@@ -2209,7 +2214,7 @@ li {
 
 .contact-title__jp {
   color: #159741;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.7px;
   padding-top: 65px;
@@ -2217,14 +2222,14 @@ li {
 }
 @media (min-width: 1000px) {
   .contact-title__jp {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
   }
 }
 
 .contact-title__en {
   font-family: "reross-quadratic", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.6px;
   padding-bottom: 60px;
@@ -2234,12 +2239,12 @@ li {
 }
 @media (min-width: 600px) {
   .contact-title__en {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1000px) {
   .contact-title__en {
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 2.4px;
     padding-bottom: 42px;
     padding-top: 8px;
@@ -2270,7 +2275,7 @@ li {
 .contact-text {
   color: #333;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   justify-content: center;
   letter-spacing: 0.48px;
@@ -2305,12 +2310,12 @@ li {
 }
 .contact-form .form-group .form-label {
   color: #333;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 @media (min-width: 1000px) {
   .contact-form .form-group .form-label {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-left: 1px;
   }
 }
@@ -2318,7 +2323,7 @@ li {
   background: #159741;
   border-radius: 6px;
   color: #FFF;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   margin-left: 6px;
   padding: 1px 7px 3px 8px;
@@ -2327,7 +2332,7 @@ li {
 .contact-form .form-group .form-textarea {
   background: #fff;
   border: 1px solid #2F2F2F;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 6px;
   padding: 15px 15px 21px;
   width: 102%;
@@ -2352,7 +2357,7 @@ li {
 .contact-form .form-group .form-input::-moz-placeholder, .contact-form .form-group .form-textarea::-moz-placeholder {
   color: #BDBDBD;
   font-family: "Noto Sans JP";
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2362,7 +2367,7 @@ li {
 .contact-form .form-group .form-textarea::placeholder {
   color: #BDBDBD;
   font-family: "Noto Sans JP";
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2385,19 +2390,19 @@ li {
 .form-textarea {
   background: #fff;
   border: 1px solid #2F2F2F;
-  font-size: 16px;
+  font-size: 1rem;
   height: 150px;
   max-width: 102%;
   padding: 10px;
 }
 .form-textarea::-moz-placeholder {
   color: #BDBDBD;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .form-textarea::placeholder {
   color: #BDBDBD;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -2457,7 +2462,7 @@ input[type=checkbox]:checked::after {
 
 .privacy-text-accent {
   color: #159741;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.8px;
   line-height: 150%;
@@ -2475,7 +2480,7 @@ input[type=checkbox]:checked::after {
 }
 @media (min-width: 1000px) {
   .privacy-text-accent {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
   }
 }
@@ -2484,7 +2489,7 @@ input[type=checkbox]:checked::after {
   background: #159741;
   color: #FFF;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   height: 56px;
   letter-spacing: 0.9px;
@@ -2608,7 +2613,7 @@ input[type=checkbox]:checked::after {
   cursor: pointer;
   display: flex;
   font-family: "reross-quadratic", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   gap: 32px;
   justify-content: center;
@@ -2616,7 +2621,7 @@ input[type=checkbox]:checked::after {
 }
 @media (min-width: 1000px) {
   .footer-nav {
-    font-size: 18px;
+    font-size: 1.125rem;
     gap: 40px;
     justify-content: center;
     letter-spacing: 0.54px;
@@ -2635,7 +2640,7 @@ input[type=checkbox]:checked::after {
 }
 .footer-text {
   color: #333;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.36px;
   padding-top: 23px;
@@ -2710,7 +2715,7 @@ input[type=checkbox]:checked::after {
 
 .privacy-title__jp {
   color: #159741;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.7px;
   padding-top: 64px;
@@ -2718,7 +2723,7 @@ input[type=checkbox]:checked::after {
 }
 @media (min-width: 1000px) {
   .privacy-title__jp {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.9px;
     padding-top: 10px;
   }
@@ -2726,7 +2731,7 @@ input[type=checkbox]:checked::after {
 
 .privacy-title__en {
   font-family: "reross-quadratic", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 1.6px;
   padding-bottom: 58px;
@@ -2736,7 +2741,7 @@ input[type=checkbox]:checked::after {
 }
 @media (min-width: 1000px) {
   .privacy-title__en {
-    font-size: 48px;
+    font-size: 3rem;
     letter-spacing: 2.4px;
     padding-bottom: 42px;
     padding-top: 8px;
@@ -2767,7 +2772,7 @@ input[type=checkbox]:checked::after {
 .privacy-text {
   color: #000;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   left: 3px;
   line-height: 150%; /* 24px */
@@ -2779,7 +2784,7 @@ input[type=checkbox]:checked::after {
 }
 @media (min-width: 1000px) {
   .privacy-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     left: -9px;
     letter-spacing: 0.9px;
     right: 0;
@@ -2787,7 +2792,7 @@ input[type=checkbox]:checked::after {
   }
 }
 .privacy-text h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0 auto;
   margin-top: 20px;
   padding: 10px 0;
