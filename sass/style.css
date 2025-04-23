@@ -2554,7 +2554,7 @@ input[type=checkbox]:checked::after {
 }
 
 .twitter-icon {
-  background-image: url("image/Twitter(footer).png");
+  background-image: url("/image/Twitter(footer).png");
   background-size: cover;
   display: inline-block;
   height: 50px;
@@ -2814,7 +2814,7 @@ input[type=checkbox]:checked::after {
 
 .parallax {
   background-attachment: fixed;
-  background-image: url("image/salad-1.png");
+  background-image: url("./image/salad-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

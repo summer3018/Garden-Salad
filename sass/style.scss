@@ -17,7 +17,7 @@ $breakpoints: (
   // スマホ用（599px以下）
   md: 600px,
   // タブレット用（600px以上1000px以下）
-  lg: 1000px // PC用（1000px以上）,,,
+  lg: 1000px // PC用（1000px以上）,,,,
 );
 $font-black: #333;
 $font-white: #fff;
@@ -2544,7 +2544,7 @@ input[type="checkbox"] {
 }
 
 .twitter-icon {
-  background-image: url("image/Twitter\(footer\).png");
+  background-image: url("/image/Twitter\(footer\).png");
   background-size: cover;
   display: inline-block;
   height: 50px;
@@ -2835,7 +2835,7 @@ input[type="checkbox"] {
 // parallax
 .parallax {
   background-attachment: fixed;
-  background-image: url("image/salad-1.png");
+  background-image: url("./image/salad-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
