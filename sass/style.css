@@ -286,7 +286,7 @@ li {
 
 .concept {
   background-color: #2f2f2f;
-  background-image: url("/image/sp/pGarden Salad(sp).png");
+  background-image: url("../image/sp/pGarden Salad(sp).png");
   background-position: 6px 274px;
   background-repeat: no-repeat;
   position: relative;
@@ -294,14 +294,14 @@ li {
 }
 @media (min-width: 600px) {
   .concept {
-    background-image: url("/image/pc/Garden Salad(pc).png");
+    background-image: url("../image/pc/Garden Salad(pc).png");
     background-position: bottom;
     background-size: contain;
   }
 }
 @media (min-width: 1000px) {
   .concept {
-    background-image: url("/image/pc/Garden Salad(pc).png");
+    background-image: url("../image/pc/Garden Salad(pc).png");
     background-position: bottom;
   }
 }
@@ -501,7 +501,7 @@ li {
 }
 
 .about-text-bg01 {
-  background-image: url("/image/sp/01.png");
+  background-image: url("../image/sp/01.png");
   background-position: calc(100% - 16px) 45px;
   background-size: 18vw;
 }
@@ -512,14 +512,14 @@ li {
 }
 @media (min-width: 1000px) {
   .about-text-bg01 {
-    background-image: url("/image/pc/01 (pc).png");
+    background-image: url("../image/pc/01 (pc).png");
     background-position: right 38px top 63px;
     background-size: 18vw;
   }
 }
 
 .about-text-bg02 {
-  background-image: url("/image/sp/02.png");
+  background-image: url("../image/sp/02.png");
   background-position: calc(100% - 16px) 79px;
 }
 @media (min-width: 600px) {
@@ -529,14 +529,14 @@ li {
 }
 @media (min-width: 1000px) {
   .about-text-bg02 {
-    background-image: url("/image/pc/02 (pc).png");
+    background-image: url("../image/pc/02 (pc).png");
     background-position: left 32% top 25%;
     background-size: 21vw;
   }
 }
 
 .about-text-bg03 {
-  background-image: url("/image/sp/03.png");
+  background-image: url("../image/sp/03.png");
   background-position: calc(100% - 16px) 68px;
 }
 @media (min-width: 600px) {
@@ -546,7 +546,7 @@ li {
 }
 @media (min-width: 1000px) {
   .about-text-bg03 {
-    background-image: url("/image/pc/03 (pc).png");
+    background-image: url("../image/pc/03 (pc).png");
     background-position: right 1px top 31px;
     background-size: 21vw;
   }
@@ -2186,7 +2186,7 @@ li {
 }
 
 .contact {
-  background-image: url("/image/pc/vegetable-background.png");
+  background-image: url("../image/pc/vegetable-background.png");
   background-position: center center;
 }
 @media (min-width: 1000px) {
@@ -2554,14 +2554,14 @@ input[type=checkbox]:checked::after {
 }
 
 .twitter-icon {
-  background-image: url("/image/Twitter(footer).png");
+  background-image: url("../image/Twitter(footer).png");
   background-size: cover;
   display: inline-block;
   height: 50px;
   width: 50px;
 }
 .twitter-icon:hover {
-  background-image: url("/image/Twitter(hover).png");
+  background-image: url("../image/Twitter(hover).png");
 }
 @media (min-width: 1000px) {
   .twitter-icon {
@@ -2574,14 +2574,14 @@ input[type=checkbox]:checked::after {
 }
 
 .instagram-icon {
-  background-image: url("/image/Instagram(footer).png");
+  background-image: url("../image/Instagram(footer).png");
   background-size: cover;
   display: inline-block;
   height: 50px;
   width: 50px;
 }
 .instagram-icon:hover {
-  background-image: url("/image/Instagram(hover).png");
+  background-image: url("../image/Instagram(hover).png");
 }
 @media (min-width: 1000px) {
   .instagram-icon {
@@ -2594,14 +2594,14 @@ input[type=checkbox]:checked::after {
 }
 
 .tiktok-icon {
-  background-image: url("/image/TikTok(footer).png");
+  background-image: url("../image/TikTok(footer).png");
   background-size: cover;
   display: inline-block;
   height: 50px;
   width: 50px;
 }
 .tiktok-icon:hover {
-  background-image: url("/image/TikTok(hover).png");
+  background-image: url("../image/TikTok(hover).png");
 }
 @media (min-width: 1000px) {
   .tiktok-icon {
@@ -2814,7 +2814,7 @@ input[type=checkbox]:checked::after {
 
 .parallax {
   background-attachment: fixed;
-  background-image: url("./image/salad-1.png");
+  background-image: url("../image/salad-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
