@@ -2186,7 +2186,10 @@ li {
 }
 
 .contact {
-  background-image: url("./image/pc/vegetable-background.png");
+  background-image: url("image/pc/vegetable-background.png");
+  background-image: url("/image/pc/Garden Salad(pc).png");
+  background-image: url("./image/pc/map.png");
+  background-image: url("../image/pc/img_mv.png");
   background-position: center center;
 }
 @media (min-width: 1000px) {
