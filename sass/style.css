@@ -104,7 +104,7 @@ li {
   justify-content: space-between;
 }
 .nav_header-list a {
-  color: #FFF;
+  color: #fff;
   font-family: "reross-quadratic", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
@@ -145,7 +145,7 @@ li {
 }
 
 .mv-bg-image {
-  background-image: url("/image/img_mv .png");
+  background-image: url("./image/img_mv .png");
   background-position: left 18vw top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,7 +167,7 @@ li {
 }
 
 .mv-texts__en {
-  color: #FFF;
+  color: #fff;
   font-family: "reross-quadratic", sans-serif;
   font-size: 2.25rem;
   font-weight: 400;
@@ -226,11 +226,11 @@ li {
   }
 }
 .salad span {
-  color: #FFF;
+  color: #fff;
 }
 
 .mv-texts__jp {
-  color: #FFF;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.7px;
@@ -323,7 +323,7 @@ li {
 }
 
 .concept-title {
-  color: #FFF;
+  color: #fff;
   font-size: 1.25rem;
   letter-spacing: 1px;
   line-height: 150%;
@@ -349,7 +349,7 @@ li {
 }
 
 .concept-texts {
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.48px;
@@ -778,12 +778,12 @@ li {
 }
 
 .menu {
-  background: #2F2F2F;
+  background: #2f2f2f;
   position: relative;
   text-align: center;
 }
 .menu::before {
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   content: "";
   inset: 23px 16px 24px;
   pointer-events: none;
@@ -805,7 +805,7 @@ li {
 }
 
 .menu-title__jp {
-  color: #FFF;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -825,7 +825,7 @@ li {
 }
 
 .menu-title__en {
-  color: #FFF;
+  color: #fff;
   font-family: "reross-quadratic", sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -863,7 +863,7 @@ li {
 }
 
 .menu-text-pfc {
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.48px;
@@ -1004,7 +1004,7 @@ li {
 }
 
 .card1-text__wrapper {
-  background: #F2F2F2;
+  background: #f2f2f2;
   height: 323px;
   margin-bottom: 32px;
   margin-left: 38px;
@@ -1063,7 +1063,7 @@ li {
 }
 
 .menu-card1__Recommendation-en {
-  color: #FFF;
+  color: #fff;
   font-family: "Satisfy", serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -1080,7 +1080,7 @@ li {
 }
 
 .menu-card1__Recommendation-jp {
-  color: #FFF;
+  color: #fff;
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: 0.54px;
@@ -1252,7 +1252,7 @@ li {
 }
 
 .card2-text__wrapper {
-  background: #F2F2F2;
+  background: #f2f2f2;
   bottom: 60px;
   height: 222px;
   margin: 0 auto;
@@ -1363,7 +1363,7 @@ li {
 }
 
 .card3-text__wrapper {
-  background: #F2F2F2;
+  background: #f2f2f2;
   bottom: 60px;
   height: 222px;
   margin: 0 auto;
@@ -1448,7 +1448,7 @@ li {
 }
 
 .instagram-card {
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin-bottom: -31px;
   margin-left: 41px;
   margin-right: 34px;
@@ -1493,7 +1493,7 @@ li {
 }
 
 .instagram-card__title-en {
-  color: #FFF;
+  color: #fff;
   font-family: "reross-quadratic", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -1664,7 +1664,7 @@ li {
 }
 
 .shop {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .shop__inner {
@@ -2129,13 +2129,13 @@ li {
 }
 
 .card-text {
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-family: "Noto Sans JP";
   font-size: 1rem;
   font-weight: 400;
   line-height: 250%;
-  -webkit-text-decoration-color: #4F4F4F;
-          text-decoration-color: #4F4F4F;
+  -webkit-text-decoration-color: #4f4f4f;
+          text-decoration-color: #4f4f4f;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   text-decoration-thickness: 1px;
@@ -2205,7 +2205,7 @@ li {
 }
 
 .contact__wrapper {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 @media (min-width: 1000px) {
   .contact__wrapper {
@@ -2325,7 +2325,7 @@ li {
 .contact-form .form-group .form-label .required {
   background: #159741;
   border-radius: 6px;
-  color: #FFF;
+  color: #fff;
   font-size: 0.75rem;
   font-weight: 400;
   margin-left: 6px;
@@ -2334,7 +2334,7 @@ li {
 .contact-form .form-group .form-input,
 .contact-form .form-group .form-textarea {
   background: #fff;
-  border: 1px solid #2F2F2F;
+  border: 1px solid #2f2f2f;
   font-size: 1rem;
   margin-top: 6px;
   padding: 15px 15px 21px;
@@ -2358,7 +2358,7 @@ li {
   box-shadow: 0 0 4px 0 #159741;
 }
 .contact-form .form-group .form-input::-moz-placeholder, .contact-form .form-group .form-textarea::-moz-placeholder {
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-family: "Noto Sans JP";
   font-size: 1rem;
   font-style: normal;
@@ -2368,7 +2368,7 @@ li {
 }
 .contact-form .form-group .form-input::placeholder,
 .contact-form .form-group .form-textarea::placeholder {
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-family: "Noto Sans JP";
   font-size: 1rem;
   font-style: normal;
@@ -2392,19 +2392,19 @@ li {
 
 .form-textarea {
   background: #fff;
-  border: 1px solid #2F2F2F;
+  border: 1px solid #2f2f2f;
   font-size: 1rem;
   height: 150px;
   max-width: 102%;
   padding: 10px;
 }
 .form-textarea::-moz-placeholder {
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-size: 1rem;
   font-weight: 400;
 }
 .form-textarea::placeholder {
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -2431,8 +2431,8 @@ input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: #FFF;
-  border: 1px solid #2F2F2F;
+  background: #fff;
+  border: 1px solid #2f2f2f;
   cursor: pointer;
   height: 30px;
   margin-right: 12px;
@@ -2492,7 +2492,7 @@ input[type=checkbox]:checked::after {
 
 .form-button {
   background: #159741;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   font-size: 1.125rem;
   font-weight: 500;
@@ -2518,13 +2518,13 @@ input[type=checkbox]:checked::after {
   opacity: 0.7;
 }
 .form-button:disabled {
-  background: #BDBDBD;
+  background: #bdbdbd;
   cursor: not-allowed;
   opacity: 0.7;
 }
 
 .footer {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .footer__inner {
@@ -2554,7 +2554,7 @@ input[type=checkbox]:checked::after {
 }
 
 .twitter-icon {
-  background-image: url("/image/Twitter(footer).png");
+  background-image: url("image/Twitter(footer).png");
   background-size: cover;
   display: inline-block;
   height: 50px;
@@ -2814,7 +2814,7 @@ input[type=checkbox]:checked::after {
 
 .parallax {
   background-attachment: fixed;
-  background-image: url("/image/salad-5904093_1920 1.png");
+  background-image: url("image/salad-5904093_1920 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2840,7 +2840,7 @@ input[type=checkbox]:checked::after {
 
 .parallax2 {
   background-attachment: fixed;
-  background-image: url("/image/cafe-768771_1920 1.png");
+  background-image: url("../image/cafe-768771_1920 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
