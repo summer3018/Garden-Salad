@@ -2814,7 +2814,7 @@ input[type=checkbox]:checked::after {
 
 .parallax {
   background-attachment: fixed;
-  background-image: url("image/salad-5904093_1920 1.png");
+  background-image: url("image/salad-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2840,7 +2840,7 @@ input[type=checkbox]:checked::after {
 
 .parallax2 {
   background-attachment: fixed;
-  background-image: url("../image/cafe-768771_1920 1.png");
+  background-image: url("../image/cafe-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
