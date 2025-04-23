@@ -56,18 +56,6 @@ li {
   }
 }
 
-// body{
-//     @include mq(sm) {
-//       color: green;
-//     }
-//     @include mq(md) {
-//       color: red;
-//     }
-//     @include mq(lg) {
-//       color: blue;
-//     }
-// }
-
 //  header
 .header {
   background: $base-color;
@@ -519,8 +507,6 @@ li {
     display: flex;
     flex-direction: row-reverse;
     gap: 7%;
-
-    //   gap: 71px;
     justify-content: flex-end;
   }
 }
@@ -874,16 +860,6 @@ li {
     position: absolute;
     transform: translateX(-50%);
     width: 50px;
-
-    /* 線の上下位置 */
-
-    /* 線の長さ */
-
-    /* 線の太さ */
-
-    /* 位置調整 */
-
-    /* 線の色 */
   }
 }
 
@@ -1375,10 +1351,6 @@ li {
   bottom: 60px;
   height: 222px;
   margin: 0 auto;
-
-  // margin-bottom: -10px;
-  // margin-left: 41px;
-  // margin-right: 34px;
   position: relative;
   text-align: center;
   width: 300px;
@@ -1461,9 +1433,6 @@ li {
 .instagram-card {
   background: #f2f2f2;
   margin-bottom: -31px;
-
-  // outline: 1px solid #333;
-  // outline-offset: -11px;
   margin-left: 41px;
   margin-right: 34px;
   position: relative;
@@ -1737,16 +1706,6 @@ li {
     position: absolute;
     transform: translateX(-50%);
     width: 50px;
-
-    /* 線の上下位置 */
-
-    /* 線の長さ */
-
-    /* 線の太さ */
-
-    /* 位置調整 */
-
-    /* 線の色 */
     @include mq(lg) {
       bottom: 52px;
     }
@@ -1976,7 +1935,6 @@ li {
   @include mq(lg) {
     padding: 30px 32px 0 34px;
 
-    // padding: 3vw 3.2vw .4000000000000004vw;
   }
 }
 
@@ -1988,8 +1946,6 @@ li {
   @include mq(lg) {
     display: flex;
 
-    //   width: calc(629.568px +  449.691px);
-    // width: calc(43.72vw + 31.228541666666665vw);
   }
 }
 
@@ -2263,15 +2219,6 @@ li {
     transform: translateX(-50%);
     width: 50px;
 
-    /* 線の上下位置 */
-
-    /* 線の長さ */
-
-    /* 線の太さ */
-
-    /* 位置調整 */
-
-    /* 線の色 */
     @include mq(lg) {
       bottom: 30px;
     }
@@ -2564,21 +2511,6 @@ input[type="checkbox"] {
   }
 }
 
-// SVG
-// .test-icon{
-//     width: 40px;
-//     height: 40px;
-//     fill: #fff;
-//     background-color:  #2F2F2F;
-//     border: 1px solid #2f2f2f;
-//     border-radius: 50%;
-//     padding: 4.6px 3.9px 3.9px 4.6px;
-//     &:hover{
-//         fill: #2f2f2f;
-//         background-color: #fff;
-//     }
-
-// }
 
 .instagram-icon {
   background-image: url("../image/Instagram\(footer\).png");
@@ -2778,15 +2710,6 @@ input[type="checkbox"] {
     transform: translateX(-50%);
     width: 50px;
 
-    /* 線の上下位置 */
-
-    /* 線の長さ */
-
-    /* 線の太さ */
-
-    /* 位置調整 */
-
-    /* 線の色 */
     @include mq(lg) {
       bottom: 30px;
     }

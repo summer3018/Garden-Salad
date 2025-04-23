@@ -855,11 +855,6 @@ li {
   position: absolute;
   transform: translateX(-50%);
   width: 50px;
-  /* 線の上下位置 */
-  /* 線の長さ */
-  /* 線の太さ */
-  /* 位置調整 */
-  /* 線の色 */
 }
 
 .menu-text-pfc {
@@ -1724,11 +1719,6 @@ li {
   position: absolute;
   transform: translateX(-50%);
   width: 50px;
-  /* 線の上下位置 */
-  /* 線の長さ */
-  /* 線の太さ */
-  /* 位置調整 */
-  /* 線の色 */
 }
 @media (min-width: 1000px) {
   .shop-title__en::before {
@@ -2261,11 +2251,6 @@ li {
   position: absolute;
   transform: translateX(-50%);
   width: 50px;
-  /* 線の上下位置 */
-  /* 線の長さ */
-  /* 線の太さ */
-  /* 位置調整 */
-  /* 線の色 */
 }
 @media (min-width: 1000px) {
   .contact-title__en::after {
@@ -2758,11 +2743,6 @@ input[type=checkbox]:checked::after {
   position: absolute;
   transform: translateX(-50%);
   width: 50px;
-  /* 線の上下位置 */
-  /* 線の長さ */
-  /* 線の太さ */
-  /* 位置調整 */
-  /* 線の色 */
 }
 @media (min-width: 1000px) {
   .privacy-title__en::after {
