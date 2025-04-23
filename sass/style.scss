@@ -17,7 +17,7 @@ $breakpoints: (
   // スマホ用（599px以下）
   md: 600px,
   // タブレット用（600px以上1000px以下）
-  lg: 1000px // PC用（1000px以上）,,,,,,
+  lg: 1000px // PC用（1000px以上）,,,
 );
 $font-black: #333;
 $font-white: #fff;
@@ -186,7 +186,7 @@ li {
 }
 
 .mv-bg-image {
-  background-image: url("./image/img_mv.png");
+  background-image: url("../image/img_mv.png");
   background-position: left 18vw top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2188,11 +2188,7 @@ li {
 
 // contact
 .contact {
-  background-image: url("image/pc/vegetable-background.png");
-  background-image: url("/image/pc/Garden\ Salad\(pc\).png");
-  background-image: url("./image/pc/map.png");
-  background-image: url("../image/pc/img_mv.png");
-
+  background-image: url("/image/pc/vegetable-background.png");
   background-position: center center;
 
   @include mq(lg) {
@@ -2839,7 +2835,7 @@ input[type="checkbox"] {
 // parallax
 .parallax {
   background-attachment: fixed;
-  background-image: url("image/salad-1.png");
+  background-image: url("./image/salad-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

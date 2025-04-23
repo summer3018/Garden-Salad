@@ -145,7 +145,7 @@ li {
 }
 
 .mv-bg-image {
-  background-image: url("./image/img_mv.png");
+  background-image: url("../image/img_mv.png");
   background-position: left 18vw top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2186,10 +2186,7 @@ li {
 }
 
 .contact {
-  background-image: url("image/pc/vegetable-background.png");
-  background-image: url("/image/pc/Garden Salad(pc).png");
-  background-image: url("./image/pc/map.png");
-  background-image: url("../image/pc/img_mv.png");
+  background-image: url("/image/pc/vegetable-background.png");
   background-position: center center;
 }
 @media (min-width: 1000px) {
@@ -2817,7 +2814,7 @@ input[type=checkbox]:checked::after {
 
 .parallax {
   background-attachment: fixed;
-  background-image: url("image/salad-1.png");
+  background-image: url("./image/salad-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
